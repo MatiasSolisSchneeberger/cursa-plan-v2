@@ -1,4 +1,13 @@
 ---
+/* Importar componentes */
+/* import Analytics from "@vercel/analytics/astro"; */
+import {ClientRouter} from "astro:transitions"
+
+import NavHeader from "@sections/NavHeader.astro"
+import BotonTema from "@components/BotonTema.astro"
+import Footer from "@sections/Footer.astro"
+import BotonArriba from "@components/BotonArriba.astro"
+
 import "./src/styles/global.css"
 
 import "@fontsource/poppins/100.css"
@@ -37,7 +46,6 @@ const {title} = Astro.props
 		<!-- Título optimizado -->
 		<title>CursaPlan {title && `| ${title}`}</title>
 
-
 		<!-- Meta descripción -->
 		<meta
 			name="description"
@@ -57,35 +65,23 @@ const {title} = Astro.props
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
 		<!-- Etiquetas Open Graph (Para Facebook, LinkedIn, etc.) -->
-		<meta
-			property="og:title"
-			content="CursaPlan - Planes de Estudio de FaCENA"
-		/>
+		<meta property="og:title" content="CursaPlan - Planes de Estudio de FaCENA" />
 		<meta
 			property="og:description"
 			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
 		/>
-		<meta
-			property="og:image"
-			content="/157shots_so.png"
-		/>
+		<meta property="og:image" content="/157shots_so.png" />
 		<meta property="og:url" content="https://tudominio.com" />
 		<meta property="og:type" content="website" />
 
 		<!-- Twitter Card (Para Twitter) -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta
-			name="twitter:title"
-			content="CursaPlan - Planes de Estudio de FaCENA"
-		/>
+		<meta name="twitter:title" content="CursaPlan - Planes de Estudio de FaCENA" />
 		<meta
 			name="twitter:description"
 			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
 		/>
-		<meta
-			name="twitter:image"
-			content="/157shots_so.png"
-		/>
+		<meta name="twitter:image" content="/157shots_so.png" />
 
 		<!-- Datos estructurados JSON-LD para SEO (Google) -->
 		<script type="application/ld+json">
@@ -96,17 +92,11 @@ const {title} = Astro.props
 				"url": "https://tudominio.com",
 				"logo": "https://tudominio.com/logo.png",
 				"description": "Consulta los planes de estudio de todas las carreras de FaCENA con información detallada sobre materias y correlatividades.",
-				"sameAs": [
-					"https://facebook.com/cursaplan",
-					"https://twitter.com/cursaplan",
-					"https://instagram.com/cursaplan"
-				]
+				"sameAs": ["https://facebook.com/cursaplan", "https://twitter.com/cursaplan", "https://instagram.com/cursaplan"]
 			}
 		</script>
-		
+
 		<meta name="generator" content={Astro.generator} />
-		
-		
 
 		<!-- ---- MaterialDesign ---- -->
 		<script type="importmap">
@@ -123,6 +113,9 @@ const {title} = Astro.props
 
 			document.adoptedStyleSheets.push(typescaleStyles.styleSheet)
 		</script>
+
+		<!-- View Transition -->
+		<ClientRouter />
 	</head>
 	<body class="bg-background px-6 sm:px-10 md:px-32 py-9">
 		<main
