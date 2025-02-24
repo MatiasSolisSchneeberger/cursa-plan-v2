@@ -12,6 +12,7 @@
 			"@icons/*": ["src/icons/*"],
 			"@data/*": ["src/data/*"],
 			"@lib/*": ["src/lib/*"],
+			"@styles/*": ["src/styles/*"],
 			"@types": ["src/types.ts"]
 		},
 		"jsx": "react-jsx",
