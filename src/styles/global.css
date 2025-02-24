@@ -1,0 +1,394 @@
+@import "tailwindcss";
+
+:root {
+	--md-sys-color-primary: rgb(68, 97, 122);
+	--md-sys-color-surface-tint: rgb(68 97 122);
+	--md-sys-color-on-primary: rgb(255, 255, 255);
+	--md-sys-color-primary-container: rgb(168, 198, 226);
+	--md-sys-color-on-primary-container: rgb(22, 54, 77);
+	--md-sys-color-secondary: rgb(85, 96, 106);
+	--md-sys-color-on-secondary: rgb(255, 255, 255);
+	--md-sys-color-secondary-container: rgb(218, 229, 242);
+	--md-sys-color-on-secondary-container: rgb(63, 74, 84);
+	--md-sys-color-tertiary: rgb(112, 85, 118);
+	--md-sys-color-on-tertiary: rgb(255, 255, 255);
+	--md-sys-color-tertiary-container: rgb(216, 183, 221);
+	--md-sys-color-on-tertiary-container: rgb(66, 42, 72);
+	--md-sys-color-error: rgb(186, 26, 26);
+	--md-sys-color-on-error: rgb(255, 255, 255);
+	--md-sys-color-error-container: rgb(255, 218, 214);
+	--md-sys-color-on-error-container: rgb(65, 0, 2);
+	--md-sys-color-background: rgb(250, 249, 251);
+	--md-sys-color-on-background: rgb(26, 28, 29);
+	--md-sys-color-surface: rgb(250, 249, 251);
+	--md-sys-color-on-surface: rgb(26, 28, 29);
+	--md-sys-color-surface-variant: rgb(223, 227, 233);
+	--md-sys-color-on-surface-variant: rgb(66, 71, 77);
+	--md-sys-color-outline: rgb(115, 119, 125);
+	--md-sys-color-outline-variant: rgb(195, 199, 205);
+	--md-sys-color-shadow: rgb(0, 0, 0);
+	--md-sys-color-scrim: rgb(0, 0, 0);
+	--md-sys-color-inverse-surface: rgb(47, 48, 50);
+	--md-sys-color-inverse-on-surface: rgb(241, 240, 242);
+	--md-sys-color-inverse-primary: rgb(172, 202, 230);
+	--md-sys-color-primary-fixed: rgb(204, 229, 255);
+	--md-sys-color-on-primary-fixed: rgb(0, 30, 49);
+	--md-sys-color-primary-fixed-dim: rgb(172, 202, 230);
+	--md-sys-color-on-primary-fixed-variant: rgb(44, 74, 97);
+	--md-sys-color-secondary-fixed: rgb(217, 228, 240);
+	--md-sys-color-on-secondary-fixed: rgb(18, 29, 38);
+	--md-sys-color-secondary-fixed-dim: rgb(189, 200, 212);
+	--md-sys-color-on-secondary-fixed-variant: rgb(61, 72, 82);
+	--md-sys-color-tertiary-fixed: rgb(250, 216, 254);
+	--md-sys-color-on-tertiary-fixed: rgb(40, 19, 47);
+	--md-sys-color-tertiary-fixed-dim: rgb(221, 188, 225);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(87, 62, 93);
+	--md-sys-color-surface-dim: rgb(218, 218, 220);
+	--md-sys-color-surface-bright: rgb(250, 249, 251);
+	--md-sys-color-surface-container-lowest: rgb(255, 255, 255);
+	--md-sys-color-surface-container-low: rgb(244, 243, 245);
+	--md-sys-color-surface-container: rgb(238, 237, 239);
+	--md-sys-color-surface-container-high: rgb(233, 232, 234);
+	--md-sys-color-surface-container-highest: rgb(227, 226, 228);
+	--m3-elevation-1-box-shadow: 0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
+		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
+	--m3-elevation-2-box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
+		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
+	--m3-elevation-3-box-shadow: 0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-4-box-shadow: 0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-5-box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3), 0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
+	--carrera-Bioquímica: rgba(55, 105, 61, 0.5);
+	--carrera-Ingeniería-en-Agrimensura: rgba(140, 79, 39, 0.5);
+	--carrera-Ingeniería-Eléctrica: rgba(111, 93, 14, 0.5);
+	--carrera-Ingeniería-en-Electrónica: rgba(51, 105, 64, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Biológicas: rgba(62, 104, 55, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Físicas: rgba(60, 96, 144, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Químicas: rgba(143, 75, 56, 0.5);
+	--carrera-Licenciatura-en-Matemática: rgba(110, 82, 138, 0.5);
+	--carrera-Licenciatura-en-Sistemas-de-Información: rgba(47, 98, 140, 0.5);
+	--carrera-Licenciatura-en-Didáctica-de-la-Matemática: rgba(139, 74, 98, 0.5);
+	--carrera-Profesorado-en-Biología: rgba(62, 104, 55, 0.5);
+	--carrera-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: rgba(142, 73, 88, 0.5);
+	--carrera-Profesorado-en-Física: rgba(0, 105, 107, 0.5);
+	--carrera-Profesorado-en-Matemática: rgba(76, 92, 146, 0.5);
+	--carrera-Profesorado-Universitario-en-Informática: rgba(27, 101, 133, 0.5);
+}
+
+[data-theme="dark"] {
+	--md-sys-color-primary: rgb(194, 224, 253);
+	--md-sys-color-surface-tint: rgb(172, 202, 230);
+	--md-sys-color-on-primary: rgb(19, 51, 74);
+	--md-sys-color-primary-container: rgb(153, 182, 210);
+	--md-sys-color-on-primary-container: rgb(7, 42, 64);
+	--md-sys-color-secondary: rgb(189, 200, 212);
+	--md-sys-color-on-secondary: rgb(39, 50, 59);
+	--md-sys-color-secondary-container: rgb(54, 64, 74);
+	--md-sys-color-on-secondary-container: rgb(202, 213, 226);
+	--md-sys-color-tertiary: rgb(244, 210, 249);
+	--md-sys-color-on-tertiary: rgb(63, 40, 69);
+	--md-sys-color-tertiary-container: rgb(201, 169, 206);
+	--md-sys-color-on-tertiary-container: rgb(54, 31, 60);
+	--md-sys-color-error: rgb(255, 180, 171);
+	--md-sys-color-on-error: rgb(105, 0, 5);
+	--md-sys-color-error-container: rgb(147, 0, 10);
+	--md-sys-color-on-error-container: rgb(255, 218, 214);
+	--md-sys-color-background: rgb(18, 19, 21);
+	--md-sys-color-on-background: rgb(227, 226, 228);
+	--md-sys-color-surface: rgb(18, 19, 21);
+	--md-sys-color-on-surface: rgb(227, 226, 228);
+	--md-sys-color-surface-variant: rgb(66, 71, 77);
+	--md-sys-color-on-surface-variant: rgb(195, 199, 205);
+	--md-sys-color-outline: rgb(140, 145, 151);
+	--md-sys-color-outline-variant: rgb(66, 71, 77);
+	--md-sys-color-shadow: rgb(0, 0, 0);
+	--md-sys-color-scrim: rgb(0, 0, 0);
+	--md-sys-color-inverse-surface: rgb(227, 226, 228);
+	--md-sys-color-inverse-on-surface: rgb(47, 48, 50);
+	--md-sys-color-inverse-primary: rgb(68, 97, 122);
+	--md-sys-color-primary-fixed: rgb(204, 229, 255);
+	--md-sys-color-on-primary-fixed: rgb(0, 30, 49);
+	--md-sys-color-primary-fixed-dim: rgb(172, 202, 230);
+	--md-sys-color-on-primary-fixed-variant: rgb(44, 74, 97);
+	--md-sys-color-secondary-fixed: rgb(217, 228, 240);
+	--md-sys-color-on-secondary-fixed: rgb(18, 29, 38);
+	--md-sys-color-secondary-fixed-dim: rgb(189, 200, 212);
+	--md-sys-color-on-secondary-fixed-variant: rgb(61, 72, 82);
+	--md-sys-color-tertiary-fixed: rgb(250, 216, 254);
+	--md-sys-color-on-tertiary-fixed: rgb(40, 19, 47);
+	--md-sys-color-tertiary-fixed-dim: rgb(221, 188, 225);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(87, 62, 93);
+	--md-sys-color-surface-dim: rgb(18, 19, 21);
+	--md-sys-color-surface-bright: rgb(56, 57, 59);
+	--md-sys-color-surface-container-lowest: rgb(13, 14, 16);
+	--md-sys-color-surface-container-low: rgb(26, 28, 29);
+	--md-sys-color-surface-container: rgb(30, 32, 33);
+	--md-sys-color-surface-container-high: rgb(41, 42, 44);
+	--md-sys-color-surface-container-highest: rgb(52, 53, 55);
+	--m3-elevation-1-box-shadow: 0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
+		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
+	--m3-elevation-2-box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
+		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
+	--m3-elevation-3-box-shadow: 0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-4-box-shadow: 0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-5-box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3), 0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
+	--carrera-Bioquímica: rgba(157, 212, 158, 0.5);
+	--carrera-Ingeniería-en-Agrimensura: rgba(255, 182, 139, 0.5);
+	--carrera-Ingeniería-Eléctrica: rgba(222, 197, 110, 0.5);
+	--carrera-Ingeniería-en-Electrónica: rgba(154, 212, 162, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Biológicas: rgba(163, 211, 151, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Físicas: rgba(165, 200, 255, 0.5);
+	--carrera-Licenciatura-en-Ciencias-Químicas: rgba(255, 181, 160, 0.5);
+	--carrera-Licenciatura-en-Matemática: rgba(219, 185, 249, 0.5);
+	--carrera-Licenciatura-en-Sistemas-de-Información: rgba(155, 203, 251, 0.5);
+	--carrera-Licenciatura-en-Didáctica-de-la-Matemática: rgba(255, 176, 202, 0.5);
+	--carrera-Profesorado-en-Biología: rgba(163, 211, 151, 0.5);
+	--carrera-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: rgba(255, 178, 191, 0.5);
+	--carrera-Profesorado-en-Física: rgba(128, 212, 214, 0.5);
+	--carrera-Profesorado-en-Matemática: rgba(181, 196, 255, 0.5);
+	--carrera-Profesorado-Universitario-en-Informática: rgba(143, 206, 243, 0.5);
+}
+
+@theme {
+	/* ---- Colores ---- */
+	--color-primary: var(--md-sys-color-primary);
+	--color-surface-tint: var(--md-sys-color-surface-tint);
+	--color-on-primary: var(--md-sys-color-on-primary);
+	--color-primary-container: var(--md-sys-color-primary-container);
+	--color-on-primary-container: var(--md-sys-color-on-primary-container);
+	--color-secondary: var(--md-sys-color-secondary);
+	--color-on-secondary: var(--md-sys-color-on-secondary);
+	--color-secondary-container: var(--md-sys-color-secondary-container);
+	--color-on-secondary-container: var(--md-sys-color-on-secondary-container);
+	--color-tertiary: var(--md-sys-color-tertiary);
+	--color-on-tertiary: var(--md-sys-color-on-tertiary);
+	--color-tertiary-container: var(--md-sys-color-tertiary-container);
+	--color-on-tertiary-container: var(--md-sys-color-on-tertiary-container);
+	--color-error: var(--md-sys-color-error);
+	--color-on-error: var(--md-sys-color-on-error);
+	--color-error-container: var(--md-sys-color-error-container);
+	--color-on-error-container: var(--md-sys-color-on-error-container);
+	--color-background: var(--md-sys-color-background);
+	--color-on-background: var(--md-sys-color-on-background);
+	--color-surface: var(--md-sys-color-surface);
+	--color-on-surface: var(--md-sys-color-on-surface);
+	--color-surface-variant: var(--md-sys-color-surface-variant);
+	--color-on-surface-variant: var(--md-sys-color-on-surface-variant);
+	--color-outline: var(--md-sys-color-outline);
+	--color-outline-variant: var(--md-sys-color-outline-variant);
+	--color-shadow: var(--md-sys-color-shadow);
+	--color-scrim: var(--md-sys-color-scrim);
+	--color-inverse-surface: var(--md-sys-color-inverse-surface);
+	--color-inverse-on-surface: var(--md-sys-color-inverse-on-surface);
+	--color-inverse-primary: var(--md-sys-color-inverse-primary);
+	--color-primary-fixed: var(--md-sys-color-primary-fixed);
+	--color-on-primary-fixed: var(--md-sys-color-on-primary-fixed);
+	--color-primary-fixed-dim: var(--md-sys-color-primary-fixed-dim);
+	--color-on-primary-fixed-variant: var(--md-sys-color-on-primary-fixed-variant);
+	--color-secondary-fixed: var(--md-sys-color-secondary-fixed);
+	--color-on-secondary-fixed: var(--md-sys-color-on-secondary-fixed);
+	--color-secondary-fixed-dim: var(--md-sys-color-secondary-fixed-dim);
+	--color-on-secondary-fixed-variant: var(--md-sys-color-on-secondary-fixed-variant);
+	--color-tertiary-fixed: var(--md-sys-color-tertiary-fixed);
+	--color-on-tertiary-fixed: var(--md-sys-color-on-tertiary-fixed);
+	--color-tertiary-fixed-dim: var(--md-sys-color-tertiary-fixed-dim);
+	--color-on-tertiary-fixed-variant: var(--md-sys-color-on-tertiary-fixed-variant);
+	--color-surface-dim: var(--md-sys-color-surface-dim);
+	--color-surface-bright: var(--md-sys-color-surface-bright);
+	--color-surface-container-lowest: var(--md-sys-color-surface-container-lowest);
+	--color-surface-container-low: var(--md-sys-color-surface-container-low);
+	--color-surface-container: var(--md-sys-color-surface-container);
+	--color-surface-container-high: var(--md-sys-color-surface-container-high);
+	--color-surface-container-highest: var(--md-sys-color-surface-container-highest);
+	--color-carrera-Bioquímica: var(--carrera-Bioquímica);
+	--color-carrera-Ingeniería-en-Agrimensura: var(--carrera-Ingeniería-en-Agrimensura);
+	--color-carrera-Ingeniería-Eléctrica: var(--carrera-Ingeniería-Eléctrica);
+	--color-carrera-Ingeniería-en-Electrónica: var(--carrera-Ingeniería-en-Electrónica);
+	--color-carrera-Licenciatura-en-Ciencias-Biológicas: var(--carrera-Licenciatura-en-Ciencias-Biológicas);
+	--color-carrera-Licenciatura-en-Ciencias-Físicas: var(--carrera-Licenciatura-en-Ciencias-Físicas);
+	--color-carrera-Licenciatura-en-Ciencias-Químicas: var(--carrera-Licenciatura-en-Ciencias-Químicas);
+	--color-carrera-Licenciatura-en-Matemática: var(--carrera-Licenciatura-en-Matemática);
+	--color-carrera-Licenciatura-en-Sistemas-de-Información: var(--carrera-Licenciatura-en-Sistemas-de-Información);
+	--color-carrera-Licenciatura-en-Didáctica-de-la-Matemática: var(--carrera-Licenciatura-en-Didáctica-de-la-Matemática);
+	--color-carrera-Profesorado-en-Biología: var(--carrera-Profesorado-en-Biología);
+	--color-carrera-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: var(
+		--carrera-Profesorado-en-Ciencias-Químicas-y-del-Ambiente
+	);
+	--color-carrera-Profesorado-en-Física: var(--carrera-Profesorado-en-Física);
+	--color-carrera-Profesorado-en-Matemática: var(--carrera-Profesorado-en-Matemática);
+	--color-carrera-Profesorado-Universitario-en-Informática: var(--carrera-Profesorado-Universitario-en-Informática);
+	--shadow-1: var(--m3-elevation-1-box-shadow);
+	--shadow-2: var(--m3-elevation-2-box-shadow);
+	--shadow-3: var(--m3-elevation-3-box-shadow);
+	--shadow-4: var(--m3-elevation-4-box-shadow);
+	--shadow-5: var(--m3-elevation-5-box-shadow);
+
+	/* ---- Fuentes ---- */
+	/* -- FontFamily -- */
+	--font-display-large-font-family: Poppins, sans-serif;
+	--font-display-medium-font-family: Poppins, sans-serif;
+	--font-display-small-font-family: Poppins, sans-serif;
+
+	--font-headline-large-font-family: Poppins, sans-serif;
+	--font-headline-medium-font-family: Poppins, sans-serif;
+	--font-headline-small-font-family: Poppins, sans-serif;
+
+	--font-title-large-font-family: Poppins, sans-serif;
+	--font-title-medium-font-family: Poppins, sans-serif;
+	--font-title-small-font-family: Poppins, sans-serif;
+
+	--font-label-large-font-family: Poppins, sans-serif;
+	--font-label-medium-font-family: Poppins, sans-serif;
+	--font-label-small-font-family: Poppins, sans-serif;
+
+	--font-body-large-font-family: Poppins, sans-serif;
+	--font-body-medium-font-family: Poppins, sans-serif;
+	--font-body-small-font-family: Poppins, sans-serif;
+
+	/* -- Size --*/
+	--text-display-large-font-size: 72px;
+	--text-display-medium-font-size: 45px;
+	--text-display-small-font-size: 36px;
+	--text-display-medium-size: 45px;
+	--text-display-small-size: 36px;
+
+	--text-headline-large-font-size: 32px;
+	--text-headline-medium-font-size: 28px;
+	--text-headline-small-font-size: 24px;
+	--text-headline-large-size: 32px;
+	--text-headline-medium-size: 28px;
+	--text-headline-small-size: 24px;
+
+	--text-title-large-font-size: 22px;
+	--text-title-medium-font-size: 16px;
+	--text-title-small-font-size: 14px;
+	--text-title-large-size: 22px;
+	--text-title-medium-size: 16px;
+	--text-title-small-size: 14px;
+
+	--text-label-large-font-size: 14px;
+	--text-label-medium-font-size: 12px;
+	--text-label-small-font-size: 11px;
+	--text-label-large-size: 14px;
+	--text-label-medium-size: 12px;
+	--text-label-small-size: 11px;
+
+	--text-body-large-font-size: 16px;
+	--text-body-medium-font-size: 14px;
+	--text-body-small-font-size: 12px;
+	--text-body-large-size: 16px;
+	--text-body-medium-size: 14px;
+	--text-body-small-size: 12px;
+
+	/* -- Weight -- */
+	--text-weight-display-large-font-weight: 700;
+	--text-weight-display-medium-font-weight: 700;
+	--text-weight-display-small-font-weight: 700;
+
+	--text-weight-headline-large-font-weight: 500;
+	--text-weight-headline-medium-font-weight: 500;
+	--text-weight-headline-small-font-weight: 500;
+
+	--text-weight-title-large-font-weight: 500;
+	--text-weight-title-medium-font-weight: 500;
+	--text-weight-title-small-font-weight: 500;
+
+	--text-weight-label-large-font-weight: 500;
+	--text-weight-label-medium-font-weight: 500;
+	--text-weight-label-small-font-weight: 500;
+
+	--text-weight-body-large-font-weight: 400;
+	--text-weight-body-medium-font-weight: 400;
+	--text-weight-body-small-font-weight: 400;
+
+	/* -- LineHeight -- */
+	--spacing-display-large-line-height: 64px;
+	--spacing-display-medium-line-height: 52px;
+	--spacing-display-small-line-height: 44px;
+
+	--spacing-headline-large-line-height: 40px;
+	--spacing-headline-medium-line-height: 36px;
+	--spacing-headline-small-line-height: 32px;
+
+	--spacing-title-large-line-height: 28px;
+	--spacing-title-medium-line-height: 24px;
+	--spacing-title-small-line-height: 20px;
+
+	--spacing-label-large-line-height: 20px;
+	--spacing-label-medium-line-height: 16px;
+	--spacing-label-small-line-height: 16px;
+
+	--spacing-body-large-line-height: 24px;
+	--spacing-body-medium-line-height: 20px;
+	--spacing-body-small-line-height: 16px;
+
+	/* -- LetterSpacing -- */
+	--tracking-display-medium-tracking: ;
+	--tracking-headline-large-tracking: ;
+	--tracking-headline-small-tracking: ;
+	--tracking-title-large-tracking: ;
+	--tracking-title-medium-tracking: 0.15px;
+	--tracking-title-small-tracking: 0.1px;
+	--tracking-label-large-tracking: 0.1px;
+	--tracking-label-medium-tracking: 0.5px;
+	--tracking-label-small-tracking: 0.5px;
+	--tracking-body-large-tracking: 0.5px;
+	--tracking-body-medium-tracking: 0.25px;
+	--tracking-body-small-tracking: 0.4px;
+}
+
+.text-display-large {
+	@apply font-display-large-font-family text-display-large-font-size font-display-large-font-weight leading-display-large-line-height;
+	letter-spacing: var(--display-large-letter-spacing, -1px);
+}
+.text-display-medium {
+	@apply font-display-medium-font-family text-display-medium-font-size font-display-medium-font-weight leading-display-medium-line-height;
+}
+.text-display-small {
+	@apply font-display-small-font-family text-display-small-font-size font-display-small-font-weight leading-display-small-line-height;
+}
+
+.text-headline-large {
+	@apply font-headline-large-font-family text-headline-large-font-size font-headline-large-font-weight leading-headline-large-line-height;
+}
+.text-headline-medium {
+	@apply font-headline-medium-font-family text-headline-medium-font-size font-headline-medium-font-weight leading-headline-medium-line-height;
+}
+.text-headline-small {
+	@apply font-headline-small-font-family text-headline-small-font-size font-headline-small-font-weight leading-headline-small-line-height;
+}
+
+.text-title-large {
+	@apply font-title-large-font-family text-title-large-font-size font-title-large-font-weight leading-title-large-line-height;
+}
+.text-title-medium {
+	@apply font-title-medium-font-family text-title-medium-font-size font-title-medium-font-weight leading-title-medium-line-height;
+	letter-spacing: var(--title-medium-letter-spacing, 0.15px);
+}
+.text-title-small {
+	@apply font-title-small-font-family text-title-small-font-size font-title-small-font-weight leading-title-small-line-height;
+	letter-spacing: var(--title-small-letter-spacing, 0.1px);
+}
+.text-label-large {
+	@apply font-label-large-font-family text-label-large-font-size font-label-large-font-weight leading-label-large-line-height;
+	letter-spacing: var(--label-large-letter-spacing, 0.1px);
+}
+.text-label-medium {
+	@apply font-label-medium-font-family text-label-medium-font-size font-label-medium-font-weight leading-label-medium-line-height;
+	letter-spacing: var(--label-medium-letter-spacing, 0.5px);
+}
+.text-label-small {
+	@apply font-label-small-font-family text-label-small-font-size font-label-small-font-weight leading-label-small-line-height;
+	letter-spacing: var(--label-small-letter-spacing, 0.5px);
+}
+.text-body-large {
+	@apply font-body-large-font-family text-body-large-font-size font-body-large-font-weight leading-body-large-line-height;
+	letter-spacing: var(--body-large-letter-spacing, 0.5px);
+}
+.text-body-medium {
+	@apply font-body-medium-font-family text-body-medium-font-size font-body-medium-font-weight leading-body-medium-line-height;
+	letter-spacing: var(--body-medium-letter-spacing, 0.25px);
+}
+.text-body-small {
+	@apply font-body-small-font-family text-body-small-font-size font-body-small-font-weight leading-body-small-line-height;
+	letter-spacing: var(--body-small-letter-spacing, 0.4px);
+}

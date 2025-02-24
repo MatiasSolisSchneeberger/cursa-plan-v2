@@ -1,14 +1,138 @@
+---
+import "./src/styles/global.css"
+
+import "@fontsource/poppins/100.css"
+import "@fontsource/poppins/200.css"
+import "@fontsource/poppins/300.css"
+import "@fontsource/poppins/400.css"
+import "@fontsource/poppins/500.css"
+import "@fontsource/poppins/600.css"
+import "@fontsource/poppins/700.css"
+import "@fontsource/poppins/800.css"
+import "@fontsource/poppins/900.css"
+import "@fontsource/poppins/100-italic.css"
+import "@fontsource/poppins/200-italic.css"
+import "@fontsource/poppins/300-italic.css"
+import "@fontsource/poppins/400-italic.css"
+import "@fontsource/poppins/500-italic.css"
+import "@fontsource/poppins/600-italic.css"
+import "@fontsource/poppins/700-italic.css"
+import "@fontsource/poppins/800-italic.css"
+import "@fontsource/poppins/900-italic.css"
+
+interface Props {
+	title?: string
+}
+
+const {title} = Astro.props
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- ---- MetaDatos ---- -->
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Título optimizado -->
+		<title>CursaPlan {title && `| ${title}`}</title>
+
+
+		<!-- Meta descripción -->
+		<meta
+			name="description"
+			content="Encuentra los planes de estudio detallados de todas las carreras de FaCENA. Información actualizada sobre materias, correlatividades y más."
+		/>
+
+		<!-- Palabras clave -->
+		<meta
+			name="keywords"
+			content="CursaPlan, planes de estudio FaCENA, carreras FaCENA, materias, correlatividades, universidad, Facultad de Ciencias Exactas y Naturales"
+		/>
+
+		<!-- Autor -->
+		<meta name="author" content="CursaPlan Team" />
+
+		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Etiquetas Open Graph (Para Facebook, LinkedIn, etc.) -->
+		<meta
+			property="og:title"
+			content="CursaPlan - Planes de Estudio de FaCENA"
+		/>
+		<meta
+			property="og:description"
+			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
+		/>
+		<meta
+			property="og:image"
+			content="/157shots_so.png"
+		/>
+		<meta property="og:url" content="https://tudominio.com" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card (Para Twitter) -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="CursaPlan - Planes de Estudio de FaCENA"
+		/>
+		<meta
+			name="twitter:description"
+			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
+		/>
+		<meta
+			name="twitter:image"
+			content="/157shots_so.png"
+		/>
+
+		<!-- Datos estructurados JSON-LD para SEO (Google) -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "EducationalOrganization",
+				"name": "CursaPlan",
+				"url": "https://tudominio.com",
+				"logo": "https://tudominio.com/logo.png",
+				"description": "Consulta los planes de estudio de todas las carreras de FaCENA con información detallada sobre materias y correlatividades.",
+				"sameAs": [
+					"https://facebook.com/cursaplan",
+					"https://twitter.com/cursaplan",
+					"https://instagram.com/cursaplan"
+				]
+			}
+		</script>
+		
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		
+
+		<!-- ---- MaterialDesign ---- -->
+		<script type="importmap">
+			{
+				"imports": {
+					"@material/web/": "https://esm.run/@material/web/"
+				}
+			}
+		</script>
+
+		<script type="module">
+			import "@material/web/all.js"
+			import {styles as typescaleStyles} from "@material/web/typography/md-typescale-styles.js"
+
+			document.adoptedStyleSheets.push(typescaleStyles.styleSheet)
+		</script>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-background px-6 sm:px-10 md:px-32 py-9">
+		<main
+			class="bg-[var(--md-sys-color-background)] flex flex-col gap-6 p-4 sm:py-4 sm:px-12 md:py-6 md:px-16 lg:py-4 lg:px-20 w-full">
+			<NavHeader />
+			<slot />
+			<BotonTema />
+			<BotonArriba />
+			<Footer />
+		</main>
 	</body>
 </html>
 

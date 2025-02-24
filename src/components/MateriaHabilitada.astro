@@ -1,0 +1,15 @@
+---
+interface Props {
+    materia: string,
+}
+
+const { materia} = Astro.props
+---
+<div
+	class="bg-tertiary-fixed-dim p-2.5 rounded-[18px] flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+
+		<p class="text-on-tertiary-fixed-variant text-center text-title-medium relative items-center justify-center">
+			{materia}
+		</p>
+	
+</div>

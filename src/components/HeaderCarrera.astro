@@ -1,0 +1,35 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	carrera: string;
+	emoji: string;
+}
+
+const { carrera, emoji } = Astro.props;
+const NombreCarrera = carrera.replace(/-/g, " ");
+---
+
+<header
+	transition:name=`header-${carrera}`
+	class=`rounded-full border border-outline p-3 flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden`
+	style={{
+		background: `linear-gradient(to left, var(--carrera-${carrera}) 25%, transparent)`,
+	}}>
+	<md-filled-icon-button href="/">
+		<Icon name="arrow-left" size={22} />
+	</md-filled-icon-button>
+	<h2
+		transition:name=`nombre-${carrera}`
+		class="text-on-background text-headline-small relative flex-1 flex items-center justify-center text-center">
+		{NombreCarrera}
+	</h2>
+	<div
+		class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
+		<div
+			transition:name=`emoji-${carrera}`
+			class="text-on-primary text-center text-title-medium relative flex items-center justify-center">
+			{emoji}
+		</div>
+	</div>
+</header>

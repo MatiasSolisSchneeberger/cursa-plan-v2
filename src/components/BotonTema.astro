@@ -1,0 +1,65 @@
+---
+import {Icon} from "astro-icon/components"
+
+---
+
+<md-fab id="themeToggle" class="fixed bottom-2 left-2 z-50" variant="primary">
+	
+	<Icon slot="icon" class="block dark:hidden" size="22" name="brightness-up" />
+	<Icon slot="icon" class="hidden dark:block" size="22" name="moon" />
+
+</md-fab>
+
+<!-- script -->
+<script>
+	/* 	console.log("Script de cambio de tema cargado"); */
+
+	document.addEventListener("astro:page-load", () => {
+		const theme = (() => {
+			if (typeof localStorage !== "undefined" && localStorage.getItem("picoPreferredColorScheme")) {
+				return localStorage.getItem("picoPreferredColorScheme")
+			}
+			if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+				return "dark"
+			}
+			return "light"
+		})()
+
+		if (theme === "light") {
+			document.documentElement.setAttribute("data-theme", "light")
+			document.documentElement.classList.remove("dark")
+		} else {
+			document.documentElement.setAttribute("data-theme", "dark")
+			document.documentElement.classList.add("dark")
+		}
+
+		window.localStorage.setItem("picoPreferredColorScheme", theme as string)
+
+		const handleToggleClick = () => {
+			const element = document.documentElement
+			element.classList.toggle("dark")
+
+			const isDark = element.classList.contains("dark")
+
+			if (isDark) {
+				element.setAttribute("data-theme", "dark")
+			} else {
+				element.setAttribute("data-theme", "light")
+			}
+
+			localStorage.setItem("picoPreferredColorScheme", isDark ? "dark" : "light")
+		}
+
+		document.getElementById("themeToggle")!.addEventListener("click", handleToggleClick)
+	})
+
+	document.addEventListener("astro:after-swap", () => {
+		if (localStorage.getItem("picoPreferredColorScheme") === "dark") {
+			document.documentElement.setAttribute("data-theme", "dark")
+			document.documentElement.classList.add("dark")
+		} else {
+			document.documentElement.setAttribute("data-theme", "light")
+			document.documentElement.classList.remove("dark")
+		}
+	})
+</script>

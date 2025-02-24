@@ -1,11 +1,32 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from '@layouts/Layout.astro';
+import HeroTitle from '@sections/HeroTitle.astro';
+import Carreras from '@sections/Carreras.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="CursaPlan | Plan de estudios">
+	<HeroTitle />
+	<Carreras />
 </Layout>
+
+
+<!-- 
+Bioquímica: rgb(71, 103, 48)
+Ingenierías
+Ingeniería en Agrimensura: rgb(140, 79, 39)
+Ingeniería Eléctrica: rgb(111, 93, 14)
+Ingeniería en Electrónica: rgb(51, 105, 64)
+Licenciaturas
+Licenciatura en Ciencias Biológicas: rgb(62, 104, 55)
+Licenciatura en Ciencias Físicas: rgb(60, 96, 144)
+Licenciatura en Ciencias Químicas: rgb(143, 75, 56)
+Licenciatura en Matemática: rgb(110, 82, 138)
+Licenciatura en Sistemas de Información: rgb(46, 98, 140)
+Licenciatura en Didáctica de la Matemática: rgb(139, 74, 98)
+Profesorados
+Profesorado en Biología: rgb(62, 104, 55)
+Profesorado en Ciencias Químicas y del Ambiente: rgb(144, 75, 61)
+Profesorado en Física: rgb(0, 105, 107)
+Profesorado en Matemática: rgb(76, 92, 146)
+Profesorado Universitario en Informática: rgb(28, 101, 133)
+Otras Carreras -->

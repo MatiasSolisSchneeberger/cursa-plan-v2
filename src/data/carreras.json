@@ -1,0 +1,5912 @@
+{
+	"carreras": [
+		{
+			"carrera": "Bioquímica",
+			"emoji": "🧫",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Álgebra y Geometría Analítica",
+							"codigo": 101,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": [
+								{
+									"fecha": "2024-07-31"
+								},
+								{
+									"fecha": "2024-07-31"
+								},
+								{
+									"fecha": "2024-09-04"
+								},
+								{
+									"fecha": "2024-10-02"
+								},
+								{
+									"fecha": "2024-11-27"
+								},
+								{
+									"fecha": "2024-12-1"
+								}
+							]
+						},
+						{
+							"materia": "Química General",
+							"codigo": 102,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Cálculo Diferencial e Integral",
+							"codigo": 103,
+							"paraCursar": [
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Inorgánica",
+							"codigo": 104,
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Biología General y Celular",
+							"codigo": 105,
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Mecánica, Calor y Termodinámica",
+							"codigo": 201,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Orgánica I",
+							"codigo": 202,
+							"paraCursar": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Morfología",
+							"codigo": 203,
+							"paraCursar": [
+								{
+									"mat": "Biología General y Celular",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Biología General y Celular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electricidad, Magnetismo, Óptica y Sonido",
+							"codigo": 204,
+							"paraCursar": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "R"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica, Calor y Termodinámica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica, Calor y Termodinámica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Orgánica II",
+							"codigo": 205,
+							"paraCursar": [
+								{
+									"mat": "Química Orgánica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología General y Celular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Orgánica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología General y Celular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Analítica",
+							"codigo": 206,
+							"paraCursar": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Química Biológica I",
+							"codigo": 301,
+							"paraCursar": [
+								{
+									"mat": "Química Orgánica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica, Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica, Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Física Biológica",
+							"codigo": 302,
+							"paraCursar": [
+								{
+									"mat": "Mecánica, Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad, Magnetismo, Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Orgánica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad, Magnetismo, Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bioestadística",
+							"codigo": 303,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Inglés",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Biológica II",
+							"codigo": 304,
+							"paraCursar": [
+								{
+									"mat": "Química Física Biológica",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Genética y Biología Molecular",
+							"codigo": 305,
+							"paraCursar": [
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Analítica Instrumental",
+							"codigo": 306,
+							"paraCursar": [
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad, Magnetismo, Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "R"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": " Virología Clínica",
+							"codigo": 401,
+							"paraCursar": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Genética y Biología Molecula",
+									"cond": "R"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Microbiología General",
+							"codigo": 402,
+							"paraCursar": [
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "R"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Fisiología Humana",
+							"codigo": 403,
+							"paraCursar": [
+								{
+									"mat": "Morfología",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Farmacología",
+							"codigo": 404,
+							"paraCursar": [
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Manejo de Software",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bromatología y Nutrición",
+							"codigo": 405,
+							"paraCursar": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Microbiología General",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Fisiopatología",
+							"codigo": 406,
+							"paraCursar": [
+								{
+									"mat": "Fisiología Humana",
+									"cond": "R"
+								},
+								{
+									"mat": "Microbiología General",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física Biológica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Inmunología Clínica",
+							"codigo": 407,
+							"paraCursar": [
+								{
+									"mat": "Microbiología General",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiología Humana",
+									"cond": "R"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Parasitología Humana",
+							"codigo": 408,
+							"paraCursar": [
+								{
+									"mat": "Microbiología General",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiología Humana",
+									"cond": "R"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Bacteriología y Micología Clínica",
+							"codigo": 501,
+							"paraCursar": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "R"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Microbiología General",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Clínica",
+							"codigo": 502,
+							"paraCursar": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fisiología Humana",
+									"cond": "A"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Toxicología y Química Legal",
+							"codigo": 503,
+							"paraCursar": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Orgánica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								},
+								{
+									"mat": "Farmacología",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ética Profesional",
+							"codigo": 504,
+							"paraCursar": [
+								{
+									"mat": "50% de la carrera",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "50% de la carrera",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Hematología Clínica",
+							"codigo": 505,
+							"paraCursar": [
+								{
+									"mat": "Bioestadística",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "R"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Endocrinología y Monitoreo de Drogas",
+							"codigo": 506,
+							"paraCursar": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "R"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								},
+								{
+									"mat": "Farmacología",
+									"cond": "A"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Gestión de Laboratorio",
+							"codigo": 507,
+							"paraCursar": [
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Epistemología y Metodología de la Investigación",
+							"codigo": 508,
+							"paraCursar": [
+								{
+									"mat": "Toxicología y Química Legal",
+									"cond": "R"
+								},
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								},
+								{
+									"mat": "Toxicología y Química Legal",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa I",
+							"codigo": 509,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II",
+							"codigo": 510,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Genética y Biología Molecular Aplicada",
+							"codigo": 511,
+							"paraCursar": [
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Genética y Biología Molecular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Epidemiología y Salud Pública",
+							"codigo": 512,
+							"paraCursar": [
+								{
+									"mat": "Parasitología Humana",
+									"cond": "R"
+								},
+								{
+									"mat": "Bacteriología y Micología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Virología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Bioestadística",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Parasitología Humana",
+									"cond": "R"
+								},
+								{
+									"mat": "Bacteriología y Micología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Virología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Bioquímica de los Alimentos",
+							"codigo": 513,
+							"paraCursar": [
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								},
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental Clínica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								},
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Métodos de Conservación de Alimentos",
+							"codigo": 514,
+							"paraCursar": [
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								},
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								},
+								{
+									"mat": "Qca Biológica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Urgencias Hospitalarias",
+							"codigo": 515,
+							"paraCursar": [
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Fisiopatología",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Determinación de Estructuras Orgánicas",
+							"codigo": 516,
+							"paraCursar": [
+								{
+									"mat": "Qca Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Qca Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Qca Analítica Instrumental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "(Optativa) Medio Interno y Nefrología",
+							"codigo": 517,
+							"paraCursar": [
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Fitopatología",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Fitopatología",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 6,
+					"materias": [
+						{
+							"materia": "Práctica Hospitalaria",
+							"codigo": 601,
+							"paraCursar": [
+								{
+									"mat": "Hematología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Bacteriología y Micología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Endocrinología y Monitoreo de Drogas",
+									"cond": "R"
+								},
+								{
+									"mat": "Gestión de Laboratorio",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Virología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Parasitología Humana",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Clínica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Prácticas Electivas",
+							"codigo": 602,
+							"paraCursar": [
+								{
+									"mat": "Hematología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Bacteriología y Micología Clínica",
+									"cond": "R"
+								},
+								{
+									"mat": "Endocrinología y Monitoreo de Drogas",
+									"cond": "R"
+								},
+								{
+									"mat": "Gestión de Laboratorio",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Virología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Inmunología Clínica",
+									"cond": "A"
+								},
+								{
+									"mat": "Parasitología Humana",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Clínica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Ingeniería-en-Agrimensura",
+			"emoji": "📏",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Algebra y Geometría Analítica",
+							"codigo": 101,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral I",
+							"codigo": 102,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química General",
+							"codigo": 103,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral II",
+							"codigo": 104,
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica, Óptica y Sonido",
+							"codigo": 105,
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Informática",
+							"codigo": 106,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistema de Representación",
+							"codigo": 107,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Electricidad, Magnetismo y Calor",
+							"codigo": 201,
+							"paraCursar": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Trigonometría",
+							"codigo": 202,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Introducción a la Ingeniería en Agrimensura",
+							"codigo": 203,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística y Análisis de Datos",
+							"codigo": 204,
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Agrimensura Legal I",
+							"codigo": 205,
+							"paraCursar": [
+								{
+									"mat": "Introducción a la Ingeniería en Agrimensura",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Introducción a la Ingeniería en Agrimensura",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Topografía I",
+							"codigo": 206,
+							"paraCursar": [
+								{
+									"mat": "Trigonometría",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Sistema de Representación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Trigonometría",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Geografía Física y Geomorfología",
+							"codigo": 207,
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Teoría de Errores y Compensación",
+							"codigo": 208,
+							"paraCursar": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Informática",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Inglés Técnico",
+							"codigo": 209,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": "Aprobada para cursar el Ciclo Superior",
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Dibujo Topográfico y Cartográfico",
+							"codigo": 301,
+							"paraCursar": [
+								{
+									"mat": "Topografía I",
+									"cond": "R"
+								},
+								{
+									"mat": "Sistemas de Representación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Topografía I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Topografía II",
+							"codigo": 302,
+							"paraCursar": [
+								{
+									"mat": "Topografía I",
+									"cond": "R"
+								},
+								{
+									"mat": "Teoría de Errores y Compensación",
+									"cond": "R"
+								},
+								{
+									"mat": "Trigonometría",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Topografía I",
+									"cond": "A"
+								},
+								{
+									"mat": "Teoría de Errores y Compensación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Fotointerpretación y Teledetección",
+							"codigo": 303,
+							"paraCursar": [
+								{
+									"mat": "Geografía Física y Geomorfología",
+									"cond": "R"
+								},
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Geografía Física y Geomorfología",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Análisis Matemático",
+							"codigo": 304,
+							"paraCursar": [
+								{
+									"mat": "Teoría de Errores y Compensación",
+									"cond": "R"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de Errores y Compensación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Economía y Gestión Empresarial",
+							"codigo": 305,
+							"paraCursar": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Informática",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Topografía III",
+							"codigo": 306,
+							"paraCursar": [
+								{
+									"mat": "Topografía II",
+									"cond": "R"
+								},
+								{
+									"mat": "Dibujo Topográfico y Cartográfico",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía I",
+									"cond": "A"
+								},
+								{
+									"mat": "Sistemas de Representación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Topografía II",
+									"cond": "A"
+								},
+								{
+									"mat": "Dibujo Topográfico y Cartográfico",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Agrimensura Legal II",
+							"codigo": 307,
+							"paraCursar": [
+								{
+									"mat": "Topografía II",
+									"cond": "R"
+								},
+								{
+									"mat": "Agrimensura Legal I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Topografía II",
+									"cond": "A"
+								},
+								{
+									"mat": "Agrimensura Legal I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa I",
+							"codigo": 308,
+							"paraCursar": [
+								{
+									"mat": "Geografía Física y Geomorfología",
+									"cond": "R"
+								},
+								{
+									"mat": "Sistemas de Representación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Geografía Física y Geomorfología",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Fotogrametría",
+							"codigo": 401,
+							"paraCursar": [
+								{
+									"mat": "Fotointerpretación y Teledetección",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fotointerpretación y Teledetección",
+									"cond": "A"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Geodesia Astronómica y Matemática",
+							"codigo": 402,
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Catastro",
+							"codigo": 403,
+							"paraCursar": [
+								{
+									"mat": "Agrimensura Legal II",
+									"cond": "R"
+								},
+								{
+									"mat": "Economía y Gestión Empresarial",
+									"cond": "R"
+								},
+								{
+									"mat": "Agrimensura Legal I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Agrimensura Legal II",
+									"cond": "A"
+								},
+								{
+									"mat": "Economía y Gestión Empresarial",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ordenamiento Territorial",
+							"codigo": 404,
+							"paraCursar": [
+								{
+									"mat": "Fotointerpretación y Teledetección",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía I",
+									"cond": "A"
+								},
+								{
+									"mat": "Geografía Física y Geomorfología",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fotointerpretación y Teledetección",
+									"cond": "A"
+								},
+								{
+									"mat": "Topografía I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Geodesia Física y Global",
+							"codigo": 405,
+							"paraCursar": [
+								{
+									"mat": "Fotogrametría",
+									"cond": "R"
+								},
+								{
+									"mat": "Geodesia Astronómica y Matemática",
+									"cond": "R"
+								},
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fotogrametría",
+									"cond": "A"
+								},
+								{
+									"mat": "Geodesia Astronómica y Matemática",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mensura",
+							"codigo": 406,
+							"paraCursar": [
+								{
+									"mat": "Catastro",
+									"cond": "R"
+								},
+								{
+									"mat": "Ordenamiento Territorial",
+									"cond": "R"
+								},
+								{
+									"mat": "Agrimensura Legal II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Catastro",
+									"cond": "A"
+								},
+								{
+									"mat": "Ordenamiento Territorial",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Valuaciones Inmobiliarias",
+							"codigo": 407,
+							"paraCursar": [
+								{
+									"mat": "Catastro",
+									"cond": "R"
+								},
+								{
+									"mat": "Economía y Gestión Empresarial",
+									"cond": "A"
+								},
+								{
+									"mat": "Agrimensura Legal II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Catastro",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Cartografía",
+							"codigo": 408,
+							"paraCursar": [
+								{
+									"mat": "Geodesia Astronómica y Matemática",
+									"cond": "R"
+								},
+								{
+									"mat": "Fotogrametría",
+									"cond": "R"
+								},
+								{
+									"mat": "Dibujo Topográfico y Cartográfico",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Geodesia Astronómica y Matemática",
+									"cond": "A"
+								},
+								{
+									"mat": "Fotogrametría",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Mediciones Especiales",
+							"codigo": 501,
+							"paraCursar": [
+								{
+									"mat": "Geodesia Física y Global",
+									"cond": "R"
+								},
+								{
+									"mat": "Topografía III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Geodesia Física y Global",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistema de Información Territorial",
+							"codigo": 502,
+							"paraCursar": [
+								{
+									"mat": "Catastro",
+									"cond": "R"
+								},
+								{
+									"mat": "Mensura",
+									"cond": "R"
+								},
+								{
+									"mat": "Ordenamiento Territorial",
+									"cond": "R"
+								},
+								{
+									"mat": "Agrimensura Legal II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Catastro",
+									"cond": "A"
+								},
+								{
+									"mat": "Mensura",
+									"cond": "A"
+								},
+								{
+									"mat": "Ordenamiento Territorial",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II",
+							"codigo": 503,
+							"paraCursar": [
+								{
+									"mat": "Geodesia Física y Global",
+									"cond": "R"
+								},
+								{
+									"mat": "Geodesia Astronómica y Matemática",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Geodesia Física y Global",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Práctica Profesional Supervisada",
+							"codigo": 504,
+							"paraCursar": [
+								{
+									"mat": "Tener regularizada y aprobada todo 4to año inclusive",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Aprobada todo 4to año inclusive",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Trabajo Final",
+							"codigo": 505,
+							"paraCursar": [
+								{
+									"mat": "Tener regularizada y aprobada todo 4to año inclusive",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Tener aprobadas todas las asignaturas del Plan de Estudios",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Ingeniería-Eléctrica",
+			"emoji": "⚡",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Algebra y Geometría Analítica",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral I",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química General",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería- Modulo I",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistemas de Representación",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Informática",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral II",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica, Óptica y Sonido",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Mecánica Técnica",
+							"paraCursar": [
+								{
+									"mat": "Sistemas de Representación",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "MOS",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electricidad, Magnetismo y Calor",
+							"paraCursar": [
+								{
+									"mat": "MOS",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística y Análisis de Datos",
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Atómica",
+							"paraCursar": [
+								{
+									"mat": "MOS",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "MOS",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería- Modulo II",
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería- Modulo I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física del Estado Solido",
+							"paraCursar": [
+								{
+									"mat": "Electricidad, Magnetismo y calor",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad, Magnetismo y calor",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Métodos Numéricos",
+							"paraCursar": [
+								{
+									"mat": "Informática",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Materiales y Componentes",
+							"paraCursar": [
+								{
+									"mat": "Electricidad, Magnetismo y calor",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Análisis Matemático",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrotecnia II",
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Circuitos Lógicos",
+							"paraCursar": [
+								{
+									"mat": "Electrónica I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Instalaciones Eléctricas I",
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "R"
+								},
+								{
+									"mat": "Materiales y Componentes",
+									"cond": "A"
+								},
+								{
+									"mat": "Medidas Eléctricas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Teoría de control",
+							"paraCursar": [
+								{
+									"mat": "Teoría de los Circuitos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería-Modulo IV",
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería-Modulo III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Economía y Org. Industrial",
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería-Modulo III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrónica Industrial",
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Maquinas Hidráulicas y Térmicas",
+							"paraCursar": [
+								{
+									"mat": "Termodinámica",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica Técnica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Transmisión de la Energía",
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica Técnica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Ingeniería Legal",
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería-Modulo IV",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Instalaciones Eléctricas II",
+							"paraCursar": [
+								{
+									"mat": "Instalaciones Eléctricas I",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistemas de Potencia",
+							"paraCursar": [
+								{
+									"mat": "Transmisión de la Energía",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de Control",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Proyecto Final (anual)",
+							"paraCursar": [
+								{
+									"mat": "Instalaciones Eléctricas I",
+									"cond": "R"
+								},
+								{
+									"mat": "Transmisión de la Energía",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrónica Industrial",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de Control",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería-Modulo V",
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería-Modulo IV",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Centrales Eléctricas",
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Instalaciones Eléctricas I",
+									"cond": "A"
+								},
+								{
+									"mat": "Maquinas Hidráulicas y Térmicas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Diseño de Líneas de Tras. Y Estaciones Transformadoras",
+							"paraCursar": [
+								{
+									"mat": "Instalaciones Eléctricas II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Transmisión de la Energía",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Distribución de la Energía",
+							"paraCursar": [
+								{
+									"mat": "Instalaciones Eléctricas II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Ingeniería-en-Electrónica",
+			"emoji": "🤖",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Álgebra y Geometría Analítica",
+							"codigo": 101,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": [
+								{
+									"fecha": "2024-07-31"
+								},
+								{
+									"fecha": "2024-07-31"
+								},
+								{
+									"fecha": "2024-09-04"
+								},
+								{
+									"fecha": "2024-10-02"
+								},
+								{
+									"fecha": "2024-11-27"
+								},
+								{
+									"fecha": "2024-12-1"
+								}
+							]
+						},
+						{
+							"materia": "Cálculo Diferencial e Integral I",
+							"codigo": 102,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química General",
+							"codigo": 103,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería - Módulo I",
+							"codigo": 104,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistemas de Representación",
+							"codigo": 105,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Informática",
+							"codigo": 106,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Cálculo Diferencial e Integral II",
+							"codigo": 107,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica, Óptica y Sonido",
+							"codigo": 108,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Electricidad, Magnetismo y Calor",
+							"codigo": 201,
+							"paraCursar": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística y Análisis de Datos",
+							"codigo": 202,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Atómica",
+							"codigo": 203,
+							"paraCursar": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería - Módulo II",
+							"codigo": 204,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física del Estado Sólido",
+							"codigo": 205,
+							"paraCursar": [
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Métodos Numéricos",
+							"codigo": 206,
+							"paraCursar": [
+								{
+									"mat": "Informática",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Informática",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Materiales y Componentes",
+							"codigo": 207,
+							"paraCursar": [
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "R"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "A"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrotecnia I",
+							"codigo": 208,
+							"paraCursar": [
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica, Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad, Magnetismo y Calor",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Prueba de Traducción Técnica",
+							"codigo": 209,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Análisis Matemático",
+							"codigo": 301,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrotecnia II",
+							"codigo": 302,
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Medidas Eléctricas",
+							"codigo": 303,
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia I",
+									"cond": "R"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electromagnetismo",
+							"codigo": 304,
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Atómica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Atómica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrónica I",
+							"codigo": 305,
+							"paraCursar": [
+								{
+									"mat": "Materiales y Componentes",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								},
+								{
+									"mat": "Física del Estado Sólido",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Materiales y Componentes",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								},
+								{
+									"mat": "Física del Estado Sólido",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Teoría de los Circuitos",
+							"codigo": 306,
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrotecnia I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería - Módulo III",
+							"codigo": 307,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Circuitos Lógicos",
+							"codigo": 401,
+							"paraCursar": [
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrónica II",
+							"codigo": 402,
+							"paraCursar": [
+								{
+									"mat": "Electrónica I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Señales y Sistemas",
+							"codigo": 403,
+							"paraCursar": [
+								{
+									"mat": "Teoría de los Circuitos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de los Circuitos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Teoría de Control",
+							"codigo": 404,
+							"paraCursar": [
+								{
+									"mat": "Teoría de los Circuitos",
+									"cond": "R"
+								},
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de los Circuitos",
+									"cond": "A"
+								},
+								{
+									"mat": "Análisis Matemático",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería - Módulo IV",
+							"codigo": 405,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Módulo III",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrónica Industrial",
+							"codigo": 406,
+							"paraCursar": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrotecnia II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electrónica III",
+							"codigo": 407,
+							"paraCursar": [
+								{
+									"mat": "Circuitos Lógicos",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Circuitos Lógicos",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mediciones Electrónicas",
+							"codigo": 408,
+							"paraCursar": [
+								{
+									"mat": "Electrónica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Medidas Eléctricas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrónica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Medidas Eléctricas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa I (Fundamentos de Comunicaciones)",
+							"codigo": 409,
+							"paraCursar": [
+								{
+									"mat": "Electrónica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Electromagnetismo",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrónica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrónica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Electromagnetismo",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Ingeniería Legal",
+							"codigo": 501,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo IV",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo IV",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II (Propagación y Antenas)",
+							"codigo": 502,
+							"paraCursar": [
+								{
+									"mat": "Fundamentos de Comunicaciones",
+									"cond": "R"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fundamentos de Comunicaciones",
+									"cond": "A"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II (Procesamiento Digital de Bísemeles)",
+							"codigo": 503,
+							"paraCursar": [
+								{
+									"mat": "Bioinstrumentación",
+									"cond": "R"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bioinstrumentación",
+									"cond": "A"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa III (Transmisión de la Información)",
+							"codigo": 504,
+							"paraCursar": [
+								{
+									"mat": "Fundamentos de Comunicaciones",
+									"cond": "R"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fundamentos de Comunicaciones",
+									"cond": "A"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa III (Modelo y Simulación de Sistemas Fisiológicos)",
+							"codigo": 505,
+							"paraCursar": [
+								{
+									"mat": "Bioinstrumentación",
+									"cond": "R"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bioinstrumentación",
+									"cond": "A"
+								},
+								{
+									"mat": "Señales y Sistemas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Proyecto Final (anual)",
+							"codigo": 506,
+							"paraCursar": [
+								{
+									"mat": "Electrónica Industrial",
+									"cond": "R"
+								},
+								{
+									"mat": "Electrónica III",
+									"cond": "R"
+								},
+								{
+									"mat": "Mediciones Electrónicas",
+									"cond": "R"
+								},
+								{
+									"mat": "Teoría de Control",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electrónica Industrial",
+									"cond": "A"
+								},
+								{
+									"mat": "Electrónica III",
+									"cond": "A"
+								},
+								{
+									"mat": "Mediciones Electrónicas",
+									"cond": "A"
+								},
+								{
+									"mat": "Teoría de Control",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Seminario de Ingeniería - Modulo V",
+							"codigo": 507,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo IV",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo IV",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Economía y Organización Industrial",
+							"codigo": 508,
+							"paraCursar": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo III",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Seminario de Ingeniería - Modulo III",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa IV (Sistemas de Comunicaciones)",
+							"codigo": 509,
+							"paraCursar": [
+								{
+									"mat": "Propagación y Antenas",
+									"cond": "R"
+								},
+								{
+									"mat": "Transmisión de la Energía",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Propagación y Antenas",
+									"cond": "A"
+								},
+								{
+									"mat": "Transmisión de la Energía",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa IV (Ingeniería Clínica)",
+							"codigo": 510,
+							"paraCursar": [
+								{
+									"mat": "Procesamiento Digital de Bísemeles",
+									"cond": "R"
+								},
+								{
+									"mat": "Modelo y Simulación de Sistemas Fisiológicos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Procesamiento Digital de Bísemeles",
+									"cond": "A"
+								},
+								{
+									"mat": "Modelo y Simulación de Sistemas Fisiológicos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Licenciatura-en-Ciencias-Biológicas",
+			"emoji": "🌱",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Matemática",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Introducción a la Biología",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química General",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física General y Biológica",
+							"paraCursar": [
+								{
+									"mat": "Matemática",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Matemática",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Biológica",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Geología",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Biología Celular y Molecular",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								},
+								{
+									"mat": "Introducción a la Biología",
+									"cond": "A"
+								},
+								{
+									"mat": "Física General y Biológica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física General y Biológica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bioestadística",
+							"paraCursar": [
+								{
+									"mat": "Matemática",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Biología de los Invertebrados",
+							"paraCursar": [
+								{
+									"mat": "Introducción a la Biología",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Celular y Molecular",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Morfología Vegetal",
+							"paraCursar": [
+								{
+									"mat": "Introducción a la Biología",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Celular y Molecular",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Biología Celular y Molecular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Fisiología Animal",
+							"paraCursar": [
+								{
+									"mat": "Biología de los Invertebrados",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Biología de los Invertebrados",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Fisiología Vegetal",
+							"paraCursar": [
+								{
+									"mat": "Física General y Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Celular y Molecular",
+									"cond": "A"
+								},
+								{
+									"mat": "Morfología Vegetal",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Morfología Vegetal",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Genética",
+							"paraCursar": [
+								{
+									"mat": "Biología Celular y Molecular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ecología",
+							"paraCursar": [
+								{
+									"mat": "Biología de los Invertebrados",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Diversidad Vegetal",
+							"paraCursar": [
+								{
+									"mat": "Morfología Vegetal",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Biología de los Cordados",
+							"paraCursar": [
+								{
+									"mat": "Biología de los Invertebrados",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Biología de los Invertebrados",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Prueba de Idioma",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"orientaciones": [
+						{
+							"nombre": "Botánica",
+							"materias": [
+								{
+									"materia": "Paleontología",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Epistemología y Metodología de la Investigación",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										},
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Genética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Biotaxonomia de Briofitas y Pteridofitas",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Biotaxonomia de Espermatofitas",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "A"
+										},
+										{
+											"mat": "Biotaxonomia de Briofitas y Pteridofitas",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Genética",
+							"materias": [
+								{
+									"materia": "Paleontología",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Citogenética",
+									"paraCursar": [
+										{
+											"mat": "Genética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Epistemología y Metodología de la Investigación",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										},
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Genética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Paleontología",
+							"materias": [
+								{
+									"materia": "Geología Histórica",
+									"paraCursar": [],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Paleobotánica",
+									"paraCursar": [
+										{
+											"mat": "Paleontología",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Paleontología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Paleontología",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Epistemología y Metodología de la Investigación",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										},
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Genética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Paleoinvertebrados",
+									"paraCursar": [
+										{
+											"mat": "Paleontología",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Paleontología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Zoología",
+							"materias": [
+								{
+									"materia": "Paleontología",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										},
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "A"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Anatomía Comparada de los Cordados",
+									"paraCursar": [],
+									"paraRendir": [
+										{
+											"mat": "Introducción a la Biología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Embriología Animal",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Embriología Animal",
+											"cond": "R"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Histología Animal",
+									"paraCursar": [
+										{
+											"mat": "Embriología Animal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Ecología",
+							"materias": [
+								{
+									"materia": "Paleontología",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Epistemología y Metodología de la Investigación",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										},
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "R"
+										},
+										{
+											"mat": "Genética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Ecología Animal",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "A"
+										},
+										{
+											"mat": "Estadística",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Ecología Vegetal",
+									"paraCursar": [
+										{
+											"mat": "Ecología",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología",
+											"cond": "A"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Ecología de las Poblaciones",
+									"paraCursar": [
+										{
+											"mat": "Bioestadística",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología Animal",
+											"cond": "R"
+										},
+										{
+											"mat": "Ecología Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología Animal",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología Vegetal",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"año": 5,
+					"orientaciones": [
+						{
+							"nombre": "Botánica",
+							"materias": [
+								{
+									"materia": "Ecología Vegetal",
+									"paraCursar": [
+										{
+											"mat": "Ecología",
+											"cond": "R"
+										},
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Ficología",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Micología",
+									"paraCursar": [
+										{
+											"mat": "Diversidad Vegetal",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Genética",
+							"materias": [
+								{
+									"materia": "Genética Molecular",
+									"paraCursar": [
+										{
+											"mat": "Citogenética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Genética de Poblaciones",
+									"paraCursar": [
+										{
+											"mat": "Ecología",
+											"cond": "A"
+										},
+										{
+											"mat": "Genética",
+											"cond": "A"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Genética Evolutiva",
+									"paraCursar": [
+										{
+											"mat": "Citogenética",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Paleontología",
+							"materias": [
+								{
+									"materia": "Sedimentología",
+									"paraCursar": [],
+									"paraRendir": [
+										{
+											"mat": "Geología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Paleovertebrados",
+									"paraCursar": [],
+									"paraRendir": [
+										{
+											"mat": "Paleontología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Paleobiogeografía",
+									"paraCursar": [
+										{
+											"mat": "Geología Histórica",
+											"cond": "R"
+										},
+										{
+											"mat": "Sedimentología",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Zoología",
+							"materias": [
+								{
+									"materia": "Ecología Animal",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Cordados",
+											"cond": "A"
+										},
+										{
+											"mat": "Estadística",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Biología de los Artrópodos",
+									"paraCursar": [
+										{
+											"mat": "Biología de los Invertebrados",
+											"cond": "A"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Biología de los Invertebrados",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						},
+						{
+							"nombre": "Ecología",
+							"materias": [
+								{
+									"materia": "Ecología de Comunidades",
+									"paraCursar": [
+										{
+											"mat": "Ecología Animal",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología Vegetal",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología de las Poblaciones",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología de las Poblaciones",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Limnología",
+									"paraCursar": [
+										{
+											"mat": "Ecología de las Poblaciones",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología de Comunidades",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología de Comunidades",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								},
+								{
+									"materia": "Manejo de Recursos Naturales",
+									"paraCursar": [
+										{
+											"mat": "Ecología de las Poblaciones",
+											"cond": "A"
+										},
+										{
+											"mat": "Ecología de Comunidades",
+											"cond": "R"
+										}
+									],
+									"paraRendir": [
+										{
+											"mat": "Ecología de Comunidades",
+											"cond": "A"
+										}
+									],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Licenciatura-en-Ciencias-Físicas",
+			"emoji": "🌌",
+			"cursada": []
+		},
+		{
+			"carrera": "Licenciatura-en-Ciencias-Químicas",
+			"emoji": "🧪",
+			"cursada": []
+		},
+		{
+			"carrera": "Licenciatura-en-Matemática",
+			"emoji": "➗",
+			"cursada": []
+		},
+		{
+			"carrera": "Licenciatura-en-Sistemas-de-Información",
+			"emoji": "💻",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Algoritmos y Estructuras de Datos I",
+							"codigo": 0,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": [
+								"2025-02-19",
+								"2025-03-12",
+								"2025-03-26",
+								"2025-05-07",
+								"2025-07-02",
+								"2025-07-30",
+								"2025-09-03",
+								"2025-10-08",
+								"2025-12-01",
+								"2025-12-17"
+
+							]
+						},
+						{
+							"materia": "Algebra",
+							"codigo": 0,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": [
+								"2025-02-18",
+								"2025-03-11",
+								"2025-03-27",
+								"2025-05-06",
+								"2025-07-01",
+								"2025-07-29",
+								"2025-09-02",
+								"2025-10-07",
+								"2025-11-25",
+								"2025-12-16"
+
+							]
+						},
+						{
+							"materia": "Algoritmos y Estructuras de Datos II",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Lógica y Matemática Computacional",
+							"codigo": 0,
+							"paraCursar": [],
+							"paraRendir": [
+								{
+									"mat": "Algebra",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistemas y Organizaciones",
+							"codigo": 0,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Paradigmas y Lenguajes",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "R"
+								},
+								{
+									"mat": "Algoritmos Y Estructura de Datos I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Arquitectura y Organización de Computadoras",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Logica Y Matematica Computacional",
+									"cond": "R"
+								},
+								{
+									"mat": "Algoritmos Y Estructura de Datos I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Logica Y Matematica Computacional",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Cálculo Diferencial e Integral",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Logica Y Matematica Computacional",
+									"cond": "R"
+								},
+								{
+									"mat": "Algebra",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra",
+									"cond": "A"
+								},
+								{
+									"mat": "Logica Y Matematica Computacional",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Programación Orientada a Objetos",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Paradigma y Lenguajes",
+									"cond": "R"
+								},
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "A"
+								},
+								{
+									"mat": "Paradigma y Lenguajes",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Sistemas Operativos",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "R"
+								},
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algoritmos Y Estructura de Datos II",
+									"cond": "A"
+								},
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Administración y Gestión de Organizaciones",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Sistemas y Organizaciones",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Sistemas y Organizaciones",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Taller de Programación I",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "R"
+								},
+								{
+									"mat": "Paradigma y Lenguajes",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Comunicaciones de Datos",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Sistemas Operativos",
+									"cond": "R"
+								},
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Sistemas Operativos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ingeniería de Software I",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "R"
+								},
+								{
+									"mat": "Administración y Gestión de Organizaciones",
+									"cond": "R"
+								},
+								{
+									"mat": "Sistemas y Organizaciones",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "A"
+								},
+								{
+									"mat": "Administración y Gestión de Organizaciones",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Taller de Programación II",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Taller de Programación I",
+									"cond": "R"
+								},
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "R"
+								},
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "A"
+								},
+								{
+									"mat": "Sistemas Operativos",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Taller de Programación I",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Probabilidad y Estadística",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bases de Datos I",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Programación Orientada a Objetos",
+									"cond": "R"
+								},
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Inglés Técnico Informático (extracurricular)",
+							"codigo": 0,
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Ingeniería de Software II",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "R"
+								},
+								{
+									"mat": "Administración y Gestión de Organizaciones",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Economía Aplicada",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "R"
+								},
+								{
+									"mat": "Administración y Gestión de Organizaciones",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Teoría de la Computación",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "R"
+								},
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Arquitectura y Organización de Computadoras",
+									"cond": "A"
+								},
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Redes de Datos",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Comunicaciones de Datos",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Comunicaciones de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bases de Datos II",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Bases de Datos I",
+									"cond": "R"
+								},
+								{
+									"mat": "Ingeniería de Software I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Bases de Datos I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Métodos Computacionales",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "R"
+								},
+								{
+									"mat": "Cálculo Diferencial e Integral",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Proyecto Final",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Redes de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Bases de Datos II",
+									"cond": "R"
+								},
+								{
+									"mat": "Ingeniería de Software II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Proyecto Final de Carrera",
+									"cond": "R"
+								},
+								{
+									"mat": "Todas las materias del Plan",
+									"cond": null
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Auditoria y Seguridad Informática",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Redes de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Bases de Datos II",
+									"cond": "R"
+								},
+								{
+									"mat": "Ingeniería de Software II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Redes de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Bases de Datos II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa I",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "R"
+								},
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "R"
+								},
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa III",
+							"codigo": 0,
+							"paraCursar": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "R"
+								},
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Teoría de la Computación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"carrera": "Licenciatura-en-Didáctica-de-la-Matemática",
+			"emoji": "📚",
+			"cursada": []
+		},
+		{
+			"carrera": "Profesorado-en-Biología",
+			"emoji": "🦋",
+			"cursada": []
+		},
+		{
+			"carrera": "Profesorado-en-Ciencias-Químicas-y-del-Ambiente",
+			"emoji": "🧬",
+			"cursada": []
+		},
+		{
+			"carrera": "Profesorado-en-Física",
+			"emoji": "🔭",
+			"cursada": []
+		},
+		{
+			"carrera": "Profesorado-en-Matemática",
+			"emoji": "📐",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Álgebra I",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Elementos de Computación",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Competencias Lingüístico-Comunicativas",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Álgebra Lineal y Geometría",
+							"paraCursar": [
+								{
+									"mat": "Álgebra I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Análisis Matemático I",
+							"paraCursar": [
+								{
+									"mat": "Álgebra I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Taller de Iniciación a la Práctica Docente",
+							"paraCursar": [
+								{
+									"mat": "Álgebra I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa (seminario)",
+							"paraCursar": [
+								{
+									"mat": "Álgebra I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Análisis Matemático II",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático I",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra I",
+									"cond": "A"
+								},
+								{
+									"mat": "Análisis Matemático I",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Pedagogía",
+							"paraCursar": [
+								{
+									"mat": "Competencias Lingüístico-Comunicativas",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Competencias Lingüístico-Comunicativas",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Complementos del Álgebra Lineal",
+							"paraCursar": [
+								{
+									"mat": "Álgebra II",
+									"cond": "R"
+								},
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra II",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Cálculo Numérico",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								},
+								{
+									"mat": "Elementos de Computación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "A"
+								},
+								{
+									"mat": "Elementos de Computación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Psicología del Aprendizaje y del Desarrollo",
+							"paraCursar": [
+								{
+									"mat": "Competencias Lingüístico-Comunicativas",
+									"cond": "R"
+								},
+								{
+									"mat": "Pedagogía",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Competencias Lingüístico-Comunicativas",
+									"cond": "A"
+								},
+								{
+									"mat": "Pedagogía",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Física (Mecánica)",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística Descriptiva",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Historia de la Matemática",
+							"paraCursar": [
+								{
+									"mat": "Álgebra II",
+									"cond": "R"
+								},
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "R"
+								},
+								{
+									"mat": "Análisis Matemático I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra II",
+									"cond": "A"
+								},
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Probabilidad y Estadística",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								},
+								{
+									"mat": "Estadística Descriptiva",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística Descriptiva",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Geometría Métrica y Trigonométrica",
+							"paraCursar": [
+								{
+									"mat": "Álgebra Lineal y Geometría",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Didáctica",
+							"paraCursar": [
+								{
+									"mat": "Psicología del Aprendizaje y del Desarrollo",
+									"cond": "A"
+								},
+								{
+									"mat": "Taller de Iniciación a la Práctica Docente",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Psicología del Aprendizaje y del Desarrollo",
+									"cond": "A"
+								},
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Análisis Matemático III",
+							"paraCursar": [
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Complementos del Álgebra Lineal",
+									"cond": "R"
+								},
+								{
+									"mat": "Análisis Matemático II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Taller de Problemas Matemáticos",
+							"paraCursar": [
+								{
+									"mat": "Didáctica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Matemática Financiera e Investigación Operativa",
+							"paraCursar": [
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Probabilidad y Estadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Epistemología y Metodología de la Investigación",
+							"paraCursar": [
+								{
+									"mat": "Física (Mecánica)",
+									"cond": "R"
+								},
+								{
+									"mat": "Geometría Métrica y Trigonométrica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Álgebra II",
+									"cond": "A"
+								},
+								{
+									"mat": "Historia de la Matemática",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Didáctica de la Matemática y Pasantía",
+							"paraCursar": [
+								{
+									"mat": "Didáctica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"carrera": "Profesorado-Universitario-en-Informática",
+					"emoji": "🖱️",
+					"cursada": [
+						{
+							"año": 1,
+							"materias": [
+								{
+									"materia": "materia I",
+									"codigo": 0,
+									"paraCursar": [],
+									"paraRendir": [],
+									"planDeEstudio": null,
+									"mesas": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

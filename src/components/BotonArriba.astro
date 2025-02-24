@@ -1,0 +1,32 @@
+---
+import {Icon} from "astro-icon/components"
+---
+
+<md-fab id="scrollToTop" class="text-on-primary fixed bottom-2 right-2 z-50" variant="primary">
+	<Icon slot="icon" name="arrow-up" />
+</md-fab>
+
+<script>
+	document.addEventListener("astro:page-load", () => {
+		const scrollToTopButton = document.getElementById("scrollToTop")
+
+		const toggleVisibility = () => {
+			if (window.scrollY > 200) {
+				// Mostrar después de scrollear 200px
+				scrollToTopButton?.classList.remove("hidden")
+			} else {
+				scrollToTopButton?.classList.add("hidden")
+			}
+		}
+
+		const handleScrollToTop = () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			})
+		}
+
+		window.addEventListener("scroll", toggleVisibility)
+		scrollToTopButton?.addEventListener("click", handleScrollToTop)
+	})
+</script>

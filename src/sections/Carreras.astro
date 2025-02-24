@@ -1,0 +1,19 @@
+---
+import {carreras} from '@data/carreras.json';
+import TarjetaCarrera from '@components/TarjetaCarrera.astro';
+
+---
+
+<section class="flex flex-col gap-6 items-center justify-start flex-wrap content-start self-stretch shrink-0 relative">
+    <h2 class="text-headline-medium text-surface-tint text-center">
+        Carreras
+    </h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start justify-start flex-wrap content-start self-stretch shrink-0 relative">
+        {carreras.map(({carrera, emoji, cursada}) => {   
+            return (
+                <TarjetaCarrera carrera={carrera} emoji={emoji} cursada={cursada.length > 0}/>
+            )
+            
+        })}
+    </ul>
+</section>

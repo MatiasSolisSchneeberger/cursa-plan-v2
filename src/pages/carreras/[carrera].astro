@@ -1,0 +1,117 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import { carreras } from "@data/carreras.json";
+
+import Layout from "@layouts/Layout.astro";
+import AñoCarrera from "@components/AñoCarrera.astro";
+import HeaderCarrera from "@components/HeaderCarrera.astro";
+import TarjetaMateria from "@components/TarjetaMateria.astro";
+import BotonAnno from "@components/BotonAño.jsx";
+
+export const getStaticPaths: GetStaticPaths = () => {
+	return carreras
+		.filter(({ cursada }) => cursada.length > 0) // Filtrar carreras sin cursada
+		.map(({ carrera }) => ({
+			params: { carrera },
+		}));
+};
+
+const { carrera } = Astro.params;
+
+// Buscar los datos específicos de la carrera
+const carreraData = carreras.find((c) => c.carrera === carrera);
+
+if (!carreraData) {
+	throw new Error(`Carrera no encontrada: ${carrera}`);
+}
+
+const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
+---
+
+<Layout title=`${NombreCarrera} | Plan de estudio`>
+	<!-- Titulo de Pagina -->
+	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
+	<BotonAnno carreraData={carreraData} client:visible />
+	<!-- map de array de los años -->
+	{
+		carreraData.cursada?.map(({ año, materias, orientaciones }) => {
+			if (orientaciones) {
+				// Si el año tiene orientaciones
+				return orientaciones.map(
+					({
+						nombre: orientacionNombre,
+						materias: orientacionMaterias,
+					}) => (
+						<AñoCarrera
+							año={año}
+							orientacion={orientacionNombre}>
+							{orientacionMaterias.map(
+								({
+									materia,
+									codigo,
+									paraCursar,
+									paraRendir,
+									planDeEstudio,
+									mesas,
+								}) => (
+									<TarjetaMateria
+										materia={
+											materia
+										}
+										codigo={
+											codigo
+										}
+										paraCursar={
+											paraCursar
+										}
+										paraRendir={
+											paraRendir
+										}
+										planDeEstudio={
+											planDeEstudio
+										}
+										mesas={
+											mesas
+										}
+									/>
+								),
+							)}
+						</AñoCarrera>
+					),
+				);
+			} else {
+				// Si el año no tiene orientaciones
+				return (
+					<AñoCarrera año={año}>
+						{materias?.map(
+							({
+								materia,
+								codigo,
+								paraCursar,
+								paraRendir,
+								planDeEstudio,
+								mesas,
+							}) => (
+								<TarjetaMateria
+									materia={materia}
+									codigo={codigo}
+									paraCursar={
+										paraCursar
+									}
+									paraRendir={
+										paraRendir
+									}
+									planDeEstudio={
+										planDeEstudio
+									}
+									mesas={mesas}
+								/>
+							),
+						)}
+					</AñoCarrera>
+				);
+			}
+		})
+	}
+</Layout>
