@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
+
 :root {
+	--md-sys-typescale-display-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-display-medium-size: 15rem;
+	--md-sys-typescale-display-medium-line-height: 17.333333333333332rem;
+	--md-sys-typescale-display-medium-weight: 700;
+
+	--md-sys-typescale-headline-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-headline-medium-size: 9.333333333333334rem;
+	--md-sys-typescale-headline-medium-line-height: 12rem;
+	--md-sys-typescale-headline-medium-weight: 500;
+
+	--md-sys-typescale-title-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-title-medium-size: 5.333333333333333rem;
+	--md-sys-typescale-title-medium-line-height: 8rem;
+	--md-sys-typescale-title-medium-weight: 500;
+
+	--md-sys-typescale-body-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-body-medium-size: 4.666666666666667rem;
+	--md-sys-typescale-body-medium-line-height: 6.666666666666667rem;
+	--md-sys-typescale-body-medium-weight: 400;
+
+	--md-sys-typescale-label-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-label-medium-size: 4rem;
+	--md-sys-typescale-label-medium-line-height: 5.333333333333333rem;
+	--md-sys-typescale-label-medium-weight: 500;
+
 	--md-sys-color-primary: rgb(68, 97, 122);
 	--md-sys-color-surface-tint: rgb(68 97 122);
 	--md-sys-color-on-primary: rgb(255, 255, 255);
@@ -280,25 +306,25 @@
 	--text-body-small-size: 12px;
 
 	/* -- Weight -- */
-	--text-weight-display-large-font-weight: 700;
-	--text-weight-display-medium-font-weight: 700;
-	--text-weight-display-small-font-weight: 700;
+	--font-weight-display-large-font-weight: 700;
+	--font-weight-display-medium-font-weight: 700;
+	--font-weight-display-small-font-weight: 700;
 
-	--text-weight-headline-large-font-weight: 500;
-	--text-weight-headline-medium-font-weight: 500;
-	--text-weight-headline-small-font-weight: 500;
+	--font-weight-headline-large-font-weight: 500;
+	--font-weight-headline-medium-font-weight: 500;
+	--font-weight-headline-small-font-weight: 500;
 
-	--text-weight-title-large-font-weight: 500;
-	--text-weight-title-medium-font-weight: 500;
-	--text-weight-title-small-font-weight: 500;
+	--font-weight-title-large-font-weight: 500;
+	--font-weight-title-medium-font-weight: 500;
+	--font-weight-title-small-font-weight: 500;
 
-	--text-weight-label-large-font-weight: 500;
-	--text-weight-label-medium-font-weight: 500;
-	--text-weight-label-small-font-weight: 500;
+	--font-weight-label-large-font-weight: 500;
+	--font-weight-label-medium-font-weight: 500;
+	--font-weight-label-small-font-weight: 500;
 
-	--text-weight-body-large-font-weight: 400;
-	--text-weight-body-medium-font-weight: 400;
-	--text-weight-body-small-font-weight: 400;
+	--font-weight-body-large-font-weight: 400;
+	--font-weight-body-medium-font-weight: 400;
+	--font-weight-body-small-font-weight: 400;
 
 	/* -- LineHeight -- */
 	--spacing-display-large-line-height: 64px;

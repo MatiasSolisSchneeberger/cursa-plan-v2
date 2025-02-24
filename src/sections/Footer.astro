@@ -1,84 +1,103 @@
 ---
 import LogoPagina from "@components/LogoPagina.astro"
+import MiLogo from "@components/MiLogo.astro"
 import {carreras} from "@data/carreras.json"
 import {Icon} from "astro-icon/components"
 
-const enlacesCarreras = carreras.map(({ carrera }) => ({
-	href: `/carreras/${carrera}`, // Enlace con guiones
-	nombre: carrera.replace(/-/g, " "), // Texto sin guiones
-}));
+const enlacesCarreras = carreras.map(({carrera}) => {
+	const nombreCompleto = carrera.replace(/-/g, " ") // Texto sin guiones
+	let nombreCorto = nombreCompleto // Por defecto, el mismo nombre
+
+	// Reemplazos para mostrar versión corta
+	nombreCorto = nombreCorto
+		.replace(/\bIngeniería\b/, "Ing.")
+		.replace(/\bLicenciatura\b/, "Lic.")
+		.replace(/\bProfesorado\b/, "Prof.")
+
+	return {
+		href: `/carreras/${carrera}`,
+		nombreCompleto,
+		nombreCorto,
+	}
+})
+
+const contactos = [
+	{
+		label: "Github",
+		link: "https://github.com/MatiasSolisSchneeberger",
+		icono: "brand-github",
+	},
+	{
+		label: "Matias.Solis.Sch@gmail.com",
+		icono: "mail",
+	},
+	{
+		label: "Linkedin",
+		link: "https://www.linkedin.com/in/matias-solis-schneeberger-40a6842ab/",
+		icono: "brand-linkedin",
+	},
+	{
+		label: "Repositorio",
+		link: "https://github.com/MatiasSolisSchneeberger/the-swifties-eras-tour",
+		icono: "brand-github-filled",
+	},
+]
 ---
 
-<section
-	class="bg-surface-variant text-on-surface-variant rounded-3xl p-6 flex flex-col sm:flex-row gap-2.5 items-start justify-between self-stretch shrink-0 relative overflow-hidden">
-	<article class="flex flex-col gap-2.5 items-start w-full sm:w-auto flex-1 justify-start shrink relative">
+<section class="bg-surface-variant rounded-3xl flex w-full flex-col items-start gap-6 p-10 text-on-primary-container lg:flex-row">
+	<article class="text-body-medium flex w-full flex-col gap-2 text-left">
 		<LogoPagina />
-		<p class="text-left text-label-large relative flex text-pretty items-start justify-start w-full">
+
+		<p>
 			Este sitio no es una página oficial de FaCENA. Está diseñado para brindar información de manera más accesible y
-			organizada. Si encontrás algún error, como fechas incorrectas, cambios en los materiales o cualquier otra
-			información desactualizada, no dudes en contactarme para corregirlo. ¡Tu ayuda es muy valiosa para mantener esta
-			página actualizada y útil para todos!
+			organizada.
 		</p>
-		<div class="flex w-full flex-col gap-4">
-			<h5 class="text-title-large text-start">
-				Contacto:
-			</h5>
-			<div
-				class="text-title-small flex w-full flex-col items-start gap-2 underline"
-			>
-				<a
-					class="flex flex-row"
-					href="https://www.linkedin.com/in/matias-solis-schneeberger-40a6842ab/"
-					target="_blank"
-				>
-					<Icon size="22" name="brand-linkedin" />
-					<p>LinkedIn</p>
-				</a>
-				<a
-					class="flex flex-row"
-					href="https://github.com/MatiasSolisSchneeberger/cursa-plan"
-					target="_blank"
-				>
-					<Icon size="22" name="brand-github-filled" />
-					<p>Repositorio</p>
-				</a>
-				<a
-					class="flex flex-row"
-					href="https://github.com/MatiasSolisSchneeberger"
-					target="_blank"
-				>
-					<Icon size="22" name="brand-github" />
-					<p>GitHub</p>
-				</a>
-				<span class="flex flex-row">
-					<Icon size="22" name="world-www" />
-					<p>Portfolio</p>
-				</span>
-				<span class="flex flex-row">
-					<Icon size="22" name="mail" />
-					<p>Matias.Solis.Sch@gmail.com</p>
-				</span>
-			</div>
+		<p>
+			Si encuentras algún error, como fechas incorrectas, cambios en los materiales o cualquier otra información
+			desactualizada, no dudes en contactarme para corregirlo. ¡Tu ayuda es muy valiosa para mantener esta página
+			actualizada y útil para todos!
+		</p>
+
+		<div class="h-10 justify-start">
+			<MiLogo color="on-primary-container" />
 		</div>
-		<figure class="flex flex-col gap-1 items-center justify-center shrink-0 w-[121px] relative">
-			<img class="w-min h-min relative overflow-visible" src="/MiLogo.svg" />
-			<figcaption class="text-center text-label-small relative self-stretch flex items-center justify-center">
-				By MatiDevCode
-			</figcaption>
-		</figure>
 	</article>
-	<article class="flex flex-col gap-3 items-start w-auto justify-start shrink-0 relative">
-		<h2 class="hidden text-left text-title-large relative self-stretch sm:flex items-center justify-start">Carreras:</h2>
-		<div class="hidden sm:flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+
+	<aside class="grid w-full grid-cols-2 items-start gap-2 overflow-hidden sm:gap-4">
+		<div class="flex flex-col gap-1">
+			<h4 class="text-title-medium mb-2">Contacto:</h4>
 			{
-				enlacesCarreras.map(({ href, nombre }) => (
-					<a 
-						href={href}
-						class="text-left text-title-small underline relative flex items-center justify-start">
-							{nombre}
-					</a>
-				))
+				contactos.map(({label, link}) => {
+					return link ?
+							<a
+								href={link}
+								class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
+								{/* {icono && <Icon name={icono} size={22} class="hidden sm:inline"/>} */}
+								<span class="">{label}</span>
+							</a>
+						:	<span
+								id="copiarCorreo"
+								class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
+								{/* {icono && <Icon name={icono} size={22} class="hidden sm:inline"/>} */}
+								<span class="">{label}</span>
+							</span>
+				})
 			}
 		</div>
-	</article>
+		<div class="flex flex-col gap-1">
+			<h2 class="text-title-medium mb-2">
+				Carreras:
+			</h2>
+			<div class="sm:flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+				{
+					enlacesCarreras.map(({href, nombreCompleto, nombreCorto}) => (
+						<a href={href} class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
+							<span class="block sm:hidden">{nombreCorto}</span> {/* Se muestra en móviles */}
+							<span class="hidden sm:block">{nombreCompleto}</span> {/* Se muestra en pantallas grandes */}
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</aside>
 </section>
