@@ -28,8 +28,8 @@ const NombreCarrera = carrera.replace(/-/g, " ");
 		class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
 		<div
 			transition:name=`emoji-${carrera}`
-			class="text-on-primary text-center text-title-medium relative flex items-center justify-center">
-			{emoji}
+			class=`text-texto-${carrera} text-center text-title-medium relative flex items-center justify-center`>
+			<Icon name={emoji} size="22"/>
 		</div>
 	</div>
 </header>

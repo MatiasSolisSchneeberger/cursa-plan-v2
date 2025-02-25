@@ -1,60 +1,73 @@
 ---
+import { Icon } from 'astro-icon/components'
+
 interface Props {
-	carrera: string;
-	emoji: string;
-	cursada: boolean;
+	carrera: string
+	emoji: string
+	cursada: boolean
 }
 
-const { carrera, emoji, cursada }: Props = Astro.props;
+const {carrera, emoji, cursada}: Props = Astro.props
 
-const nombreCarrera = carrera.replace(/-/g, " ");
+const nombreCarrera = carrera.replace(/-/g, " ")
 ---
 
 {
-	cursada ? (
+	cursada ?
 		<a
 			transition:name={`header-${carrera}`}
 			href={`/carreras/${carrera}`}
 			aria-disabled="true"
-			class="rounded-3xl hover:shadow-1 from-25% hover:scale-[1.01] outline-solid outline-outline outline-1 outline p-3 flex flex-row sm:flex-col items-start justify-between flex-1 h-min sm:h-56 relative overflow-hidden transition-all duration-100"
+			class="rounded-3xl hover:shadow-1 from-25% hover:scale-[1.01] outline-solid outline-outline outline-1 p-3 flex flex-row sm:flex-col items-start justify-between flex-1 h-min sm:h-56 relative overflow-hidden transition-all duration-100"
 			style={{
 				background: `linear-gradient(to right, var(--carrera-${carrera}) 25%, transparent)`,
 			}}>
 			<div class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
 				<label
 					transition:name={`emoji-${carrera}`}
-					class="text-on-primary text-center text-title-large relative flex items-center justify-center">
-					{emoji}
+					class={`text-[var(--texto-${carrera})] text-center text-title-large relative flex items-center justify-center`}>
+					<Icon name={emoji} size="22"/>
 				</label>
 			</div>
 
 			<h2
 				transition:name={`nombre-${carrera}`}
 				class="text-on-background text-center text-title-large relative self-stretch flex items-center justify-center w-full">
-				{nombreCarrera}
+				{/* Texto corto para tamaños menores a md */}
+				<span class="block sm:hidden">
+					{nombreCarrera.replace("Licenciatura", "Lic.").replace("Ingeniería", "Ing.").replace("Profesorado", "Prof.")}
+				</span>
+
+				{/* Texto completo para tamaños md y mayores */}
+				<span class="hidden sm:block">{nombreCarrera}</span>
 			</h2>
 		</a>
-	) : (
-		<div class="rounded-3xl opacity-50 outline-solid outline-outline outline-1 outline p-3 flex flex-row sm:flex-col justify-between flex-1 h-min sm:h-56 relative overflow-hidden bg-gradient-to-r from-gray-400 items-center sm:items-start">
+	:	<div class="rounded-3xl opacity-50 outline-solid outline-outline outline-1 p-3 flex flex-row sm:flex-col justify-between flex-1 h-min sm:h-56 relative overflow-hidden bg-gradient-to-r from-gray-400 items-center sm:items-start">
 			<div class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
 				<label
 					transition:name={`emoji-${carrera}`}
-					class="text-on-primary text-center text-title-small relative flex items-center justify-center grayscale-emoji">
-					{emoji}
+					class={`text-[var(--texto-${carrera})] text-center text-title-large relative flex items-center justify-center`}>
+					<Icon name={emoji} size="22"/>
 				</label>
 			</div>
 			<div class="flex w-full flex-col gap-2.5  justify-center items-center sm:items-start self-stretch shrink-0 relative">
 				<label class="text-error text-center text-label-large relative self-stretch flex items-center sm:items-start justify-center w-full ">
 					Próximamente
 				</label>
-				<h2
-					transition:name={`nombre-${carrera}`}
-					class="text-on-background text-center text-title-large relative self-stretch flex items-center sm:items-start justify-center w-full">
-					{nombreCarrera}
+				<h2 class="text-on-background text-center text-title-large relative self-stretch flex items-center justify-center w-full">
+					{/* Texto corto para tamaños menores a md */}
+					<span class="block sm:hidden">
+						{nombreCarrera
+							.replace("Licenciatura", "Lic.")
+							.replace("Ingeniería", "Ing.")
+							.replace("Profesorado", "Prof.")}
+					</span>
+
+					{/* Texto completo para tamaños md y mayores */}
+					<span class="hidden sm:block">{nombreCarrera}</span>
 				</h2>
 			</div>
 		</div>
-	)
 }
 <style>
 	.grayscale-emoji {

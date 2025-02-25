@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
 	--md-sys-typescale-display-medium-font: Poppins, sans-serif;
 	--md-sys-typescale-display-medium-size: 15rem;
@@ -98,6 +97,21 @@
 	--carrera-Profesorado-en-Física: rgba(0, 105, 107, 0.5);
 	--carrera-Profesorado-en-Matemática: rgba(76, 92, 146, 0.5);
 	--carrera-Profesorado-Universitario-en-Informática: rgba(27, 101, 133, 0.5);
+	--texto-Bioquímica: rgb(55, 105, 61);
+	--texto-Ingeniería-en-Agrimensura: rgb(140, 79, 39);
+	--texto-Ingeniería-Eléctrica: rgb(111, 93, 14);
+	--texto-Ingeniería-en-Electrónica: rgb(51, 105, 64);
+	--texto-Licenciatura-en-Ciencias-Biológicas: rgb(62, 104, 55);
+	--texto-Licenciatura-en-Ciencias-Físicas: rgb(60, 96, 144);
+	--texto-Licenciatura-en-Ciencias-Químicas: rgb(143, 75, 56);
+	--texto-Licenciatura-en-Matemática: rgb(110, 82, 138);
+	--texto-Licenciatura-en-Sistemas-de-Información: rgb(47, 98, 140);
+	--texto-Licenciatura-en-Didáctica-de-la-Matemática: rgb(139, 74, 98);
+	--texto-Profesorado-en-Biología: rgb(62, 104, 55);
+	--texto-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: rgb(142, 73, 88);
+	--texto-Profesorado-en-Física: rgb(0, 105, 107);
+	--texto-Profesorado-en-Matemática: rgb(76, 92, 146);
+	--texto-Profesorado-Universitario-en-Informática: rgb(27, 101, 133);
 }
 
 [data-theme="dark"] {
@@ -172,6 +186,21 @@
 	--carrera-Profesorado-en-Física: rgba(128, 212, 214, 0.5);
 	--carrera-Profesorado-en-Matemática: rgba(181, 196, 255, 0.5);
 	--carrera-Profesorado-Universitario-en-Informática: rgba(143, 206, 243, 0.5);
+	--texto-Bioquímica: rgb(157, 212, 158);
+	--texto-Ingeniería-en-Agrimensura: rgb(255, 182, 139);
+	--texto-Ingeniería-Eléctrica: rgb(222, 197, 110);
+	--texto-Ingeniería-en-Electrónica: rgb(154, 212, 162);
+	--texto-Licenciatura-en-Ciencias-Biológicas: rgb(163, 211, 151);
+	--texto-Licenciatura-en-Ciencias-Físicas: rgb(165, 200, 255);
+	--texto-Licenciatura-en-Ciencias-Químicas: rgb(255, 181, 160);
+	--texto-Licenciatura-en-Matemática: rgb(219, 185, 249);
+	--texto-Licenciatura-en-Sistemas-de-Información: rgb(155, 203, 251);
+	--texto-Licenciatura-en-Didáctica-de-la-Matemática: rgb(255, 176, 202);
+	--texto-Profesorado-en-Biología: rgb(163, 211, 151);
+	--texto-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: rgb(255, 178, 191);
+	--texto-Profesorado-en-Física: rgb(128, 212, 214);
+	--texto-Profesorado-en-Matemática: rgb(181, 196, 255);
+	--texto-Profesorado-Universitario-en-Informática: rgb(143, 206, 243);
 }
 
 @theme {
@@ -225,6 +254,7 @@
 	--color-surface-container: var(--md-sys-color-surface-container);
 	--color-surface-container-high: var(--md-sys-color-surface-container-high);
 	--color-surface-container-highest: var(--md-sys-color-surface-container-highest);
+	
 	--color-carrera-Bioquímica: var(--carrera-Bioquímica);
 	--color-carrera-Ingeniería-en-Agrimensura: var(--carrera-Ingeniería-en-Agrimensura);
 	--color-carrera-Ingeniería-Eléctrica: var(--carrera-Ingeniería-Eléctrica);
@@ -242,6 +272,24 @@
 	--color-carrera-Profesorado-en-Física: var(--carrera-Profesorado-en-Física);
 	--color-carrera-Profesorado-en-Matemática: var(--carrera-Profesorado-en-Matemática);
 	--color-carrera-Profesorado-Universitario-en-Informática: var(--carrera-Profesorado-Universitario-en-Informática);
+
+	--color-texto-Bioquímica: var(--texto-Bioquímica);
+	--color-texto-Ingeniería-en-Agrimensura: var(--texto-Ingeniería-en-Agrimensura);
+	--color-texto-Ingeniería-Eléctrica: var(--texto-Ingeniería-Eléctrica);
+	--color-texto-Ingeniería-en-Electrónica: var(--texto-Ingeniería-en-Electrónica);
+	--color-texto-Licenciatura-en-Ciencias-Biológicas: var(--texto-Licenciatura-en-Ciencias-Biológicas);
+	--color-texto-Licenciatura-en-Ciencias-Físicas: var(--texto-Licenciatura-en-Ciencias-Físicas);
+	--color-texto-Licenciatura-en-Ciencias-Químicas: var(--texto-Licenciatura-en-Ciencias-Químicas);
+	--color-texto-Licenciatura-en-Matemática: var(--texto-Licenciatura-en-Matemática);
+	--color-texto-Licenciatura-en-Sistemas-de-Información: var(--texto-Licenciatura-en-Sistemas-de-Información);
+	--color-texto-Licenciatura-en-Didáctica-de-la-Matemática: var(--texto-Licenciatura-en-Didáctica-de-la-Matemática);
+	--color-texto-Profesorado-en-Biología: var(--texto-Profesorado-en-Biología);
+	--color-texto-Profesorado-en-Ciencias-Químicas-y-del-Ambiente: var(
+		--texto-Profesorado-en-Ciencias-Químicas-y-del-Ambiente
+	);
+	--color-texto-Profesorado-en-Física: var(--texto-Profesorado-en-Física);
+	--color-texto-Profesorado-en-Matemática: var(--texto-Profesorado-en-Matemática);
+	--color-texto-Profesorado-Universitario-en-Informática: var(--texto-Profesorado-Universitario-en-Informática);
 	--shadow-1: var(--m3-elevation-1-box-shadow);
 	--shadow-2: var(--m3-elevation-2-box-shadow);
 	--shadow-3: var(--m3-elevation-3-box-shadow);

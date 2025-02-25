@@ -2,7 +2,7 @@
 	"carreras": [
 		{
 			"carrera": "Bioquímica",
-			"emoji": "🧫",
+			"emoji": "microscope",
 			"cursada": [
 				{
 					"año": 1,
@@ -1409,7 +1409,7 @@
 		},
 		{
 			"carrera": "Ingeniería-en-Agrimensura",
-			"emoji": "📏",
+			"emoji": "ruler-2",
 			"cursada": [
 				{
 					"año": 1,
@@ -2262,7 +2262,7 @@
 		},
 		{
 			"carrera": "Ingeniería-Eléctrica",
-			"emoji": "⚡",
+			"emoji": "bolt",
 			"cursada": [
 				{
 					"año": 1,
@@ -2810,7 +2810,7 @@
 		},
 		{
 			"carrera": "Ingeniería-en-Electrónica",
-			"emoji": "🤖",
+			"emoji": "robot",
 			"cursada": [
 				{
 					"año": 1,
@@ -3796,7 +3796,7 @@
 		},
 		{
 			"carrera": "Licenciatura-en-Ciencias-Biológicas",
-			"emoji": "🌱",
+			"emoji": "seedling",
 			"cursada": [
 				{
 					"año": 1,
@@ -4753,22 +4753,1104 @@
 		},
 		{
 			"carrera": "Licenciatura-en-Ciencias-Físicas",
-			"emoji": "🌌",
-			"cursada": []
+			"emoji": "atom",
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Algebra y Geometría Analítica",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química General",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral I",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Inorgánica",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Biología General y Celular",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Calculo Diferencial e Integral II",
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica, Calor y Termodinámica",
+							"paraCursar": [
+								{
+									"mat": "Calculo diferencial e Integral",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "R"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Gral.",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo diferencial e Integral",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Gral.",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Orgánica I",
+							"paraCursar": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inoraganica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Analítica I",
+							"paraCursar": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística y Análisis de Datos",
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electricidad, Magnetismo y Óptica",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Calor y Termodinámica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Orgánica II",
+							"paraCursar": [
+								{
+									"mat": "Química Org I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Gral. y Celular",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Inorgánica",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Gral. y Celular",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Química Biológica",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Física I",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "R"
+								},
+								{
+									"mat": "EMO",
+									"cond": "R"
+								},
+								{
+									"mat": "Mec. Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "EMO",
+									"cond": "A"
+								},
+								{
+									"mat": "Mec. Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Microbiología Aplicada y Ambiental",
+							"paraCursar": [
+								{
+									"mat": "Química Biológica",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Biología Gral. Celular",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Biología Gral. Celular",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Analítica II",
+							"paraCursar": [
+								{
+									"mat": "Química Física. I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Ingles",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Fenómenos de Transporte",
+							"paraCursar": [
+								{
+									"mat": "Química Física. I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Química Física II",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Toxicológica y Legal",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electro analítico",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bromatología y Nutrición",
+							"paraCursar": [
+								{
+									"mat": "Fenómeno de Transporte",
+									"cond": "R"
+								},
+								{
+									"mat": "Microbiología y Ambiental",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fenómeno de Transporte",
+									"cond": "A"
+								},
+								{
+									"mat": "Microbiología y Ambiental",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Procesos Industriales",
+							"paraCursar": [
+								{
+									"mat": "Fenómenos de Transporte",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física. II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fenómenos de Transporte",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Bioquímica de los Alimentos",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Bromatologia y Nutrición",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Epistemología de las Ciencias",
+							"paraCursar": [
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Método de Conservación de los Alimentos",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Bromatología y Nutrición",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Biológica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Bromatologia y Nutrición",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Gestión Estratégica Personal y Empresarial",
+							"paraCursar": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mec. Calor my Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Ingles",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mec. Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Prueba de Traducción de Ingles",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Analítica Aplicada a las Formulaciones Farmacéuticas",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Modelado Molecular",
+							"paraCursar": [
+								{
+									"mat": "Química Física. II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física. II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Tecnología del Medio Ambiente",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ética Profesional",
+							"paraCursar": [
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Eco toxicología y Sanidad Laboral y Ambiental",
+							"paraCursar": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Toxicológica y Legal",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Química Analítica III",
+							"paraCursar": [
+								{
+									"mat": "Electro analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electro analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Química Física III",
+							"paraCursar": [
+								{
+									"mat": "Química Física. II",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física. II",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Org II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Operaciones Unitarias",
+							"paraCursar": [
+								{
+									"mat": "Fenómenos de Transporte",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Fenómenos de Transporte",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Física. I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Proceso Analítico Total",
+							"paraCursar": [
+								{
+									"mat": "Química Analítica III",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Analítica III",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Determinación de Estructuras Orgánicas",
+							"paraCursar": [
+								{
+									"mat": "Química Física. III",
+									"cond": "R"
+								},
+								{
+									"mat": "Química Analítica III",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química Física. III",
+									"cond": "A"
+								},
+								{
+									"mat": "Química Analítica III",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Biotecnología Microbiana",
+							"paraCursar": [
+								{
+									"mat": "Operaciones Unitarias",
+									"cond": "R"
+								},
+								{
+									"mat": "Procesos Industriales",
+									"cond": "R"
+								},
+								{
+									"mat": "microbiología Aplicada y Ambiental",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Operaciones Unitarias",
+									"cond": "A"
+								},
+								{
+									"mat": "Procesos Industriales",
+									"cond": "A"
+								},
+								{
+									"mat": "microbiología Aplicada y Ambiental",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Trabajo Final",
+							"paraCursar": [
+								{
+									"mat": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				}
+			]
 		},
 		{
 			"carrera": "Licenciatura-en-Ciencias-Químicas",
-			"emoji": "🧪",
+			"emoji": "flask",
 			"cursada": []
 		},
 		{
 			"carrera": "Licenciatura-en-Matemática",
-			"emoji": "➗",
+			"emoji": "math",
 			"cursada": []
 		},
 		{
 			"carrera": "Licenciatura-en-Sistemas-de-Información",
-			"emoji": "💻",
+			"emoji": "device-imac",
 			"cursada": [
 				{
 					"año": 1,
@@ -4790,7 +5872,6 @@
 								"2025-10-08",
 								"2025-12-01",
 								"2025-12-17"
-
 							]
 						},
 						{
@@ -4810,7 +5891,6 @@
 								"2025-10-07",
 								"2025-11-25",
 								"2025-12-16"
-
 							]
 						},
 						{
@@ -5432,27 +6512,27 @@
 		},
 		{
 			"carrera": "Licenciatura-en-Didáctica-de-la-Matemática",
-			"emoji": "📚",
+			"emoji": "abacus",
 			"cursada": []
 		},
 		{
 			"carrera": "Profesorado-en-Biología",
-			"emoji": "🦋",
+			"emoji": "butterfly",
 			"cursada": []
 		},
 		{
 			"carrera": "Profesorado-en-Ciencias-Químicas-y-del-Ambiente",
-			"emoji": "🧬",
+			"emoji": "test-pipe-2",
 			"cursada": []
 		},
 		{
 			"carrera": "Profesorado-en-Física",
-			"emoji": "🔭",
+			"emoji": "telescope",
 			"cursada": []
 		},
 		{
 			"carrera": "Profesorado-en-Matemática",
-			"emoji": "📐",
+			"emoji": "ruler",
 			"cursada": [
 				{
 					"año": 1,
