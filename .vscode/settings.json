@@ -12,10 +12,14 @@
         "markdown",
         "latex",
         "plaintext",
-        "tailwindcss"
+        "tailwindcss",
+        "astro"
     ],
     "spellright.parserByClass": {
         "tailwindcss": {
+            "parser": "code"
+        },
+        "astro": {
             "parser": "code"
         }
     }

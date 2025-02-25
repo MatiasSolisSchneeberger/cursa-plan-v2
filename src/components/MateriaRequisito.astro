@@ -1,6 +1,6 @@
 ---
 interface Props {
-    condicion: 'A' | 'R',
+    condicion: 'A' | 'R' | null,
     materia: string,
 }
 
@@ -11,7 +11,8 @@ const {condicion, materia} = Astro.props
 	href=`#${materia}`
 	class=" outline-[var(--md-sys-color-outline)] outline-1 rounded-full flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden py-1.5 pr-3 pl-1.5">
 	<div
-		class="bg-[var(--md-sys-color-tertiary)] rounded-full p-[5px] flex flex-col gap-2.5 items-center justify-center shrink-0 w-6 h-6 relative">
+		class:list={["rounded-full p-[5px] flex flex-col gap-2.5 items-center justify-center shrink-0 w-6 h-6 relative",
+			condicion === null ? "bg-[var(--md-sys-color-error)]": "bg-[var(--md-sys-color-tertiary)]"]}>
 		<p class="text-[var(--md-sys-color-on-tertiary)] text-center text-title-medium relative flex items-center justify-center">
             {condicion}
         </p>
