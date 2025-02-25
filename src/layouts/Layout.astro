@@ -1,6 +1,7 @@
 ---
 /* Importar componentes */
 /* import Analytics from "@vercel/analytics/astro"; */
+import Analytics from '@vercel/analytics/astro'
 import {ClientRouter} from "astro:transitions"
 
 import NavHeader from "@sections/NavHeader.astro"
@@ -118,6 +119,7 @@ const {title, theme} = Astro.props
 
 		<!-- View Transition -->
 		<ClientRouter />
+		<Analytics/>
 	</head>
 	<body>
 		<main
