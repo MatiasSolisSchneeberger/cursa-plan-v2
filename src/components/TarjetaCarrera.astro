@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components'
+import {Icon} from "astro-icon/components"
 
 interface Props {
 	carrera: string
@@ -18,21 +18,20 @@ const nombreCarrera = carrera.replace(/-/g, " ")
 			transition:name={`header-${carrera}`}
 			href={`/carreras/${carrera}`}
 			aria-disabled="true"
-			class="rounded-3xl hover:shadow-1 from-25% hover:scale-[1.01] outline-solid outline-outline outline-1 p-3 flex flex-row sm:flex-col items-start justify-between flex-1 h-min sm:h-56 relative overflow-hidden transition-all duration-100"
-			style={{
-				background: `linear-gradient(to right, var(--carrera-${carrera}) 25%, transparent)`,
-			}}>
-			<div class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
+			class={`theme-${carrera} rounded-3xl hover:shadow-1 from-25% hover:scale-[1.01] outline-solid outline-outline outline-1 p-3 flex flex-row sm:flex-col items-start justify-between flex-1 h-min sm:h-56 relative overflow-hidden transition-all duration-100`}
+			style="background: linear-gradient(to right, var(--md-sys-color-primary-container) 25%, transparent)">
+			<div class="bg-[var(--md-sys-color-surface-variant)] rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
 				<label
 					transition:name={`emoji-${carrera}`}
-					class={`text-[var(--texto-${carrera})] text-center text-title-large relative flex items-center justify-center`}>
-					<Icon name={emoji} size="22"/>
+					class={`text-${carrera} text-center text-title-large relative flex items-center justify-center`}
+					style="color: var(--md-sys-color-primary)">
+					<Icon name={emoji} size="22" />
 				</label>
 			</div>
 
 			<h2
 				transition:name={`nombre-${carrera}`}
-				class="text-on-background text-center text-title-large relative self-stretch flex items-center justify-center w-full">
+				class="text-[var(--md-sys-color-on-background)] text-center text-title-large relative self-stretch flex items-center justify-center w-full">
 				{/* Texto corto para tamaños menores a md */}
 				<span class="block sm:hidden">
 					{nombreCarrera.replace("Licenciatura", "Lic.").replace("Ingeniería", "Ing.").replace("Profesorado", "Prof.")}
@@ -46,15 +45,15 @@ const nombreCarrera = carrera.replace(/-/g, " ")
 			<div class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
 				<label
 					transition:name={`emoji-${carrera}`}
-					class={`text-[var(--texto-${carrera})] text-center text-title-large relative flex items-center justify-center`}>
-					<Icon name={emoji} size="22"/>
+					class={`text-${carrera} text-center text-title-large relative flex items-center justify-center`}>
+					<Icon name={emoji} size="22" />
 				</label>
 			</div>
 			<div class="flex w-full flex-col gap-2.5  justify-center items-center sm:items-start self-stretch shrink-0 relative">
 				<label class="text-error text-center text-label-large relative self-stretch flex items-center sm:items-start justify-center w-full ">
 					Próximamente
 				</label>
-				<h2 class="text-on-background text-center text-title-large relative self-stretch flex items-center justify-center w-full">
+				<h2 class="text-[var(--md-sys-color-on-background)] text-center text-title-large relative self-stretch flex items-center justify-center w-full">
 					{/* Texto corto para tamaños menores a md */}
 					<span class="block sm:hidden">
 						{nombreCarrera

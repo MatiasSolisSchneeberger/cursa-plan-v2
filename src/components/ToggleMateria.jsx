@@ -16,8 +16,8 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 
 	return (
 		<article className="flex flex-col gap-2.5 h-min w-full">
-			<header className="bg-primary text-on-primary rounded-br-2xl rounded-bl-2xl p-1.5 flex flex-row gap-2.5 items-center w-full justify-center self-stretch shrink-0 relative">
-				<h3 className="text-on-primary text-center text-headline-small relative flex-1 flex items-center justify-center text-pretty">
+			<header className="bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] rounded-br-2xl rounded-bl-2xl p-1.5 flex flex-row gap-2.5 items-center w-full justify-center self-stretch shrink-0 relative">
+				<h3 className="text-[var(--md-sys-color-on-primary)] text-center text-headline-small relative flex-1 flex items-center justify-center text-pretty">
 					{materia}
 				</h3>
 
@@ -57,9 +57,9 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 			{isVisible && (
 				<footer className="flex w-full flex-col sm:flex-row gap-2 p-2">
 					{/* Información sobre las mesas */}
-					<section className="md:w-full md:flex-1 border border-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+					<section className="md:w-full md:flex-1 outline outline-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
 						{/*  */}
-						<div className="bg-secondary text-on-secondary rounded-2xl p-2.5 flex flex-wrap gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+						<div className="bg-[var(--md-sys-color-secondary)] text-[var(--md-sys-color-on-secondary)] rounded-2xl p-2.5 flex flex-wrap gap-2.5 items-center justify-center self-stretch shrink-0 relative">
 							{mesas?.length > 0 ? (
 								<>
 									<p className="text-title-medium relative flex-1 flex items-center text-nowrap justify-center">
@@ -76,7 +76,7 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 							)}
 						</div>
 						<div className="flex flex-wrap gap-2.5 w-full">
-							<md-filled-tonal-button disabled={!mesas?.length} className="w-full flex-1 text-on-primary">
+							<md-filled-tonal-button disabled={!mesas?.length} className="w-full flex-1 text-[var(--md-sys-color-on-primary)]">
 								Ver Mas
 							</md-filled-tonal-button>
 							{/* <md-dialog>
@@ -100,14 +100,14 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 
 					{/* Información sobre el plan de estudio */}
 					<section className="md:w-full md:flex-1 border border-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
-						<header className="bg-secondary text-on-secondary rounded-2xl p-2.5 flex flex-col lg:flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+						<header className="bg-[var(--md-sys-color-secondary)] text-[var(--md-sys-color-on-secondary)] rounded-2xl p-2.5 flex flex-col lg:flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
 							<p className="text-title-medium relative self-stretch flex items-center justify-center">
 								Plan de Estudio:
 							</p>
 						</header>
 
 						<footer className="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-							<md-filled-tonal-button disabled={!planDeEstudio} className="w-1/2 flex-1 sm:w-full text-on-primary">
+							<md-filled-tonal-button disabled={!planDeEstudio} className="w-1/2 flex-1 sm:w-full text-[var(--md-sys-color-on-primary)]">
 								Ver
 							</md-filled-tonal-button>
 							<md-elevated-button disabled={!planDeEstudio} className="w-1/2 flex-1 sm:w-full">

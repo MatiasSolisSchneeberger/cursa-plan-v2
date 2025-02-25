@@ -11,6 +11,12 @@
     "spellright.documentTypes": [
         "markdown",
         "latex",
-        "plaintext"
-    ]
+        "plaintext",
+        "tailwindcss"
+    ],
+    "spellright.parserByClass": {
+        "tailwindcss": {
+            "parser": "code"
+        }
+    }
 }
