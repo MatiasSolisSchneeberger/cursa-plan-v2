@@ -1,36 +1,52 @@
-import React, {useState} from "react"
+import React, { useState } from "react";
 
-const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
-	const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
+const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
+	const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 
 	// Estado para controlar la visibilidad del contenido adicional
-	const [isVisible, setIsVisible] = useState(false)
+	const [isVisible, setIsVisible] = useState(false);
+
+	// Estado para controlar la apertura del diálogo
+	const [openDialogId, setOpenDialogId] = useState(null);
 
 	// Función para alternar la visibilidad
 	const toggleVisibility = () => {
-		setIsVisible((prevState) => !prevState)
-	}
+		setIsVisible((prevState) => !prevState);
+	};
+
+	// Función para abrir el diálogo
+	const openDialog = (id) => {
+		setOpenDialogId(id);
+	};
+
+	// Función para cerrar el diálogo
+	const closeDialog = () => {
+		setOpenDialogId(null);
+	};
 
 	const formatDate = (date) => new Date(date).toLocaleDateString("es-ES");
 
 	// Formato de fecha para mostrar de forma consistente
 	const obtenerProximaFecha = (fechas) => {
 		// Filtramos las fechas que son mayores a la fecha actual
-		const fechasFuturas = fechas.filter((fecha) => new Date(fecha) > new Date())
+		const fechasFuturas = fechas.filter((fecha) => new Date(fecha) > new Date());
 
 		// Si hay fechas futuras, encontramos la más cercana
 		if (fechasFuturas.length > 0) {
 			const proximaFecha = fechasFuturas.reduce((fechaMasCercana, fechaActual) => {
-				const diferenciaFechaMasCercana = Math.abs(new Date(fechaMasCercana) - new Date())
-				const diferenciaFechaActual = Math.abs(new Date(fechaActual) - new Date())
+				const diferenciaFechaMasCercana = Math.abs(new Date(fechaMasCercana) - new Date());
+				const diferenciaFechaActual = Math.abs(new Date(fechaActual) - new Date());
 
 				// Comparamos cuál de las dos fechas es más cercana
-				return diferenciaFechaActual < diferenciaFechaMasCercana ? fechaActual : fechaMasCercana
-			})
-			return proximaFecha
+				return diferenciaFechaActual < diferenciaFechaMasCercana ? fechaActual : fechaMasCercana;
+			});
+			return proximaFecha;
 		}
-		return null // Si no hay fechas futuras, podemos devolver null o alguna otra opción
-	}
+		return null; // Si no hay fechas futuras, podemos devolver null o alguna otra opción
+	};
+
+	// Generar un ID único para el diálogo basado en la materia
+	const dialogId = `dialog-${materia.replace(/\s+/g, "-").toLowerCase()}`;
 
 	return (
 		<article className="flex flex-col gap-2.5 h-min w-full">
@@ -42,7 +58,6 @@ const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
 				<md-filled-tonal-icon-button toggle trailing-icon onClick={toggleVisibility}>
 					{isVisible ? (
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-
 							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 							<path d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" />
 						</svg>
@@ -59,7 +74,6 @@ const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
 				<footer className="flex w-full flex-col sm:flex-row gap-2 p-2">
 					{/* Información sobre las mesas */}
 					<section className="md:w-full md:flex-1 outline outline-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
-						{/*  */}
 						<div className="bg-[var(--md-sys-color-secondary)] text-[var(--md-sys-color-on-secondary)] rounded-2xl p-2.5 flex flex-wrap gap-2.5 items-center justify-center self-stretch shrink-0 relative">
 							{mesas?.length > 0 ? (
 								<>
@@ -77,20 +91,22 @@ const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
 						<div className="flex flex-wrap gap-2.5 w-full">
 							<md-filled-tonal-button
 								disabled={!mesas?.length}
-								className="w-full flex-1 text-[var(--md-sys-color-on-primary)]">
+								className="w-full flex-1 text-[var(--md-sys-color-on-primary)]"
+								onClick={() => openDialog(dialogId)}>
 								Ver Mas
 							</md-filled-tonal-button>
-							{/* <md-dialog>
-								<div slot="headline">
-									Dialog title
+							<md-dialog id={dialogId} open={openDialogId === dialogId} onClose={closeDialog}>
+								<div slot="headline">Información adicional</div>
+								<div slot="content">
+									{materia} hola
+									
 								</div>
-								<form slot="content" id="form-id" method="dialog">
-									A simple dialog with free-form content.
-								</form>
 								<div slot="actions">
-									<md-text-button form="form-id">Ok</md-text-button>
+									<md-text-button onClick={closeDialog}>
+										Cerrar
+									</md-text-button>
 								</div>
-							</md-dialog> */}
+							</md-dialog>
 							<md-filled-button
 								href={
 									mesas?.length > 0 && mesas[0]?.fecha
@@ -130,7 +146,7 @@ const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
 				</footer>
 			)}
 		</article>
-	)
-}
+	);
+};
 
-export default ToggleMateria
+export default ToggleMateria;
