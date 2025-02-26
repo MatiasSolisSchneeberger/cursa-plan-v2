@@ -1,18 +1,36 @@
-import React, { useState } from "react";
+import React, {useState} from "react"
 
-const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
-	const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
+const ToggleMateria = ({materia, mesas, planDeEstudio}) => {
+	const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
 
 	// Estado para controlar la visibilidad del contenido adicional
-	const [isVisible, setIsVisible] = useState(false);
+	const [isVisible, setIsVisible] = useState(false)
 
 	// Función para alternar la visibilidad
 	const toggleVisibility = () => {
-		setIsVisible((prevState) => !prevState);
-	};
+		setIsVisible((prevState) => !prevState)
+	}
+
+	const formatDate = (date) => new Date(date).toLocaleDateString("es-ES");
 
 	// Formato de fecha para mostrar de forma consistente
-	const formatDate = (date) => new Date(date).toLocaleDateString("es-ES");
+	const obtenerProximaFecha = (fechas) => {
+		// Filtramos las fechas que son mayores a la fecha actual
+		const fechasFuturas = fechas.filter((fecha) => new Date(fecha) > new Date())
+
+		// Si hay fechas futuras, encontramos la más cercana
+		if (fechasFuturas.length > 0) {
+			const proximaFecha = fechasFuturas.reduce((fechaMasCercana, fechaActual) => {
+				const diferenciaFechaMasCercana = Math.abs(new Date(fechaMasCercana) - new Date())
+				const diferenciaFechaActual = Math.abs(new Date(fechaActual) - new Date())
+
+				// Comparamos cuál de las dos fechas es más cercana
+				return diferenciaFechaActual < diferenciaFechaMasCercana ? fechaActual : fechaMasCercana
+			})
+			return proximaFecha
+		}
+		return null // Si no hay fechas futuras, podemos devolver null o alguna otra opción
+	}
 
 	return (
 		<article className="flex flex-col gap-2.5 h-min w-full">
@@ -23,31 +41,14 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 
 				<md-filled-tonal-icon-button toggle trailing-icon onClick={toggleVisibility}>
 					{isVisible ? (
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="currentColor">
-							<path
-								stroke="none"
-								d="M0 0h24v24H0z"
-								fill="none"
-							/>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 							<path d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" />
 						</svg>
 					) : (
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="currentColor">
-							<path
-								stroke="none"
-								d="M0 0h24v24H0z"
-								fill="none"
-							/>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 							<path d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" />
 						</svg>
 					)}
@@ -66,17 +67,17 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 										Próxima Mesa:
 									</p>
 									<p className="text-center text-title-small flex-1 relative flex items-center justify-center">
-										{mesas[0].fecha > new Date() ? formatDate(mesas[0].fecha,) : formatDate(new Date(),)}
+										{obtenerProximaFecha(mesas) ? formatDate(obtenerProximaFecha(mesas)) : "No hay fechas futuras"}
 									</p>
 								</>
 							) : (
-								<p className="text-title-medium relative flex-1 flex items-center justify-center">
-									No hay fechas
-								</p>
+								<p className="text-title-medium relative flex-1 flex items-center justify-center">No hay fechas</p>
 							)}
 						</div>
 						<div className="flex flex-wrap gap-2.5 w-full">
-							<md-filled-tonal-button disabled={!mesas?.length} className="w-full flex-1 text-[var(--md-sys-color-on-primary)]">
+							<md-filled-tonal-button
+								disabled={!mesas?.length}
+								className="w-full flex-1 text-[var(--md-sys-color-on-primary)]">
 								Ver Mas
 							</md-filled-tonal-button>
 							{/* <md-dialog>
@@ -91,8 +92,17 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 								</div>
 							</md-dialog> */}
 							<md-filled-button
-								href={mesas?.length > 0 && mesas[0]?.fecha ? `${baseURL}&text=Mesa+de+${materia}&dates=${new Date(mesas[0].fecha).toISOString().replace(/-|:|\.\d+/g, "")}` : "#"}
-								target="_blank" rel="noopener noreferrer" className="w-full flex-1" disabled={!mesas?.length}>
+								href={
+									mesas?.length > 0 && mesas[0]?.fecha
+										? `${baseURL}&text=Mesa+de+${materia}&dates=${new Date(mesas[0].fecha)
+												.toISOString()
+												.replace(/-|:|\.\d+/g, "")}`
+										: "#"
+								}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-full flex-1"
+								disabled={!mesas?.length}>
 								Agendar
 							</md-filled-button>
 						</div>
@@ -107,7 +117,9 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 						</header>
 
 						<footer className="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-							<md-filled-tonal-button disabled={!planDeEstudio} className="w-1/2 flex-1 sm:w-full text-[var(--md-sys-color-on-primary)]">
+							<md-filled-tonal-button
+								disabled={!planDeEstudio}
+								className="w-1/2 flex-1 sm:w-full text-[var(--md-sys-color-on-primary)]">
 								Ver
 							</md-filled-tonal-button>
 							<md-elevated-button disabled={!planDeEstudio} className="w-1/2 flex-1 sm:w-full">
@@ -118,7 +130,7 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 				</footer>
 			)}
 		</article>
-	);
-};
+	)
+}
 
-export default ToggleMateria;
+export default ToggleMateria
