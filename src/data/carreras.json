@@ -4738,7 +4738,785 @@
 		{
 			"carrera": "Licenciatura-en-Ciencias-Físicas",
 			"emoji": "atom",
-			"cursada": []
+			"cursada": [
+				{
+					"año": 1,
+					"materias": [
+						{
+							"materia": "Algebra y Geometría Analítica",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral I",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica Clásica",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Laboratorio de Mecánica Clásica",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Programación",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calculo Diferencial e Integral II",
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Calor y Termodinámica",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Laboratorio de Calor y Termodinámica",
+							"paraCursar": [
+								{
+									"mat": "Laboratorio de Mecánica Clásica",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "R"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Laboratorio de Mecánica Clásica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 2,
+					"materias": [
+						{
+							"materia": "Electricidad y Magnetismo",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Laboratorio de Electricidad y Magnetismo",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								},
+								{
+									"mat": "Laboratorio de Mecánica Clásica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Laboratorio de Calor y Termodinámica",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Estadística y Análisis de Datos",
+							"paraCursar": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Matemática I",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "R"
+								},
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral I",
+									"cond": "A"
+								},
+								{
+									"mat": "Algebra y Geometría Analítica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Matemática II",
+							"paraCursar": [
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Matemática I",
+									"cond": "R"
+								},
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "R"
+								},
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Óptica y Sonido",
+							"paraCursar": [
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "R"
+								},
+								{
+									"mat": "Física matemática I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Laboratorio de Óptica y Sonido",
+							"paraCursar": [
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								},
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "R"
+								},
+								{
+									"mat": "Laboratorio de Electricidad y Magnetismo",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Matemática I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Laboratorio de Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica Analítica",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica Clásica",
+									"cond": "A"
+								},
+								{
+									"mat": "Calculo Diferencial e Integral II",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 3,
+					"materias": [
+						{
+							"materia": "Química General",
+							"paraCursar": [
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Calor y Termodinámica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Electromagnetismo (Para Físicos)",
+							"paraCursar": [
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Matemática II",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Matemática II",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Experimental I",
+							"paraCursar": [
+								{
+									"mat": "Laboratorio de Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Laboratorio de Óptica y Sonido",
+									"cond": "R"
+								},
+								{
+									"mat": "Óptica y Sonido",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Laboratorio de Óptica y Sonido",
+									"cond": "A"
+								},
+								{
+									"mat": "Óptica y Sonido",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica Cuántica I",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Analítica",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Matemática II",
+									"cond": "R"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica Analítica",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Matemática II",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Computacional",
+							"paraCursar": [
+								{
+									"mat": "Física Matemática II",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								},
+								{
+									"mat": "Programación",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física Matemática II",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								},
+								{
+									"mat": "Programación",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Instrumentación y Mediciones Electrónicas",
+							"paraCursar": [
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Laboratorio de Electricidad y Magnetismo",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Electricidad y Magnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Laboratorio de Electricidad y Magnetismo",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Ingles Técnico",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": "Aprobar para iniciar el Ciclo Superior",
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 4,
+					"materias": [
+						{
+							"materia": "Termodinámica Estadística",
+							"paraCursar": [
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física Matemática I",
+									"cond": "A"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Mecánica Cuántica II",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física Experimental II",
+							"paraCursar": [
+								{
+									"mat": "Instrumentación y Mediciones Electrónicas",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Experimental I",
+									"cond": "R"
+								},
+								{
+									"mat": "Electromagnetismo",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Instrumentación y Mediciones Electrónicas",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Experimental I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Física de Sólidos",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Termodinámica",
+									"cond": "R"
+								},
+								{
+									"mat": "Estadística y Análisis de Datos",
+									"cond": "R"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Química General",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Técnicas Nucleares",
+							"paraCursar": [
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "R"
+								},
+								{
+									"mat": "Química General",
+									"cond": "R"
+								},
+								{
+									"mat": "Física Experimental I",
+									"cond": "R"
+								},
+								{
+									"mat": "Instrumentación y Mediciones Electrónicas",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física Experimental I",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica I",
+									"cond": "A"
+								},
+								{
+									"mat": "Química General",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Optativa II (Dentro del Departamento de Física)",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento",
+							"mesas": []
+						},
+						{
+							"materia": "Optativa III (Dentro del Departamento de Física)",
+							"paraCursar": [],
+							"paraRendir": [],
+							"planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento",
+							"mesas": []
+						}
+					]
+				},
+				{
+					"año": 5,
+					"materias": [
+						{
+							"materia": "Seminario sobre Temas de Física",
+							"paraCursar": [
+								{
+									"mat": "Electromagnetismo",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica II",
+									"cond": "R"
+								},
+								{
+									"mat": "Termodinámica Estadística",
+									"cond": "R"
+								},
+								{
+									"mat": "Física de Sólidos",
+									"cond": "R"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Técnicas Nucleares",
+									"cond": "A"
+								},
+								{
+									"mat": "Mecánica Cuántica II",
+									"cond": "A"
+								},
+								{
+									"mat": "Termodinámica Estadística",
+									"cond": "A"
+								}
+							],
+							"planDeEstudio": null,
+							"mesas": []
+						},
+						{
+							"materia": "Trabajo Final",
+							"paraCursar": [
+								{
+									"mat": "Física Computacional",
+									"cond": "A"
+								},
+								{
+									"mat": "Física Experimental II",
+									"cond": "A"
+								},
+								{
+									"mat": "Electromagnetismo",
+									"cond": "A"
+								}
+							],
+							"paraRendir": [
+								{
+									"mat": "Física de Sólidos",
+									"cond": "R"
+								},
+								{
+									"mat": "Técnicas Nucleares",
+									"cond": "R"
+								}
+							],
+							"planDeEstudio": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior",
+							"mesas": []
+						}
+					]
+				}
+			]
 		},
 		{
 			"carrera": "Licenciatura-en-Ciencias-Químicas",

@@ -1,0 +1,111 @@
+---
+interface Props {
+    materia: string
+    mesas: {fecha: string}[]
+    planDeEstudio: string
+}
+
+const {materia, mesas = [], planDeEstudio} = Astro.props
+const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
+
+// Funciones helper (también podrías importarlas desde un archivo utils)
+const formatDate = (date: Date) => new Date(date).toLocaleDateString("es-ES")
+
+const obtenerProximaFecha = (fechas: {fecha: string}[]) => {
+	const fechasFuturas = fechas.map(f => new Date(f.fecha)).filter(fecha => fecha > new Date())
+	return fechasFuturas.length > 0 ?
+			fechasFuturas.reduce((a, b) => (a.getTime() - Date.now() < b.getTime() - Date.now() ? a : b))
+		:	null
+}
+
+const dialogId = `dialog-${materia.replace(/\s+/g, "-").toLowerCase()}`
+---
+
+<footer class="flex w-full flex-col sm:flex-row gap-2 p-2">
+	<!-- Sección de Mesas -->
+	<section
+		class="md:w-full md:flex-1 outline outline-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+		<div
+			class="bg-[var(--md-sys-color-secondary)] text-[var(--md-sys-color-on-secondary)] rounded-2xl p-2.5 flex flex-wrap gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+			{
+				mesas.length > 0 ?
+					<>
+						<p class="text-title-medium relative flex-1 flex items-center text-nowrap justify-center">Próxima Mesa:</p>
+						<p class="text-center text-title-small flex-1 relative flex items-center justify-center">
+							{obtenerProximaFecha(mesas) ? formatDate(obtenerProximaFecha(mesas)) : "No hay fechas futuras"}
+						</p>
+					</>
+				:	<p class="text-title-medium relative flex-1 flex items-center justify-center">No hay fechas</p>
+			}
+		</div>
+		<div class="flex flex-wrap gap-2.5 w-full">
+			<md-filled-tonal-button
+				disabled={!mesas.length}
+				class="w-full flex-1 text-[var(--md-sys-color-on-primary)]"
+				onclick={`document.getElementById('${dialogId}').show()`}>
+				Ver Mas
+			</md-filled-tonal-button>
+
+			<!-- Dialog -->
+			<md-dialog id={dialogId} class="w-full">
+				<div slot="icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+						<path d="M16 3l0 4"></path>
+						<path d="M8 3l0 4"></path>
+						<path d="M4 11l16 0"></path>
+						<path d="M8 15h2v2h-2z"></path>
+					</svg>
+				</div>
+				<h4 slot="headline" class="flex">Información adicional</h4>
+				<div slot="content" class="text-body-large">
+					{materia} - Fechas disponibles:
+					<ul>
+						{mesas.map((mesa) => <li>{formatDate(new Date(mesa.fecha))}</li>)}
+					</ul>
+				</div>
+				<div slot="actions">
+					<md-text-button onclick={`document.getElementById('${dialogId}').close()`}> Cerrar </md-text-button>
+				</div>
+			</md-dialog>
+
+			<md-filled-button
+				href={mesas.length > 0 && mesas[0]?.fecha ?
+					`${baseURL}&text=Mesa+de+${materia}&dates=${new Date(mesas[0].fecha).toISOString().replace(/-|:|\.\d+/g, "")}`
+				:	"#"}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="w-full flex-1"
+				disabled={!mesas.length}>
+				Agendar
+			</md-filled-button>
+		</div>
+	</section>
+
+	<!-- Sección de Plan de Estudio -->
+	<section
+		class="md:w-full md:flex-1 border border-outline rounded-xl p-2 flex flex-col gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+		<header
+			class="bg-[var(--md-sys-color-secondary)] text-[var(--md-sys-color-on-secondary)] rounded-2xl p-2.5 flex flex-col lg:flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative">
+			<p class="text-title-medium relative self-stretch flex items-center justify-center">Plan de Estudio:</p>
+		</header>
+		<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+			<md-filled-tonal-button
+				disabled={!planDeEstudio}
+				class="w-1/2 flex-1 sm:w-full text-[var(--md-sys-color-on-primary)]">
+				Ver
+			</md-filled-tonal-button>
+			<md-elevated-button disabled={!planDeEstudio} class="w-1/2 flex-1 sm:w-full"> Descargar </md-elevated-button>
+		</footer>
+	</section>
+</footer>

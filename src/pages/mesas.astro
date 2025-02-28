@@ -1,0 +1,71 @@
+---
+import Layout from "@layouts/Layout.astro"
+---
+
+<Layout title="Mesas de Examen">
+	<div class="flex flex-col gap-4 items-center justify-center w-full">
+		<h1 class="text-4xl font-bold">Mesas de Examen</h1>
+		<p class="text-lg">
+			Aquí podrás encontrar las mesas de examen de las materias de la carrera de Licenciatura en Informática de la
+			Facultad de Informática de la Universidad Nacional de La Plata.
+		</p>
+		
+			<div class="relative overflow-x-auto">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Asignatura</th>
+                            <th scope="col" class="px-6 py-3">1º Turno</th>
+                            <th scope="col" class="px-6 py-3">2º Turno</th>
+                            <th scope="col" class="px-6 py-3">3º Turno</th>
+                            <th scope="col" class="px-6 py-3">4º Turno</th>
+                            <th scope="col" class="px-6 py-3">5º Turno</th>
+                            <th scope="col" class="px-6 py-3">6º Turno</th>
+                            <th scope="col" class="px-6 py-3">7º Turno</th>
+                            <th scope="col" class="px-6 py-3">8º Turno</th>
+                            <th scope="col" class="px-6 py-3">9º Turno</th>
+                            <th scope="col" class="px-6 py-3">10º Turno</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Ejemplo de fila -->
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                ADMINISTRACIÓN Y GESTIÓN DE ORGANIZACIONES
+                            </th>
+                            <td class="px-6 py-4">20/02/2025</td>
+                            <td class="px-6 py-4">14/3/2025</td>
+                            <td class="px-6 py-4">27/3/2025</td>
+                            <td class="px-6 py-4">8/5/2025</td>
+                            <td class="px-6 py-4">3/7/2025</td>
+                            <td class="px-6 py-4">31/07/25</td>
+                            <td class="px-6 py-4">04/09/25</td>
+                            <td class="px-6 py-4">09/10/25</td>
+                            <td class="px-6 py-4">27/11/25</td>
+                            <td class="px-6 py-4">18/12/25</td>
+                        </tr>
+            
+                        <!-- Plantilla para las demás asignaturas (repetir este bloque) -->
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                AGRIMENSURA LEGAL I
+                            </th>
+                            <td class="px-6 py-4">17/02/2025</td>
+                            <td class="px-6 py-4">10/3/2025</td>
+                            <td class="px-6 py-4">31/3/2025</td>
+                            <td class="px-6 py-4">5/5/2025</td>
+                            <td class="px-6 py-4">30/6/2025</td>
+                            <td class="px-6 py-4">28/07/25</td>
+                            <td class="px-6 py-4">01/09/25</td>
+                            <td class="px-6 py-4">06/10/25</td>
+                            <td class="px-6 py-4">24/11/25</td>
+                            <td class="px-6 py-4">15/12/25</td>
+                        </tr>
+            
+                        <!-- ... (repetir para todas las asignaturas del PDF) -->
+                    </tbody>
+                </table>
+            </div>
+		
+	</div>
+</Layout>

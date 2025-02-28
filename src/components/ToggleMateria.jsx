@@ -95,24 +95,49 @@ const ToggleMateria = ({ materia, mesas, planDeEstudio }) => {
 								onClick={() => openDialog(dialogId)}>
 								Ver Mas
 							</md-filled-tonal-button>
-							<md-dialog id={dialogId} open={openDialogId === dialogId} onClose={closeDialog}>
-								<div slot="headline">Información adicional</div>
-								<div slot="content">
-									{materia} hola
-									
-								</div>
-								<div slot="actions">
-									<md-text-button onClick={closeDialog}>
-										Cerrar
-									</md-text-button>
-								</div>
-							</md-dialog>
+
+							{/* Dialog */}
+							<div className="absolute inset-1/2 flex items-center justify-center">
+
+								<md-dialog
+									id={dialogId}
+									open={openDialogId === dialogId}
+									onClose={closeDialog}
+									className="w-full relative"
+								>
+
+									<div slot="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+											<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+											<path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+											<path d="M16 3l0 4" />
+											<path d="M8 3l0 4" />
+											<path d="M4 11l16 0" />
+											<path d="M8 15h2v2h-2z" />
+										</svg>
+									</div>
+									<h4 slot="headline" class="flex">
+										Información adicional
+									</h4>
+									<div slot="content" className="text-body-large">
+										{materia} hola
+
+									</div>
+									<div slot="actions">
+										<md-text-button onClick={closeDialog}>
+											Cerrar
+										</md-text-button>
+									</div>
+								</md-dialog>
+							</div>
+
+
 							<md-filled-button
 								href={
 									mesas?.length > 0 && mesas[0]?.fecha
 										? `${baseURL}&text=Mesa+de+${materia}&dates=${new Date(mesas[0].fecha)
-												.toISOString()
-												.replace(/-|:|\.\d+/g, "")}`
+											.toISOString()
+											.replace(/-|:|\.\d+/g, "")}`
 										: "#"
 								}
 								target="_blank"
