@@ -304,6 +304,7 @@ if (proximaMesa) {
 		const dialog = document.getElementById(id)
 		const content = dialog.querySelector("div.relative")
 		dialog.classList.remove("hidden")
+		document.body.style.overflow = "hidden"; // Bloquea el scroll en el fondo
 		// Forzar reflow para reiniciar la animación
 		void content.offsetWidth
 		content.classList.remove("opacity-0", "scale-95")
@@ -314,6 +315,7 @@ if (proximaMesa) {
 		const dialog = document.getElementById(id)
 		const content = dialog.querySelector("div.relative")
 		content.classList.remove("opacity-100", "scale-100")
+		document.body.style.overflow = ""; // Restaura el scroll en el fondo
 		content.classList.add("opacity-0", "scale-95")
 		setTimeout(() => {
 			dialog.classList.add("hidden")
