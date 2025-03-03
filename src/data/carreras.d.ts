@@ -34,5 +34,5 @@ interface Condicion {
 }
 
 interface Mesa {
-    fecha: Date;
+    fecha: string;
 }

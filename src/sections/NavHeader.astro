@@ -1,6 +1,5 @@
 ---
-import LogoPagina from "@components/LogoPagina.astro";
-
+import LogoPagina from "@components/LogoPagina.astro"
 ---
 
 <header
@@ -9,6 +8,7 @@ import LogoPagina from "@components/LogoPagina.astro";
 	<LogoPagina />
 	<!-- Menu -->
 	<nav class="flex flex-row gap-2 items-center justify-center shrink-0 relative">
-		<md-filled-button href="/mesas" class="px-6">Mesas De Examenes</md-filled-button>
+		<md-filled-button onclick="openDialog('dialog-1')" class="px-6"> Mesas De Examenes </md-filled-button>
 	</nav>
 </header>
+<!-- Componente de Dialog -->

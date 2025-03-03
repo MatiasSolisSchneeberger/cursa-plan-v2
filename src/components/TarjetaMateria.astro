@@ -1,49 +1,353 @@
 ---
-import MateriaRequisito from "./MateriaRequisito.astro";
-import RequisitosPara from "./RequisitosPara.astro";
-import ToggleMateria from "./ToggleMateria.jsx";
+import {Icon} from "astro-icon/components"
+import RequisitosPara from "./RequisitosPara.astro"
 
 interface Props {
-	materia: string;
-	codigo: number;
-	paraCursar: Array<condicion> | null;
-	paraRendir: Array<condicion> | null;
-	planDeEstudio: string | null;
-	mesas: Array<mesa> | null;
-	theme?: string;
+	materia: string
+	codigo: number
+	paraCursar: Array<condicion> | null
+	paraRendir: Array<condicion> | null
+	planDeEstudio: string | null
+	mesas: Array<mesa> | null
+	theme?: string
 }
 interface condicion {
-	mat: string;
-	cond: "R" | "A";
+	mat: string
+	cond: "R" | "A"
 }
 interface mesa {
-	fecha: Date;
+	fecha: string
 }
 
-const { materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas, theme } = Astro.props;
+const {materia, paraCursar, paraRendir, planDeEstudio, mesas, theme} = Astro.props
+
+const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
+
+const formatDate = (fecha: string | null) => {
+	if (!fecha || typeof fecha !== "string") return null // Si es null o no es string, devolver null
+
+	const dateParts = fecha.split("-")
+	if (dateParts.length !== 3) return null // Si el formato no es "aaaa-mm-d", devolver null
+
+	const [year, month, day] = dateParts
+
+	if (!year || !month || !day) return null // Si falta algún dato, devolver null
+
+	return `${day.padStart(2, "0")}/${month.padStart(2, "0")}/${year.slice(-2)}`
+}
+
+// Si `mesas` es null o vacío, que sea un array vacío para evitar errores
+const sortedMesas = (mesas ?? [])
+	.filter((mesa) => mesa.fecha)
+	.sort((a, b) => {
+		return new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
+	})
+const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null
+
+let eventUrl = ""
+if (proximaMesa) {
+	// Convertir la fecha en objeto Date (se asume el formato "aaaa-mm-d")
+	const examDate = new Date(proximaMesa.fecha)
+	const year = examDate.getFullYear().toString()
+	const month = (examDate.getMonth() + 1).toString().padStart(2, "0")
+	const day = examDate.getDate().toString().padStart(2, "0")
+	// Para un evento de día completo, el formato es: YYYYMMDD (inicio) y el día siguiente para el fin.
+	const startDate = `${year}${month}${day}`
+	const examDateNext = new Date(examDate)
+	examDateNext.setDate(examDate.getDate() + 1)
+	const yearNext = examDateNext.getFullYear().toString()
+	const monthNext = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
+	const dayNext = examDateNext.getDate().toString().padStart(2, "0")
+	const endDate = `${yearNext}${monthNext}${dayNext}`
+	const eventTitle = encodeURIComponent(`Examen De ${materia}`)
+	eventUrl = `${baseURL}&text=${eventTitle}&dates=${startDate}/${endDate}`
+}
 ---
 
 <article
-	id={materia}
-	class=`theme-${theme} w-full rounded-3xl border-solid border-outline border p-2 flex flex-col gap-2 items-center justify-start flex-1 relative overflow-hidden`>
-	<!-- Info de la materia -->
-	<div class="flex flex-row w-full gap-2.5 items-center justify-center relative">
-		<!-- Nombre de la Materia -->
-			<div
-				class="bg-[var(--md-sys-color-primary-container)] w-full rounded-2xl flex flex-col gap-2 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
-				<!-- Titulo Materia -->
-				<ToggleMateria
-					materia={materia}
-					mesas={mesas}
-					planDeEstudio={planDeEstudio}
-					client:visible
-				/>
-			</div>
-	</div>
+	class={`theme-${theme} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}>
+	<header
+		class="bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] rounded-2xl p-1.5 flex flex-row gap-2.5 items-center w-full justify-center self-stretch shrink-0 relative">
+		<h3 class="text-center text-headline-small relative flex-1 flex items-center justify-center text-pretty">
+			{materia}
+		</h3>
+	</header>
+
 	<!-- Requisitos -->
-	<div
-		class="flex w-full flex-col lg:flex-row gap-2.5 items-start justify-start flex-1 relative">
-		<RequisitosPara CursarRendir="Cursar" requisitos={paraCursar}/>
-		<RequisitosPara CursarRendir="Rendir" requisitos={paraRendir}/>
-	</div>
+	<section class="flex w-full flex-col lg:flex-row gap-2.5 items-start justify-start relative">
+		<RequisitosPara CursarRendir="Cursar" requisitos={paraCursar} />
+		<RequisitosPara CursarRendir="Rendir" requisitos={paraRendir} />
+	</section>
+
+	<!-- Footer -->
+	<footer class="flex w-full flex-col lg:flex-row gap-2.5 items-start justify-start relative overflow-hidden">
+		<div
+			class="w-full lg:w-1/2 sm:flex-1 bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+			<header
+				class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+				{
+					proximaMesa ?
+						<>
+							<h4>Proxima Mesa de Examen:</h4>
+							<p>{`${formatDate(proximaMesa.fecha)}`}</p>
+						</>
+					:	<h4>No hay Fechas</h4>
+				}
+			</header>
+			<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+				<md-outlined-button
+					class="px-6 w-full flex-1 lg:w-1/2"
+					onclick={`openDialog('dialog-${materia}')`}
+					disabled={!proximaMesa}>
+					Ver Mas
+				</md-outlined-button>
+				<md-filled-button
+					class="px-6 w-full flex-1 lg:w-1/2"
+					trailing-icon
+					href={eventUrl}
+					target="_blank"
+					disabled={!proximaMesa}>
+					Agendar
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						slot="icon"
+						class={!proximaMesa ? "grayscale-100" : ""}
+						x="0px"
+						y="0px"
+						viewBox="0 0 200 200"
+						enable-background="new 0 0 200 200"
+						xml:space="preserve">
+						<g>
+							<g transform="translate(3.75 3.75)">
+								<path
+									fill="#FFFFFF"
+									d="M148.882,43.618l-47.368-5.263l-57.895,5.263L38.355,96.25l5.263,52.632l52.632,6.579l52.632-6.579    l5.263-53.947L148.882,43.618z"
+								></path>
+								<path
+									fill="#1A73E8"
+									d="M65.211,125.276c-3.934-2.658-6.658-6.539-8.145-11.671l9.132-3.763c0.829,3.158,2.276,5.605,4.342,7.342    c2.053,1.737,4.553,2.592,7.474,2.592c2.987,0,5.553-0.908,7.697-2.724s3.224-4.132,3.224-6.934c0-2.868-1.132-5.211-3.395-7.026    s-5.105-2.724-8.5-2.724h-5.276v-9.039H76.5c2.921,0,5.382-0.789,7.382-2.368c2-1.579,3-3.737,3-6.487    c0-2.447-0.895-4.395-2.684-5.855s-4.053-2.197-6.803-2.197c-2.684,0-4.816,0.711-6.395,2.145s-2.724,3.197-3.447,5.276    l-9.039-3.763c1.197-3.395,3.395-6.395,6.618-8.987c3.224-2.592,7.342-3.895,12.342-3.895c3.697,0,7.026,0.711,9.974,2.145    c2.947,1.434,5.263,3.421,6.934,5.947c1.671,2.539,2.5,5.382,2.5,8.539c0,3.224-0.776,5.947-2.329,8.184    c-1.553,2.237-3.461,3.947-5.724,5.145v0.539c2.987,1.25,5.421,3.158,7.342,5.724c1.908,2.566,2.868,5.632,2.868,9.211    s-0.908,6.776-2.724,9.579c-1.816,2.803-4.329,5.013-7.513,6.618c-3.197,1.605-6.789,2.421-10.776,2.421    C73.408,129.263,69.145,127.934,65.211,125.276z"
+								></path>
+								<path
+									fill="#1A73E8"
+									d="M121.25,79.961l-9.974,7.25l-5.013-7.605l17.987-12.974h6.895v61.197h-9.895L121.25,79.961z"></path>
+								<path
+									fill="#EA4335"
+									d="M148.882,196.25l47.368-47.368l-23.684-10.526l-23.684,10.526l-10.526,23.684L148.882,196.25z"></path>
+								<path fill="#34A853" d="M33.092,172.566l10.526,23.684h105.263v-47.368H43.618L33.092,172.566z"></path>
+								<path
+									fill="#4285F4"
+									d="M12.039-3.75C3.316-3.75-3.75,3.316-3.75,12.039v136.842l23.684,10.526l23.684-10.526V43.618h105.263    l10.526-23.684L148.882-3.75H12.039z"
+								></path>
+								<path fill="#188038" d="M-3.75,148.882v31.579c0,8.724,7.066,15.789,15.789,15.789h31.579v-47.368H-3.75z"
+								></path>
+								<path fill="#FBBC04" d="M148.882,43.618v105.263h47.368V43.618l-23.684-10.526L148.882,43.618z"></path>
+								<path fill="#1967D2" d="M196.25,43.618V12.039c0-8.724-7.066-15.789-15.789-15.789h-31.579v47.368H196.25z"
+								></path>
+							</g>
+						</g>
+					</svg>
+				</md-filled-button>
+			</footer>
+		</div>
+		<div
+			class="w-full lg:w-1/2 sm:flex-1 bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+			<header
+				class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+				Plan De Estudio
+			</header>
+			<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+				<md-outlined-button class="px-6 w-full flex-1" disabled={!planDeEstudio}>Ver</md-outlined-button>
+				<md-filled-button class="px-6 w-full flex-1" disabled={!planDeEstudio}>Descargar</md-filled-button>
+			</footer>
+		</div>
+	</footer>
 </article>
+
+<!-- Aside: Lista de todas las mesas -->
+<aside id=`dialog-${materia}` class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+	<!-- Backdrop -->
+	<div
+		class="fixed inset-0 bg-black opacity-25 ease-in-out transition-all duration-300"
+		onclick=`closeDialog('dialog-${materia}')`>
+	</div>
+
+	<!-- Contenedor del dialog -->
+	<div
+		class="relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
+		<!-- Contenido superior -->
+		<div class="flex flex-col items-center justify-center gap-2.5 relative">
+			<!-- Icono -->
+			<div class="text-[var(--md-sys-color-primary)]">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+					<path
+						d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z">
+					</path>
+					<path
+						d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z">
+					</path>
+				</svg>
+			</div>
+			<!-- Título -->
+			<h2 class="text-headline-small text-[var(--md-sys-color-on-surface)]">{materia}</h2>
+		</div>
+
+		<!-- Lista con scroll -->
+		<div class="flex-1 overflow-y-auto overscroll-contain py-2 w-full">
+			<md-list>
+				{
+					sortedMesas.map((mesa, index) => {
+						const formattedDate = formatDate(mesa.fecha)
+						const generateCalendarLink = (fecha: string) => {
+							const examDate = new Date(fecha)
+							const year = examDate.getFullYear()
+							const month = (examDate.getMonth() + 1).toString().padStart(2, "0")
+							const day = examDate.getDate().toString().padStart(2, "0")
+
+							const startDate = `${year}${month}${day}`
+							const examDateNext = new Date(examDate)
+							examDateNext.setDate(examDate.getDate() + 1)
+							const endDate = `${examDateNext.getFullYear()}${(examDateNext.getMonth() + 1).toString().padStart(2, "0")}${examDateNext.getDate().toString().padStart(2, "0")}`
+
+							return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
+						}
+
+						return (
+							<>
+								<md-list-item>
+									<div>
+										<strong>Mesa {index + 1}:</strong> {formattedDate}
+									</div>
+									<md-outlined-button
+										href={generateCalendarLink(mesa.fecha)}
+										target="_blank"
+										class="pl-4 pr-6 w-min"
+										slot="end"
+										aria-label="Agendar en Google Calendar">
+										Agendar
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											version="1.1"
+											id="Livello_1"
+											slot="icon"
+											x="0px"
+											y="0px"
+											viewBox="0 0 200 200"
+											enable-background="new 0 0 200 200"
+											xml:space="preserve">
+											<g>
+												<g transform="translate(3.75 3.75)">
+													<path
+														fill="#FFFFFF"
+														d="M148.882,43.618l-47.368-5.263l-57.895,5.263L38.355,96.25l5.263,52.632l52.632,6.579l52.632-6.579    l5.263-53.947L148.882,43.618z"
+													/>
+													<path
+														fill="#1A73E8"
+														d="M65.211,125.276c-3.934-2.658-6.658-6.539-8.145-11.671l9.132-3.763c0.829,3.158,2.276,5.605,4.342,7.342    c2.053,1.737,4.553,2.592,7.474,2.592c2.987,0,5.553-0.908,7.697-2.724s3.224-4.132,3.224-6.934c0-2.868-1.132-5.211-3.395-7.026    s-5.105-2.724-8.5-2.724h-5.276v-9.039H76.5c2.921,0,5.382-0.789,7.382-2.368c2-1.579,3-3.737,3-6.487    c0-2.447-0.895-4.395-2.684-5.855s-4.053-2.197-6.803-2.197c-2.684,0-4.816,0.711-6.395,2.145s-2.724,3.197-3.447,5.276    l-9.039-3.763c1.197-3.395,3.395-6.395,6.618-8.987c3.224-2.592,7.342-3.895,12.342-3.895c3.697,0,7.026,0.711,9.974,2.145    c2.947,1.434,5.263,3.421,6.934,5.947c1.671,2.539,2.5,5.382,2.5,8.539c0,3.224-0.776,5.947-2.329,8.184    c-1.553,2.237-3.461,3.947-5.724,5.145v0.539c2.987,1.25,5.421,3.158,7.342,5.724c1.908,2.566,2.868,5.632,2.868,9.211    s-0.908,6.776-2.724,9.579c-1.816,2.803-4.329,5.013-7.513,6.618c-3.197,1.605-6.789,2.421-10.776,2.421    C73.408,129.263,69.145,127.934,65.211,125.276z"
+													/>
+													<path
+														fill="#1A73E8"
+														d="M121.25,79.961l-9.974,7.25l-5.013-7.605l17.987-12.974h6.895v61.197h-9.895L121.25,79.961z"
+													/>
+													<path
+														fill="#EA4335"
+														d="M148.882,196.25l47.368-47.368l-23.684-10.526l-23.684,10.526l-10.526,23.684L148.882,196.25z"
+													/>
+													<path
+														fill="#34A853"
+														d="M33.092,172.566l10.526,23.684h105.263v-47.368H43.618L33.092,172.566z"
+													/>
+													<path
+														fill="#4285F4"
+														d="M12.039-3.75C3.316-3.75-3.75,3.316-3.75,12.039v136.842l23.684,10.526l23.684-10.526V43.618h105.263    l10.526-23.684L148.882-3.75H12.039z"
+													/>
+													<path
+														fill="#188038"
+														d="M-3.75,148.882v31.579c0,8.724,7.066,15.789,15.789,15.789h31.579v-47.368H-3.75z"
+													/>
+													<path
+														fill="#FBBC04"
+														d="M148.882,43.618v105.263h47.368V43.618l-23.684-10.526L148.882,43.618z"
+													/>
+													<path
+														fill="#1967D2"
+														d="M196.25,43.618V12.039c0-8.724-7.066-15.789-15.789-15.789h-31.579v47.368H196.25z"
+													/>
+												</g>
+											</g>
+										</svg>
+									</md-outlined-button>
+								</md-list-item>
+								<md-divider />
+							</>
+						)
+					})
+				}
+			</md-list>
+		</div>
+
+		<!-- Botón -->
+		<div class="pt-4 text-center">
+			<md-filled-button onclick=`closeDialog('dialog-${materia}')` class="px-6 w-min">Cerrar</md-filled-button>
+		</div>
+	</div>
+</aside>
+<script is:inline>
+	function openDialog(id) {
+		const dialog = document.getElementById(id)
+		const content = dialog.querySelector("div.relative")
+		dialog.classList.remove("hidden")
+		// Forzar reflow para reiniciar la animación
+		void content.offsetWidth
+		content.classList.remove("opacity-0", "scale-95")
+		content.classList.add("opacity-100", "scale-100")
+	}
+
+	function closeDialog(id) {
+		const dialog = document.getElementById(id)
+		const content = dialog.querySelector("div.relative")
+		content.classList.remove("opacity-100", "scale-100")
+		content.classList.add("opacity-0", "scale-95")
+		setTimeout(() => {
+			dialog.classList.add("hidden")
+		}, 300)
+	}
+</script>
+
+<style>
+	/* Animación de apertura del dialog */
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	/* Animación de cierre del dialog */
+	@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+
+	/* Estilos para el backdrop con animación */
+	.dialog-backdrop {
+		animation: fadeIn 300ms ease-out forwards;
+	}
+
+	.dialog-backdrop.hidden {
+		animation: fadeOut 300ms ease-in forwards;
+	}
+</style>
