@@ -25,7 +25,7 @@
 	--md-sys-typescale-label-medium-size: 4rem;
 	--md-sys-typescale-label-medium-line-height: 5.333333333333333rem;
 	--md-sys-typescale-label-medium-weight: 500;
-	
+
 	--md-sys-color-primary: rgb(68, 97, 122);
 	--md-sys-color-surface-tint: rgb(68 97 122);
 	--md-sys-color-on-primary: rgb(255, 255, 255);
@@ -143,6 +143,7 @@
 	--m3-elevation-5-box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3), 0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
+/* Bioquímica */
 [data-theme="light"] .theme-Bioquímica {
 	--md-sys-color-primary: rgb(55 105 61);
 	--md-sys-color-surface-tint: rgb(55 105 61);
@@ -247,6 +248,7 @@
 	--md-sys-color-surface-container-highest: rgb(49 54 48);
 }
 
+/* Ingeniería-en-Agrimensura */
 [data-theme="light"] .theme-Ingeniería-en-Agrimensura {
 	--md-sys-color-primary: rgb(140 79 39);
 	--md-sys-color-surface-tint: rgb(140 79 39);
@@ -351,6 +353,7 @@
 	--md-sys-color-surface-container-highest: rgb(61 51 45);
 }
 
+/* Ingeniería-Eléctrica */
 [data-theme="light"] .theme-Ingeniería-Eléctrica {
 	--md-sys-color-primary: rgb(111 93 14);
 	--md-sys-color-surface-tint: rgb(111 93 14);
@@ -455,6 +458,7 @@
 	--md-sys-color-surface-container-highest: rgb(56 53 43);
 }
 
+/* Ingeniería-en-Electrónica */
 [data-theme="light"] .theme-Ingeniería-en-Electrónica {
 	--md-sys-color-primary: rgb(24 107 82);
 	--md-sys-color-surface-tint: rgb(24 107 82);
@@ -559,6 +563,7 @@
 	--md-sys-color-surface-container-highest: rgb(48 54 51);
 }
 
+/* Licenciatura-en-Ciencias-Biológicas */
 [data-theme="light"] .theme-Licenciatura-en-Ciencias-Biológicas {
 	--md-sys-color-primary: rgb(62 104 55);
 	--md-sys-color-surface-tint: rgb(62 104 55);
@@ -663,6 +668,7 @@
 	--md-sys-color-surface-container-highest: rgb(50 54 48);
 }
 
+/* Licenciatura-en-Ciencias-Físicas */
 [data-theme="light"] .theme-Licenciatura-en-Ciencias-Físicas {
 	--md-sys-color-primary: rgb(27 101 133);
 	--md-sys-color-surface-tint: rgb(27 101 133);
@@ -767,6 +773,7 @@
 	--md-sys-color-surface-container-highest: rgb(49 53 57);
 }
 
+/* Licenciatura-en-Ciencias-Químicas */
 [data-theme="light"] .theme-Licenciatura-en-Ciencias-Químicas {
 	--md-sys-color-primary: rgb(143 75 56);
 	--md-sys-color-surface-tint: rgb(143 75 56);
@@ -870,6 +877,644 @@
 	--md-sys-color-surface-container-high: rgb(50 40 37);
 	--md-sys-color-surface-container-highest: rgb(61 50 48);
 }
+
+/* Licenciatura-en-Matemática */
+[data-theme="light"] .theme-Licenciatura-en-Matemática {
+	--md-sys-color-primary: rgb(138 80 34);
+	--md-sys-color-surface-tint: rgb(138 80 34);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(255 220 197);
+	--md-sys-color-on-primary-container: rgb(109 57 11);
+	--md-sys-color-secondary: rgb(117 88 69);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(255 220 197);
+	--md-sys-color-on-secondary-container: rgb(91 65 47);
+	--md-sys-color-tertiary: rgb(95 97 53);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(228 230 174);
+	--md-sys-color-on-tertiary-container: rgb(71 73 32);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(255 248 245);
+	--md-sys-color-on-background: rgb(34 26 21);
+	--md-sys-color-surface: rgb(255 248 245);
+	--md-sys-color-on-surface: rgb(34 26 21);
+	--md-sys-color-surface-variant: rgb(243 223 210);
+	--md-sys-color-on-surface-variant: rgb(82 68 59);
+	--md-sys-color-outline: rgb(132 116 106);
+	--md-sys-color-outline-variant: rgb(214 195 183);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(56 47 41);
+	--md-sys-color-inverse-on-surface: rgb(254 238 228);
+	--md-sys-color-inverse-primary: rgb(255 183 131);
+	--md-sys-color-primary-fixed: rgb(255 220 197);
+	--md-sys-color-on-primary-fixed: rgb(48 20 0);
+	--md-sys-color-primary-fixed-dim: rgb(255 183 131);
+	--md-sys-color-on-primary-fixed-variant: rgb(109 57 11);
+	--md-sys-color-secondary-fixed: rgb(255 220 197);
+	--md-sys-color-on-secondary-fixed: rgb(42 23 8);
+	--md-sys-color-secondary-fixed-dim: rgb(228 191 167);
+	--md-sys-color-on-secondary-fixed-variant: rgb(91 65 47);
+	--md-sys-color-tertiary-fixed: rgb(228 230 174);
+	--md-sys-color-on-tertiary-fixed: rgb(27 29 0);
+	--md-sys-color-tertiary-fixed-dim: rgb(200 202 148);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(71 73 32);
+	--md-sys-color-surface-dim: rgb(231 215 206);
+	--md-sys-color-surface-bright: rgb(255 248 245);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(255 241 233);
+	--md-sys-color-surface-container: rgb(251 235 225);
+	--md-sys-color-surface-container-high: rgb(246 229 220);
+	--md-sys-color-surface-container-highest: rgb(240 223 214);
+}
+
+[data-theme="dark"] .theme-Licenciatura-en-Matemática {
+	--md-sys-color-primary: rgb(255 183 131);
+	--md-sys-color-surface-tint: rgb(255 183 131);
+	--md-sys-color-on-primary: rgb(79 37 0);
+	--md-sys-color-primary-container: rgb(109 57 11);
+	--md-sys-color-on-primary-container: rgb(255 220 197);
+	--md-sys-color-secondary: rgb(228 191 167);
+	--md-sys-color-on-secondary: rgb(66 43 27);
+	--md-sys-color-secondary-container: rgb(91 65 47);
+	--md-sys-color-on-secondary-container: rgb(255 220 197);
+	--md-sys-color-tertiary: rgb(200 202 148);
+	--md-sys-color-on-tertiary: rgb(48 51 11);
+	--md-sys-color-tertiary-container: rgb(71 73 32);
+	--md-sys-color-on-tertiary-container: rgb(228 230 174);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(25 18 13);
+	--md-sys-color-on-background: rgb(240 223 214);
+	--md-sys-color-surface: rgb(25 18 13);
+	--md-sys-color-on-surface: rgb(240 223 214);
+	--md-sys-color-surface-variant: rgb(82 68 59);
+	--md-sys-color-on-surface-variant: rgb(214 195 183);
+	--md-sys-color-outline: rgb(159 141 131);
+	--md-sys-color-outline-variant: rgb(82 68 59);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(240 223 214);
+	--md-sys-color-inverse-on-surface: rgb(56 47 41);
+	--md-sys-color-inverse-primary: rgb(138 80 34);
+	--md-sys-color-primary-fixed: rgb(255 220 197);
+	--md-sys-color-on-primary-fixed: rgb(48 20 0);
+	--md-sys-color-primary-fixed-dim: rgb(255 183 131);
+	--md-sys-color-on-primary-fixed-variant: rgb(109 57 11);
+	--md-sys-color-secondary-fixed: rgb(255 220 197);
+	--md-sys-color-on-secondary-fixed: rgb(42 23 8);
+	--md-sys-color-secondary-fixed-dim: rgb(228 191 167);
+	--md-sys-color-on-secondary-fixed-variant: rgb(91 65 47);
+	--md-sys-color-tertiary-fixed: rgb(228 230 174);
+	--md-sys-color-on-tertiary-fixed: rgb(27 29 0);
+	--md-sys-color-tertiary-fixed-dim: rgb(200 202 148);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(71 73 32);
+	--md-sys-color-surface-dim: rgb(25 18 13);
+	--md-sys-color-surface-bright: rgb(65 55 49);
+	--md-sys-color-surface-container-lowest: rgb(20 13 8);
+	--md-sys-color-surface-container-low: rgb(34 26 21);
+	--md-sys-color-surface-container: rgb(38 30 24);
+	--md-sys-color-surface-container-high: rgb(49 40 34);
+	--md-sys-color-surface-container-highest: rgb(60 51 45);
+}
+
+/* Licenciatura-en-Sistemas-de-Información */
+[data-theme="light"] .theme-Licenciatura-en-Sistemas-de-Información {
+	--md-sys-color-primary: rgb(64 95 144);
+	--md-sys-color-surface-tint: rgb(64 95 144);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(214 227 255);
+	--md-sys-color-on-primary-container: rgb(39 71 119);
+	--md-sys-color-secondary: rgb(86 95 113);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(218 226 249);
+	--md-sys-color-on-secondary-container: rgb(62 71 89);
+	--md-sys-color-tertiary: rgb(111 85 117);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(249 216 253);
+	--md-sys-color-on-tertiary-container: rgb(86 62 92);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(249 249 255);
+	--md-sys-color-on-background: rgb(25 28 32);
+	--md-sys-color-surface: rgb(249 249 255);
+	--md-sys-color-on-surface: rgb(25 28 32);
+	--md-sys-color-surface-variant: rgb(224 226 236);
+	--md-sys-color-on-surface-variant: rgb(68 71 78);
+	--md-sys-color-outline: rgb(116 119 127);
+	--md-sys-color-outline-variant: rgb(196 198 208);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(46 48 54);
+	--md-sys-color-inverse-on-surface: rgb(240 240 247);
+	--md-sys-color-inverse-primary: rgb(170 199 255);
+	--md-sys-color-primary-fixed: rgb(214 227 255);
+	--md-sys-color-on-primary-fixed: rgb(0 27 62);
+	--md-sys-color-primary-fixed-dim: rgb(170 199 255);
+	--md-sys-color-on-primary-fixed-variant: rgb(39 71 119);
+	--md-sys-color-secondary-fixed: rgb(218 226 249);
+	--md-sys-color-on-secondary-fixed: rgb(19 28 43);
+	--md-sys-color-secondary-fixed-dim: rgb(190 199 220);
+	--md-sys-color-on-secondary-fixed-variant: rgb(62 71 89);
+	--md-sys-color-tertiary-fixed: rgb(249 216 253);
+	--md-sys-color-on-tertiary-fixed: rgb(40 19 46);
+	--md-sys-color-tertiary-fixed-dim: rgb(220 188 224);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(86 62 92);
+	--md-sys-color-surface-dim: rgb(217 217 224);
+	--md-sys-color-surface-bright: rgb(249 249 255);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(243 243 250);
+	--md-sys-color-surface-container: rgb(237 237 244);
+	--md-sys-color-surface-container-high: rgb(231 232 238);
+	--md-sys-color-surface-container-highest: rgb(226 226 233);
+
+}
+
+[data-theme="dark"] .theme-Licenciatura-en-Sistemas-de-Información {
+	--md-sys-color-primary: rgb(170 199 255);
+	--md-sys-color-surface-tint: rgb(170 199 255);
+	--md-sys-color-on-primary: rgb(9 48 95);
+	--md-sys-color-primary-container: rgb(39 71 119);
+	--md-sys-color-on-primary-container: rgb(214 227 255);
+	--md-sys-color-secondary: rgb(190 199 220);
+	--md-sys-color-on-secondary: rgb(40 49 65);
+	--md-sys-color-secondary-container: rgb(62 71 89);
+	--md-sys-color-on-secondary-container: rgb(218 226 249);
+	--md-sys-color-tertiary: rgb(220 188 224);
+	--md-sys-color-on-tertiary: rgb(63 40 69);
+	--md-sys-color-tertiary-container: rgb(86 62 92);
+	--md-sys-color-on-tertiary-container: rgb(249 216 253);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(17 19 24);
+	--md-sys-color-on-background: rgb(226 226 233);
+	--md-sys-color-surface: rgb(17 19 24);
+	--md-sys-color-on-surface: rgb(226 226 233);
+	--md-sys-color-surface-variant: rgb(68 71 78);
+	--md-sys-color-on-surface-variant: rgb(196 198 208);
+	--md-sys-color-outline: rgb(142 144 153);
+	--md-sys-color-outline-variant: rgb(68 71 78);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(226 226 233);
+	--md-sys-color-inverse-on-surface: rgb(46 48 54);
+	--md-sys-color-inverse-primary: rgb(64 95 144);
+	--md-sys-color-primary-fixed: rgb(214 227 255);
+	--md-sys-color-on-primary-fixed: rgb(0 27 62);
+	--md-sys-color-primary-fixed-dim: rgb(170 199 255);
+	--md-sys-color-on-primary-fixed-variant: rgb(39 71 119);
+	--md-sys-color-secondary-fixed: rgb(218 226 249);
+	--md-sys-color-on-secondary-fixed: rgb(19 28 43);
+	--md-sys-color-secondary-fixed-dim: rgb(190 199 220);
+	--md-sys-color-on-secondary-fixed-variant: rgb(62 71 89);
+	--md-sys-color-tertiary-fixed: rgb(249 216 253);
+	--md-sys-color-on-tertiary-fixed: rgb(40 19 46);
+	--md-sys-color-tertiary-fixed-dim: rgb(220 188 224);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(86 62 92);
+	--md-sys-color-surface-dim: rgb(17 19 24);
+	--md-sys-color-surface-bright: rgb(55 57 62);
+	--md-sys-color-surface-container-lowest: rgb(12 14 19);
+	--md-sys-color-surface-container-low: rgb(25 28 32);
+	--md-sys-color-surface-container: rgb(29 32 36);
+	--md-sys-color-surface-container-high: rgb(40 42 47);
+	--md-sys-color-surface-container-highest: rgb(51 53 58);
+
+}
+
+/* Profesorado-en-Biología */
+[data-theme="light"] .theme-Profesorado-en-Biología {
+	--md-sys-color-primary: rgb(90 99 30);
+	--md-sys-color-surface-tint: rgb(90 99 30);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(223 233 149);
+	--md-sys-color-on-primary-container: rgb(67 75 6);
+	--md-sys-color-secondary: rgb(93 97 69);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(227 229 194);
+	--md-sys-color-on-secondary-container: rgb(70 73 47);
+	--md-sys-color-tertiary: rgb(59 102 91);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(189 236 222);
+	--md-sys-color-on-tertiary-container: rgb(34 78 68);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(252 250 237);
+	--md-sys-color-on-background: rgb(27 28 20);
+	--md-sys-color-surface: rgb(252 250 237);
+	--md-sys-color-on-surface: rgb(27 28 20);
+	--md-sys-color-surface-variant: rgb(228 227 210);
+	--md-sys-color-on-surface-variant: rgb(71 72 59);
+	--md-sys-color-outline: rgb(120 120 106);
+	--md-sys-color-outline-variant: rgb(200 199 183);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(48 49 40);
+	--md-sys-color-inverse-on-surface: rgb(243 241 228);
+	--md-sys-color-inverse-primary: rgb(194 205 124);
+	--md-sys-color-primary-fixed: rgb(223 233 149);
+	--md-sys-color-on-primary-fixed: rgb(25 30 0);
+	--md-sys-color-primary-fixed-dim: rgb(194 205 124);
+	--md-sys-color-on-primary-fixed-variant: rgb(67 75 6);
+	--md-sys-color-secondary-fixed: rgb(227 229 194);
+	--md-sys-color-on-secondary-fixed: rgb(26 29 7);
+	--md-sys-color-secondary-fixed-dim: rgb(198 201 167);
+	--md-sys-color-on-secondary-fixed-variant: rgb(70 73 47);
+	--md-sys-color-tertiary-fixed: rgb(189 236 222);
+	--md-sys-color-on-tertiary-fixed: rgb(0 32 26);
+	--md-sys-color-tertiary-fixed-dim: rgb(162 208 194);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(34 78 68);
+	--md-sys-color-surface-dim: rgb(220 218 206);
+	--md-sys-color-surface-bright: rgb(252 250 237);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(246 244 231);
+	--md-sys-color-surface-container: rgb(240 238 225);
+	--md-sys-color-surface-container-high: rgb(234 233 220);
+	--md-sys-color-surface-container-highest: rgb(228 227 214);
+
+}
+
+[data-theme="dark"] .theme-Profesorado-en-Biología {
+	--md-sys-color-primary: rgb(194 205 124);
+	--md-sys-color-surface-tint: rgb(194 205 124);
+	--md-sys-color-on-primary: rgb(45 52 0);
+	--md-sys-color-primary-container: rgb(67 75 6);
+	--md-sys-color-on-primary-container: rgb(223 233 149);
+	--md-sys-color-secondary: rgb(198 201 167);
+	--md-sys-color-on-secondary: rgb(47 50 26);
+	--md-sys-color-secondary-container: rgb(70 73 47);
+	--md-sys-color-on-secondary-container: rgb(227 229 194);
+	--md-sys-color-tertiary: rgb(162 208 194);
+	--md-sys-color-on-tertiary: rgb(6 55 46);
+	--md-sys-color-tertiary-container: rgb(34 78 68);
+	--md-sys-color-on-tertiary-container: rgb(189 236 222);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(19 20 13);
+	--md-sys-color-on-background: rgb(228 227 214);
+	--md-sys-color-surface: rgb(19 20 13);
+	--md-sys-color-on-surface: rgb(228 227 214);
+	--md-sys-color-surface-variant: rgb(71 72 59);
+	--md-sys-color-on-surface-variant: rgb(200 199 183);
+	--md-sys-color-outline: rgb(145 146 131);
+	--md-sys-color-outline-variant: rgb(71 72 59);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(228 227 214);
+	--md-sys-color-inverse-on-surface: rgb(48 49 40);
+	--md-sys-color-inverse-primary: rgb(90 99 30);
+	--md-sys-color-primary-fixed: rgb(223 233 149);
+	--md-sys-color-on-primary-fixed: rgb(25 30 0);
+	--md-sys-color-primary-fixed-dim: rgb(194 205 124);
+	--md-sys-color-on-primary-fixed-variant: rgb(67 75 6);
+	--md-sys-color-secondary-fixed: rgb(227 229 194);
+	--md-sys-color-on-secondary-fixed: rgb(26 29 7);
+	--md-sys-color-secondary-fixed-dim: rgb(198 201 167);
+	--md-sys-color-on-secondary-fixed-variant: rgb(70 73 47);
+	--md-sys-color-tertiary-fixed: rgb(189 236 222);
+	--md-sys-color-on-tertiary-fixed: rgb(0 32 26);
+	--md-sys-color-tertiary-fixed-dim: rgb(162 208 194);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(34 78 68);
+	--md-sys-color-surface-dim: rgb(19 20 13);
+	--md-sys-color-surface-bright: rgb(57 58 49);
+	--md-sys-color-surface-container-lowest: rgb(14 15 8);
+	--md-sys-color-surface-container-low: rgb(27 28 20);
+	--md-sys-color-surface-container: rgb(31 32 24);
+	--md-sys-color-surface-container-high: rgb(42 43 34);
+	--md-sys-color-surface-container-highest: rgb(53 53 45);
+}
+
+/* Profesorado-en-Física */
+[data-theme="light"] .theme-Profesorado-en-Física {
+	--md-sys-color-primary: rgb(0 105 107);
+	--md-sys-color-surface-tint: rgb(0 105 107);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(156 241 243);
+	--md-sys-color-on-primary-container: rgb(0 79 81);
+	--md-sys-color-secondary: rgb(74 99 99);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(204 232 232);
+	--md-sys-color-on-secondary-container: rgb(50 75 76);
+	--md-sys-color-tertiary: rgb(76 95 124);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(212 227 255);
+	--md-sys-color-on-tertiary-container: rgb(53 72 99);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(244 251 250);
+	--md-sys-color-on-background: rgb(22 29 29);
+	--md-sys-color-surface: rgb(244 251 250);
+	--md-sys-color-on-surface: rgb(22 29 29);
+	--md-sys-color-surface-variant: rgb(218 228 228);
+	--md-sys-color-on-surface-variant: rgb(63 73 73);
+	--md-sys-color-outline: rgb(111 121 121);
+	--md-sys-color-outline-variant: rgb(190 200 200);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(43 50 50);
+	--md-sys-color-inverse-on-surface: rgb(236 242 241);
+	--md-sys-color-inverse-primary: rgb(128 212 214);
+	--md-sys-color-primary-fixed: rgb(156 241 243);
+	--md-sys-color-on-primary-fixed: rgb(0 32 33);
+	--md-sys-color-primary-fixed-dim: rgb(128 212 214);
+	--md-sys-color-on-primary-fixed-variant: rgb(0 79 81);
+	--md-sys-color-secondary-fixed: rgb(204 232 232);
+	--md-sys-color-on-secondary-fixed: rgb(4 31 32);
+	--md-sys-color-secondary-fixed-dim: rgb(176 204 204);
+	--md-sys-color-on-secondary-fixed-variant: rgb(50 75 76);
+	--md-sys-color-tertiary-fixed: rgb(212 227 255);
+	--md-sys-color-on-tertiary-fixed: rgb(6 28 54);
+	--md-sys-color-tertiary-fixed-dim: rgb(180 200 233);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(53 72 99);
+	--md-sys-color-surface-dim: rgb(213 219 219);
+	--md-sys-color-surface-bright: rgb(244 251 250);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(239 245 244);
+	--md-sys-color-surface-container: rgb(233 239 239);
+	--md-sys-color-surface-container-high: rgb(227 233 233);
+	--md-sys-color-surface-container-highest: rgb(221 228 227);
+
+}
+
+[data-theme="dark"] .theme-Profesorado-en-Física {
+	--md-sys-color-primary: rgb(128 212 214);
+	--md-sys-color-surface-tint: rgb(128 212 214);
+	--md-sys-color-on-primary: rgb(0 55 56);
+	--md-sys-color-primary-container: rgb(0 79 81);
+	--md-sys-color-on-primary-container: rgb(156 241 243);
+	--md-sys-color-secondary: rgb(176 204 204);
+	--md-sys-color-on-secondary: rgb(27 52 53);
+	--md-sys-color-secondary-container: rgb(50 75 76);
+	--md-sys-color-on-secondary-container: rgb(204 232 232);
+	--md-sys-color-tertiary: rgb(180 200 233);
+	--md-sys-color-on-tertiary: rgb(29 49 76);
+	--md-sys-color-tertiary-container: rgb(53 72 99);
+	--md-sys-color-on-tertiary-container: rgb(212 227 255);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(14 20 21);
+	--md-sys-color-on-background: rgb(221 228 227);
+	--md-sys-color-surface: rgb(14 20 21);
+	--md-sys-color-on-surface: rgb(221 228 227);
+	--md-sys-color-surface-variant: rgb(63 73 73);
+	--md-sys-color-on-surface-variant: rgb(190 200 200);
+	--md-sys-color-outline: rgb(137 147 146);
+	--md-sys-color-outline-variant: rgb(63 73 73);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(221 228 227);
+	--md-sys-color-inverse-on-surface: rgb(43 50 50);
+	--md-sys-color-inverse-primary: rgb(0 105 107);
+	--md-sys-color-primary-fixed: rgb(156 241 243);
+	--md-sys-color-on-primary-fixed: rgb(0 32 33);
+	--md-sys-color-primary-fixed-dim: rgb(128 212 214);
+	--md-sys-color-on-primary-fixed-variant: rgb(0 79 81);
+	--md-sys-color-secondary-fixed: rgb(204 232 232);
+	--md-sys-color-on-secondary-fixed: rgb(4 31 32);
+	--md-sys-color-secondary-fixed-dim: rgb(176 204 204);
+	--md-sys-color-on-secondary-fixed-variant: rgb(50 75 76);
+	--md-sys-color-tertiary-fixed: rgb(212 227 255);
+	--md-sys-color-on-tertiary-fixed: rgb(6 28 54);
+	--md-sys-color-tertiary-fixed-dim: rgb(180 200 233);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(53 72 99);
+	--md-sys-color-surface-dim: rgb(14 20 21);
+	--md-sys-color-surface-bright: rgb(52 58 58);
+	--md-sys-color-surface-container-lowest: rgb(9 15 15);
+	--md-sys-color-surface-container-low: rgb(22 29 29);
+	--md-sys-color-surface-container: rgb(26 33 33);
+	--md-sys-color-surface-container-high: rgb(37 43 43);
+	--md-sys-color-surface-container-highest: rgb(47 54 54);
+}
+
+/* Profesorado-en-Matemática */
+[data-theme="light"] .theme-Profesorado-en-Matemática {
+	--md-sys-color-primary: rgb(90 88 145);
+	--md-sys-color-surface-tint: rgb(90 88 145);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(227 223 255);
+	--md-sys-color-on-primary-container: rgb(66 64 120);
+	--md-sys-color-secondary: rgb(94 92 113);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(227 224 249);
+	--md-sys-color-on-secondary-container: rgb(70 69 89);
+	--md-sys-color-tertiary: rgb(122 83 104);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(255 216 234);
+	--md-sys-color-on-tertiary-container: rgb(96 59 80);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(252 248 255);
+	--md-sys-color-on-background: rgb(28 27 33);
+	--md-sys-color-surface: rgb(252 248 255);
+	--md-sys-color-on-surface: rgb(28 27 33);
+	--md-sys-color-surface-variant: rgb(228 225 236);
+	--md-sys-color-on-surface-variant: rgb(71 70 79);
+	--md-sys-color-outline: rgb(120 118 128);
+	--md-sys-color-outline-variant: rgb(200 197 208);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(49 48 54);
+	--md-sys-color-inverse-on-surface: rgb(243 239 247);
+	--md-sys-color-inverse-primary: rgb(195 192 255);
+	--md-sys-color-primary-fixed: rgb(227 223 255);
+	--md-sys-color-on-primary-fixed: rgb(22 19 74);
+	--md-sys-color-primary-fixed-dim: rgb(195 192 255);
+	--md-sys-color-on-primary-fixed-variant: rgb(66 64 120);
+	--md-sys-color-secondary-fixed: rgb(227 224 249);
+	--md-sys-color-on-secondary-fixed: rgb(26 26 44);
+	--md-sys-color-secondary-fixed-dim: rgb(199 196 221);
+	--md-sys-color-on-secondary-fixed-variant: rgb(70 69 89);
+	--md-sys-color-tertiary-fixed: rgb(255 216 234);
+	--md-sys-color-on-tertiary-fixed: rgb(47 17 35);
+	--md-sys-color-tertiary-fixed-dim: rgb(234 185 209);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(96 59 80);
+	--md-sys-color-surface-dim: rgb(220 217 224);
+	--md-sys-color-surface-bright: rgb(252 248 255);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(246 242 250);
+	--md-sys-color-surface-container: rgb(240 236 244);
+	--md-sys-color-surface-container-high: rgb(234 231 239);
+	--md-sys-color-surface-container-highest: rgb(229 225 233);
+}
+
+[data-theme="dark"] .theme-Profesorado-en-Matemática {
+	--md-sys-color-primary: rgb(195 192 255);
+	--md-sys-color-surface-tint: rgb(195 192 255);
+	--md-sys-color-on-primary: rgb(44 41 96);
+	--md-sys-color-primary-container: rgb(66 64 120);
+	--md-sys-color-on-primary-container: rgb(227 223 255);
+	--md-sys-color-secondary: rgb(199 196 221);
+	--md-sys-color-on-secondary: rgb(47 46 66);
+	--md-sys-color-secondary-container: rgb(70 69 89);
+	--md-sys-color-on-secondary-container: rgb(227 224 249);
+	--md-sys-color-tertiary: rgb(234 185 209);
+	--md-sys-color-on-tertiary: rgb(71 38 57);
+	--md-sys-color-tertiary-container: rgb(96 59 80);
+	--md-sys-color-on-tertiary-container: rgb(255 216 234);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(19 19 24);
+	--md-sys-color-on-background: rgb(229 225 233);
+	--md-sys-color-surface: rgb(19 19 24);
+	--md-sys-color-on-surface: rgb(229 225 233);
+	--md-sys-color-surface-variant: rgb(71 70 79);
+	--md-sys-color-on-surface-variant: rgb(200 197 208);
+	--md-sys-color-outline: rgb(146 143 154);
+	--md-sys-color-outline-variant: rgb(71 70 79);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(229 225 233);
+	--md-sys-color-inverse-on-surface: rgb(49 48 54);
+	--md-sys-color-inverse-primary: rgb(90 88 145);
+	--md-sys-color-primary-fixed: rgb(227 223 255);
+	--md-sys-color-on-primary-fixed: rgb(22 19 74);
+	--md-sys-color-primary-fixed-dim: rgb(195 192 255);
+	--md-sys-color-on-primary-fixed-variant: rgb(66 64 120);
+	--md-sys-color-secondary-fixed: rgb(227 224 249);
+	--md-sys-color-on-secondary-fixed: rgb(26 26 44);
+	--md-sys-color-secondary-fixed-dim: rgb(199 196 221);
+	--md-sys-color-on-secondary-fixed-variant: rgb(70 69 89);
+	--md-sys-color-tertiary-fixed: rgb(255 216 234);
+	--md-sys-color-on-tertiary-fixed: rgb(47 17 35);
+	--md-sys-color-tertiary-fixed-dim: rgb(234 185 209);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(96 59 80);
+	--md-sys-color-surface-dim: rgb(19 19 24);
+	--md-sys-color-surface-bright: rgb(57 56 63);
+	--md-sys-color-surface-container-lowest: rgb(14 14 19);
+	--md-sys-color-surface-container-low: rgb(28 27 33);
+	--md-sys-color-surface-container: rgb(32 31 37);
+	--md-sys-color-surface-container-high: rgb(42 41 47);
+	--md-sys-color-surface-container-highest: rgb(53 52 58);
+}
+
+/* Profesorado-en-Ciencias-Químicas-y-del-Ambiente */
+[data-theme="light"] .theme-Profesorado-en-Ciencias-Químicas-y-del-Ambiente {
+	--md-sys-color-primary: rgb(142 73 88);
+	--md-sys-color-surface-tint: rgb(142 73 88);
+	--md-sys-color-on-primary: rgb(255 255 255);
+	--md-sys-color-primary-container: rgb(255 217 222);
+	--md-sys-color-on-primary-container: rgb(113 51 65);
+	--md-sys-color-secondary: rgb(117 86 91);
+	--md-sys-color-on-secondary: rgb(255 255 255);
+	--md-sys-color-secondary-container: rgb(255 217 222);
+	--md-sys-color-on-secondary-container: rgb(92 63 68);
+	--md-sys-color-tertiary: rgb(122 88 50);
+	--md-sys-color-on-tertiary: rgb(255 255 255);
+	--md-sys-color-tertiary-container: rgb(255 220 187);
+	--md-sys-color-on-tertiary-container: rgb(95 64 29);
+	--md-sys-color-error: rgb(186 26 26);
+	--md-sys-color-on-error: rgb(255 255 255);
+	--md-sys-color-error-container: rgb(255 218 214);
+	--md-sys-color-on-error-container: rgb(147 0 10);
+	--md-sys-color-background: rgb(255 248 247);
+	--md-sys-color-on-background: rgb(34 25 27);
+	--md-sys-color-surface: rgb(255 248 247);
+	--md-sys-color-on-surface: rgb(34 25 27);
+	--md-sys-color-surface-variant: rgb(243 221 224);
+	--md-sys-color-on-surface-variant: rgb(82 67 69);
+	--md-sys-color-outline: rgb(132 115 117);
+	--md-sys-color-outline-variant: rgb(214 194 196);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(56 46 47);
+	--md-sys-color-inverse-on-surface: rgb(254 237 238);
+	--md-sys-color-inverse-primary: rgb(255 178 191);
+	--md-sys-color-primary-fixed: rgb(255 217 222);
+	--md-sys-color-on-primary-fixed: rgb(58 7 23);
+	--md-sys-color-primary-fixed-dim: rgb(255 178 191);
+	--md-sys-color-on-primary-fixed-variant: rgb(113 51 65);
+	--md-sys-color-secondary-fixed: rgb(255 217 222);
+	--md-sys-color-on-secondary-fixed: rgb(43 21 25);
+	--md-sys-color-secondary-fixed-dim: rgb(228 189 194);
+	--md-sys-color-on-secondary-fixed-variant: rgb(92 63 68);
+	--md-sys-color-tertiary-fixed: rgb(255 220 187);
+	--md-sys-color-on-tertiary-fixed: rgb(44 23 0);
+	--md-sys-color-tertiary-fixed-dim: rgb(235 190 144);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(95 64 29);
+	--md-sys-color-surface-dim: rgb(231 214 216);
+	--md-sys-color-surface-bright: rgb(255 248 247);
+	--md-sys-color-surface-container-lowest: rgb(255 255 255);
+	--md-sys-color-surface-container-low: rgb(255 240 241);
+	--md-sys-color-surface-container: rgb(251 234 235);
+	--md-sys-color-surface-container-high: rgb(245 228 230);
+	--md-sys-color-surface-container-highest: rgb(240 222 224);
+
+}
+
+[data-theme="dark"] .theme-Profesorado-en-Ciencias-Químicas-y-del-Ambiente {
+	--md-sys-color-primary: rgb(255 178 191);
+	--md-sys-color-surface-tint: rgb(255 178 191);
+	--md-sys-color-on-primary: rgb(86 29 43);
+	--md-sys-color-primary-container: rgb(113 51 65);
+	--md-sys-color-on-primary-container: rgb(255 217 222);
+	--md-sys-color-secondary: rgb(228 189 194);
+	--md-sys-color-on-secondary: rgb(67 41 46);
+	--md-sys-color-secondary-container: rgb(92 63 68);
+	--md-sys-color-on-secondary-container: rgb(255 217 222);
+	--md-sys-color-tertiary: rgb(235 190 144);
+	--md-sys-color-on-tertiary: rgb(70 42 8);
+	--md-sys-color-tertiary-container: rgb(95 64 29);
+	--md-sys-color-on-tertiary-container: rgb(255 220 187);
+	--md-sys-color-error: rgb(255 180 171);
+	--md-sys-color-on-error: rgb(105 0 5);
+	--md-sys-color-error-container: rgb(147 0 10);
+	--md-sys-color-on-error-container: rgb(255 218 214);
+	--md-sys-color-background: rgb(25 17 19);
+	--md-sys-color-on-background: rgb(240 222 224);
+	--md-sys-color-surface: rgb(25 17 19);
+	--md-sys-color-on-surface: rgb(240 222 224);
+	--md-sys-color-surface-variant: rgb(82 67 69);
+	--md-sys-color-on-surface-variant: rgb(214 194 196);
+	--md-sys-color-outline: rgb(159 140 142);
+	--md-sys-color-outline-variant: rgb(82 67 69);
+	--md-sys-color-shadow: rgb(0 0 0);
+	--md-sys-color-scrim: rgb(0 0 0);
+	--md-sys-color-inverse-surface: rgb(240 222 224);
+	--md-sys-color-inverse-on-surface: rgb(56 46 47);
+	--md-sys-color-inverse-primary: rgb(142 73 88);
+	--md-sys-color-primary-fixed: rgb(255 217 222);
+	--md-sys-color-on-primary-fixed: rgb(58 7 23);
+	--md-sys-color-primary-fixed-dim: rgb(255 178 191);
+	--md-sys-color-on-primary-fixed-variant: rgb(113 51 65);
+	--md-sys-color-secondary-fixed: rgb(255 217 222);
+	--md-sys-color-on-secondary-fixed: rgb(43 21 25);
+	--md-sys-color-secondary-fixed-dim: rgb(228 189 194);
+	--md-sys-color-on-secondary-fixed-variant: rgb(92 63 68);
+	--md-sys-color-tertiary-fixed: rgb(255 220 187);
+	--md-sys-color-on-tertiary-fixed: rgb(44 23 0);
+	--md-sys-color-tertiary-fixed-dim: rgb(235 190 144);
+	--md-sys-color-on-tertiary-fixed-variant: rgb(95 64 29);
+	--md-sys-color-surface-dim: rgb(25 17 19);
+	--md-sys-color-surface-bright: rgb(65 55 56);
+	--md-sys-color-surface-container-lowest: rgb(20 12 13);
+	--md-sys-color-surface-container-low: rgb(34 25 27);
+	--md-sys-color-surface-container: rgb(38 29 31);
+	--md-sys-color-surface-container-high: rgb(49 40 41);
+	--md-sys-color-surface-container-highest: rgb(60 50 52);
+}
+
+
+
 
 @theme {
 	/* ---- Colores ---- */
@@ -1047,9 +1692,11 @@
 	@apply font-display-large-font-family text-display-large-font-size font-display-large-font-weight leading-display-large-line-height;
 	letter-spacing: var(--display-large-letter-spacing, -1px);
 }
+
 .text-display-medium {
 	@apply font-display-medium-font-family text-display-medium-font-size font-display-medium-font-weight leading-display-medium-line-height;
 }
+
 .text-display-small {
 	@apply font-display-small-font-family text-display-small-font-size font-display-small-font-weight leading-display-small-line-height;
 }
@@ -1057,9 +1704,11 @@
 .text-headline-large {
 	@apply font-headline-large-font-family text-headline-large-font-size font-headline-large-font-weight leading-headline-large-line-height;
 }
+
 .text-headline-medium {
 	@apply font-headline-medium-font-family text-headline-medium-font-size font-headline-medium-font-weight leading-headline-medium-line-height;
 }
+
 .text-headline-small {
 	@apply font-headline-small-font-family text-headline-small-font-size font-headline-small-font-weight leading-headline-small-line-height;
 }
@@ -1067,34 +1716,42 @@
 .text-title-large {
 	@apply font-title-large-font-family text-title-large-font-size font-title-large-font-weight leading-title-large-line-height;
 }
+
 .text-title-medium {
 	@apply font-title-medium-font-family text-title-medium-font-size font-title-medium-font-weight leading-title-medium-line-height;
 	letter-spacing: var(--title-medium-letter-spacing, 0.15px);
 }
+
 .text-title-small {
 	@apply font-title-small-font-family text-title-small-font-size font-title-small-font-weight leading-title-small-line-height;
 	letter-spacing: var(--title-small-letter-spacing, 0.1px);
 }
+
 .text-label-large {
 	@apply font-label-large-font-family text-label-large-font-size font-label-large-font-weight leading-label-large-line-height;
 	letter-spacing: var(--label-large-letter-spacing, 0.1px);
 }
+
 .text-label-medium {
 	@apply font-label-medium-font-family text-label-medium-font-size font-label-medium-font-weight leading-label-medium-line-height;
 	letter-spacing: var(--label-medium-letter-spacing, 0.5px);
 }
+
 .text-label-small {
 	@apply font-label-small-font-family text-label-small-font-size font-label-small-font-weight leading-label-small-line-height;
 	letter-spacing: var(--label-small-letter-spacing, 0.5px);
 }
+
 .text-body-large {
 	@apply font-body-large-font-family text-body-large-font-size font-body-large-font-weight leading-body-large-line-height;
 	letter-spacing: var(--body-large-letter-spacing, 0.5px);
 }
+
 .text-body-medium {
 	@apply font-body-medium-font-family text-body-medium-font-size font-body-medium-font-weight leading-body-medium-line-height;
 	letter-spacing: var(--body-medium-letter-spacing, 0.25px);
 }
+
 .text-body-small {
 	@apply font-body-small-font-family text-body-small-font-size font-body-small-font-weight leading-body-small-line-height;
 	letter-spacing: var(--body-small-letter-spacing, 0.4px);

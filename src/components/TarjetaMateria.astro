@@ -4,7 +4,7 @@ import RequisitosPara from "./RequisitosPara.astro"
 
 interface Props {
 	materia: string
-	codigo: number
+	codigo?: number
 	paraCursar: Array<condicion> | null
 	paraRendir: Array<condicion> | null
 	planDeEstudio: string | null
@@ -19,7 +19,7 @@ interface mesa {
 	fecha: string
 }
 
-const {materia, paraCursar, paraRendir, planDeEstudio, mesas, theme} = Astro.props
+const {materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas, theme} = Astro.props
 
 const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
 
@@ -65,7 +65,9 @@ if (proximaMesa) {
 ---
 
 <article
-	class={`theme-${theme} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}>
+	class={`materia-card theme-${theme} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
+	data-materia={materia}
+	data-codigo={codigo}>
 	<header
 		class="bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] rounded-2xl p-1.5 flex flex-row gap-2.5 items-center w-full justify-center self-stretch shrink-0 relative">
 		<h3 class="text-center text-headline-small relative flex-1 flex items-center justify-center text-pretty">
@@ -199,7 +201,7 @@ if (proximaMesa) {
 		</div>
 
 		<!-- Lista con scroll -->
-		<div class="flex-1 overflow-y-auto overscroll-contain py-2 w-full">
+		<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
 			<md-list>
 				{
 					sortedMesas.map((mesa, index) => {

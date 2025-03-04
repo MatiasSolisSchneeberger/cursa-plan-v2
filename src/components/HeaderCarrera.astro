@@ -19,7 +19,12 @@ const NombreCarrera = carrera.replace(/-/g, " ");
 	</md-filled-icon-button>
 	<h2
 		transition:name=`nombre-${carrera}`
-		class=`theme-${carrera} text-[var(--md-sys-color-primary)] text-headline-small relative flex-1 flex items-center justify-center text-center`>
+		class=`theme-${carrera} block sm:hidden text-[var(--md-sys-color-primary)] text-headline-small relative flex-1 flex items-center justify-center text-center`>
+		{NombreCarrera.replace("Licenciatura", "Lic.").replace("Ingeniería", "Ing.").replace("Profesorado", "Prof.")}
+	</h2>
+	<h2
+		transition:name=`nombre-${carrera}`
+		class=`hidden sm:block theme-${carrera} text-[var(--md-sys-color-primary)] text-headline-small relative flex-1 flex items-center justify-center text-center`>
 		{NombreCarrera}
 	</h2>
 	<div

@@ -9,21 +9,21 @@ interface Carrera {
 }
 
 interface Cursada {
-    año: number;
+    año: number; 
     materias?: Array<Materia>;
     orientaciones?: Array<Orientacion>;
 }
 
 interface Materia {
     materia: string;
-    codigo: number;
+    codigo?: number;
     paraCursar: Array<Condicion> | null;
     paraRendir: Array<Condicion> | null;
     planDeEstudio: string | null;
     mesas: Array<Mesa> | null;
 }
 
-export interface Orientacion {
+interface Orientacion {
     nombre: string;
     materias: Array<Materia>;
 }

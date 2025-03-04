@@ -7,7 +7,8 @@ import Layout from "@layouts/Layout.astro"
 import AñoCarrera from "@components/AñoCarrera.astro"
 import HeaderCarrera from "@components/HeaderCarrera.astro"
 import TarjetaMateria from "@components/TarjetaMateria.astro"
-import BotonAnno from "@components/BotonAño.jsx"
+import BotonAño from "@components/BotonAño.jsx"
+import BuscadorMaterias from "@components/BuscadorMaterias.jsx"
 
 export const getStaticPaths: GetStaticPaths = () => {
 	return carreras
@@ -29,46 +30,72 @@ if (!carreraData) {
 const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 ---
 
-<Layout title=`${NombreCarrera} | Plan de estudio` theme={carreraData.carrera}>
+<Layout title={`${NombreCarrera} | Plan de estudio`} theme={carreraData.carrera}>
 	<!-- Titulo de Pagina -->
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<BotonAnno carreraData={carreraData} client:visible />
+	<BotonAño carreraData={carreraData} client:visible />
+	<BuscadorMaterias client:visible />
+	
 	<!-- map de array de los años -->
-	{
-		carreraData.cursada?.map(({año, materias, orientaciones}) => {
-			if (orientaciones) {
-				// Si el año tiene orientaciones
-				return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
-					<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
-						{orientacionMaterias.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
-							<TarjetaMateria
-								materia={materia}
-								codigo={codigo}
-								paraCursar={paraCursar}
-								paraRendir={paraRendir}
-								planDeEstudio={planDeEstudio}
-								mesas={mesas}
-							/>
-						))}
-					</AñoCarrera>
-				))
-			} else {
-				// Si el año no tiene orientaciones
-				return (
-					<AñoCarrera año={año} theme={carreraData.carrera}>
-						{materias?.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
-							<TarjetaMateria
-								materia={materia}
-								codigo={codigo}
-								paraCursar={paraCursar}
-								paraRendir={paraRendir}
-								planDeEstudio={planDeEstudio}
-								mesas={mesas}
-							/>
-						))}
-					</AñoCarrera>
-				)
-			}
-		})
-	}
+	<div id="materias-container" class="space-y-8">
+	{carreraData.cursada?.map(({año, materias, orientaciones}) => {
+		if (orientaciones?.length > 0) {
+			// Si el año tiene orientaciones
+			return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
+				<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
+					{orientacionMaterias.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
+						<TarjetaMateria
+							materia={materia}
+							codigo={codigo}
+							paraCursar={paraCursar}
+							paraRendir={paraRendir}
+							planDeEstudio={planDeEstudio}
+							mesas={mesas}
+							theme={carreraData.carrera}
+						/>
+					))}
+				</AñoCarrera>
+			))
+		} else {
+			// Si el año no tiene orientaciones
+			return (
+				<AñoCarrera año={año} theme={carreraData.carrera}>
+					{materias?.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
+						<TarjetaMateria
+							materia={materia}
+							codigo={codigo}
+							paraCursar={paraCursar}
+							paraRendir={paraRendir}
+							planDeEstudio={planDeEstudio}
+							mesas={mesas}
+							theme={carreraData.carrera}
+						/>
+					))}
+				</AñoCarrera>
+			)
+		}
+	})}
+	</div>
 </Layout>
+
+<script>
+	function handleSearch(searchTerm) {
+		const searchTermLower = searchTerm.toLowerCase();
+		const materiasContainer = document.getElementById('materias-container');
+		const tarjetas = materiasContainer.getElementsByClassName('materia-card');
+
+		Array.from(tarjetas).forEach(tarjeta => {
+			const nombreMateria = tarjeta.querySelector('h3')?.textContent?.toLowerCase() || '';
+			const codigoMateria = tarjeta.querySelector('.codigo')?.textContent?.toLowerCase() || '';
+			
+			if (nombreMateria.includes(searchTermLower) || codigoMateria.includes(searchTermLower)) {
+				tarjeta.style.display = '';
+			} else {
+				tarjeta.style.display = 'none';
+			}
+		});
+	}
+
+	// Exponer la función al componente React
+	window.handleSearch = handleSearch;
+</script>
