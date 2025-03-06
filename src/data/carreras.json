@@ -1093,22 +1093,6 @@
                             "mesas": []
                         },
                         {
-                            "materia": "Optativa I",
-                            "codigo": 509,
-                            "paraCursar": [],
-                            "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
-                        },
-                        {
-                            "materia": "Optativa II",
-                            "codigo": 510,
-                            "paraCursar": [],
-                            "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
-                        },
-                        {
                             "materia": "(Optativa) Genética y Biología Molecular Aplicada",
                             "codigo": 511,
                             "paraCursar": [
