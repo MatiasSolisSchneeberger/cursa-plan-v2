@@ -22,5 +22,7 @@
         "astro": {
             "parser": "code"
         }
-    }
+    },
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }

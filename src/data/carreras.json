@@ -1093,22 +1093,6 @@
                             "mesas": []
                         },
                         {
-                            "materia": "Optativa I",
-                            "codigo": 509,
-                            "paraCursar": [],
-                            "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
-                        },
-                        {
-                            "materia": "Optativa II",
-                            "codigo": 510,
-                            "paraCursar": [],
-                            "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
-                        },
-                        {
                             "materia": "(Optativa) Genética y Biología Molecular Aplicada",
                             "codigo": 511,
                             "paraCursar": [
@@ -1680,7 +1664,7 @@
                             "codigo": 209,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": "Aprobada para cursar el Ciclo Superior",
+                            "planDeEstudio": null,
                             "mesas": []
                         }
                     ]
@@ -1741,7 +1725,7 @@
                             "mesas": []
                         },
                         {
-                            "materia": "Fotointerpretación y Teledetección",
+                            "materia": "Fotointerpretación y Teledetección (Anual)",
                             "codigo": 303,
                             "paraCursar": [
                                 {
@@ -2233,7 +2217,7 @@
                             "mesas": []
                         },
                         {
-                            "materia": "Práctica Profesional Supervisada",
+                            "materia": "Práctica Profesional Supervisada (Anual)",
                             "codigo": 504,
                             "paraCursar": [
                                 {
@@ -2251,7 +2235,7 @@
                             "mesas": []
                         },
                         {
-                            "materia": "Trabajo Final",
+                            "materia": "Trabajo Final (Anual)",
                             "codigo": 505,
                             "paraCursar": [
                                 {
