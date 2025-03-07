@@ -1,70 +1,80 @@
 ---
 import Layout from "@layouts/Layout.astro"
 import {examenes} from "@data/mesaDeExamenes.json"
+import BuscadorMaterias from "@components/BuscadorMaterias"
+
 
 // Función para verificar si una fecha ya pasó
-const fechaPasada = (fechaStr) => {
-  const [day, month] = fechaStr.split('/').map(Number);
-  const fecha = new Date();
-  fecha.setMonth(month - 1, day);
-  fecha.setHours(0, 0, 0, 0);
-  return fecha < new Date();
+const fechaPasada = (fechaStr: string): boolean => {
+    const [day, month] = fechaStr.split('/').map(Number);
+    const fecha = new Date();
+    fecha.setFullYear(new Date().getFullYear(), month - 1, day);
+    fecha.setHours(0, 0, 0, 0);
+    return fecha < new Date();
 };
 
 // Obtener columnas visibles
 const columnasVisibles = examenes[0].turnos
-  .map((_, index) => {
-    const ultimaFecha = Math.max(...examenes.map(examen => {
-      const fechaStr = examen.turnos[index].fecha;
-      const [day, month] = fechaStr.split('/').map(Number);
-      return new Date(new Date().getFullYear(), month - 1, day).getTime();
-    }));
-    return new Date(ultimaFecha) >= new Date() ? index : null;
-  })
-  .filter(index => index !== null);
+    .map((_, index) => {
+        const ultimaFecha = Math.max(...examenes.map(examen => {
+        const fechaStr = examen.turnos[index].fecha;
+        const [day, month] = fechaStr.split('/').map(Number);
+        return new Date(new Date().getFullYear(), month - 1, day).getTime();
+        }));
+        return new Date(ultimaFecha) >= new Date() ? index : null;
+    })
+    .filter(index => index !== null);
 ---
 
 <Layout title="Mesas de Examen">
-    {examenes.length > 0 && (
-        <div class="w-full overflow-x-auto">
-            <table class="w-full text-sm text-left rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
-                <thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
-                    <tr>
-                        <th scope="col" class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10">
-                            Materia
-                        </th>
-                        {columnasVisibles.map(index => (
-                            <th scope="col" class="px-6 py-3">
-                                Mesa {index + 1}
+    <div class="space-y-4">
+        <BuscadorMaterias 
+            client:load 
+            placeholder="Buscar materia..." 
+            targetClass="mesa-row" 
+        />
+        {examenes.length > 0 && (
+            <div class="w-full overflow-x-auto mt-4">
+                <table class="w-full text-sm text-left rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
+                    <thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10">
+                                Materia
                             </th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {examenes.map(({asignatura, turnos}) => (
-                        <tr class="bg-[var(--md-sys-color-secondary)] border-b border-[var(--md-sys-color-outline)] group">
-                            <th
-                                scope="row"
-                                class="px-6 py-4 font-medium text-[var(--md-sys-color-on-secondary)] whitespace-nowrap sticky left-0 bg-[var(--md-sys-color-secondary)] z-10 group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
-                                {asignatura}
-                            </th>
-                            {columnasVisibles.map(colIndex => {
-                                const {fecha} = turnos[colIndex];
-                                return (
-                                    <td
-                                        class:list={
-                                            colIndex % 2 === 0 ?
-                                                "px-6 py-4 bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black"
-                                            :   "px-6 py-4 bg-[var(--md-sys-color-tertiary-container)] text-[var(--md-sys-color-on-tertiary-container)] group-hover:bg-[var(--md-sys-color-tertiary-container)]/70 group-hover:text-black"
-                                        }>
-                                        {fecha}
-                                    </td>
-                                );
-                            })}
+                            {columnasVisibles.map(index => (
+                                <th scope="col" class="px-6 text-center py-3">
+                                    {index + 1}° Turno
+                                </th>
+                            ))}
                         </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    )}
+                    </thead>
+                    <tbody>
+                        {examenes.map(({asignatura, turnos}) => (
+                            <tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
+                                <th
+                                    scope="row"
+                                    class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
+                                    {asignatura}
+                                </th>
+                                {columnasVisibles.map(colIndex => {
+                                    const {fecha} = turnos[colIndex];
+                                    return (
+                                        <td
+                                            class:list={[
+                                                "border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4",
+                                                colIndex % 2 === 0 ?
+                                                    "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
+                                                :   "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black"
+                                            ]}>
+                                            {fecha}
+                                        </td>
+                                    );
+                                })}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        )}
+    </div>
 </Layout>
