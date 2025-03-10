@@ -92,8 +92,8 @@ const contactos = [
 				{
 					enlacesCarreras.map(({href, nombreCompleto, nombreCorto}) => (
 						<a href={href} class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
-							<span class="block sm:hidden">{nombreCorto}</span> {/* Se muestra en móviles */}
-							<span class="hidden sm:block">{nombreCompleto}</span> {/* Se muestra en pantallas grandes */}
+							<span class="block md:hidden">{nombreCorto}</span> {/* Se muestra en móviles */}
+							<span class="hidden md:block">{nombreCompleto}</span> {/* Se muestra en pantallas grandes */}
 						</a>
 					))
 				}
