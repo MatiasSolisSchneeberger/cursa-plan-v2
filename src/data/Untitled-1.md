@@ -357,3 +357,77 @@
 | 4   | Epistemología y Metodología de la Investigación | R: Física (Mecánica); A: Algebra II; Análisis Matemático II; Historia de la matemática; geometría métrica y tigonometrica           | R: Física (Mecánica); A: Algebra II; Análisis Matemático II; Historia de la matemática; geometría métrica y tigonometrica                                            |
 | 4   | Didáctica de la Matemática y Pasantía           | A: Taller de Iniciación a la Práctica Docente; Algebra II; Análisis Matemático II, Geometría Métrica y Trigonométrica R: Didáctica; | Régimen promocional, no tiene régimen de Examen Final. No es posible inscribirse a rendir libre.                                                                     |
 
+
+
+Administración Y Gestión De Organizaciones
+Agrimensura Legal I
+Agrimensura Legal II
+Algebra
+Algebra I
+Algebra II
+Algebra Lineal Y Geometria
+Algebra Lineal Numerica Y Optimizacion
+Algebra Y Geometria Analitica
+Algoritmos Y Estructuras De Datos I
+Algoritmos Y Estructuras De Datos II
+Analisis Matematico
+Analisis Matematico I
+Analisis Matematico II
+Analisis Matematico III
+Analisis Matematico IV
+Analisis Real
+Anatomia Comparada De Los Cordados
+Antropologia Fisica Y Cultural
+Aplicaciones Termicas De La Energia Solar
+Aplicaciones Termicas De La Energia Solar
+Arquitectura Y Organizacion De Computadoras
+Arquitecturas Y Sistemas Operativos Avanzados
+Astronomia
+Auditoria Y Seguridad Informatica
+Bacteriologia Y Micologia Clinica
+Bases De Datos I
+Bases De Datos II
+Bioestadistica (Boca.)
+Bioestadistica (Biologia)
+Bioinstrumentacion
+Biologia Celular Y Molecular
+Biologia De Los Artrópodos
+Biologia De Los Cordados
+Biologia De Los Invertebrados
+Biologia De Los Parasitos
+Biologia General Y Celular
+Bioquimica De Los Alimentos
+Biotaxonomia De Briofitas Y Pteridofitas
+Biotaxonomia De Espermatofitas
+Biotecnologia Microbiana
+Bromatologia Y Nutricion
+Calculo Diferencial E Integral
+Calculo Diferencial E Integral (LSI)
+Calculo Diferencial E Integral I
+Calculo Diferencial E Integral II
+Calculo Numerico
+Calor Y Termodinamica
+Cartografia
+Catastro
+Centrales Electricas
+Ciencia, Tecnologia Y Sociedad I
+Circuitos Logicos
+Citogenetica
+Competencias Linguistico - Comunicativas
+Complementos De Algebra Lineal
+Comunicaciones De Datos
+Conocimiento De Idioma Ingles Tecnico
+Determinacion De Estructuras Organicas
+Dibujo Topografico Y Cartografico
+Didactica
+Dinamica De Fluidos Georisicos
+Dinamica Cualitica En Nanoestructuras
+Diseno De Lineas De Transmision Y Estaciones Transformadoras
+Distribucion De La Energia
+Diversidad Vegetal
+Ecologia
+Ecologia Animal
+Ecologia De La Conservacion
+Ecologia De Comunidades
+Ecologia De Poblaciones
+Ecologia Del Comportamiento

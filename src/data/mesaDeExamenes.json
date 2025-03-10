@@ -1,7 +1,7 @@
 {
 	"examenes": [
 		{
-			"asignatura": "ADMINISTRACIÓN Y GESTIÓN DE ORGANIZACIONES",
+			"asignatura": "Administración y Gestión De Organizaciones",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -36,7 +36,7 @@
 			]
 		},
 		{
-			"asignatura": "AGRIMENSURA LEGAL I",
+			"asignatura": "Agrimensura Legal I",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -71,7 +71,7 @@
 			]
 		},
 		{
-			"asignatura": "AGRIMENSURA LEGAL II",
+			"asignatura": "Agrimensura Legal II",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -106,7 +106,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA",
+			"asignatura": "Álgebra",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
@@ -141,7 +141,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA I",
+			"asignatura": "Álgebra I",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -176,7 +176,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA II",
+			"asignatura": "Álgebra II",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
@@ -211,7 +211,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA LINEAL Y GEOMETRIA",
+			"asignatura": "Álgebra Lineal y Geometría",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -246,7 +246,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA LINEAL NUMÉRICA Y OPTIMIZACIÓN",
+			"asignatura": "Álgebra Lineal Numerica y Optimizacion",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -281,7 +281,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGEBRA Y GEOMETRIA ANALÍTICA",
+			"asignatura": "Álgebra y Geometría Analítica",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -316,7 +316,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGORITMOS Y ESTRUCTURAS DE DATOS I",
+			"asignatura": "Algoritmos y Estructuras De Datos I",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -351,7 +351,7 @@
 			]
 		},
 		{
-			"asignatura": "ALGORITMOS Y ESTRUCTURAS DE DATOS II",
+			"asignatura": "Algoritmos y Estructuras De Datos II",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
@@ -386,7 +386,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS MATEMÁTICO",
+			"asignatura": "Analisis Matematico",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -421,7 +421,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS MATEMÁTICO I",
+			"asignatura": "Analisis Matematico I",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
@@ -456,7 +456,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS MATEMÁTICO II",
+			"asignatura": "Analisis Matematico II",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -491,7 +491,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS MATEMÁTICO III",
+			"asignatura": "Analisis Matematico III",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -526,7 +526,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS MATEMÁTICO IV",
+			"asignatura": "Analisis Matematico IV",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
@@ -561,7 +561,7 @@
 			]
 		},
 		{
-			"asignatura": "ANALISIS REAL",
+			"asignatura": "Analisis Real",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
@@ -596,7 +596,7 @@
 			]
 		},
 		{
-			"asignatura": "ANATOMIA COMPARADA DE LOS CORDADOS",
+			"asignatura": "Anatomia Comparada De Los Cordados",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
@@ -631,7 +631,7 @@
 			]
 		},
 		{
-			"asignatura": "ANTROPOLOGIA FISICA Y CULTURAL",
+			"asignatura": "Antropologia Fisica y Cultural",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
@@ -666,7 +666,7 @@
 			]
 		},
 		{
-			"asignatura": "APLICACIONES TÉRMICAS DE LA ENERGÍA SOLAR",
+			"asignatura": "Aplicaciones Termicas De La Energia Solar",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
@@ -701,1822 +701,1822 @@
 			]
 		},
 		{
-			"asignatura": "APLICACIONES TÉRMICAS DE LA ENERGÍA SOLAR",
+			"asignatura": "Aplicaciones Termicas De La Energia Solar",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "22/5/2025"
+					"fecha": "22/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ARQUITECTURA Y ORGANIZACIÓN DE COMPUTADORAS",
+			"asignatura": "Arquitectura y Organizacion De Computadoras",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "8/5/2025"
+					"fecha": "08/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ARQUITECTURAS Y SISTEMAS OPERATIVOS AVANZADOS",
+			"asignatura": "Arquitecturas y Sistemas Operativos Avanzados",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "8/5/2025"
+					"fecha": "08/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ASTRONOMIA",
+			"asignatura": "Astronomia",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "AUDITORIA Y SEGURIDAD INFORMÁTICA",
+			"asignatura": "Auditoria y Seguridad Informatica",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "19/09/25"
+					"fecha": "19/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BACTERIOLOGÍA Y MICOLOGÍA CLINICA",
+			"asignatura": "Bacteriologia y Micologia Clinica",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BASES DE DATOS I",
+			"asignatura": "Bases De Datos I",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "31/3/2025"
+					"fecha": "31/03/2025"
 				},
 				{
-					"fecha": "12/5/2025"
+					"fecha": "12/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "08/09/25"
+					"fecha": "08/09/2025"
 				},
 				{
-					"fecha": "20/10/25"
+					"fecha": "20/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BASES DE DATOS II",
+			"asignatura": "Bases De Datos II",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "22/5/2025"
+					"fecha": "22/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "23/10/25"
+					"fecha": "23/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOESTADISTICA (Boca.)",
+			"asignatura": "Bioestadistica (Boca.)",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "6/5/2025"
+					"fecha": "06/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "02/09/25"
+					"fecha": "02/09/2025"
 				},
 				{
-					"fecha": "07/10/25"
+					"fecha": "07/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOESTADISTICA (Biología)",
+			"asignatura": "Bioestadistica (Biologia)",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "6/5/2025"
+					"fecha": "06/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "02/09/25"
+					"fecha": "02/09/2025"
 				},
 				{
-					"fecha": "07/10/25"
+					"fecha": "07/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOINSTRUMENTACIÓN",
+			"asignatura": "Bioinstrumentacion",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "14/5/2025"
+					"fecha": "14/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "03/09/25"
+					"fecha": "03/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA CELULAR Y MOLECULAR",
+			"asignatura": "Biologia Celular y Molecular",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "7/5/2025"
+					"fecha": "07/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "03/09/25"
+					"fecha": "03/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA DE LOS ARTROPODOS",
+			"asignatura": "Biologia De Los Artrópodos",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "19/09/25"
+					"fecha": "19/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA DE LOS CORDADOS",
+			"asignatura": "Biologia De Los Cordados",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "15/5/2025"
+					"fecha": "15/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "16/10/25"
+					"fecha": "16/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA DE LOS INVERTEBRADOS",
+			"asignatura": "Biologia De Los Invertebrados",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "05/09/25"
+					"fecha": "05/09/2025"
 				},
 				{
-					"fecha": "10/10/25"
+					"fecha": "10/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "19/12/25"
+					"fecha": "19/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA DE LOS PARASITOS",
+			"asignatura": "Biologia De Los Parasitos",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "14/10/25"
+					"fecha": "14/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOLOGÍA GENERAL Y CELULAR",
+			"asignatura": "Biologia General y Celular",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "7/5/2025"
+					"fecha": "07/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "03/09/25"
+					"fecha": "03/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOQUÍMICA DE LOS ALIMENTOS",
+			"asignatura": "Bioquimica De Los Alimentos",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "13/5/2025"
+					"fecha": "13/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "14/10/25"
+					"fecha": "14/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOTAXONOMIA DE BRIOFITAS Y PTERIDOFITAS",
+			"asignatura": "Biotaxonomia De Briofitas y Pteridofitas",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "13/5/2025"
+					"fecha": "13/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOTAXONOMIA DE ESPERMATOFITAS",
+			"asignatura": "Biotaxonomia De Espermatofitas",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "13/5/2025"
+					"fecha": "13/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BIOTECNOLOGIA MICROBIANA",
+			"asignatura": "Biotecnologia Microbiana",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "02/09/25"
+					"fecha": "02/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "BROMATOLOGIA Y NUTRICION",
+			"asignatura": "Bromatologia y Nutricion",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "13/5/2025"
+					"fecha": "13/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "14/10/25"
+					"fecha": "14/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALCULO DIFERENCIAL E INTEGRAL",
+			"asignatura": "Calculo Diferencial e Integral",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "8/5/2025"
+					"fecha": "08/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALCULO DIFERENCIAL E INTEGRAL (LSI)",
+			"asignatura": "Calculo Diferencial e Integral (LSI)",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "8/5/2025"
+					"fecha": "08/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALCULO DIFERENCIAL E INTEGRAL I",
+			"asignatura": "Cálculo Diferencial e Integral I",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "7/5/2025"
+					"fecha": "07/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "03/09/25"
+					"fecha": "03/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALCULO DIFERENCIAL E INTEGRAL II",
+			"asignatura": "Calculo Diferencial e Integral II",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "31/3/2025"
+					"fecha": "31/03/2025"
 				},
 				{
-					"fecha": "5/5/2025"
+					"fecha": "5/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "01/09/25"
+					"fecha": "01/09/2025"
 				},
 				{
-					"fecha": "06/10/25"
+					"fecha": "06/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALCULO NUMERICO",
+			"asignatura": "Calculo Numerico",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "8/5/2025"
+					"fecha": "08/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "04/09/25"
+					"fecha": "04/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CALOR Y TERMODINAMICA",
+			"asignatura": "Calor y Termodinamica",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "31/3/2025"
+					"fecha": "31/03/2025"
 				},
 				{
-					"fecha": "5/5/2025"
+					"fecha": "5/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "01/09/25"
+					"fecha": "01/09/2025"
 				},
 				{
-					"fecha": "09/10/25"
+					"fecha": "09/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CARTOGRAFIA",
+			"asignatura": "Cartografia",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "23/5/2025"
+					"fecha": "23/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "12/09/25"
+					"fecha": "12/09/2025"
 				},
 				{
-					"fecha": "17/10/25"
+					"fecha": "17/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CATASTRO",
+			"asignatura": "Catastro",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "12/5/2025"
+					"fecha": "12/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "08/09/25"
+					"fecha": "08/09/2025"
 				},
 				{
-					"fecha": "20/10/25"
+					"fecha": "20/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CENTRALES ELECTRICAS",
+			"asignatura": "Centrales Electricas",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CIENCIA, TECNOLOGÍA Y SOCIEDAD I",
+			"asignatura": "Ciencia, Tecnologia y Sociedad I",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "22/5/2025"
+					"fecha": "22/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "23/10/25"
+					"fecha": "23/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CIRCUITOS LOGICOS",
+			"asignatura": "Circuitos Logicos",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "22/5/2025"
+					"fecha": "22/05/2025"
 				},
 				{
-					"fecha": "3/7/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "23/10/25"
+					"fecha": "23/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CITOGENETICA",
+			"asignatura": "Citogenetica",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "19/09/25"
+					"fecha": "19/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "19/12/25"
+					"fecha": "19/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "COMPETENCIAS LINGÜISTICO - COMUNICATIVAS",
+			"asignatura": "Competencias Linguistico - Comunicativas",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "6/5/2025"
+					"fecha": "06/05/2025"
 				},
 				{
-					"fecha": "1/7/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "02/09/25"
+					"fecha": "02/09/2025"
 				},
 				{
-					"fecha": "07/10/25"
+					"fecha": "07/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "COMPLEMENTOS DE ALGEBRA LINEAL",
+			"asignatura": "Complementos De Álgebra Lineal",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "9/5/2025"
+					"fecha": "09/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "12/09/25"
+					"fecha": "12/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "COMUNICACIONES DE DATOS",
+			"asignatura": "Comunicaciones De Datos",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "4/7/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "05/09/25"
+					"fecha": "05/09/2025"
 				},
 				{
-					"fecha": "17/10/25"
+					"fecha": "17/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "CONOCIMIENTO DE IDIOMA INGLES TECNICO",
+			"asignatura": "Conocimiento De Idioma Ingles Tecnico",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "13/5/2025"
+					"fecha": "13/05/2025"
 				},
 				{
-					"fecha": "17/2/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "02/09/25"
+					"fecha": "02/09/2025"
 				},
 				{
-					"fecha": "07/10/25"
+					"fecha": "07/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DETERMINACIÓN DE ESTRUCTURAS ORGÁNICAS",
+			"asignatura": "Determinacion De Estructuras Organicas",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "15/5/2025"
+					"fecha": "15/05/2025"
 				},
 				{
-					"fecha": "37/2/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "16/10/25"
+					"fecha": "16/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DIBUJO TOPOGRÁFICO Y CARTOGRÁFICO",
+			"asignatura": "Dibujo Topografico y Cartografico",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "47/2/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "05/09/25"
+					"fecha": "05/09/2025"
 				},
 				{
-					"fecha": "17/10/25"
+					"fecha": "17/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "19/12/25"
+					"fecha": "19/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DIDACTICA",
+			"asignatura": "Didactica",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "7/5/2025"
+					"fecha": "07/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "10/09/25"
+					"fecha": "10/09/2025"
 				},
 				{
-					"fecha": "15/10/25"
+					"fecha": "15/10/2025"
 				},
 				{
-					"fecha": "02/12/25"
+					"fecha": "02/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DINÁMICA DE FLUIDOS GEORÍSICOS",
+			"asignatura": "Dinamica De Fluidos Georisicos",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "7/5/2025"
+					"fecha": "07/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "03/09/25"
+					"fecha": "03/09/2025"
 				},
 				{
-					"fecha": "08/10/25"
+					"fecha": "08/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DINÁMICA CUALITICA EN NANOESTRATURAS",
+			"asignatura": "Dinamica Cualitica En Nanoestructuras",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "6/5/2025"
+					"fecha": "06/05/2025"
 				},
 				{
-					"fecha": "17/2/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DISEÑO DE LÍNEAS DE TRANSMISIÓN Y ESTACIONES TRANSFORMADORAS",
+			"asignatura": "Diseno De Lineas De Transmision y Estaciones Transformadoras",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "47/2/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "19/09/25"
+					"fecha": "19/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DISTRIBUCIÓN DE LA ENERGÍA",
+			"asignatura": "Distribucion De La Energia",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "31/3/2025"
+					"fecha": "31/03/2025"
 				},
 				{
-					"fecha": "19/5/2025"
+					"fecha": "19/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "15/09/25"
+					"fecha": "15/09/2025"
 				},
 				{
-					"fecha": "20/10/25"
+					"fecha": "20/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "DIVERSIDAD VEGETAL",
+			"asignatura": "Diversidad Vegetal",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "16/5/2025"
+					"fecha": "16/05/2025"
 				},
 				{
-					"fecha": "47/2/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "05/09/25"
+					"fecha": "05/09/2025"
 				},
 				{
-					"fecha": "10/10/25"
+					"fecha": "10/10/2025"
 				},
 				{
-					"fecha": "28/11/25"
+					"fecha": "28/11/2025"
 				},
 				{
-					"fecha": "19/12/25"
+					"fecha": "19/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA",
+			"asignatura": "Ecologia",
 			"turnos": [
 				{
 					"fecha": "17/02/2025"
 				},
 				{
-					"fecha": "10/3/2025"
+					"fecha": "10/03/2025"
 				},
 				{
-					"fecha": "31/3/2025"
+					"fecha": "31/03/2025"
 				},
 				{
-					"fecha": "12/5/2025"
+					"fecha": "12/05/2025"
 				},
 				{
-					"fecha": "30/6/2025"
+					"fecha": "30/06/2025"
 				},
 				{
-					"fecha": "28/07/25"
+					"fecha": "28/07/2025"
 				},
 				{
-					"fecha": "08/09/25"
+					"fecha": "08/09/2025"
 				},
 				{
-					"fecha": "20/10/25"
+					"fecha": "20/10/2025"
 				},
 				{
-					"fecha": "24/11/25"
+					"fecha": "24/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA ANIMAL",
+			"asignatura": "Ecologia Animal",
 			"turnos": [
 				{
 					"fecha": "18/02/2025"
 				},
 				{
-					"fecha": "11/3/2025"
+					"fecha": "11/03/2025"
 				},
 				{
-					"fecha": "25/3/2025"
+					"fecha": "25/03/2025"
 				},
 				{
-					"fecha": "20/5/2025"
+					"fecha": "20/05/2025"
 				},
 				{
-					"fecha": "17/2/2025"
+					"fecha": "01/07/2025"
 				},
 				{
-					"fecha": "29/07/25"
+					"fecha": "29/07/2025"
 				},
 				{
-					"fecha": "09/09/25"
+					"fecha": "09/09/2025"
 				},
 				{
-					"fecha": "21/10/25"
+					"fecha": "21/10/2025"
 				},
 				{
-					"fecha": "25/11/25"
+					"fecha": "25/11/2025"
 				},
 				{
-					"fecha": "16/12/25"
+					"fecha": "16/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA DE LA CONSERVACIÓN",
+			"asignatura": "Ecologia De La Conservacion",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "9/5/2025"
+					"fecha": "09/05/2025"
 				},
 				{
-					"fecha": "47/2/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "19/09/25"
+					"fecha": "19/09/2025"
 				},
 				{
-					"fecha": "24/10/25"
+					"fecha": "24/10/2025"
 				},
 				{
-					"fecha": "21/11/25"
+					"fecha": "21/11/2025"
 				},
 				{
-					"fecha": "15/12/25"
+					"fecha": "15/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA DE COMUNIDADES",
+			"asignatura": "Ecologia De Comunidades",
 			"turnos": [
 				{
 					"fecha": "20/02/2025"
 				},
 				{
-					"fecha": "13/3/2025"
+					"fecha": "13/03/2025"
 				},
 				{
-					"fecha": "27/3/2025"
+					"fecha": "27/03/2025"
 				},
 				{
-					"fecha": "15/5/2025"
+					"fecha": "15/05/2025"
 				},
 				{
-					"fecha": "37/2/2025"
+					"fecha": "03/07/2025"
 				},
 				{
-					"fecha": "31/07/25"
+					"fecha": "31/07/2025"
 				},
 				{
-					"fecha": "11/09/25"
+					"fecha": "11/09/2025"
 				},
 				{
-					"fecha": "16/10/25"
+					"fecha": "16/10/2025"
 				},
 				{
-					"fecha": "27/11/25"
+					"fecha": "27/11/2025"
 				},
 				{
-					"fecha": "18/12/25"
+					"fecha": "18/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA DE POBLACIONES",
+			"asignatura": "Ecologia De Poblaciones",
 			"turnos": [
 				{
 					"fecha": "19/02/2025"
 				},
 				{
-					"fecha": "12/3/2025"
+					"fecha": "12/03/2025"
 				},
 				{
-					"fecha": "26/3/2025"
+					"fecha": "26/03/2025"
 				},
 				{
-					"fecha": "14/5/2025"
+					"fecha": "14/05/2025"
 				},
 				{
-					"fecha": "2/7/2025"
+					"fecha": "02/07/2025"
 				},
 				{
-					"fecha": "30/07/25"
+					"fecha": "30/07/2025"
 				},
 				{
-					"fecha": "10/09/25"
+					"fecha": "10/09/2025"
 				},
 				{
-					"fecha": "22/10/25"
+					"fecha": "22/10/2025"
 				},
 				{
-					"fecha": "01/12/25"
+					"fecha": "01/12/2025"
 				},
 				{
-					"fecha": "17/12/25"
+					"fecha": "17/12/2025"
 				}
 			]
 		},
 		{
-			"asignatura": "ECOLOGIA DEL COMPORTAMIENTO",
+			"asignatura": "Ecologia Del Comportamiento",
 			"turnos": [
 				{
 					"fecha": "21/02/2025"
 				},
 				{
-					"fecha": "14/3/2025"
+					"fecha": "14/03/2025"
 				},
 				{
-					"fecha": "28/3/2025"
+					"fecha": "28/03/2025"
 				},
 				{
-					"fecha": "9/5/2025"
+					"fecha": "09/05/2025"
 				},
 				{
-					"fecha": "47/2/2025"
+					"fecha": "04/07/2025"
 				},
 				{
-					"fecha": "01/08/25"
+					"fecha": "01/08/2025"
 				},
 				{
-					"fecha": "05/09/25"
+					"fecha": "05/09/2025"
 				},
 				{
-					"fecha": "10/10/25"
+					"fecha": "10/10/2025"
 				},
 				{
-					"fecha": "21/11/25"
+					"fecha": "21/11/2025"
 				},
 				{
-					"fecha": "19/12/25"
+					"fecha": "19/12/2025"
 				}
 			]
 		}

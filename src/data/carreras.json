@@ -12,47 +12,14 @@
                             "codigo": 101,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": [
-                                {
-                                    "fecha": "2025-02-19"
-                                },
-                                {
-                                    "fecha": "2025-03-12"
-                                },
-                                {
-                                    "fecha": "2025-03-26"
-                                },
-                                {
-                                    "fecha": "2025-05-07"
-                                },
-                                {
-                                    "fecha": "2025-07-02"
-                                },
-                                {
-                                    "fecha": "2025-07-30"
-                                },
-                                {
-                                    "fecha": "2025-09-03"
-                                },
-                                {
-                                    "fecha": "2025-10-08"
-                                },
-                                {
-                                    "fecha": "2025-12-01"
-                                },
-                                {
-                                    "fecha": "2025-12-17"
-                                }
-                            ]
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "codigo": 102,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral",
@@ -69,8 +36,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Inorgánica",
@@ -87,8 +53,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología General y Celular",
@@ -105,8 +70,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -144,8 +108,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Orgánica I",
@@ -174,8 +137,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Morfología",
@@ -192,8 +154,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electricidad, Magnetismo, Óptica y Sonido",
@@ -222,8 +183,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Orgánica II",
@@ -248,8 +208,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Analítica",
@@ -278,8 +237,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -329,8 +287,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Física Biológica",
@@ -379,8 +336,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bioestadística",
@@ -413,8 +369,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Biológica II",
@@ -443,8 +398,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Genética y Biología Molecular",
@@ -477,8 +431,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Analítica Instrumental",
@@ -515,8 +468,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -566,8 +518,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Microbiología General",
@@ -608,8 +559,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fisiología Humana",
@@ -646,8 +596,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Farmacología",
@@ -684,8 +633,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bromatología y Nutrición",
@@ -718,8 +666,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fisiopatología",
@@ -752,8 +699,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Inmunología Clínica",
@@ -786,8 +732,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Parasitología Humana",
@@ -824,8 +769,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -871,8 +815,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Clínica",
@@ -909,8 +852,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Toxicología y Química Legal",
@@ -939,8 +881,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ética Profesional",
@@ -957,8 +898,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Hematología Clínica",
@@ -995,8 +935,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Endocrinología y Monitoreo de Drogas",
@@ -1033,8 +972,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Gestión de Laboratorio",
@@ -1059,8 +997,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología y Metodología de la Investigación",
@@ -1089,8 +1026,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Genética y Biología Molecular Aplicada",
@@ -1115,8 +1051,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Epidemiología y Salud Pública",
@@ -1161,8 +1096,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Bioquímica de los Alimentos",
@@ -1195,8 +1129,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Métodos de Conservación de Alimentos",
@@ -1229,8 +1162,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Urgencias Hospitalarias",
@@ -1255,8 +1187,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Determinación de Estructuras Orgánicas",
@@ -1281,8 +1212,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "(Optativa) Medio Interno y Nefrología",
@@ -1307,8 +1237,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -1354,8 +1283,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Prácticas Electivas",
@@ -1396,8 +1324,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -1415,24 +1342,21 @@
                             "codigo": 101,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral I",
                             "codigo": 102,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral II",
@@ -1449,8 +1373,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica, Óptica y Sonido",
@@ -1475,24 +1398,21 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Informática",
                             "codigo": 106,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistema de Representación",
                             "codigo": 107,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -1518,24 +1438,21 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Trigonometría",
                             "codigo": 202,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Introducción a la Ingeniería en Agrimensura",
                             "codigo": 203,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -1564,8 +1481,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Agrimensura Legal I",
@@ -1582,8 +1498,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Topografía I",
@@ -1616,8 +1531,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geografía Física y Geomorfología",
@@ -1634,8 +1548,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Teoría de Errores y Compensación",
@@ -1656,16 +1569,14 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Inglés Técnico",
                             "codigo": 209,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -1691,8 +1602,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Topografía II",
@@ -1721,8 +1631,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fotointerpretación y Teledetección (Anual)",
@@ -1751,8 +1660,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Análisis Matemático",
@@ -1773,8 +1681,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Economía y Gestión Empresarial",
@@ -1795,8 +1702,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Topografía III",
@@ -1829,8 +1735,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Agrimensura Legal II",
@@ -1855,8 +1760,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa I",
@@ -1877,8 +1781,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -1916,8 +1819,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geodesia Astronómica y Matemática",
@@ -1946,8 +1848,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Catastro",
@@ -1976,8 +1877,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ordenamiento Territorial",
@@ -2006,8 +1906,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geodesia Física y Global",
@@ -2040,8 +1939,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mensura",
@@ -2070,8 +1968,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Valuaciones Inmobiliarias",
@@ -2096,8 +1993,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cartografía",
@@ -2126,8 +2022,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2153,8 +2048,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistema de Información Territorial",
@@ -2191,8 +2085,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa II",
@@ -2213,8 +2106,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Práctica Profesional Supervisada (Anual)",
@@ -2231,8 +2123,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Trabajo Final (Anual)",
@@ -2249,8 +2140,7 @@
                                     "cond": null
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -2267,43 +2157,37 @@
                             "materia": "Algebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería- Modulo I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistemas de Representación",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Informática",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral II",
@@ -2319,8 +2203,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica, Óptica y Sonido",
@@ -2344,8 +2227,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2366,8 +2248,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electricidad, Magnetismo y Calor",
@@ -2383,8 +2264,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -2408,8 +2288,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Atómica",
@@ -2425,8 +2304,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería- Modulo II",
@@ -2437,8 +2315,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física del Estado Solido",
@@ -2454,8 +2331,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Métodos Numéricos",
@@ -2475,8 +2351,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Materiales y Componentes",
@@ -2492,8 +2367,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2514,8 +2388,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrotecnia II",
@@ -2526,8 +2399,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2543,8 +2415,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Instalaciones Eléctricas I",
@@ -2563,8 +2434,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Teoría de control",
@@ -2580,8 +2450,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería-Modulo IV",
@@ -2592,8 +2461,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Economía y Org. Industrial",
@@ -2604,8 +2472,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrónica Industrial",
@@ -2620,8 +2487,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Maquinas Hidráulicas y Térmicas",
@@ -2636,8 +2502,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Transmisión de la Energía",
@@ -2652,8 +2517,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2673,8 +2537,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Instalaciones Eléctricas II",
@@ -2689,8 +2552,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistemas de Potencia",
@@ -2706,8 +2568,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Proyecto Final (anual)",
@@ -2731,8 +2592,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería-Modulo V",
@@ -2747,8 +2607,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Centrales Eléctricas",
@@ -2768,8 +2627,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Diseño de Líneas de Tras. Y Estaciones Transformadoras",
@@ -2785,8 +2643,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Distribución de la Energía",
@@ -2797,8 +2654,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -2816,79 +2672,42 @@
                             "codigo": 101,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": [
-                                {
-                                    "fecha": "2025-02-19"
-                                },
-                                {
-                                    "fecha": "2025-03-12"
-                                },
-                                {
-                                    "fecha": "2025-03-26"
-                                },
-                                {
-                                    "fecha": "2025-05-07"
-                                },
-                                {
-                                    "fecha": "2025-07-02"
-                                },
-                                {
-                                    "fecha": "2025-07-30"
-                                },
-                                {
-                                    "fecha": "2025-09-03"
-                                },
-                                {
-                                    "fecha": "2025-10-08"
-                                },
-                                {
-                                    "fecha": "2025-12-01"
-                                },
-                                {
-                                    "fecha": "2025-12-17"
-                                }
-                            ]
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral I",
                             "codigo": 102,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería - Módulo I",
                             "codigo": 104,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistemas de Representación",
                             "codigo": 105,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Informática",
                             "codigo": 106,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral II",
@@ -2905,8 +2724,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica, Óptica y Sonido",
@@ -2931,8 +2749,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -2962,8 +2779,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -2996,8 +2812,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Atómica",
@@ -3014,8 +2829,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería - Módulo II",
@@ -3032,8 +2846,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física del Estado Sólido",
@@ -3050,8 +2863,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Métodos Numéricos",
@@ -3084,8 +2896,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Materiales y Componentes",
@@ -3110,8 +2921,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrotecnia I",
@@ -3144,16 +2954,14 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Prueba de Traducción Técnica",
                             "codigo": 209,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -3175,8 +2983,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrotecnia II",
@@ -3193,8 +3000,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Medidas Eléctricas",
@@ -3219,8 +3025,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electromagnetismo",
@@ -3245,8 +3050,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrónica I",
@@ -3279,8 +3083,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Teoría de los Circuitos",
@@ -3305,8 +3108,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería - Módulo III",
@@ -3323,8 +3125,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -3346,8 +3147,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrónica II",
@@ -3364,8 +3164,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Señales y Sistemas",
@@ -3382,8 +3181,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Teoría de Control",
@@ -3408,8 +3206,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería - Módulo IV",
@@ -3426,8 +3223,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrónica Industrial",
@@ -3452,8 +3248,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electrónica III",
@@ -3478,8 +3273,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mediciones Electrónicas",
@@ -3504,8 +3298,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa I (Fundamentos de Comunicaciones)",
@@ -3538,8 +3331,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -3561,8 +3353,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa II (Propagación y Antenas)",
@@ -3587,8 +3378,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa II (Procesamiento Digital de Bísemeles)",
@@ -3613,8 +3403,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa III (Transmisión de la Información)",
@@ -3639,8 +3428,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa III (Modelo y Simulación de Sistemas Fisiológicos)",
@@ -3665,8 +3453,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Proyecto Final (anual)",
@@ -3707,8 +3494,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario de Ingeniería - Modulo V",
@@ -3725,8 +3511,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Economía y Organización Industrial",
@@ -3743,8 +3528,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa IV (Sistemas de Comunicaciones)",
@@ -3769,8 +3553,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa IV (Ingeniería Clínica)",
@@ -3795,8 +3578,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -3813,22 +3595,19 @@
                             "materia": "Matemática",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Introducción a la Biología",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física General y Biológica",
@@ -3844,8 +3623,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Biológica",
@@ -3861,8 +3639,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geología",
@@ -3878,8 +3655,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -3908,8 +3684,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bioestadística",
@@ -3920,8 +3695,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología de los Invertebrados",
@@ -3936,8 +3710,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Morfología Vegetal",
@@ -3957,8 +3730,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -3979,8 +3751,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fisiología Vegetal",
@@ -4004,8 +3775,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Genética",
@@ -4016,8 +3786,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ecología",
@@ -4028,8 +3797,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Diversidad Vegetal",
@@ -4040,8 +3808,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología de los Cordados",
@@ -4057,15 +3824,13 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Prueba de Idioma",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -4093,8 +3858,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Epistemología y Metodología de la Investigación",
@@ -4113,8 +3877,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Biotaxonomia de Briofitas y Pteridofitas",
@@ -4125,8 +3888,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Biotaxonomia de Espermatofitas",
@@ -4141,8 +3903,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4167,8 +3928,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Citogenética",
@@ -4179,8 +3939,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Epistemología y Metodología de la Investigación",
@@ -4199,8 +3958,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4216,8 +3974,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Paleobotánica",
@@ -4233,8 +3990,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Paleontología",
@@ -4254,8 +4010,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Epistemología y Metodología de la Investigación",
@@ -4274,8 +4029,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Paleoinvertebrados",
@@ -4291,8 +4045,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4325,8 +4078,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Anatomía Comparada de los Cordados",
@@ -4337,8 +4089,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Embriología Animal",
@@ -4354,8 +4105,7 @@
                                             "cond": "R"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Histología Animal",
@@ -4366,8 +4116,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4392,8 +4141,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Epistemología y Metodología de la Investigación",
@@ -4412,8 +4160,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Ecología Animal",
@@ -4437,8 +4184,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Ecología Vegetal",
@@ -4462,8 +4208,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Ecología de las Poblaciones",
@@ -4491,8 +4236,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         }
@@ -4517,8 +4261,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Ficología",
@@ -4529,8 +4272,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Micología",
@@ -4541,8 +4283,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4558,8 +4299,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Genética de Poblaciones",
@@ -4574,8 +4314,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Genética Evolutiva",
@@ -4586,8 +4325,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4603,8 +4341,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Paleovertebrados",
@@ -4615,8 +4352,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Paleobiogeografía",
@@ -4631,8 +4367,7 @@
                                         }
                                     ],
                                     "paraRendir": [],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4661,8 +4396,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Biología de los Artrópodos",
@@ -4678,8 +4412,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         },
@@ -4708,8 +4441,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Limnología",
@@ -4729,8 +4461,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 },
                                 {
                                     "materia": "Manejo de Recursos Naturales",
@@ -4750,8 +4481,7 @@
                                             "cond": "A"
                                         }
                                     ],
-                                    "planDeEstudio": null,
-                                    "mesas": []
+                                    "planDeEstudio": null
                                 }
                             ]
                         }
@@ -4770,36 +4500,31 @@
                             "materia": "Algebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica Clásica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Mecánica Clásica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Programación",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral II",
@@ -4823,8 +4548,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calor y Termodinámica",
@@ -4844,8 +4568,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Calor y Termodinámica",
@@ -4869,8 +4592,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -4907,8 +4629,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Electricidad y Magnetismo",
@@ -4932,8 +4653,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -4957,8 +4677,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Matemática I",
@@ -4986,8 +4705,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Matemática II",
@@ -5019,8 +4737,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Óptica y Sonido",
@@ -5048,8 +4765,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Óptica y Sonido",
@@ -5081,8 +4797,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica Analítica",
@@ -5110,8 +4825,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -5132,8 +4846,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electromagnetismo (Para Físicos)",
@@ -5165,8 +4878,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Experimental I",
@@ -5198,8 +4910,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica Cuántica I",
@@ -5231,8 +4942,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Computacional",
@@ -5264,8 +4974,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Instrumentación y Mediciones Electrónicas",
@@ -5289,15 +4998,13 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ingles Técnico",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": "Aprobar para iniciar el Ciclo Superior",
-                            "mesas": []
+                            "planDeEstudio": "Aprobar para iniciar el Ciclo Superior"
                         }
                     ]
                 },
@@ -5334,8 +5041,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica Cuántica II",
@@ -5351,8 +5057,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Experimental II",
@@ -5380,8 +5085,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física de Sólidos",
@@ -5413,8 +5117,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Técnicas Nucleares",
@@ -5450,22 +5153,19 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa II (Dentro del Departamento de Física)",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento",
-                            "mesas": []
+                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento"
                         },
                         {
                             "materia": "Optativa III (Dentro del Departamento de Física)",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento",
-                            "mesas": []
+                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento"
                         }
                     ]
                 },
@@ -5506,8 +5206,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Trabajo Final",
@@ -5535,8 +5234,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior",
-                            "mesas": []
+                            "planDeEstudio": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior"
                         }
                     ]
                 }
@@ -5553,22 +5251,19 @@
                             "materia": "Algebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calculo Diferencial e Integral I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Inorgánica",
@@ -5584,8 +5279,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología General y Celular",
@@ -5601,8 +5295,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -5631,8 +5324,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica, Calor y Termodinámica",
@@ -5672,8 +5364,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Orgánica I",
@@ -5705,8 +5396,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Analítica I",
@@ -5730,8 +5420,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -5751,8 +5440,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electricidad, Magnetismo y Óptica",
@@ -5792,8 +5480,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Orgánica II",
@@ -5825,8 +5512,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -5871,8 +5557,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Física I",
@@ -5924,8 +5609,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Microbiología Aplicada y Ambiental",
@@ -5965,8 +5649,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Analítica II",
@@ -6006,8 +5689,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fenómenos de Transporte",
@@ -6031,8 +5713,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -6069,8 +5750,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Toxicológica y Legal",
@@ -6102,8 +5782,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electro analítico",
@@ -6127,8 +5806,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bromatología y Nutrición",
@@ -6168,8 +5846,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Procesos Industriales",
@@ -6201,8 +5878,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bioquímica de los Alimentos",
@@ -6234,8 +5910,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología de las Ciencias",
@@ -6251,8 +5926,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Método de Conservación de los Alimentos",
@@ -6284,8 +5958,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Gestión Estratégica Personal y Empresarial",
@@ -6325,8 +5998,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Analítica Aplicada a las Formulaciones Farmacéuticas",
@@ -6350,8 +6022,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Modelado Molecular",
@@ -6367,8 +6038,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Tecnología del Medio Ambiente",
@@ -6392,8 +6062,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ética Profesional",
@@ -6409,8 +6078,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Eco toxicología y Sanidad Laboral y Ambiental",
@@ -6434,8 +6102,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -6464,8 +6131,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química Física III",
@@ -6497,8 +6163,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Operaciones Unitarias",
@@ -6522,8 +6187,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Proceso Analítico Total",
@@ -6547,8 +6211,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Determinación de Estructuras Orgánicas",
@@ -6572,8 +6235,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biotecnología Microbiana",
@@ -6605,8 +6267,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Trabajo Final",
@@ -6622,8 +6283,7 @@
                                     "cond": null
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -6640,15 +6300,13 @@
                             "materia": "Álgebra I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Elementos de Computación",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Álgebra Lineal y Geometría",
@@ -6664,8 +6322,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Análisis Matemático I",
@@ -6681,8 +6338,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -6719,8 +6375,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Álgebra II",
@@ -6752,8 +6407,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Numérico",
@@ -6777,8 +6431,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Complementos de Álgebra Lineal",
@@ -6806,8 +6459,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -6828,8 +6480,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística Descriptiva",
@@ -6857,8 +6508,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Probabilidad y Estadística",
@@ -6890,8 +6540,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Análisis Matemático IV",
@@ -6907,8 +6556,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física (Mecánica)",
@@ -6932,8 +6580,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Funciones Reales",
@@ -6965,8 +6612,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -6987,8 +6633,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ecuaciones Diferenciales",
@@ -7004,8 +6649,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Topología General",
@@ -7021,8 +6665,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología y Metodología de la Investigación",
@@ -7046,8 +6689,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7063,15 +6705,13 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Asignatura Optativa",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento de Matemática",
-                            "mesas": []
+                            "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento de Matemática"
                         },
                         {
                             "materia": "Tesis",
@@ -7103,8 +6743,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -7122,78 +6761,14 @@
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": [
-                                {
-                                    "fecha": "2025-02-19"
-                                },
-                                {
-                                    "fecha": "2025-03-12"
-                                },
-                                {
-                                    "fecha": "2025-03-26"
-                                },
-                                {
-                                    "fecha": "2025-05-07"
-                                },
-                                {
-                                    "fecha": "2025-07-02"
-                                },
-                                {
-                                    "fecha": "2025-07-30"
-                                },
-                                {
-                                    "fecha": "2025-09-03"
-                                },
-                                {
-                                    "fecha": "2025-10-08"
-                                },
-                                {
-                                    "fecha": "2025-12-01"
-                                },
-                                {
-                                    "fecha": "2025-12-17"
-                                }
-                            ]
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Algebra",
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": [
-                                {
-                                    "fecha": "2025-02-18"
-                                },
-                                {
-                                    "fecha": "2025-03-11"
-                                },
-                                {
-                                    "fecha": "2025-03-27"
-                                },
-                                {
-                                    "fecha": "2025-05-06"
-                                },
-                                {
-                                    "fecha": "2025-07-01"
-                                },
-                                {
-                                    "fecha": "2025-07-29"
-                                },
-                                {
-                                    "fecha": "2025-09-02"
-                                },
-                                {
-                                    "fecha": "2025-10-07"
-                                },
-                                {
-                                    "fecha": "2025-11-25"
-                                },
-                                {
-                                    "fecha": "2025-12-16"
-                                }
-                            ]
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Algoritmos y Estructuras de Datos II",
@@ -7210,8 +6785,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Lógica y Matemática Computacional",
@@ -7223,16 +6797,14 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistemas y Organizaciones",
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7258,8 +6830,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Arquitectura y Organización de Computadoras",
@@ -7280,8 +6851,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral",
@@ -7306,8 +6876,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Programación Orientada a Objetos",
@@ -7332,8 +6901,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Sistemas Operativos",
@@ -7358,8 +6926,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Administración y Gestión de Organizaciones",
@@ -7376,8 +6943,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7403,8 +6969,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Comunicaciones de Datos",
@@ -7425,8 +6990,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ingeniería de Software I",
@@ -7455,8 +7019,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Taller de Programación II",
@@ -7489,8 +7052,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Probabilidad y Estadística",
@@ -7507,8 +7069,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bases de Datos I",
@@ -7529,16 +7090,14 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Inglés Técnico Informático (extracurricular)",
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7564,8 +7123,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Economía Aplicada",
@@ -7586,8 +7144,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Teoría de la Computación",
@@ -7612,8 +7169,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Redes de Datos",
@@ -7630,8 +7186,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Bases de Datos II",
@@ -7652,8 +7207,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Métodos Computacionales",
@@ -7674,8 +7228,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7709,8 +7262,7 @@
                                     "cond": null
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Auditoria y Seguridad Informática",
@@ -7739,8 +7291,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa I",
@@ -7761,8 +7312,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa II",
@@ -7783,8 +7333,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa III",
@@ -7805,8 +7354,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -7823,22 +7371,19 @@
                             "materia": "Introducción a la Biología",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Matemática",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General y Biológica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geología",
@@ -7854,8 +7399,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física General y Biológica",
@@ -7871,22 +7415,19 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Competencias Lingüístico-Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Problemática Filosófica Contemporánea",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -7907,8 +7448,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología Celular y Molecular",
@@ -7932,8 +7472,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Anatomía Comparada de los Cordados",
@@ -7949,8 +7488,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Psicología del Aprendizaje y del Desarrollo",
@@ -7982,8 +7520,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología de los Invertebrados",
@@ -8003,8 +7540,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Morfología Vegetal",
@@ -8024,8 +7560,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Seminario sobre Institución Educativa",
@@ -8049,8 +7584,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -8075,8 +7609,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Genética",
@@ -8092,8 +7625,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Fisiología Animal",
@@ -8113,8 +7645,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Biología de los Cordados",
@@ -8138,8 +7669,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Diversidad Vegetal",
@@ -8155,8 +7685,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Didáctica",
@@ -8188,8 +7717,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -8218,8 +7746,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Paleontología",
@@ -8251,8 +7778,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Didáctica de la Biología y Práctica de Residencia",
@@ -8276,8 +7802,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Ecología",
@@ -8309,8 +7834,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Educación para la Salud y el Ambiente",
@@ -8334,8 +7858,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología y Metodología de la Investigación",
@@ -8351,8 +7874,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -8374,22 +7896,19 @@
                             "materia": "Álgebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Competencia Lingüístico-Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Diferencial e Integral II",
@@ -8413,15 +7932,13 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Problemática Filosófica Contemporánea",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística y Análisis de Datos",
@@ -8445,8 +7962,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geología",
@@ -8462,8 +7978,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -8500,8 +8015,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Mecánica Clásica",
@@ -8525,8 +8039,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Mecánica Clásica",
@@ -8558,8 +8071,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Pedagogía",
@@ -8575,8 +8087,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Química General",
@@ -8592,8 +8103,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Electricidad y Magnetismo",
@@ -8617,8 +8127,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Electricidad y Magnetismo",
@@ -8650,8 +8159,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física Experimental I",
@@ -8667,8 +8175,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Astronomía",
@@ -8700,8 +8207,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Técnicas Nucleares",
@@ -8733,8 +8239,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -8763,8 +8268,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Calor y Termodinámica",
@@ -8788,8 +8292,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Calor y Termodinámica",
@@ -8821,8 +8324,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Psicología del Aprendizaje y del Desarrollo",
@@ -8846,8 +8348,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Óptica y Sonido",
@@ -8879,8 +8380,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Laboratorio de Óptica y Sonido",
@@ -8904,8 +8404,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Didáctica",
@@ -8945,8 +8444,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Instrumentación y Mediciones Electrónicas",
@@ -8978,8 +8476,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Física General y Biológica",
@@ -9003,8 +8500,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología y Metodología de la Investigación",
@@ -9020,8 +8516,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Taller de Tecnología Educativa",
@@ -9053,8 +8548,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
@@ -9071,22 +8565,19 @@
                             "materia": "Álgebra I",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Elementos de Computación",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Competencias Lingüístico-Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Álgebra Lineal y Geometría",
@@ -9102,8 +8593,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Análisis Matemático I",
@@ -9119,8 +8609,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Taller de Iniciación a la Práctica Docente",
@@ -9131,8 +8620,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Optativa (seminario)",
@@ -9143,8 +8631,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -9177,8 +8664,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Pedagogía",
@@ -9194,8 +8680,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Complementos del Álgebra Lineal",
@@ -9219,8 +8704,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Cálculo Numérico",
@@ -9244,8 +8728,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Psicología del Aprendizaje y del Desarrollo",
@@ -9269,8 +8752,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -9291,8 +8773,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Estadística Descriptiva",
@@ -9308,8 +8789,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Historia de la Matemática",
@@ -9337,8 +8817,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Probabilidad y Estadística",
@@ -9358,8 +8837,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Geometría Métrica y Trigonométrica",
@@ -9375,8 +8853,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Didáctica",
@@ -9400,8 +8877,7 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 },
@@ -9426,8 +8902,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Taller de Problemas Matemáticos",
@@ -9438,8 +8913,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Matemática Financiera e Investigación Operativa",
@@ -9455,8 +8929,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Epistemología y Metodología de la Investigación",
@@ -9480,8 +8953,7 @@
                                     "cond": "A"
                                 }
                             ],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         },
                         {
                             "materia": "Didáctica de la Matemática y Pasantía",
@@ -9492,8 +8964,7 @@
                                 }
                             ],
                             "paraRendir": [],
-                            "planDeEstudio": null,
-                            "mesas": []
+                            "planDeEstudio": null
                         }
                     ]
                 }
