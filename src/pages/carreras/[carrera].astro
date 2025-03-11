@@ -1,99 +1,107 @@
 ---
-import type {GetStaticPaths} from "astro"
+import type { GetStaticPaths } from "astro";
 
-import {carreras} from "@data/carreras.json"
+import { carreras } from "@data/carreras.json";
 
-import Layout from "@layouts/Layout.astro"
-import AñoCarrera from "@components/AñoCarrera.astro"
-import HeaderCarrera from "@components/HeaderCarrera.astro"
-import TarjetaMateria from "@components/TarjetaMateria.astro"
-import BotonAño from "@components/BotonAño.jsx"
-import BuscadorMaterias from "@components/BuscadorMaterias.jsx"
+import Layout from "@layouts/Layout.astro";
+import AñoCarrera from "@components/AñoCarrera.astro";
+import HeaderCarrera from "@components/HeaderCarrera.astro";
+import TarjetaMateria from "@components/TarjetaMateria.astro";
+import BotonAño from "@components/BotonAño.jsx";
+import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
 
 // Define interfaces for type safety
 interface Condicion {
-	mat: string;
-	cond: "R" | "A";
+  mat: string;
+  cond: "R" | "A";
 }
 
 interface Materia {
-	materia: string;
-	codigo?: number;
-	paraCursar: Condicion[] | null;
-	paraRendir: Condicion[] | null;
-	planDeEstudio: string | null;
+  materia: string;
+  codigo?: number;
+  paraCursar: Condicion[] | null;
+  paraRendir: Condicion[] | null;
+  planDeEstudio: string | null;
 }
 
 interface Orientacion {
-	nombre: string;
-	materias: Materia[];
+  nombre: string;
+  materias: Materia[];
 }
 
 interface Año {
-	año: number;
-	materias?: Materia[];
-	orientaciones?: Orientacion[];
+  año: number;
+  materias?: Materia[];
+  orientaciones?: Orientacion[];
 }
 
 export const getStaticPaths: GetStaticPaths = () => {
-	return carreras
-		.filter(({cursada}) => cursada.length > 0) // Filtrar carreras sin cursada
-		.map(({carrera}) => ({
-			params: {carrera},
-		}))
-}
+  return carreras
+    .filter(({ cursada }) => cursada.length > 0) // Filtrar carreras sin cursada
+    .map(({ carrera }) => ({
+      params: { carrera },
+    }));
+};
 
-const {carrera} = Astro.params
+const { carrera } = Astro.params;
 
 // Buscar los datos específicos de la carrera
-const carreraData = carreras.find((c) => c.carrera === carrera)
+const carreraData = carreras.find((c) => c.carrera === carrera);
 
 if (!carreraData) {
-	throw new Error(`Carrera no encontrada: ${carrera}`)
+  throw new Error(`Carrera no encontrada: ${carrera}`);
 }
 
-const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
+const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 ---
 
 <Layout title={`${NombreCarrera} | Plan de estudio`} theme={carreraData.carrera}>
-	<!-- Titulo de Pagina -->
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
 	<BotonAño carreraData={carreraData} client:visible />
 	<BuscadorMaterias client:visible />
 	
-	<!-- map de array de los años -->
 	<div id="materias-container" class="space-y-8">
 	{carreraData.cursada?.map(({año, materias, orientaciones}) => {
 		if (orientaciones?.length > 0) {
-			// Si el año tiene orientaciones
 			return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
 				<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
-					{orientacionMaterias.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio}) => (
-						<TarjetaMateria
-							materia={materia}
-							codigo={codigo}
-							paraCursar={paraCursar}
-							paraRendir={paraRendir}
-							planDeEstudio={planDeEstudio}
-							theme={carreraData.carrera}
-						/>
-					))}
+					{orientacionMaterias.map(({materia: originalMateria, codigo, paraCursar, paraRendir, planDeEstudio}) => {
+						// Eliminar (Carrera) del nombre si existe
+						const materia = originalMateria.endsWith(` (${carreraData.carrera})`) 
+							? originalMateria.slice(0, -` (${carreraData.carrera})`.length) 
+							: originalMateria;
+						return (
+							<TarjetaMateria
+								materia={materia}
+								codigo={codigo}
+								paraCursar={paraCursar}
+								paraRendir={paraRendir}
+								planDeEstudio={planDeEstudio}
+								theme={carreraData.carrera}
+							/>
+						);
+					})}
 				</AñoCarrera>
 			))
 		} else {
-			// Si el año no tiene orientaciones
 			return (
 				<AñoCarrera año={año} theme={carreraData.carrera}>
-					{materias?.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio}) => (
-						<TarjetaMateria
-							materia={materia}
-							codigo={codigo}
-							paraCursar={paraCursar}
-							paraRendir={paraRendir}
-							planDeEstudio={planDeEstudio}
-							theme={carreraData.carrera}
-						/>
-					))}
+					{materias?.map(({materia: originalMateria, codigo, paraCursar, paraRendir, planDeEstudio}) => {
+						// Eliminar (Carrera) del nombre si existe
+						const materia = originalMateria.endsWith(` (${carreraData.carrera})`) 
+							? originalMateria.slice(0, -` (${carreraData.carrera})`.length) 
+							: originalMateria;
+						return (
+							<TarjetaMateria
+								materia={materia}
+								codigo={codigo}
+								paraCursar={paraCursar}
+								paraRendir={paraRendir}
+								planDeEstudio={planDeEstudio}
+								theme={carreraData.carrera}
+							/>
+						);
+					})}
 				</AñoCarrera>
 			)
 		}
@@ -102,50 +110,30 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 </Layout>
 
 <script>
-	function handleSearch(searchTerm: string) {
-		const searchTermLower = searchTerm.toLowerCase();
-		const materiasContainer = document.getElementById('materias-container');
-		if (!materiasContainer) return;
-		
-		const tarjetas = materiasContainer.getElementsByClassName('materia-card');
+  function handleSearch(searchTerm: string) {
+    const searchTermLower = searchTerm.toLowerCase();
+    const materiasContainer = document.getElementById("materias-container");
+    if (!materiasContainer) return;
 
-		Array.from(tarjetas).forEach(tarjeta => {
-			const nombreMateria = tarjeta.querySelector('h3')?.textContent?.toLowerCase() || '';
-			const codigoMateria = tarjeta.querySelector('.codigo')?.textContent?.toLowerCase() || '';
-			
-			if (nombreMateria.includes(searchTermLower) || codigoMateria.includes(searchTermLower)) {
-				(tarjeta as HTMLElement).style.display = '';
-			} else {
-				(tarjeta as HTMLElement).style.display = 'none';
-			}
-		});
-	}
+    const tarjetas = materiasContainer.getElementsByClassName("materia-card");
 
-	// Exponer la función al componente React
-	(window as any).handleSearch = handleSearch;
+    Array.from(tarjetas).forEach((tarjeta) => {
+      const nombreMateria =
+        tarjeta.querySelector("h3")?.textContent?.toLowerCase() || "";
+      const codigoMateria =
+        tarjeta.querySelector(".codigo")?.textContent?.toLowerCase() || "";
+
+      if (
+        nombreMateria.includes(searchTermLower) ||
+        codigoMateria.includes(searchTermLower)
+      ) {
+        (tarjeta as HTMLElement).style.display = "";
+      } else {
+        (tarjeta as HTMLElement).style.display = "none";
+      }
+    });
+  }
+
+  // Exponer la función al componente React
+  (window as any).handleSearch = handleSearch;
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
