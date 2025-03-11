@@ -6,190 +6,264 @@ import { Icon } from "astro-icon/components";
 
 // Función para verificar si una fecha ya pasó
 const fechaPasada = (fechaStr: string): boolean => {
-  const [day, month] = fechaStr.split("/").map(Number);
-  const fecha = new Date();
-  fecha.setFullYear(new Date().getFullYear(), month - 1, day);
-  fecha.setHours(0, 0, 0, 0);
-  return fecha < new Date();
+	const [day, month] = fechaStr.split("/").map(Number);
+	const fecha = new Date();
+	fecha.setFullYear(new Date().getFullYear(), month - 1, day);
+	fecha.setHours(0, 0, 0, 0);
+	return fecha < new Date();
 };
 
 // Obtener columnas visibles
-const columnasVisibles = examenes[0].turnos
-  .map((_, index) => {
-    const ultimaFecha = Math.max(
-      ...examenes.map((examen) => {
-        const fechaStr = examen.turnos[index].fecha;
-        const [day, month] = fechaStr.split("/").map(Number);
-        return new Date(new Date().getFullYear(), month - 1, day).getTime();
-      })
-    );
-    return new Date(ultimaFecha) >= new Date() ? index : null;
-  })
-  .filter((index) => index !== null);
+const columnasVisibles = examenes[0].turnos.map((_, index) => {
+		const ultimaFecha = Math.max(...examenes.map((examen) => {
+			const fechaStr = examen.turnos[index].fecha;
+			const [day, month] = fechaStr.split("/").map(Number);
+			return new Date(new Date().getFullYear(), month - 1, day).getTime();
+		}));
+		return new Date(ultimaFecha) >= new Date() ? index : null;
+	}).filter((index) => index !== null);
+
+// Helper function to generate Google Calendar links
+const generateCalendarLink = (fecha: string, asignatura: string): string => {
+	// Convert dd/mm/yyyy to Date object
+	const [day, month, year] = fecha.split('/')
+	
+	const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
+	const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+	const examDateNext = new Date(examDate)
+	examDateNext.setDate(examDate.getDate() + 1)
+	
+	const nextYear = examDateNext.getFullYear()
+	const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
+	const nextDay = examDateNext.getDate().toString().padStart(2, "0")
+	
+	const endDate = `${nextYear}${nextMonth}${nextDay}`
+
+	return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(asignatura)}&dates=${startDate}/${endDate}`
+}
 ---
 
 <Layout title="Mesas de Examen">
-  <div class="space-y-4">
-    <BuscadorMaterias
-      client:load
-      placeholder="Buscar materia..."
-      targetClass="mesa-row"
-    />
-    {
-      examenes.length > 0 && (
-        <div class="w-full overflow-x-auto mt-4">
-          <table class="w-full text-sm text-left hidden md:inline-block rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
-            <thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
-              <tr>
-                <th
-                  scope="col"
-                  class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10"
-                >
-                  Materia
-                </th>
-                {columnasVisibles.map((index) => (
-                  <th scope="col" class="px-6 text-center py-3">
-                    {index + 1}° Turno
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {examenes.map(({ asignatura, turnos }) => (
-                <tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
-                  <th
-                    scope="row"
-                    class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]"
-                  >
-                    {asignatura}
-                  </th>
-                  {columnasVisibles.map((colIndex) => {
-                    const { fecha } = turnos[colIndex];
-                    return (
-                      <td
-                        class:list={[
-                          "border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4",
-                          colIndex % 2 === 0
-                            ? "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
-                            : "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black",
-                        ]}
-                      >
-                        {fecha}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+	<section class="space-y-4">
+		<BuscadorMaterias client:load placeholder="Buscar materia..." targetClass="mesa-row"/>
+		{
+			examenes.length > 0 && (
+				<article class="w-full overflow-x-auto mt-4">
+					{/* <table class="w-full text-sm text-left hidden md:inline-block rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
+						<thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
+							<tr>
+								<th scope="col" class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10">
+									Materia
+								</th>
+								{columnasVisibles.map((index) => (
+									<th scope="col" class="px-6 text-center py-3">
+										{index + 1}° Turno
+									</th>
+									))
+								}
+							</tr>
+						</thead>
 
-          {examenes.map(({ asignatura: materia, turnos }) => {
-            
+						<tbody>
+						{examenes.map(({ asignatura, turnos }) => (
+							<tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
+								<th scope="row" class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
+									{asignatura}
+								</th>
+								{columnasVisibles.map((colIndex) => {
+									const { fecha } = turnos[colIndex];
+									return (
+										<td
+											class:list={[
+												"border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4", colIndex % 2 === 0 
+												? "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
+												: "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black",
+											]}>
+											{fecha}
+										</td>
+									);
+								})}
+							</tr>
+						))}
+						</tbody>
+					</table> */}
 
-            return (
-                <>
-              <div>
-                {materia}
-                
-              </div>
-              {/* Aside: Lista de todas las mesas */}
-<aside id={`dialog-${materia}`} class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
-	{/* Backdrop */}
-	<div
-		class="fixed inset-0 bg-black opacity-25 ease-in-out transition-all duration-300"
-		onclick={`closeDialog('dialog-${materia}')`}>
-	</div>
-
-	{/* Contenedor del dialog */}
-	<div
-		class="relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
-		{/* Contenido superior */}
-		<div class="flex flex-col items-center justify-center gap-2.5 relative">
-			{/* Icono */}
-			<div class="text-[var(--md-sys-color-primary)]">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="currentColor"
-					class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
-					<path
-						d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z">
-					</path>
-					<path
-						d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z">
-					</path>
-				</svg>
-			</div>
-			{/* Título */}
-			<h2 class="text-headline-small text-[var(--md-sys-color-on-surface)]">{materia}</h2>
-		</div>
-
-		{/* Lista con scroll */}
-		<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
-			<md-list>
-				{
-					turnos.map((turno, index) => {
-						const formattedDate = turno.fecha
-						const generateCalendarLink = (fecha: string) => {
-							// Convert dd/mm/yyyy to Date object
-							const [day, month, year] = fecha.split('/')
-							const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+					{/* Tarjeta Materia - Mesa */}
+					<div class="flex-col gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+						{examenes.map(({ asignatura, turnos }) => {
+							// Ordenar turnos por fecha y filtrar fechas pasadas
+							const today = new Date();
+							today.setHours(0, 0, 0, 0);
 							
-							const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
-							const examDateNext = new Date(examDate)
-							examDateNext.setDate(examDate.getDate() + 1)
-							
-							const nextYear = examDateNext.getFullYear()
-							const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
-							const nextDay = examDateNext.getDate().toString().padStart(2, "0")
-							
-							const endDate = `${nextYear}${nextMonth}${nextDay}`
+							const sortedTurnos = [...turnos]
+								.filter((turno) => {
+									if (!turno.fecha) return false;
+									
+									// Check if the date has passed
+									const [day, month, year] = turno.fecha.split('/').map(Number);
+									const examDate = new Date(year, month - 1, day);
+									examDate.setHours(0, 0, 0, 0);
+									
+									// Only include dates that haven't passed yet
+									return examDate >= today;
+								})
+								.map(turno => {
+									// Convert dd/mm/yyyy to yyyy-mm-dd for sorting
+									const [day, month, year] = turno.fecha.split('/')
+									return {
+										...turno,
+										fechaOrdenada: `${year}-${month}-${day}`
+									}
+								})
+								.sort((a, b) => {
+									return new Date(a.fechaOrdenada).getTime() - new Date(b.fechaOrdenada).getTime()
+								});
 
-							return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
-						}
+							// Obtener próxima mesa (primera fecha futura)
+							const proximaMesa = sortedTurnos.length > 0 ? sortedTurnos[0] : null;
+							
+							// Generar URL para Google Calendar
+							const eventUrl = proximaMesa ? generateCalendarLink(proximaMesa.fecha, asignatura) : "";
 
-						return (
-							<>
-								<md-list-item>
-									<div>
-										<strong>Mesa {index + 1}:</strong> {formattedDate}
+							return (
+								<article class="mesa-row w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden">
+									<header
+										class="bg-[var(--md-sys-color-primary)] text-[var(--md-sys-color-on-primary)] rounded-2xl p-1.5 flex flex-row gap-2.5 items-center w-full justify-center self-stretch shrink-0 relative">
+										<h3 class="text-center text-headline-small relative flex-1 flex items-center justify-center text-pretty">
+											{asignatura}
+										</h3>
+									</header>
+
+									
+									<div class="w-full bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+										<header class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+											{proximaMesa && (
+												<>
+													<h4>Próxima Mesa de Examen:</h4>
+													<p>{proximaMesa.fecha}</p>
+												</>
+											)}
+										</header>
+										
+										<div class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+											<md-outlined-button 
+												class="px-6 w-full flex-1"
+												onclick={`openDialog('dialog-${asignatura.replace(/\s+/g, '-')}')`}
+												disabled={!proximaMesa}>
+												Ver Más
+											</md-outlined-button>
+											
+											<md-filled-button
+												class="px-6 w-full flex-1"
+												trailing-icon
+												href={eventUrl}
+												target="_blank"
+												disabled={!proximaMesa}>
+												Agendar
+												<Icon name="GoogleCalendar" class={!proximaMesa ? "grayscale-100" : ""} slot="icon"/>
+											</md-filled-button>
+										</div>
 									</div>
-									<md-outlined-button
-										href={generateCalendarLink(turno.fecha)}
-										target="_blank"
-										class="pl-4 pr-6 w-min"
-										slot="end"
-										aria-label="Agendar en Google Calendar">
-										Agendar
-										<Icon name="GoogleCalendar" slot="icon"/>
-									</md-outlined-button>
-								</md-list-item>
-								<md-divider />
-							</>
-						)
-					})
-				}
-			</md-list>
-		</div>
+								</article>
+							);
+						})}
+					</div>
+				</article>
+			)
+		}
+	</section>
 
-		{/* Botón */}
-		<div class="pt-4 text-center">
-			<md-filled-button onclick={`closeDialog('dialog-${materia}')`} class="px-6 w-min">Cerrar</md-filled-button>
-		</div>
-	</div>
-</aside>
+	{/* Dialogs para cada materia */}
+	{
+		examenes.map(({ asignatura, turnos }) => (
+			<aside id={`dialog-${asignatura.replace(/\s+/g, '-')}`} class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+				{/* Backdrop */}
+				<div
+					class="fixed inset-0 bg-black opacity-25 ease-in-out transition-all duration-300"
+					onclick={`closeDialog('dialog-${asignatura.replace(/\s+/g, '-')}')`}>
+				</div>
 
-              </>
-            );
-          })}
-        </div>
-      )
-    }
-  </div>
+				{/* Contenedor del dialog */}
+				<div
+					class="relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
+					{/* Contenido superior */}
+					<div class="flex flex-col items-center justify-center gap-2.5 relative">
+						{/* Icono */}
+						<div class="text-[var(--md-sys-color-primary)]">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+								class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+								<path
+									d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z">
+								</path>
+								<path
+									d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z">
+								</path>
+							</svg>
+						</div>
+						{/* Título */}
+						<h2 class="text-headline-small text-[var(--md-sys-color-on-surface)]">{asignatura}</h2>
+					</div>
+
+					{/* Lista con scroll */}
+					<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
+						<md-list>
+							{
+								turnos.map((turno, index) => {
+									// Check if the date has passed
+									let dateHasPassed = false;
+									if (turno.fecha) {
+										const [day, month, year] = turno.fecha.split('/').map(Number);
+										const examDate = new Date(year, month - 1, day);
+										examDate.setHours(0, 0, 0, 0);
+										
+										const today = new Date();
+										today.setHours(0, 0, 0, 0);
+										
+										dateHasPassed = examDate < today;
+									}
+									
+									return (
+										<>
+											<md-list-item>
+												<div>
+													<strong>Mesa {index + 1}:</strong> {turno.fecha}
+													{dateHasPassed && <span class="text-[var(--md-sys-color-error)] ml-2">(Fecha pasada)</span>}
+												</div>
+												<md-outlined-button
+													href={!dateHasPassed ? generateCalendarLink(turno.fecha, asignatura) : undefined}
+													target="_blank"
+													class="pl-4 pr-6 w-min"
+													slot="end"
+													disabled={dateHasPassed}
+													aria-label="Agendar en Google Calendar">
+													Agendar
+													<Icon name="GoogleCalendar" class={dateHasPassed ? "grayscale-100" : ""} slot="icon"/>
+												</md-outlined-button>
+											</md-list-item>
+											<md-divider />
+										</>
+									);
+								})
+							}
+						</md-list>
+					</div>
+
+					{/* Botón */}
+					<div class="pt-4 text-center">
+						<md-filled-button onclick={`closeDialog('dialog-${asignatura.replace(/\s+/g, '-')}')`} class="px-6 w-min">Cerrar</md-filled-button>
+					</div>
+				</div>
+			</aside>
+		))
+	}
 </Layout>
+
 <script is:inline>
 	function openDialog(id) {
 		const dialog = document.getElementById(id)

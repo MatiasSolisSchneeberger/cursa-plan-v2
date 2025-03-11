@@ -54,9 +54,22 @@ const examen = examenes.find(e => e.asignatura.toUpperCase() === materia.toUpper
 // Get the turnos if the examen exists, otherwise use an empty array
 const turnos = examen?.turnos || []
 
-// Convert turnos to the format expected by the component
+// Convert turnos to the format expected by the component and filter past dates
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
 const sortedMesas = turnos
-	.filter((turno) => turno.fecha)
+	.filter((turno) => {
+		if (!turno.fecha) return false;
+		
+		// Check if the date has passed
+		const [day, month, year] = turno.fecha.split('/').map(Number);
+		const examDate = new Date(year, month - 1, day);
+		examDate.setHours(0, 0, 0, 0);
+		
+		// Only include dates that haven't passed yet
+		return examDate >= today;
+	})
 	.map(turno => {
 		// Convert dd/mm/yyyy to yyyy-mm-dd for sorting
 		const [day, month, year] = turno.fecha.split('/')
@@ -197,46 +210,64 @@ if (proximaMesa) {
 		<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
 			<md-list>
 				{
-					turnos.map((turno, index) => {
-						const formattedDate = turno.fecha
-						const generateCalendarLink = (fecha: string) => {
-							// Convert dd/mm/yyyy to Date object
-							const [day, month, year] = fecha.split('/')
-							const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+					(() => {
+						// Get today's date for comparison
+						const today = new Date();
+						today.setHours(0, 0, 0, 0);
+						
+						return turnos.map((turno, index) => {
+							const formattedDate = turno.fecha;
 							
-							const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
-							const examDateNext = new Date(examDate)
-							examDateNext.setDate(examDate.getDate() + 1)
+							// Check if the date has passed
+							let dateHasPassed = false;
+							if (turno.fecha) {
+								const [day, month, year] = turno.fecha.split('/').map(Number);
+								const examDate = new Date(year, month - 1, day);
+								examDate.setHours(0, 0, 0, 0);
+								dateHasPassed = examDate < today;
+							}
 							
-							const nextYear = examDateNext.getFullYear()
-							const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
-							const nextDay = examDateNext.getDate().toString().padStart(2, "0")
-							
-							const endDate = `${nextYear}${nextMonth}${nextDay}`
+							const generateCalendarLink = (fecha: string) => {
+								// Convert dd/mm/yyyy to Date object
+								const [day, month, year] = fecha.split('/')
+								const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+								
+								const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
+								const examDateNext = new Date(examDate)
+								examDateNext.setDate(examDate.getDate() + 1)
+								
+								const nextYear = examDateNext.getFullYear()
+								const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
+								const nextDay = examDateNext.getDate().toString().padStart(2, "0")
+								
+								const endDate = `${nextYear}${nextMonth}${nextDay}`
 
-							return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
-						}
+								return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
+							}
 
-						return (
-							<>
-								<md-list-item>
-									<div>
-										<strong>Mesa {index + 1}:</strong> {formattedDate}
-									</div>
-									<md-outlined-button
-										href={generateCalendarLink(turno.fecha)}
-										target="_blank"
-										class="pl-4 pr-6 w-min"
-										slot="end"
-										aria-label="Agendar en Google Calendar">
-										Agendar
-										<Icon name="GoogleCalendar" slot="icon"/>
-									</md-outlined-button>
-								</md-list-item>
-								<md-divider />
-							</>
-						)
-					})
+							return (
+								<>
+									<md-list-item>
+										<div>
+											<strong>Mesa {index + 1}:</strong> {formattedDate}
+											{dateHasPassed && <span class="text-[var(--md-sys-color-error)] ml-2">(Fecha pasada)</span>}
+										</div>
+										<md-outlined-button
+											href={!dateHasPassed ? generateCalendarLink(turno.fecha) : undefined}
+											target="_blank"
+											class="pl-4 pr-6 w-min"
+											slot="end"
+											disabled={dateHasPassed}
+											aria-label="Agendar en Google Calendar">
+											Agendar
+											<Icon name="GoogleCalendar" class={dateHasPassed ? "grayscale-100" : ""} slot="icon"/>
+										</md-outlined-button>
+									</md-list-item>
+									<md-divider />
+								</>
+							)
+						})
+					})()
 				}
 			</md-list>
 		</div>
