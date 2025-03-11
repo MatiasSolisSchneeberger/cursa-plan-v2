@@ -1,80 +1,247 @@
 ---
-import Layout from "@layouts/Layout.astro"
-import {examenes} from "@data/mesaDeExamenes.json"
-import BuscadorMaterias from "@components/BuscadorMaterias"
-
+import Layout from "@layouts/Layout.astro";
+import { examenes } from "@data/mesaDeExamenes.json";
+import BuscadorMaterias from "@components/BuscadorMaterias";
+import { Icon } from "astro-icon/components";
 
 // Función para verificar si una fecha ya pasó
 const fechaPasada = (fechaStr: string): boolean => {
-    const [day, month] = fechaStr.split('/').map(Number);
-    const fecha = new Date();
-    fecha.setFullYear(new Date().getFullYear(), month - 1, day);
-    fecha.setHours(0, 0, 0, 0);
-    return fecha < new Date();
+  const [day, month] = fechaStr.split("/").map(Number);
+  const fecha = new Date();
+  fecha.setFullYear(new Date().getFullYear(), month - 1, day);
+  fecha.setHours(0, 0, 0, 0);
+  return fecha < new Date();
 };
 
 // Obtener columnas visibles
 const columnasVisibles = examenes[0].turnos
-    .map((_, index) => {
-        const ultimaFecha = Math.max(...examenes.map(examen => {
+  .map((_, index) => {
+    const ultimaFecha = Math.max(
+      ...examenes.map((examen) => {
         const fechaStr = examen.turnos[index].fecha;
-        const [day, month] = fechaStr.split('/').map(Number);
+        const [day, month] = fechaStr.split("/").map(Number);
         return new Date(new Date().getFullYear(), month - 1, day).getTime();
-        }));
-        return new Date(ultimaFecha) >= new Date() ? index : null;
-    })
-    .filter(index => index !== null);
+      })
+    );
+    return new Date(ultimaFecha) >= new Date() ? index : null;
+  })
+  .filter((index) => index !== null);
 ---
 
 <Layout title="Mesas de Examen">
-    <div class="space-y-4">
-        <BuscadorMaterias 
-            client:load 
-            placeholder="Buscar materia..." 
-            targetClass="mesa-row" 
-        />
-        {examenes.length > 0 && (
-            <div class="w-full overflow-x-auto mt-4">
-                <table class="w-full text-sm text-left rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
-                    <thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
-                        <tr>
-                            <th scope="col" class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10">
-                                Materia
-                            </th>
-                            {columnasVisibles.map(index => (
-                                <th scope="col" class="px-6 text-center py-3">
-                                    {index + 1}° Turno
-                                </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {examenes.map(({asignatura, turnos}) => (
-                            <tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
-                                <th
-                                    scope="row"
-                                    class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
-                                    {asignatura}
-                                </th>
-                                {columnasVisibles.map(colIndex => {
-                                    const {fecha} = turnos[colIndex];
-                                    return (
-                                        <td
-                                            class:list={[
-                                                "border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4",
-                                                colIndex % 2 === 0 ?
-                                                    "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
-                                                :   "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black"
-                                            ]}>
-                                            {fecha}
-                                        </td>
-                                    );
-                                })}
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-        )}
-    </div>
+  <div class="space-y-4">
+    <BuscadorMaterias
+      client:load
+      placeholder="Buscar materia..."
+      targetClass="mesa-row"
+    />
+    {
+      examenes.length > 0 && (
+        <div class="w-full overflow-x-auto mt-4">
+          <table class="w-full text-sm text-left hidden md:inline-block rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
+            <thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
+              <tr>
+                <th
+                  scope="col"
+                  class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10"
+                >
+                  Materia
+                </th>
+                {columnasVisibles.map((index) => (
+                  <th scope="col" class="px-6 text-center py-3">
+                    {index + 1}° Turno
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {examenes.map(({ asignatura, turnos }) => (
+                <tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]"
+                  >
+                    {asignatura}
+                  </th>
+                  {columnasVisibles.map((colIndex) => {
+                    const { fecha } = turnos[colIndex];
+                    return (
+                      <td
+                        class:list={[
+                          "border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4",
+                          colIndex % 2 === 0
+                            ? "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
+                            : "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black",
+                        ]}
+                      >
+                        {fecha}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          {examenes.map(({ asignatura: materia, turnos }) => {
+            
+
+            return (
+                <>
+              <div>
+                {materia}
+                
+              </div>
+              {/* Aside: Lista de todas las mesas */}
+<aside id={`dialog-${materia}`} class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+	{/* Backdrop */}
+	<div
+		class="fixed inset-0 bg-black opacity-25 ease-in-out transition-all duration-300"
+		onclick={`closeDialog('dialog-${materia}')`}>
+	</div>
+
+	{/* Contenedor del dialog */}
+	<div
+		class="relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
+		{/* Contenido superior */}
+		<div class="flex flex-col items-center justify-center gap-2.5 relative">
+			{/* Icono */}
+			<div class="text-[var(--md-sys-color-primary)]">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="currentColor"
+					class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
+					<path
+						d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z">
+					</path>
+					<path
+						d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z">
+					</path>
+				</svg>
+			</div>
+			{/* Título */}
+			<h2 class="text-headline-small text-[var(--md-sys-color-on-surface)]">{materia}</h2>
+		</div>
+
+		{/* Lista con scroll */}
+		<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
+			<md-list>
+				{
+					turnos.map((turno, index) => {
+						const formattedDate = turno.fecha
+						const generateCalendarLink = (fecha: string) => {
+							// Convert dd/mm/yyyy to Date object
+							const [day, month, year] = fecha.split('/')
+							const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+							
+							const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
+							const examDateNext = new Date(examDate)
+							examDateNext.setDate(examDate.getDate() + 1)
+							
+							const nextYear = examDateNext.getFullYear()
+							const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
+							const nextDay = examDateNext.getDate().toString().padStart(2, "0")
+							
+							const endDate = `${nextYear}${nextMonth}${nextDay}`
+
+							return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
+						}
+
+						return (
+							<>
+								<md-list-item>
+									<div>
+										<strong>Mesa {index + 1}:</strong> {formattedDate}
+									</div>
+									<md-outlined-button
+										href={generateCalendarLink(turno.fecha)}
+										target="_blank"
+										class="pl-4 pr-6 w-min"
+										slot="end"
+										aria-label="Agendar en Google Calendar">
+										Agendar
+										<Icon name="GoogleCalendar" slot="icon"/>
+									</md-outlined-button>
+								</md-list-item>
+								<md-divider />
+							</>
+						)
+					})
+				}
+			</md-list>
+		</div>
+
+		{/* Botón */}
+		<div class="pt-4 text-center">
+			<md-filled-button onclick={`closeDialog('dialog-${materia}')`} class="px-6 w-min">Cerrar</md-filled-button>
+		</div>
+	</div>
+</aside>
+
+              </>
+            );
+          })}
+        </div>
+      )
+    }
+  </div>
 </Layout>
+<script is:inline>
+	function openDialog(id) {
+		const dialog = document.getElementById(id)
+		const content = dialog.querySelector("div.relative")
+		dialog.classList.remove("hidden")
+		document.body.style.overflow = "hidden"; // Bloquea el scroll en el fondo
+		// Forzar reflow para reiniciar la animación
+		void content.offsetWidth
+		content.classList.remove("opacity-0", "scale-95")
+		content.classList.add("opacity-100", "scale-100")
+	}
+
+	function closeDialog(id) {
+		const dialog = document.getElementById(id)
+		const content = dialog.querySelector("div.relative")
+		content.classList.remove("opacity-100", "scale-100")
+		document.body.style.overflow = ""; // Restaura el scroll en el fondo
+		content.classList.add("opacity-0", "scale-95")
+		setTimeout(() => {
+			dialog.classList.add("hidden")
+		}, 300)
+	}
+</script>
+
+<style>
+	/* Animación de apertura del dialog */
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	/* Animación de cierre del dialog */
+	@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+
+	/* Estilos para el backdrop con animación */
+	.dialog-backdrop {
+		animation: fadeIn 300ms ease-out forwards;
+	}
+
+	.dialog-backdrop.hidden {
+		animation: fadeOut 300ms ease-in forwards;
+	}
+</style>
+
