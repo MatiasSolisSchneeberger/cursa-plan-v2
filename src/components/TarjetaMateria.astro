@@ -1,6 +1,7 @@
 ---
 import {Icon} from "astro-icon/components"
 import RequisitosPara from "./RequisitosPara.astro"
+import {examenes} from "@data/mesaDeExamenes.json"
 
 interface Props {
 	materia: string
@@ -8,7 +9,6 @@ interface Props {
 	paraCursar: Array<condicion> | null
 	paraRendir: Array<condicion> | null
 	planDeEstudio: string | null
-	mesas: Array<mesa> | null
 	theme?: string
 }
 interface condicion {
@@ -19,13 +19,25 @@ interface mesa {
 	fecha: string
 }
 
-const {materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas, theme} = Astro.props
+const {materia, codigo, paraCursar, paraRendir, planDeEstudio, theme} = Astro.props
 
 const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE"
 
 const formatDate = (fecha: string | null) => {
 	if (!fecha || typeof fecha !== "string") return null // Si es null o no es string, devolver null
 
+	// Check if the date is in "dd/mm/yyyy" format (from mesaDeExamenes.json)
+	if (fecha.includes('/')) {
+		const dateParts = fecha.split('/')
+		if (dateParts.length !== 3) return null
+		
+		const [day, month, year] = dateParts
+		if (!year || !month || !day) return null
+		
+		return `${day}/${month}/${year.slice(-2)}`
+	}
+	
+	// Handle "yyyy-mm-dd" format (legacy format)
 	const dateParts = fecha.split("-")
 	if (dateParts.length !== 3) return null // Si el formato no es "aaaa-mm-d", devolver null
 
@@ -36,12 +48,26 @@ const formatDate = (fecha: string | null) => {
 	return `${day.padStart(2, "0")}/${month.padStart(2, "0")}/${year.slice(-2)}`
 }
 
-// Si `mesas` es null o vacío, que sea un array vacío para evitar errores
-const sortedMesas = (mesas ?? [])
-	.filter((mesa) => mesa.fecha)
+// Find the corresponding examen in mesaDeExamenes.json
+const examen = examenes.find(e => e.asignatura.toUpperCase() === materia.toUpperCase())
+
+// Get the turnos if the examen exists, otherwise use an empty array
+const turnos = examen?.turnos || []
+
+// Convert turnos to the format expected by the component
+const sortedMesas = turnos
+	.filter((turno) => turno.fecha)
+	.map(turno => {
+		// Convert dd/mm/yyyy to yyyy-mm-dd for sorting
+		const [day, month, year] = turno.fecha.split('/')
+		return {
+			fecha: `${year}-${month}-${day}`
+		}
+	})
 	.sort((a, b) => {
 		return new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
 	})
+
 const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null
 
 let eventUrl = ""
@@ -206,18 +232,22 @@ if (proximaMesa) {
 		<div class="flex-1 overflow-y-auto overscroll-contain py-4 w-full">
 			<md-list>
 				{
-					sortedMesas.map((mesa, index) => {
-						const formattedDate = formatDate(mesa.fecha)
+					turnos.map((turno, index) => {
+						const formattedDate = turno.fecha
 						const generateCalendarLink = (fecha: string) => {
-							const examDate = new Date(fecha)
-							const year = examDate.getFullYear()
-							const month = (examDate.getMonth() + 1).toString().padStart(2, "0")
-							const day = examDate.getDate().toString().padStart(2, "0")
-
-							const startDate = `${year}${month}${day}`
+							// Convert dd/mm/yyyy to Date object
+							const [day, month, year] = fecha.split('/')
+							const examDate = new Date(Number(year), Number(month) - 1, Number(day))
+							
+							const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`
 							const examDateNext = new Date(examDate)
 							examDateNext.setDate(examDate.getDate() + 1)
-							const endDate = `${examDateNext.getFullYear()}${(examDateNext.getMonth() + 1).toString().padStart(2, "0")}${examDateNext.getDate().toString().padStart(2, "0")}`
+							
+							const nextYear = examDateNext.getFullYear()
+							const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0")
+							const nextDay = examDateNext.getDate().toString().padStart(2, "0")
+							
+							const endDate = `${nextYear}${nextMonth}${nextDay}`
 
 							return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`
 						}
@@ -229,7 +259,7 @@ if (proximaMesa) {
 										<strong>Mesa {index + 1}:</strong> {formattedDate}
 									</div>
 									<md-outlined-button
-										href={generateCalendarLink(mesa.fecha)}
+										href={generateCalendarLink(turno.fecha)}
 										target="_blank"
 										class="pl-4 pr-6 w-min"
 										slot="end"

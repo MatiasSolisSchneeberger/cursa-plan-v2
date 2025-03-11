@@ -10,6 +10,31 @@ import TarjetaMateria from "@components/TarjetaMateria.astro"
 import BotonAño from "@components/BotonAño.jsx"
 import BuscadorMaterias from "@components/BuscadorMaterias.jsx"
 
+// Define interfaces for type safety
+interface Condicion {
+	mat: string;
+	cond: "R" | "A";
+}
+
+interface Materia {
+	materia: string;
+	codigo?: number;
+	paraCursar: Condicion[] | null;
+	paraRendir: Condicion[] | null;
+	planDeEstudio: string | null;
+}
+
+interface Orientacion {
+	nombre: string;
+	materias: Materia[];
+}
+
+interface Año {
+	año: number;
+	materias?: Materia[];
+	orientaciones?: Orientacion[];
+}
+
 export const getStaticPaths: GetStaticPaths = () => {
 	return carreras
 		.filter(({cursada}) => cursada.length > 0) // Filtrar carreras sin cursada
@@ -43,14 +68,13 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 			// Si el año tiene orientaciones
 			return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
 				<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
-					{orientacionMaterias.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
+					{orientacionMaterias.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio}) => (
 						<TarjetaMateria
 							materia={materia}
 							codigo={codigo}
 							paraCursar={paraCursar}
 							paraRendir={paraRendir}
 							planDeEstudio={planDeEstudio}
-							mesas={mesas}
 							theme={carreraData.carrera}
 						/>
 					))}
@@ -60,14 +84,13 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 			// Si el año no tiene orientaciones
 			return (
 				<AñoCarrera año={año} theme={carreraData.carrera}>
-					{materias?.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio, mesas}) => (
+					{materias?.map(({materia, codigo, paraCursar, paraRendir, planDeEstudio}) => (
 						<TarjetaMateria
 							materia={materia}
 							codigo={codigo}
 							paraCursar={paraCursar}
 							paraRendir={paraRendir}
 							planDeEstudio={planDeEstudio}
-							mesas={mesas}
 							theme={carreraData.carrera}
 						/>
 					))}
@@ -79,9 +102,11 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 </Layout>
 
 <script>
-	function handleSearch(searchTerm) {
+	function handleSearch(searchTerm: string) {
 		const searchTermLower = searchTerm.toLowerCase();
 		const materiasContainer = document.getElementById('materias-container');
+		if (!materiasContainer) return;
+		
 		const tarjetas = materiasContainer.getElementsByClassName('materia-card');
 
 		Array.from(tarjetas).forEach(tarjeta => {
@@ -89,13 +114,38 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ")
 			const codigoMateria = tarjeta.querySelector('.codigo')?.textContent?.toLowerCase() || '';
 			
 			if (nombreMateria.includes(searchTermLower) || codigoMateria.includes(searchTermLower)) {
-				tarjeta.style.display = '';
+				(tarjeta as HTMLElement).style.display = '';
 			} else {
-				tarjeta.style.display = 'none';
+				(tarjeta as HTMLElement).style.display = 'none';
 			}
 		});
 	}
 
 	// Exponer la función al componente React
-	window.handleSearch = handleSearch;
+	(window as any).handleSearch = handleSearch;
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1338,7 +1338,7 @@
                     "año": 1,
                     "materias": [
                         {
-                            "materia": "Algebra y Geometría Analítica",
+                            "materia": "Álgebra y Geometría Analítica",
                             "codigo": 101,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -1380,7 +1380,7 @@
                             "codigo": 105,
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 },
                                 {
@@ -1390,7 +1390,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -1459,7 +1459,7 @@
                             "codigo": 204,
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 },
                                 {
@@ -1473,7 +1473,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -1513,7 +1513,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -2154,7 +2154,7 @@
                     "año": 1,
                     "materias": [
                         {
-                            "materia": "Algebra y Geometría Analítica",
+                            "materia": "Álgebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -2213,7 +2213,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 }
                             ],
@@ -2223,7 +2223,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 }
                             ],
@@ -2270,7 +2270,7 @@
                             "materia": "Estadística y Análisis de Datos",
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 },
                                 {
@@ -2284,7 +2284,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 }
                             ],
@@ -2343,7 +2343,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -4497,7 +4497,7 @@
                     "año": 1,
                     "materias": [
                         {
-                            "materia": "Algebra y Geometría Analítica",
+                            "materia": "Álgebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -4530,7 +4530,7 @@
                             "materia": "Calculo Diferencial e Integral II",
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 },
                                 {
@@ -4540,7 +4540,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -4659,7 +4659,7 @@
                             "materia": "Estadística y Análisis de Datos",
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -4669,7 +4669,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -4701,7 +4701,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 }
                             ],
@@ -5248,7 +5248,7 @@
                     "año": 1,
                     "materias": [
                         {
-                            "materia": "Algebra y Geometría Analítica",
+                            "materia": "Álgebra y Geometría Analítica",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -5306,7 +5306,7 @@
                             "materia": "Calculo Diferencial e Integral II",
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "R"
                                 },
                                 {
@@ -5316,7 +5316,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -5338,7 +5338,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -5356,7 +5356,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -5374,7 +5374,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -5388,7 +5388,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -5426,7 +5426,7 @@
                             "materia": "Estadística y Análisis de Datos",
                             "paraCursar": [
                                 {
-                                    "mat": "Algebra y Geometría Analítica",
+                                    "mat": "Álgebra y Geometría Analítica",
                                     "cond": "A"
                                 },
                                 {
@@ -6764,7 +6764,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Algebra",
+                            "materia": "Álgebra",
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -6793,7 +6793,7 @@
                             "paraCursar": [],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra",
+                                    "mat": "Álgebra",
                                     "cond": "A"
                                 }
                             ],
@@ -6862,13 +6862,13 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algebra",
+                                    "mat": "Álgebra",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algebra",
+                                    "mat": "Álgebra",
                                     "cond": "A"
                                 },
                                 {
