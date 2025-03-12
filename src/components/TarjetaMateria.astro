@@ -115,59 +115,131 @@ if (proximaMesa) {
 		</h3>
 	</header>
 
-	<!-- Mobile slider container -->
+	<!-- Mobile slider / Desktop stack container -->
 	<div class="w-full flex flex-col gap-2.5">
-		<!-- Scrollable container -->
-		<div class="slider-container w-full overflow-x-auto flex gap-2 snap-x snap-mandatory hide-scrollbar">
+		<!-- Mobile slider container -->
+		<div class="sm:hidden w-full flex flex-col gap-2.5">
+			<!-- Scrollable container -->
+			<div class="slider-container w-full overflow-x-auto flex gap-2 snap-x snap-mandatory hide-scrollbar">
+				<!-- Requisitos -->
+				<section class="flex w-full flex-none snap-center gap-2.5 items-start justify-start">
+					<div class="w-full flex flex-col gap-2.5">
+						<RequisitosPara CursarRendir="Cursar" requisitos={paraCursar} />
+						<RequisitosPara CursarRendir="Rendir" requisitos={paraRendir} />
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer class="flex w-full flex-none snap-center gap-2.5 items-start justify-start">
+					<div class="w-full flex flex-col gap-2.5">
+						<!-- Mesa de Examenes -->
+						<div
+							class="w-full bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+							<header
+								class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
+								{
+									proximaMesa ?
+										<>
+											<h4>Proxima Mesa de Examen:</h4>
+											<p>{`${formatDate(proximaMesa.fecha)}`}</p>
+										</>
+									:	<h4>No hay Fechas</h4>
+								}
+							</header>
+							<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+								<md-outlined-button
+									class="px-6 w-full flex-1"
+									onclick={`openDialog('dialog-${materia}')`}
+									disabled={!proximaMesa}>
+									Ver Mas
+								</md-outlined-button>
+								<md-filled-button
+									class="px-6 w-full flex-1"
+									trailing-icon
+									href={eventUrl}
+									target="_blank"
+									disabled={!proximaMesa}>
+									Agendar
+									
+									<Icon name="GoogleCalendar" class={!proximaMesa ? "grayscale-100" : ""} slot="icon"/>
+								</md-filled-button>
+							</footer>
+						</div>
+						<div
+							class="w-full bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+							<header
+								class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
+								Plan De Estudio
+							</header>
+							<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+								<md-outlined-button class="px-6 w-full flex-1" disabled={!planDeEstudio}>Ver</md-outlined-button>
+								<md-filled-button class="px-6 w-full flex-1" disabled={!planDeEstudio}>Descargar</md-filled-button>
+							</footer>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<!-- Indicator dots -->
+			<div class="flex justify-center gap-2">
+				<button class="slider-dot w-2 h-2 rounded-full bg-[var(--md-sys-color-primary)] opacity-50" data-index="0"></button>
+				<button class="slider-dot w-2 h-2 rounded-full bg-[var(--md-sys-color-primary)] opacity-50" data-index="1"></button>
+			</div>
+		</div>
+
+		<!-- Desktop stack -->
+		<div class="hidden sm:flex w-full flex-col gap-2.5">
 			<!-- Requisitos -->
-			<section class="flex w-full flex-none snap-center gap-2.5 items-start justify-start">
+			<section class="flex w-full gap-2.5 items-start justify-start">
 				<div class="w-full flex flex-col lg:flex-row gap-2.5">
 					<RequisitosPara CursarRendir="Cursar" requisitos={paraCursar} />
 					<RequisitosPara CursarRendir="Rendir" requisitos={paraRendir} />
 				</div>
 			</section>
 
+			<md-divider role="separator" style="--md-divider-thickness: 2px"></md-divider>
+
 			<!-- Footer -->
-			<footer class="flex w-full flex-none snap-center gap-2.5 items-start justify-start">
+			<footer class="flex w-full gap-2.5 items-start justify-start">
 				<div class="w-full flex flex-col lg:flex-row gap-2.5">
 					<!-- Mesa de Examenes -->
-					<div
-						class="w-full lg:w-1/2 sm:flex-initial bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
-						<header
-							class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
-							{
-								proximaMesa ?
-									<>
-										<h4>Proxima Mesa de Examen:</h4>
-										<p>{`${formatDate(proximaMesa.fecha)}`}</p>
-									</>
-								:	<h4>No hay Fechas</h4>
-							}
-						</header>
-						<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
-							<md-outlined-button
-								class="px-6 w-full flex-1 lg:w-1/2"
-								onclick={`openDialog('dialog-${materia}')`}
-								disabled={!proximaMesa}>
-								Ver Mas
-							</md-outlined-button>
-							<md-filled-button
-								class="px-6 w-full flex-1 lg:w-1/2"
-								trailing-icon
-								href={eventUrl}
-								target="_blank"
-								disabled={!proximaMesa}>
-								Agendar
-								
-								<Icon name="GoogleCalendar" class={!proximaMesa ? "grayscale-100" : ""} slot="icon"/>
+				<div
+					class="w-full lg:w-1/2 sm:flex-initial bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
+					<header
+						class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+						{
+							proximaMesa ?
+								<>
+									<h4>Proxima Mesa de Examen:</h4>
+									<p>{`${formatDate(proximaMesa.fecha)}`}</p>
+								</>
+							:	<h4>No hay Fechas</h4>
+						}
+					</header>
+					<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
+						<md-outlined-button
+							class="px-6 w-full flex-1 lg:w-1/2"
+							onclick={`openDialog('dialog-${materia}')`}
+							disabled={!proximaMesa}>
+							Ver Mas
+						</md-outlined-button>
+						<md-filled-button
+							class="px-6 w-full flex-1 lg:w-1/2"
+							trailing-icon
+							href={eventUrl}
+							target="_blank"
+							disabled={!proximaMesa}>
+							Agendar
+							
+							<Icon name="GoogleCalendar" class={!proximaMesa ? "grayscale-100" : ""} slot="icon"/>
 
-							</md-filled-button>
+						</md-filled-button>
 						</footer>
 					</div>
 					<div
 						class="w-full lg:w-1/2 sm:flex-1 bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
 						<header
-							class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
+							class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
 							Plan De Estudio
 						</header>
 						<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
@@ -177,12 +249,6 @@ if (proximaMesa) {
 					</div>
 				</div>
 			</footer>
-		</div>
-
-		<!-- Indicator dots -->
-		<div class="flex justify-center gap-2 lg:hidden">
-			<button class="slider-dot w-2 h-2 rounded-full bg-[var(--md-sys-color-primary)] opacity-50" data-index="0"></button>
-			<button class="slider-dot w-2 h-2 rounded-full bg-[var(--md-sys-color-primary)] opacity-50" data-index="1"></button>
 		</div>
 	</div>
 </article>
