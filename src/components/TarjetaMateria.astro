@@ -55,33 +55,25 @@ const examen = examenes.find(e => e.asignatura.toUpperCase() === materia.toUpper
 const turnos = examen?.turnos || []
 
 // Convert turnos to the format expected by the component and filter past dates
-const today = new Date();
-today.setHours(0, 0, 0, 0);
+const currentDate = new Date();
 
 const sortedMesas = turnos
-	.filter((turno) => {
-		if (!turno.fecha) return false;
-		
-		// Check if the date has passed
-		const [day, month, year] = turno.fecha.split('/').map(Number);
-		const examDate = new Date(year, month - 1, day);
-		examDate.setHours(0, 0, 0, 0);
-		
-		// Only include dates that haven't passed yet
-		return examDate >= today;
-	})
-	.map(turno => {
-		// Convert dd/mm/yyyy to yyyy-mm-dd for sorting
-		const [day, month, year] = turno.fecha.split('/')
-		return {
-			fecha: `${year}-${month}-${day}`
-		}
-	})
-	.sort((a, b) => {
-		return new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
-	})
+  .filter(turno => turno.fecha)
+  .map(turno => {
+    // Convertir "dd/mm/yyyy" a objeto Date
+    const [day, month, year] = turno.fecha.split('/');
+    const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
+    return {
+      fecha: `${year}-${month}-${day}`,
+      dateObj
+    }
+  })
+  // Filtrar solo las fechas que sean hoy o futuras
+  .filter(turno => turno.dateObj >= currentDate)
+  .sort((a, b) => a.dateObj.getTime() - b.dateObj.getTime());
 
-const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null
+const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null;
+
 
 let eventUrl = ""
 if (proximaMesa) {
@@ -206,7 +198,7 @@ if (proximaMesa) {
 				<div
 					class="w-full lg:w-1/2 sm:flex-initial bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
 					<header
-						class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+						class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-xl flex flex-col text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
 						{
 							proximaMesa ?
 								<>
@@ -239,7 +231,7 @@ if (proximaMesa) {
 					<div
 						class="w-full lg:w-1/2 sm:flex-1 bg-[var(--md-sys-color-surface-variant)] rounded-2xl flex flex-col p-2.5 gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden">
 						<header
-							class="w-full bg-[var(--md-sys-color-primary-container)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-primary-container)] text-title-small">
+							class="w-full bg-[var(--md-sys-color-secondary)] p-2 rounded-lg text-center text-[var(--md-sys-color-on-secondary)] text-title-small">
 							Plan De Estudio
 						</header>
 						<footer class="flex flex-wrap gap-2.5 items-start justify-start self-stretch shrink-0 relative">
