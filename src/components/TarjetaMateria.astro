@@ -74,7 +74,7 @@ const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null;
 
 
 let eventUrl = ""
-let day = "";
+let day = "31";
 
 if (proximaMesa) {
 	// Convertir la fecha en objeto Date (se asume el formato "aaaa-mm-d")
@@ -155,7 +155,7 @@ if (proximaMesa) {
 									target="_blank"
 									disabled={!proximaMesa}>
 									Agendar
-									<img slot=icon src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`} alt="">
+									<img class="size-4" slot=icon src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`} alt="">
 								</md-filled-button>
 							</footer>
 						</div>
@@ -224,7 +224,7 @@ if (proximaMesa) {
 							target="_blank"
 							disabled={!proximaMesa}>
 							Agendar
-							<img slot=icon src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`} alt="">
+							<img class="size-4" slot=icon src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`} alt="">
 						</md-filled-button>
 						</footer>
 					</div>
