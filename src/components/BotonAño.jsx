@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 function Carrera({ carreraData }) {
     // Función para obtener sufijos
     function obtenerSufijo(p_año) {
-        if (p_año === 1) return "ro";
+        if (p_año === 1) return "er";
         if (p_año === 2) return "do";
         if (p_año === 3) return "ro";
         return "to"; // Para 4 o más
@@ -24,7 +24,7 @@ function Carrera({ carreraData }) {
     }, [carreraData]);
 
     return (
-        <div className="flex flex-wrap gap-3 justify-center">
+        <div className="flex flex-wrap w-full gap-3 justify-center">
             {carreraData.cursada.map(({ año, orientaciones }) => {
                 const sufijo = obtenerSufijo(año);
                 const tieneOrientaciones =
@@ -33,7 +33,7 @@ function Carrera({ carreraData }) {
                 return (
                     <div className="relative">
                         <md-outlined-button
-                            className={tieneOrientaciones ? "pl-6 pr-4": "px-6"}
+                            className={tieneOrientaciones ? "pl-6 pr-4" : "px-6"}
                             id={`usage-anchor-${año}`}
                             href={tieneOrientaciones ? null : `#${año}`}
                             trailing-icon
