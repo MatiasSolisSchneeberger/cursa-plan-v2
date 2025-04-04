@@ -1,0 +1,498 @@
+{
+    "carreras":[
+        {
+            "id": "BIO",
+            "carrera": "Bioquímica",
+            "icon": "microscope",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "AGR",
+            "carrera": "Ingeniería en Agrimensura",
+            "icon": "ruler-2",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ELE",
+            "carrera": "Ingeniería Eléctrica",
+            "icon": "bolt",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ELC",
+            "carrera": "Ingeniería en Electrónica",
+            "icon": "robot",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "LCB",
+            "carrera": "Licenciatura en Ciencias Biológicas",
+            "icon": "seedling",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "LCF",
+            "carrera": "Licenciatura en Ciencias Físicas",
+            "icon": "atom",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "LCQ",
+            "carrera": "Licenciatura en Ciencias Químicas",
+            "icon": "flask",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "LMA",
+            "carrera": "Licenciatura en Matemática",
+            "icon": "math",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "LSI",
+            "carrera": "Licenciatura en Sistemas de Información",
+            "icon": "device-imac",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PBI",
+            "carrera": "Profesorado en Biología",
+            "icon": "butterfly",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PCQ",
+            "carrera": "Profesorado en Ciencias Químicas y del Ambiente",
+            "icon": "test-pipe-2",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PFI",
+            "carrera": "Profesorado en Física",
+            "icon": "telescope",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "PMA",
+            "carrera": "Profesorado en Matemática",
+            "icon": "ruler",
+            "plan_de_estudio":[
+                {
+                    "id": 1,
+                    "añoInicio": 0,
+                    "descripcion": "",
+                    "cursada": [
+                        {
+                            "año": 1,
+                            "materias": [
+                                {
+                                    "id": 101,
+                                    "nombre": "",
+                                    "resolucion": "",
+                                    "correlativas": {
+                                        "cursar": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ],
+                                        "rendir": [
+                                            {
+                                                "mat": 101,
+                                                "condicion": "R"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
