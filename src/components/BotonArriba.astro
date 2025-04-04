@@ -2,7 +2,7 @@
 import {Icon} from "astro-icon/components"
 ---
 
-<md-fab id="scrollToTop" class="text-[var(--md-sys-color-on-primary)] fixed bottom-2 right-2 z-50" variant="primary">
+<md-fab id="scrollToTop" class="text-[var(--md-sys-color-on-primary)] invisible transition-all ease-in-out duration-250 fixed bottom-2 right-2 z-50 opacity-0 scale-90" variant="primary">
 	<Icon slot="icon" name="arrow-up" />
 </md-fab>
 
@@ -13,9 +13,11 @@ import {Icon} from "astro-icon/components"
 		const toggleVisibility = () => {
 			if (window.scrollY > 200) {
 				// Mostrar después de scrollear 200px
-				scrollToTopButton?.classList.remove("hidden")
+				scrollToTopButton?.classList.remove("invisible", "opacity-0", "scale-90")
+				scrollToTopButton?.classList.add("opacity-100", "scale-100")
 			} else {
-				scrollToTopButton?.classList.add("hidden")
+				scrollToTopButton?.classList.remove("opacity-100", "scale-100")
+				scrollToTopButton?.classList.add("invisible", "opacity-0", "scale-90")
 			}
 		}
 
