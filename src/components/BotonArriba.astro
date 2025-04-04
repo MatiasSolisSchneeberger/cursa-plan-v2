@@ -7,7 +7,6 @@ import {Icon} from "astro-icon/components"
 </md-fab>
 
 <script>
-	document.addEventListener("astro:page-load", () => {
 		const scrollToTopButton = document.getElementById("scrollToTop")
 
 		const toggleVisibility = () => {
@@ -30,5 +29,5 @@ import {Icon} from "astro-icon/components"
 
 		window.addEventListener("scroll", toggleVisibility)
 		scrollToTopButton?.addEventListener("click", handleScrollToTop)
-	})
+
 </script>

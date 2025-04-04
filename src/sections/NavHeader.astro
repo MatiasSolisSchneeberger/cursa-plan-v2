@@ -1,19 +1,17 @@
 ---
 import LogoPagina from "@components/LogoPagina.astro";
 import { Icon } from "astro-icon/components";
-
+const {pagina} = Astro.props
 const paginas = [
 	{ nombre: "Inicio", href: "/" },
 	{ nombre: "Mesas de Exámenes", href: "/mesas" },
 	{ nombre: "Calendarios", href: "/calendarios" },
-	{ nombre: "Contacto", href: "/contacto" },
 ];
 ---
 
-<nav
-	class="rounded-3xl bg-[var(--md-sys-color-background)] shadow-[var(--m3-elevation-1-box-shadow)] outline-1 outline-[var(--md-sys-color-outline)] transition-transform ease-in-out">
-	<div
-		class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+<header
+	class="rounded-xl bg-[var(--md-sys-color-background)] shadow-[var(--m3-elevation-1-box-shadow)] outline-1 outline-[var(--md-sys-color-outline)] transition-transform ease-in-out flex max-w-screen-xl flex-wrap items-center justify-between p-2.5">
+
 		<LogoPagina />
 
 		<md-filled-tonal-icon-button
@@ -25,79 +23,84 @@ const paginas = [
 			<Icon name="menu-2" />
 		</md-filled-tonal-icon-button>
 
-		<div
+		<nav
 			class="hidden w-full space-y-0.5 opacity-0 transition-all duration-150 ease-in-out md:block md:w-auto md:opacity-100">
 			<ul
 				class="mt-4 flex flex-col gap-3 rounded-lg md:mt-0 md:flex-row md:border-0 md:bg-transparent rtl:space-x-reverse">
 				<li class="block md:hidden"><md-divider inset></md-divider></li>
 				{
 					paginas.map(({ href, nombre }) => {
-						return (
-							<li>
-								<md-filled-tonal-button
-									href={href}
-									aria-current="page"
-									class="w-full px-6">
-									{nombre}
-								</md-filled-tonal-button>
-							</li>
-						);
+						if (pagina !== nombre ){
+							return (
+								<li>
+									<md-filled-tonal-button
+										href={href}
+										aria-current="page"
+										class="w-full px-6">
+										{nombre}
+									</md-filled-tonal-button>
+								</li>
+							);
+						}
 					})
 				}
 			</ul>
-		</div>
-	</div>
-</nav>
+		</nav>
+
+</header>
+
 <script>
-	document.addEventListener('astro:page-load', () => {
-		const menuButton = document.querySelector<HTMLElement>('md-filled-tonal-icon-button.md\\:hidden');
-		const mobileMenu = document.querySelector<HTMLElement>('.hidden.w-full.md\\:block');
-		
-		let isMenuOpen = false;
-	
-		if (!menuButton || !mobileMenu) return;
-	
-		const toggleMenu = (open: boolean) => {
-			if (!mobileMenu) return;
-	
-			if (open) {
-				// Mostrar menú con animación
-				mobileMenu.classList.remove('hidden');
-				mobileMenu.style.maxHeight = '0';
-				mobileMenu.style.opacity = '0';
-				
-				// Forzar reflow
-				void mobileMenu.offsetHeight;
-				
-				mobileMenu.style.maxHeight = `${mobileMenu.scrollHeight}px`;
-				mobileMenu.style.opacity = '1';
-			} else {
-				// Ocultar menú con animación
-				mobileMenu.style.maxHeight = '0';
-				mobileMenu.style.opacity = '0';
-				
-				setTimeout(() => {
-					mobileMenu.classList.add('hidden');
-				}, 200);
-			}
-		};
-	
-		menuButton.addEventListener('click', (e) => {
-			e.stopPropagation();
-			isMenuOpen = !isMenuOpen;
-			toggleMenu(isMenuOpen);
-		});
-	
-		// Cerrar menú al hacer clic fuera
-		document.addEventListener('click', (e) => {
-			if (isMenuOpen && mobileMenu && menuButton) {
-				const target = e.target as Node;
-				
-				if (!mobileMenu.contains(target) && !menuButton.contains(target)) {
-					isMenuOpen = false;
-					toggleMenu(false);
-				}
-			}
-		});
+	const menuButton = document.querySelector<HTMLElement>(
+		"md-filled-tonal-icon-button.md\\:hidden",
+	);
+	const mobileMenu = document.querySelector<HTMLElement>(
+		".hidden.w-full.md\\:block",
+	);
+
+	let isMenuOpen = false;
+
+	if (!menuButton || !mobileMenu) return;
+
+	const toggleMenu = (open: boolean) => {
+		if (!mobileMenu) return;
+
+		if (open) {
+			// Mostrar menú con animación
+			mobileMenu.classList.remove("hidden");
+			mobileMenu.style.maxHeight = "0";
+			mobileMenu.style.opacity = "0";
+
+			// Forzar reflow
+			void mobileMenu.offsetHeight;
+
+			mobileMenu.style.maxHeight = `${mobileMenu.scrollHeight}px`;
+			mobileMenu.style.opacity = "1";
+		} else {
+			// Ocultar menú con animación
+			mobileMenu.style.maxHeight = "0";
+			mobileMenu.style.opacity = "0";
+
+			setTimeout(() => {
+				mobileMenu.classList.add("hidden");
+			}, 200);
+		}
+	};
+
+	menuButton.addEventListener("click", (e) => {
+		e.stopPropagation();
+		isMenuOpen = !isMenuOpen;
+		toggleMenu(isMenuOpen);
 	});
-	</script>
+
+	// Cerrar menú al hacer clic fuera
+	document.addEventListener("click", (e) => {
+		if (isMenuOpen && mobileMenu && menuButton) {
+			const target = e.target as Node;
+
+			if (!mobileMenu.contains(target) && !menuButton.contains(target)) {
+				isMenuOpen = false;
+				toggleMenu(false);
+			}
+		}
+	});
+</script>
