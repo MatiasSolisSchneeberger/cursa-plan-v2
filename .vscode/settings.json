@@ -13,7 +13,8 @@
         "latex",
         "plaintext",
         "tailwindcss",
-        "astro"
+        "astro",
+        "javascriptreact"
     ],
     "spellright.parserByClass": {
         "tailwindcss": {

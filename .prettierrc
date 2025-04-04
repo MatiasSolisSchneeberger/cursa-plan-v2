@@ -1,0 +1,33 @@
+{
+    "arrowParens": "always",
+    "bracketSameLine": true,
+    "objectWrap": "preserve",
+    "bracketSpacing": true,
+    "semi": true,
+    "experimentalOperatorPosition": "end",
+    "experimentalTernaries": false,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "quoteProps": "as-needed",
+    "trailingComma": "all",
+    "singleAttributePerLine": false,
+    "htmlWhitespaceSensitivity": "css",
+    "vueIndentScriptAndStyle": false,
+    "proseWrap": "preserve",
+    "insertPragma": true,
+    "printWidth": 80,
+    "requirePragma": false,
+    "tabWidth": 4,
+    "useTabs": true,
+    "embeddedLanguageFormatting": "auto",
+    "tailwindStylesheet": "src/styles/global.css",
+    "plugins": [
+        "prettier-plugin-tailwindcss"
+    ],
+    "prettier.documentSelectors": [
+        "**/*.astro"
+    ],
+    "[astro]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
