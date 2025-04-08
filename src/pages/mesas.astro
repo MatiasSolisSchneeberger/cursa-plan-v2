@@ -79,7 +79,7 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 						<tbody>
 						{examenes.map(({ asignatura, turnos }) => (
 							<tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
-								<th scope="row" class="px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
+								<th scope="row" class="mesa-row px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
 									{asignatura}
 								</th>
 								{columnasVisibles.map((colIndex) => {

@@ -255,7 +255,7 @@ if (proximaMesa) {
 
 	<!-- Contenedor del dialog -->
 	<div
-		class="relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
+		class=" relative bg-[var(--md-sys-color-surface)] rounded-3xl w-full max-w-lg p-4 shadow-lg transform transition-all duration-300 scale-95 opacity-0 max-h-[90vh] flex flex-col">
 		<!-- Contenido superior -->
 		<div class="flex flex-col items-center justify-center gap-2.5 relative">
 			<!-- Icono -->
@@ -320,8 +320,8 @@ if (proximaMesa) {
 							}
 
 							return (
-								<>
-									<md-list-item>
+								
+									<md-list-item class="bg-inherit border-0">
 										<div>
 											<strong>Mesa {index + 1}:</strong> {formattedDate}
 											{dateHasPassed && <span class="text-[var(--md-sys-color-error)] ml-2">(Fecha pasada)</span>}
@@ -338,7 +338,7 @@ if (proximaMesa) {
 										</md-outlined-button>
 									</md-list-item>
 									<md-divider />
-								</>
+								
 							)
 						})
 					})()
@@ -355,14 +355,13 @@ if (proximaMesa) {
 
 <script is:inline>
 	function openDialog(id) {
-		const dialog = document.getElementById(id)
-		const content = dialog.querySelector("div.relative")
-		dialog.classList.remove("hidden")
-		document.body.style.overflow = "hidden"; // Bloquea el scroll en el fondo
-		// Forzar reflow para reiniciar la animación
-		void content.offsetWidth
-		content.classList.remove("opacity-0", "scale-95")
-		content.classList.add("opacity-100", "scale-100")
+		const dialog = document.getElementById(id);
+		const content = dialog.querySelector("div.relative");
+		dialog.classList.toggle("hidden");
+		document.body.style.overflow = "hidden";
+		void content.offsetWidth;
+		content.classList.remove("opacity-0", "scale-95");
+		content.classList.add("opacity-100", "scale-100");
 	}
 
 	function closeDialog(id) {
@@ -372,7 +371,7 @@ if (proximaMesa) {
 		document.body.style.overflow = ""; // Restaura el scroll en el fondo
 		content.classList.add("opacity-0", "scale-95")
 		setTimeout(() => {
-			dialog.classList.add("hidden")
+			dialog.classList.toggle("hidden")
 		}, 300)
 	}
 
