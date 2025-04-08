@@ -59,48 +59,49 @@ const paginas = [
 
 	let isMenuOpen = false;
 
-	if (!menuButton || !mobileMenu) return;
+	// Check if elements exist before proceeding
+	if (menuButton && mobileMenu) {
+		const toggleMenu = (open: boolean) => {
+			if (!mobileMenu) return;
 
-	const toggleMenu = (open: boolean) => {
-		if (!mobileMenu) return;
+			if (open) {
+				// Mostrar menú con animación
+				mobileMenu.classList.remove("hidden");
+				mobileMenu.style.maxHeight = "0";
+				mobileMenu.style.opacity = "0";
 
-		if (open) {
-			// Mostrar menú con animación
-			mobileMenu.classList.remove("hidden");
-			mobileMenu.style.maxHeight = "0";
-			mobileMenu.style.opacity = "0";
+				// Forzar reflow
+				void mobileMenu.offsetHeight;
 
-			// Forzar reflow
-			void mobileMenu.offsetHeight;
+				mobileMenu.style.maxHeight = `${mobileMenu.scrollHeight}px`;
+				mobileMenu.style.opacity = "1";
+			} else {
+				// Ocultar menú con animación
+				mobileMenu.style.maxHeight = "0";
+				mobileMenu.style.opacity = "0";
 
-			mobileMenu.style.maxHeight = `${mobileMenu.scrollHeight}px`;
-			mobileMenu.style.opacity = "1";
-		} else {
-			// Ocultar menú con animación
-			mobileMenu.style.maxHeight = "0";
-			mobileMenu.style.opacity = "0";
-
-			setTimeout(() => {
-				mobileMenu.classList.add("hidden");
-			}, 200);
-		}
-	};
-
-	menuButton.addEventListener("click", (e) => {
-		e.stopPropagation();
-		isMenuOpen = !isMenuOpen;
-		toggleMenu(isMenuOpen);
-	});
-
-	// Cerrar menú al hacer clic fuera
-	document.addEventListener("click", (e) => {
-		if (isMenuOpen && mobileMenu && menuButton) {
-			const target = e.target as Node;
-
-			if (!mobileMenu.contains(target) && !menuButton.contains(target)) {
-				isMenuOpen = false;
-				toggleMenu(false);
+				setTimeout(() => {
+					mobileMenu.classList.add("hidden");
+				}, 200);
 			}
-		}
-	});
+		};
+
+		menuButton.addEventListener("click", (e) => {
+			e.stopPropagation();
+			isMenuOpen = !isMenuOpen;
+			toggleMenu(isMenuOpen);
+		});
+
+		// Cerrar menú al hacer clic fuera
+		document.addEventListener("click", (e) => {
+			if (isMenuOpen && mobileMenu && menuButton) {
+				const target = e.target as Node;
+
+				if (!mobileMenu.contains(target) && !menuButton.contains(target)) {
+					isMenuOpen = false;
+					toggleMenu(false);
+				}
+			}
+		});
+	}
 </script>
