@@ -1,0 +1,205 @@
+{
+	"feriados": [
+		{
+			"tipo": "Feriados Inamovibles",
+			"color": "error",
+			"dias": [
+				{
+					"dia": 1,
+					"mes": 1,
+					"descripcion": "Año Nuevo",
+					"dia_semana": "Miércoles"
+				},
+				{
+					"dia": 3,
+					"mes": 3,
+					"descripcion": "Carnaval (Día 1)",
+					"dia_semana": "Lunes"
+				},
+				{
+					"dia": 4,
+					"mes": 3,
+					"descripcion": "Carnaval (Día 2)",
+					"dia_semana": "Martes"
+				},
+				{
+					"dia": 24,
+					"mes": 3,
+					"descripcion": "Día Nacional de la Memoria por la Verdad y la Justicia",
+					"dia_semana": "Lunes"
+				},
+				{
+					"dia": 2,
+					"mes": 4,
+					"descripcion": "Día del Veterano y de los Caídos en la Guerra de Malvinas",
+					"dia_semana": "Miércoles"
+				},
+				{
+					"dia": 18,
+					"mes": 4,
+					"descripcion": "Viernes Santo",
+					"dia_semana": "Viernes",
+					"aclaracion": "Festividad Cristiana"
+				},
+				{
+					"dia": 1,
+					"mes": 5,
+					"descripcion": "Día del Trabajador",
+					"dia_semana": "Jueves"
+				},
+				{
+					"dia": 25,
+					"mes": 5,
+					"descripcion": "Día de la Revolución de Mayo",
+					"dia_semana": "Domingo"
+				},
+				{
+					"dia": 20,
+					"mes": 6,
+					"descripcion": "Día Paso a la Inmortalidad del General Manuel Belgrano",
+					"dia_semana": "Viernes"
+				},
+				{
+					"dia": 9,
+					"mes": 7,
+					"descripcion": "Día de la Independencia",
+					"dia_semana": "Miércoles"
+				},
+				{
+					"dia": 8,
+					"mes": 12,
+					"descripcion": "Inmaculada Concepción de María",
+					"dia_semana": "Lunes"
+				},
+				{
+					"dia": 25,
+					"mes": 12,
+					"descripcion": "Navidad",
+					"dia_semana": "Jueves"
+				}
+			]
+		},
+		{
+			"tipo": "Feriados Trasladables",
+			"color": "error-container",
+			"dias": [
+				{
+					"dia": 16,
+					"mes": 6,
+					"descripcion": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
+					"dia_semana": "Martes",
+					"dia_original": 17
+				},
+				{
+					"dia": 18,
+					"mes": 8,
+					"descripcion": "Paso a la Inmortalidad del General José de San Martín",
+					"dia_semana": "Domingo",
+					"dia_original": 17
+				},
+				{
+					"dia": 13,
+					"mes": 10,
+					"descripcion": "Día del Respeto a la Diversidad Cultural",
+					"dia_semana": "Domingo",
+					"dia_original": 12
+				},
+				{
+					"dia": 21,
+					"mes": 11,
+					"descripcion": "Día de la Soberanía Nacional",
+					"dia_semana": "Jueves",
+					"dia_original": 20
+				}
+			]
+		},
+		{
+			"tipo": "Días No Laborables",
+			"color": "error-container",
+			"dias": [
+				{
+					"dia": 2,
+					"mes": 5,
+					"descripcion": "Fines turísticos",
+					"dia_semana": "Viernes",
+					"aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+				},
+				{
+					"dia": 15,
+					"mes": 8,
+					"descripcion": "Fines turísticos",
+					"dia_semana": "Viernes",
+					"aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+				},
+				{
+					"dia": 21,
+					"mes": 11,
+					"descripcion": "Fines turísticos",
+					"dia_semana": "Viernes",
+					"aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+				},
+				{
+					"dia": 17,
+					"mes": 4,
+					"descripcion": "Jueves Santo",
+					"dia_semana": "Jueves",
+					"aclaracion": "Festividad Cristiana (Res. 778/17)"
+				},
+				{
+					"dia": 3,
+					"mes": 5,
+					"descripcion": "Fundación de Corrientes",
+					"dia_semana": "Sábado",
+					"aclaracion": "Sólo para Corrientes"
+				},
+				{
+					"dia": 16,
+					"mes": 7,
+					"descripcion": "Virgen de Itatí",
+					"dia_semana": "Miércoles",
+					"aclaracion": "Corrientes"
+				},
+				{
+					"dia": 17,
+					"mes": 9,
+					"descripcion": "Día del Docente Universitario",
+					"dia_semana": "Miércoles",
+					"aclaracion": "No laborable para docentes"
+				},
+				{
+					"dia": 21,
+					"mes": 9,
+					"descripcion": "Día del Estudiante",
+					"dia_semana": "Domingo",
+					"aclaracion": "Asueto estudiantil"
+				},
+				{
+					"dia": 24,
+					"mes": 9,
+					"descripcion": "Virgen de la Merced",
+					"dia_semana": "Miércoles",
+					"aclaracion": "Sólo Corrientes"
+				},
+				{
+					"dia": 26,
+					"mes": 11,
+					"descripcion": "Día del No Docente Universitario",
+					"dia_semana": "Miércoles",
+					"aclaracion": "Personal administrativo"
+				},
+				{
+					"dia": 14,
+					"mes": 12,
+					"descripcion": "Aniversario UNNE",
+					"dia_semana": "Domingo",
+					"aclaracion": "Universidad Nacional del Nordeste"
+				}
+			]
+		}
+	],
+	"observaciones": {
+		"feriados_trasladables": "Según Ley 27.399, algunos feriados se mueven al lunes para crear fines de semana largos",
+		"dias_turisticos": "Decreto DECTO-2024-1027-APN-PTE establece días no laborables con fines turísticos",
+		"universitarios": "Los días no laborables universitarios aplican sólo para el claustro correspondiente"
+	}
+}

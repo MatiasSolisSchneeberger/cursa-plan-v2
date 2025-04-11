@@ -1,0 +1,164 @@
+{
+	"periodos": [
+		{
+			"nombre": "1° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 17,
+					"mes": 2
+				},
+				"final": {
+					"dia": 21,
+					"mes": 2
+				}
+			},
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica, excepto 1er año 1er cuatrimestre)"
+		},
+		{
+			"nombre": "2° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 10,
+					"mes": 3
+				},
+				"final": {
+					"dia": 14,
+					"mes": 3
+				}
+			}
+		},
+		{
+			"nombre": "3° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 25,
+					"mes": 3
+				},
+				"final": {
+					"dia": 31,
+					"mes": 3
+				}
+			}
+		},
+		{
+			"nombre": "4° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 5,
+					"mes": 5
+				},
+				"final": {
+					"dia": 30,
+					"mes": 5
+				}
+			}
+		},
+		{
+			"nombre": "5° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 30,
+					"mes": 6
+				},
+				"final": {
+					"dia": 4,
+					"mes": 7
+				}
+			},
+			"aclaracion": "Mesa expandida (actividad normal) | Mesa comprimida (suspensión de actividad)"
+		},
+		{
+			"nombre": "6° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 28,
+					"mes": 7
+				},
+				"final": {
+					"dia": 1,
+					"mes": 8
+				}
+			}
+		},
+		{
+			"nombre": "7° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 1,
+					"mes": 9
+				},
+				"final": {
+					"dia": 26,
+					"mes": 9
+				}
+			},
+			"aclaracion": "Mesa comprimida y expandida alternadas"
+		},
+		{
+			"nombre": "8° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 6,
+					"mes": 10
+				},
+				"final": {
+					"dia": 31,
+					"mes": 10
+				}
+			},
+			"aclaracion": "Mesa expandida (actividad normal)"
+		},
+		{
+			"nombre": "9° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 24,
+					"mes": 11
+				},
+				"final": {
+					"dia": 1,
+					"mes": 12
+				}
+			},
+			"aclaracion": "Mesa comprimida"
+		},
+		{
+			"nombre": "10° Turno",
+			"color": "primary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 15,
+					"mes": 12
+				},
+				"final": {
+					"dia": 19,
+					"mes": 12
+				}
+			},
+			"aclaracion": "Mesa comprimida"
+		},
+		{
+			"nombre": "Receso de Invierno",
+			"color": "secondary-container",
+			"fechas": {
+				"inicio": {
+					"dia": 14,
+					"mes": 7
+				},
+				"final": {
+					"dia": 27,
+					"mes": 7
+				}
+			}
+		}
+	]
+}
