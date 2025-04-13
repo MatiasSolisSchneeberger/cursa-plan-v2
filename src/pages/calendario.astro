@@ -130,8 +130,8 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 															? ""
 															: "hover:bg-[var(--md-sys-color-surface-bright)]"
 													} ${
-														color 
-															? `bg-[var(--md-sys-color-${color})] ${color !== 'error' && `border border-[var(--md-sys-color-on-${color})]`}`
+														color
+															? `bg-[var(--md-sys-color-${color})] hover:bg-[var(--md-sys-color-${color})] ${color !== "error" && `border border-[var(--md-sys-color-on-${color})]`}`
 															: "border border-[var(--md-sys-color-outline)]"
 													}`}>
 													<span
@@ -151,35 +151,85 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 
 							{/* Pie de página con leyendas */}
 							<footer class="flex w-full flex-col gap-4 rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2">
-								{/* Leyenda Feriados */}
-								{feriadosData.feriados.map((tipo) => (
-									<div class="flex flex-col gap-2.5">
-										<div class="flex items-center gap-2.5">
-											<div
-												class={`size-7 rounded-full bg-[var(--md-sys-color-${tipo.color})] outline outline-[var(--md-sys-color-on-${tipo.color})]`}
-											/>
-											<p class="text-body-medium">
-												{tipo.tipo}
-											</p>
-										</div>
-										<md-divider />
-									</div>
-								))}
+								{/* Feriados */}
+								{feriadosData.feriados.flatMap((tipo) =>
+									tipo.dias
+										.filter(
+											(dia) => dia.mes === currentMonth,
+										)
+										.map((feriado) => (
+											<div class="flex items-center gap-2.5">
+												<div
+													class={`relative flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-${tipo.color})] outline outline-[var(--md-sys-color-on-${tipo.color})] flex-none`}>
+													<span
+														class={`text-body-medium text-[var(--md-sys-color-on-${tipo.color})]`}>
+														{feriado.dia}
+													</span>
+												</div>
+												<p class="text-body-medium w-max text-[var(--md-sys-color-on-surface-variant)]">
+													{feriado.descripcion}
+													{/* {feriado.dia_original && ` (Original: ${feriado.dia_original})`} */}
+												</p>
+											</div>
+										)),
+								)}
 
-								{/* Leyenda Periodos */}
-								{periodosData.periodos.map((periodo) => (
-									<div class="flex flex-col gap-2.5">
-										<div class="flex items-center gap-2.5">
-											<div
-												class={`size-7 rounded-full bg-[var(--md-sys-color-${periodo.color})] outline outline-[var(--md-sys-color-on-${periodo.color})]`}
-											/>
-											<p class="text-body-medium">
-												{periodo.nombre}
-											</p>
-										</div>
-										<md-divider />
-									</div>
-								))}
+								{/* Periodos */}
+								{periodosData.periodos
+									.filter((periodo) => {
+										const startMonth =
+											periodo.fechas.inicio.mes;
+										const endMonth =
+											periodo.fechas.final.mes;
+										return (
+											currentMonth >= startMonth &&
+											(currentMonth < endMonth ||
+												currentMonth === endMonth)
+										);
+									})
+									.map((periodo) => {
+										const inicio = periodo.fechas.inicio;
+										const final = periodo.fechas.final;
+
+										// Determinar si el periodo cruza meses
+										const isCrossMonth =
+											inicio.mes !== final.mes;
+
+										// Mostrar fecha completa cuando hay cambio de mes
+										const displayStart =
+											isCrossMonth &&
+											currentMonth === inicio.mes
+												? `${inicio.dia}/${inicio.mes}`
+												: inicio.dia;
+
+										const displayEnd =
+											isCrossMonth &&
+											currentMonth === final.mes
+												? `${final.dia}/${final.mes}`
+												: final.dia;
+
+										return (
+											<div class="flex items-center gap-2.5">
+												<div
+													class={`relative flex h-7 items-center justify-center rounded-full px-2.5 bg-[var(--md-sys-color-${periodo.color})] outline outline-[var(--md-sys-color-on-${periodo.color})]`}>
+													<span
+														class={`text-body-small text-[var(--md-sys-color-on-${periodo.color})] text-nowrap`}>
+														{`${displayStart} - ${displayEnd}`}
+													</span>
+												</div>
+												<div>
+													<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
+														{periodo.nombre}
+													</p>
+													{periodo.aclaracion && (
+														<p class="text-label-medium text-[var(--md-sys-color-on-surface-variant)]">
+															{periodo.aclaracion}
+														</p>
+													)}
+												</div>
+											</div>
+										);
+									})}
 							</footer>
 						</div>
 					);

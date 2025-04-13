@@ -27,7 +27,8 @@
 					"dia": 14,
 					"mes": 3
 				}
-			}
+			},
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica, excepto 1er año 1er cuatrimestre)"
 		},
 		{
 			"nombre": "3° Turno",
@@ -41,7 +42,8 @@
 					"dia": 31,
 					"mes": 3
 				}
-			}
+			},
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica, excepto 1er año 1er cuatrimestre)"
 		},
 		{
 			"nombre": "4° Turno",
@@ -55,7 +57,8 @@
 					"dia": 30,
 					"mes": 5
 				}
-			}
+			},
+			"aclaracion": "Mesa expandida (con actividad académica normal)"
 		},
 		{
 			"nombre": "5° Turno",
@@ -70,7 +73,7 @@
 					"mes": 7
 				}
 			},
-			"aclaracion": "Mesa expandida (actividad normal) | Mesa comprimida (suspensión de actividad)"
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica)"
 		},
 		{
 			"nombre": "6° Turno",
@@ -84,7 +87,8 @@
 					"dia": 1,
 					"mes": 8
 				}
-			}
+			},
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica)"
 		},
 		{
 			"nombre": "7° Turno",
@@ -99,7 +103,7 @@
 					"mes": 9
 				}
 			},
-			"aclaracion": "Mesa comprimida y expandida alternadas"
+			"aclaracion": "Mesa expandida (con actividad académica normal)"
 		},
 		{
 			"nombre": "8° Turno",
@@ -114,7 +118,7 @@
 					"mes": 10
 				}
 			},
-			"aclaracion": "Mesa expandida (actividad normal)"
+			"aclaracion": "Mesa expandida (con actividad académica normal)"
 		},
 		{
 			"nombre": "9° Turno",
@@ -129,7 +133,7 @@
 					"mes": 12
 				}
 			},
-			"aclaracion": "Mesa comprimida"
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica)"
 		},
 		{
 			"nombre": "10° Turno",
@@ -144,7 +148,7 @@
 					"mes": 12
 				}
 			},
-			"aclaracion": "Mesa comprimida"
+			"aclaracion": "Mesa comprimida (suspensión de actividad académica)"
 		},
 		{
 			"nombre": "Receso de Invierno",
