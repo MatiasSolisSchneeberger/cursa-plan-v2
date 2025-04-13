@@ -2,6 +2,7 @@
 /* Importar componentes */
 import Analytics from "@vercel/analytics/astro";
 import { ClientRouter } from "astro:transitions";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import NavHeader from "@sections/NavHeader.astro";
 import BotonTema from "@components/BotonTema.astro";
@@ -150,6 +151,7 @@ const { title, theme, pagina } = Astro.props;
 
 		<!-- View Transition -->
 		<Analytics />
+		<SpeedInsights />
 	</head>
 	<body
 		class=`theme-${theme} transition-color ease-in-out duration-200 flex justify-center bg-[var(--md-sys-color-background)]`>
