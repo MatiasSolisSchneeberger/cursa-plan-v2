@@ -1,0 +1,240 @@
+---
+import Layout from "../layouts/Layout.astro";
+import feriadosData from "../data/calendario/feriados.json";
+import periodosData from "../data/calendario/periodos.json";
+
+const months = [
+	{ name: "Enero", days: 31, startDay: 3 },
+	{ name: "Febrero", days: 28, startDay: 6 },
+	{ name: "Marzo", days: 31, startDay: 6 },
+	{ name: "Abril", days: 30, startDay: 2 },
+	{ name: "Mayo", days: 31, startDay: 4 },
+	{ name: "Junio", days: 30, startDay: 0 },
+	{ name: "Julio", days: 31, startDay: 2 },
+	{ name: "Agosto", days: 31, startDay: 5 },
+	{ name: "Septiembre", days: 30, startDay: 1 },
+	{ name: "Octubre", days: 31, startDay: 3 },
+	{ name: "Noviembre", days: 30, startDay: 6 },
+	{ name: "Diciembre", days: 31, startDay: 1 },
+];
+
+const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
+---
+
+<Layout title="Calendario 2025">
+	<main class="container mx-auto px-4 py-8">
+		<h1 class="mb-8 text-center text-3xl font-bold">Calendario 2025</h1>
+		<div
+			class="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+			{
+				months.map((month, monthIndex) => {
+					const currentYear = 2025;
+					const currentMonth = monthIndex + 1;
+
+					return (
+						<div class="relative flex w-full max-w-sm flex-1 flex-col items-center justify-start gap-6 rounded-3xl border-1 border-[var(--md-sys-color-outline)] p-2">
+							<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-[var(--md-sys-color-primary)] p-1.5 text-[var(--md-sys-color-on-primary)]">
+								<h3 class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
+									{month.name}
+								</h3>
+							</header>
+
+							{/* Calendario */}
+							<div class="flex w-full flex-col gap-4 rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2 select-none">
+								<div class="grid grid-cols-7 justify-items-center gap-1">
+									{weekDays.map((day) => (
+										<div class="flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-secondary)] text-sm font-semibold text-[var(--md-sys-color-on-secondary)]">
+											<span>{day}</span>
+										</div>
+									))}
+								</div>
+								<div class="grid grid-cols-7 justify-items-center space-y-4">
+									{Array.from({ length: month.startDay }).map(
+										() => (
+											<div class="size-6" />
+										),
+									)}
+									{Array.from({ length: month.days }).map(
+										(_, i) => {
+											const day = i + 1;
+											let color = null;
+
+											// Verificar feriados
+											feriadosData.feriados.forEach(
+												(tipo) => {
+													tipo.dias.forEach(
+														(diaFeriado) => {
+															if (
+																diaFeriado.mes ===
+																	currentMonth &&
+																diaFeriado.dia ===
+																	day
+															) {
+																color =
+																	tipo.color;
+															}
+														},
+													);
+												},
+											);
+
+											// Verificar periodos
+											if (!color) {
+												periodosData.periodos.forEach(
+													(periodo) => {
+														const inicio =
+															periodo.fechas
+																.inicio;
+														const final =
+															periodo.fechas
+																.final;
+
+														// Usar el mes del periodo, no el mes actual
+														const startDate =
+															new Date(
+																currentYear,
+																inicio.mes - 1,
+																inicio.dia,
+															);
+														const endDate =
+															new Date(
+																currentYear,
+																final.mes - 1,
+																final.dia + 1,
+															); // +1 para incluir día final
+														const currentDate =
+															new Date(
+																currentYear,
+																currentMonth -
+																	1,
+																day,
+															);
+
+														if (
+															currentDate >=
+																startDate &&
+															currentDate <
+																endDate
+														) {
+															color =
+																periodo.color;
+														}
+													},
+												);
+											}
+
+											return (
+												<div
+													class={`relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out ${
+														color
+															? ""
+															: "hover:bg-[var(--md-sys-color-surface-bright)]"
+													} ${
+														color
+															? `bg-[var(--md-sys-color-${color})] hover:bg-[var(--md-sys-color-${color})] ${color !== "error" && `border border-[var(--md-sys-color-on-${color})]`}`
+															: "border border-[var(--md-sys-color-outline)]"
+													}`}>
+													<span
+														class={`text-body-medium ${
+															color
+																? `text-[var(--md-sys-color-on-${color})]`
+																: "text-[var(--md-sys-color-on-surface-variant)]"
+														}`}>
+														{day}
+													</span>
+												</div>
+											);
+										},
+									)}
+								</div>
+							</div>
+
+							{/* Pie de página con leyendas */}
+							<footer class="flex w-full flex-col gap-4 rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2">
+								{/* Feriados */}
+								{feriadosData.feriados.flatMap((tipo) =>
+									tipo.dias
+										.filter(
+											(dia) => dia.mes === currentMonth,
+										)
+										.map((feriado) => (
+											<div class="flex items-center gap-2.5">
+												<div
+													class={`relative flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-${tipo.color})] outline outline-[var(--md-sys-color-on-${tipo.color})] flex-none`}>
+													<span
+														class={`text-body-medium text-[var(--md-sys-color-on-${tipo.color})]`}>
+														{feriado.dia}
+													</span>
+												</div>
+												<p class="text-body-medium w-max text-[var(--md-sys-color-on-surface-variant)]">
+													{feriado.descripcion}
+													{/* {feriado.dia_original && ` (Original: ${feriado.dia_original})`} */}
+												</p>
+											</div>
+										)),
+								)}
+
+								{/* Periodos */}
+								{periodosData.periodos
+									.filter((periodo) => {
+										const startMonth =
+											periodo.fechas.inicio.mes;
+										const endMonth =
+											periodo.fechas.final.mes;
+										return (
+											currentMonth >= startMonth &&
+											(currentMonth < endMonth ||
+												currentMonth === endMonth)
+										);
+									})
+									.map((periodo) => {
+										const inicio = periodo.fechas.inicio;
+										const final = periodo.fechas.final;
+
+										// Determinar si el periodo cruza meses
+										const isCrossMonth =
+											inicio.mes !== final.mes;
+
+										// Mostrar fecha completa cuando hay cambio de mes
+										const displayStart =
+											isCrossMonth &&
+											currentMonth === inicio.mes
+												? `${inicio.dia}/${inicio.mes}`
+												: inicio.dia;
+
+										const displayEnd =
+											isCrossMonth &&
+											currentMonth === final.mes
+												? `${final.dia}/${final.mes}`
+												: final.dia;
+
+										return (
+											<div class="flex items-center gap-2.5">
+												<div
+													class={`relative flex h-7 items-center justify-center rounded-full px-2.5 bg-[var(--md-sys-color-${periodo.color})] outline outline-[var(--md-sys-color-on-${periodo.color})]`}>
+													<span
+														class={`text-body-small text-[var(--md-sys-color-on-${periodo.color})] text-nowrap`}>
+														{`${displayStart} - ${displayEnd}`}
+													</span>
+												</div>
+												<div>
+													<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
+														{periodo.nombre}
+													</p>
+													{periodo.aclaracion && (
+														<p class="text-label-medium text-[var(--md-sys-color-on-surface-variant)]">
+															{periodo.aclaracion}
+														</p>
+													)}
+												</div>
+											</div>
+										);
+									})}
+							</footer>
+						</div>
+					);
+				})
+			}
+		</div>
+	</main>
+</Layout>

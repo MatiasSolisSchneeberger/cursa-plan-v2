@@ -61,45 +61,7 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 		{
 			examenes.length > 0 && (
 				<article class="mt-4 w-full overflow-x-auto">
-					{/* <table class="w-full text-sm text-left hidden md:inline-block rounded-2xl overflow-hidden border-[var(--md-sys-color-outline)] border-2 rtl:text-right">
-						<thead class="text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-primary)] bg-[var(--md-sys-color-primary)]">
-							<tr>
-								<th scope="col" class="px-6 py-3 sticky left-0 bg-[var(--md-sys-color-primary)] z-10">
-									Materia
-								</th>
-								{columnasVisibles.map((index) => (
-									<th scope="col" class="px-6 text-center py-3">
-										{index + 1}° Turno
-									</th>
-									))
-								}
-							</tr>
-						</thead>
-
-						<tbody>
-						{examenes.map(({ asignatura, turnos }) => (
-							<tr class="bg-[var(--md-sys-color-secondary)] group mesa-row">
-								<th scope="row" class="mesa-row px-6 py-4 text-body-medium border-b-2 border-[var(--md-sys-color-outline-variant)] text-[var(--md-sys-color-on-secondary)] text-pretty w-full sticky left-0 bg-[var(--md-sys-color-secondary)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-[var(--md-sys-color-on-primary-container)]">
-									{asignatura}
-								</th>
-								{columnasVisibles.map((colIndex) => {
-									const { fecha } = turnos[colIndex];
-									return (
-										<td
-											class:list={[
-												"border-b-2 border-[var(--md-sys-color-outline)] px-6 py-4", colIndex % 2 === 0 
-												? "bg-[var(--md-sys-color-primary-container)] text-[var(--md-sys-color-on-primary-container)] group-hover:bg-[var(--md-sys-color-primary-container)]/70 group-hover:text-black"
-												: "bg-[var(--md-sys-color-secondary-container)] text-[var(--md-sys-color-on-secondary-container)] group-hover:bg-[var(--md-sys-color-secondary-container)]/70 group-hover:text-black",
-											]}>
-											{fecha}
-										</td>
-									);
-								})}
-							</tr>
-						))}
-						</tbody>
-					</table> */}
-
+				
 					{/* Tarjeta Materia - Mesa */}
 					<div class="grid grid-cols-1 flex-col gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
 						{examenes.map(({ asignatura, turnos }) => {

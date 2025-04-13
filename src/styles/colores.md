@@ -8,9 +8,9 @@ Ingeniería en Electrónica: #336940 -
 
 Licenciatura en Ciencias Biológicas: #3E6837 -
 
-Licenciatura en Ciencias Físicas: #3C6090 - 
+Licenciatura en Ciencias Físicas: #3C6090 -
 
-Licenciatura en Ciencias Químicas: #8F4B38 - 
+Licenciatura en Ciencias Químicas: #8F4B38 -
 
 Licenciatura en Matemática: #6E528A -
 
@@ -18,7 +18,7 @@ Licenciatura en Sistemas de Información: #2F628C
 
 Profesorado en Biología: #3E6837 -
 
-Profesorado en Ciencias Químicas y del Ambiente: #8E4958 - 
+Profesorado en Ciencias Químicas y del Ambiente: #8E4958 -
 
 Profesorado en Física: #00696B -
 
