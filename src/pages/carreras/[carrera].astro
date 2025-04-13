@@ -65,7 +65,7 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 	{carreraData.cursada?.map(({año, materias, orientaciones}) => {
 		if (orientaciones?.length > 0) {
 			return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
-				<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
+				<AñoCarrera client:visible año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
 					{orientacionMaterias.map(({materia: originalMateria, codigo, paraCursar, paraRendir, planDeEstudio}) => {
 						// Eliminar (Carrera) del nombre si existe
 						const materia = originalMateria.endsWith(` (${carreraData.carrera})`) 
