@@ -1,0 +1,73 @@
+---
+const {
+	tipo,
+	fecha,
+	fechaInicio,
+	fechaFinal,
+	descripcion,
+	aclaracion,
+	currentMonth,
+} = Astro.props;
+
+let displayDates = "";
+
+if (fecha) {
+	// Formato para feriado de un solo día
+	displayDates = fecha.dia.toString();
+} else if (fechaInicio && fechaFinal) {
+	// Formato para periodos con posible cambio de mes
+	const isCrossMonth = fechaInicio.mes !== fechaFinal.mes;
+
+	const start =
+		isCrossMonth && currentMonth === fechaInicio.mes
+			? `${fechaInicio.dia}/${fechaInicio.mes}`
+			: fechaInicio.dia;
+
+	const end =
+		isCrossMonth && currentMonth === fechaFinal.mes
+			? `${fechaFinal.dia}/${fechaFinal.mes}`
+			: fechaFinal.dia;
+
+	displayDates = `${start} - ${end}`;
+}
+---
+
+{
+	fecha ? (
+		/* Feriado de un día */
+		<div class="flex items-center gap-2.5">
+			<div
+				class={`relative flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-${tipo})]
+                 outline outline-[var(--md-sys-color-on-${tipo})]`}>
+				<span
+					class={`text-body-medium text-[var(--md-sys-color-on-${tipo})]`}>
+					{displayDates}
+				</span>
+			</div>
+			<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
+				{descripcion}
+			</p>
+		</div>
+	) : (
+		/* Periodo con rango de fechas */
+		<div class="flex items-center gap-2.5">
+			<div
+				class={`relative flex h-7 items-center justify-center rounded-full px-2.5 bg-[var(--md-sys-color-${tipo})] outline outline-[var(--md-sys-color-on-${tipo})]`}>
+				<span
+					class={`text-body-small text-[var(--md-sys-color-on-${tipo})] text-nowrap`}>
+					{displayDates}
+				</span>
+			</div>
+			<div>
+				<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
+					{descripcion}
+				</p>
+				{aclaracion && (
+					<p class="text-label-medium text-[var(--md-sys-color-on-surface-variant)]">
+						{aclaracion}
+					</p>
+				)}
+			</div>
+		</div>
+	)
+}

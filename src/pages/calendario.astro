@@ -57,7 +57,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 									{Array.from({ length: month.days }).map(
 										(_, i) => {
 											const day = i + 1;
-											let color = null;
+											let Estilo = null;
 
 											// Verificar feriados
 											feriadosData.feriados.forEach(
@@ -70,7 +70,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 																diaFeriado.dia ===
 																	day
 															) {
-																color =
+																Estilo =
 																	tipo.color;
 															}
 														},
@@ -79,7 +79,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 											);
 
 											// Verificar periodos
-											if (!color) {
+											if (!Estilo) {
 												periodosData.periodos.forEach(
 													(periodo) => {
 														const inicio =
@@ -116,7 +116,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 															currentDate <
 																endDate
 														) {
-															color =
+															Estilo =
 																periodo.color;
 														}
 													},
@@ -125,21 +125,14 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 
 											return (
 												<div
-													class={`relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out ${
-														color
-															? ""
-															: "hover:bg-[var(--md-sys-color-surface-bright)]"
-													} ${
-														color
-															? `bg-[var(--md-sys-color-${color})] hover:bg-[var(--md-sys-color-${color})] ${color !== "error" && `border border-[var(--md-sys-color-on-${color})]`}`
-															: "border border-[var(--md-sys-color-outline)]"
-													}`}>
+													class={`relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out 
+													${Estilo && 
+														`bg-[var(--md-sys-color-${Estilo})]`} 
+													${Estilo !== "error" && "outline"} outline-[var(--md-sys-color-${Estilo ? (Estilo !== "error" ? `on-${Estilo}` : "") : "outline"})] 
+														 `}>
 													<span
-														class={`text-body-medium ${
-															color
-																? `text-[var(--md-sys-color-on-${color})]`
-																: "text-[var(--md-sys-color-on-surface-variant)]"
-														}`}>
+														class={`text-body-medium
+																${Estilo ? `text-[var(--md-sys-color-on-${Estilo})]` : `text-[var(--md-sys-color-on-surface-variant)]`}`}>
 														{day}
 													</span>
 												</div>
