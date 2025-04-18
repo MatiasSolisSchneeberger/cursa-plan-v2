@@ -1,3 +1,5 @@
+/** @format */
+
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
@@ -80,13 +82,21 @@
 	--md-sys-color-surface-container: rgb(238, 237, 239);
 	--md-sys-color-surface-container-high: rgb(233, 232, 234);
 	--md-sys-color-surface-container-highest: rgb(227, 226, 228);
-	--m3-elevation-1-box-shadow: 0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
+	--m3-elevation-1-box-shadow:
+		0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
 		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
-	--m3-elevation-2-box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
+	--m3-elevation-2-box-shadow:
+		0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
 		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
-	--m3-elevation-3-box-shadow: 0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
-	--m3-elevation-4-box-shadow: 0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
-	--m3-elevation-5-box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3), 0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-3-box-shadow:
+		0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-4-box-shadow:
+		0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-5-box-shadow:
+		0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 [data-theme="dark"] {
@@ -139,13 +149,21 @@
 	--md-sys-color-surface-container: rgb(30, 32, 33);
 	--md-sys-color-surface-container-high: rgb(41, 42, 44);
 	--md-sys-color-surface-container-highest: rgb(52, 53, 55);
-	--m3-elevation-1-box-shadow: 0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
+	--m3-elevation-1-box-shadow:
+		0rem 0.25rem 0.75rem 0.25rem rgba(0, 0, 0, 0.15),
 		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
-	--m3-elevation-2-box-shadow: 0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
+	--m3-elevation-2-box-shadow:
+		0rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15),
 		0rem 0.25rem 0.5rem 0rem rgba(0, 0, 0, 0.3);
-	--m3-elevation-3-box-shadow: 0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
-	--m3-elevation-4-box-shadow: 0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3), 0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
-	--m3-elevation-5-box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3), 0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-3-box-shadow:
+		0rem 0.25rem 0.75rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 1rem 2rem 0.75rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-4-box-shadow:
+		0rem 0.5rem 0.75rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 1.5rem 2.5rem 1rem rgba(0, 0, 0, 0.15);
+	--m3-elevation-5-box-shadow:
+		0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.3),
+		0rem 2rem 3rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 /* Bioquímica */
@@ -1039,7 +1057,6 @@
 	--md-sys-color-surface-container: rgb(237 237 244);
 	--md-sys-color-surface-container-high: rgb(231 232 238);
 	--md-sys-color-surface-container-highest: rgb(226 226 233);
-
 }
 
 [data-theme="dark"] .theme-Licenciatura-en-Sistemas-de-Información {
@@ -1092,7 +1109,6 @@
 	--md-sys-color-surface-container: rgb(29 32 36);
 	--md-sys-color-surface-container-high: rgb(40 42 47);
 	--md-sys-color-surface-container-highest: rgb(51 53 58);
-
 }
 
 /* Profesorado-en-Biología */
@@ -1146,7 +1162,6 @@
 	--md-sys-color-surface-container: rgb(240 238 225);
 	--md-sys-color-surface-container-high: rgb(234 233 220);
 	--md-sys-color-surface-container-highest: rgb(228 227 214);
-
 }
 
 [data-theme="dark"] .theme-Profesorado-en-Biología {
@@ -1252,7 +1267,6 @@
 	--md-sys-color-surface-container: rgb(233 239 239);
 	--md-sys-color-surface-container-high: rgb(227 233 233);
 	--md-sys-color-surface-container-highest: rgb(221 228 227);
-
 }
 
 [data-theme="dark"] .theme-Profesorado-en-Física {
@@ -1463,7 +1477,6 @@
 	--md-sys-color-surface-container: rgb(251 234 235);
 	--md-sys-color-surface-container-high: rgb(245 228 230);
 	--md-sys-color-surface-container-highest: rgb(240 222 224);
-
 }
 
 [data-theme="dark"] .theme-Profesorado-en-Ciencias-Químicas-y-del-Ambiente {
@@ -1518,10 +1531,7 @@
 	--md-sys-color-surface-container-highest: rgb(60 50 52);
 }
 
-
-
-
-@theme {
+@theme inline {
 	/* ---- Colores ---- */
 	--color-primary: var(--md-sys-color-primary);
 	--color-surface-tint: var(--md-sys-color-surface-tint);
@@ -1556,22 +1566,32 @@
 	--color-primary-fixed: var(--md-sys-color-primary-fixed);
 	--color-on-primary-fixed: var(--md-sys-color-on-primary-fixed);
 	--color-primary-fixed-dim: var(--md-sys-color-primary-fixed-dim);
-	--color-on-primary-fixed-variant: var(--md-sys-color-on-primary-fixed-variant);
+	--color-on-primary-fixed-variant: var(
+		--md-sys-color-on-primary-fixed-variant
+	);
 	--color-secondary-fixed: var(--md-sys-color-secondary-fixed);
 	--color-on-secondary-fixed: var(--md-sys-color-on-secondary-fixed);
 	--color-secondary-fixed-dim: var(--md-sys-color-secondary-fixed-dim);
-	--color-on-secondary-fixed-variant: var(--md-sys-color-on-secondary-fixed-variant);
+	--color-on-secondary-fixed-variant: var(
+		--md-sys-color-on-secondary-fixed-variant
+	);
 	--color-tertiary-fixed: var(--md-sys-color-tertiary-fixed);
 	--color-on-tertiary-fixed: var(--md-sys-color-on-tertiary-fixed);
 	--color-tertiary-fixed-dim: var(--md-sys-color-tertiary-fixed-dim);
-	--color-on-tertiary-fixed-variant: var(--md-sys-color-on-tertiary-fixed-variant);
+	--color-on-tertiary-fixed-variant: var(
+		--md-sys-color-on-tertiary-fixed-variant
+	);
 	--color-surface-dim: var(--md-sys-color-surface-dim);
 	--color-surface-bright: var(--md-sys-color-surface-bright);
-	--color-surface-container-lowest: var(--md-sys-color-surface-container-lowest);
+	--color-surface-container-lowest: var(
+		--md-sys-color-surface-container-lowest
+	);
 	--color-surface-container-low: var(--md-sys-color-surface-container-low);
 	--color-surface-container: var(--md-sys-color-surface-container);
 	--color-surface-container-high: var(--md-sys-color-surface-container-high);
-	--color-surface-container-highest: var(--md-sys-color-surface-container-highest);
+	--color-surface-container-highest: var(
+		--md-sys-color-surface-container-highest
+	);
 
 	--shadow-1: var(--m3-elevation-1-box-shadow);
 	--shadow-2: var(--m3-elevation-2-box-shadow);
@@ -1694,70 +1714,70 @@
 }
 
 .text-display-large {
-	@apply font-display-large-font-family text-display-large-font-size font-display-large-font-weight leading-display-large-line-height;
+	@apply font-display-large-font-family text-display-large-font-size leading-display-large-line-height font-display-large-font-weight;
 	letter-spacing: var(--display-large-letter-spacing, -1px);
 }
 
 .text-display-medium {
-	@apply font-display-medium-font-family text-display-medium-font-size font-display-medium-font-weight leading-display-medium-line-height;
+	@apply font-display-medium-font-family text-display-medium-font-size leading-display-medium-line-height font-display-medium-font-weight;
 }
 
 .text-display-small {
-	@apply font-display-small-font-family text-display-small-font-size font-display-small-font-weight leading-display-small-line-height;
+	@apply font-display-small-font-family text-display-small-font-size leading-display-small-line-height font-display-small-font-weight;
 }
 
 .text-headline-large {
-	@apply font-headline-large-font-family text-headline-large-font-size font-headline-large-font-weight leading-headline-large-line-height;
+	@apply font-headline-large-font-family text-headline-large-font-size leading-headline-large-line-height font-headline-large-font-weight;
 }
 
 .text-headline-medium {
-	@apply font-headline-medium-font-family text-headline-medium-font-size font-headline-medium-font-weight leading-headline-medium-line-height;
+	@apply font-headline-medium-font-family text-headline-medium-font-size leading-headline-medium-line-height font-headline-medium-font-weight;
 }
 
 .text-headline-small {
-	@apply font-headline-small-font-family text-headline-small-font-size font-headline-small-font-weight leading-headline-small-line-height;
+	@apply font-headline-small-font-family text-headline-small-font-size leading-headline-small-line-height font-headline-small-font-weight;
 }
 
 .text-title-large {
-	@apply font-title-large-font-family text-title-large-font-size font-title-large-font-weight leading-title-large-line-height;
+	@apply font-title-large-font-family text-title-large-font-size leading-title-large-line-height font-title-large-font-weight;
 }
 
 .text-title-medium {
-	@apply font-title-medium-font-family text-title-medium-font-size font-title-medium-font-weight leading-title-medium-line-height;
+	@apply font-title-medium-font-family text-title-medium-font-size leading-title-medium-line-height font-title-medium-font-weight;
 	letter-spacing: var(--title-medium-letter-spacing, 0.15px);
 }
 
 .text-title-small {
-	@apply font-title-small-font-family text-title-small-font-size font-title-small-font-weight leading-title-small-line-height;
+	@apply font-title-small-font-family text-title-small-font-size leading-title-small-line-height font-title-small-font-weight;
 	letter-spacing: var(--title-small-letter-spacing, 0.1px);
 }
 
 .text-label-large {
-	@apply font-label-large-font-family text-label-large-font-size font-label-large-font-weight leading-label-large-line-height;
+	@apply font-label-large-font-family text-label-large-font-size leading-label-large-line-height font-label-large-font-weight;
 	letter-spacing: var(--label-large-letter-spacing, 0.1px);
 }
 
 .text-label-medium {
-	@apply font-label-medium-font-family text-label-medium-font-size font-label-medium-font-weight leading-label-medium-line-height;
+	@apply font-label-medium-font-family text-label-medium-font-size leading-label-medium-line-height font-label-medium-font-weight;
 	letter-spacing: var(--label-medium-letter-spacing, 0.5px);
 }
 
 .text-label-small {
-	@apply font-label-small-font-family text-label-small-font-size font-label-small-font-weight leading-label-small-line-height;
+	@apply font-label-small-font-family text-label-small-font-size leading-label-small-line-height font-label-small-font-weight;
 	letter-spacing: var(--label-small-letter-spacing, 0.5px);
 }
 
 .text-body-large {
-	@apply font-body-large-font-family text-body-large-font-size font-body-large-font-weight leading-body-large-line-height;
+	@apply font-body-large-font-family text-body-large-font-size leading-body-large-line-height font-body-large-font-weight;
 	letter-spacing: var(--body-large-letter-spacing, 0.5px);
 }
 
 .text-body-medium {
-	@apply font-body-medium-font-family text-body-medium-font-size font-body-medium-font-weight leading-body-medium-line-height;
+	@apply font-body-medium-font-family text-body-medium-font-size leading-body-medium-line-height font-body-medium-font-weight;
 	letter-spacing: var(--body-medium-letter-spacing, 0.25px);
 }
 
 .text-body-small {
-	@apply font-body-small-font-family text-body-small-font-size font-body-small-font-weight leading-body-small-line-height;
+	@apply font-body-small-font-family text-body-small-font-size leading-body-small-line-height font-body-small-font-weight;
 	letter-spacing: var(--body-small-letter-spacing, 0.4px);
 }

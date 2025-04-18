@@ -9,17 +9,17 @@ const {condicion, materia} = Astro.props
 
 <a
 	href=`#${materia}`
-	class=" outline-[var(--md-sys-color-outline)] outline-1 rounded-full flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden py-1.5 pr-3 pl-1.5">
+	class=" outline-outline outline-1 rounded-full flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden py-1.5 pr-3 pl-1.5">
 	<div
 		class:list={["rounded-full p-[5px] flex flex-col gap-2.5 items-center justify-center shrink-0 w-6 h-6 relative",
-			condicion === null ? "bg-[var(--md-sys-color-error)]": "bg-[var(--md-sys-color-tertiary)]"]}>
-		<p class="text-[var(--md-sys-color-on-tertiary)] text-center text-title-medium relative flex items-center justify-center">
+			condicion === null ? "bg-error": "bg-tertiary"]}>
+		<p class="text-on-tertiary text-center text-title-medium relative flex items-center justify-center">
             {condicion}
         </p>
 	</div>
 
 	<div class="flex flex-row pr-2 items-center justify-start flex-1 relative">
-		<p class="text-[var(--md-sys-color-on-secondary-container)] text-title-small relative flex items-center text-start justify-center">
+		<p class="text-on-secondary-container text-title-small relative flex items-center text-start justify-center">
 			{materia}
 		</p>
 	</div>

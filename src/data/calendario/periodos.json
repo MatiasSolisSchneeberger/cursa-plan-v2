@@ -152,7 +152,7 @@
 		},
 		{
 			"nombre": "Receso de Invierno",
-			"color": "secondary-container",
+			"color": "tertiary-container",
 			"fechas": {
 				"inicio": {
 					"dia": 14,

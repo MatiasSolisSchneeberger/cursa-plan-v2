@@ -119,14 +119,14 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 
 							return (
 								<article class="mesa-row full relative flex w-full flex-1 flex-col items-center justify-start gap-2.5 overflow-hidden rounded-3xl border border-outline p-2">
-									<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-[var(--md-sys-color-primary)] p-1.5 text-[var(--md-sys-color-on-primary)]">
+									<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
 										<h3 class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
 											{asignatura.replace(/-/g, " ")}
 										</h3>
 									</header>
 
-									<div class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2.5">
-										<header class="text-title-small flex w-full flex-col rounded-xl bg-[var(--md-sys-color-primary-container)] p-2 text-center text-[var(--md-sys-color-on-primary-container)]">
+									<div class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5">
+										<header class="text-title-small flex w-full flex-col rounded-xl bg-primary-container p-2 text-center text-on-primary-container">
 											{proximaMesa && (
 												<>
 													<h4>
@@ -185,11 +185,11 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 					onclick={`closeDialog('dialog-${asignatura.replace(/\s+/g, "-")}')`}></div>
 
 				{/* Contenedor del dialog */}
-				<div class="relative flex max-h-[90vh] w-full max-w-lg scale-95 transform flex-col rounded-3xl bg-[var(--md-sys-color-surface)] p-4 opacity-0 shadow-lg transition-all duration-300">
+				<div class="relative flex max-h-[90vh] w-full max-w-lg scale-95 transform flex-col rounded-3xl bg-surface p-4 opacity-0 shadow-lg transition-all duration-300">
 					{/* Contenido superior */}
 					<div class="relative flex flex-col items-center justify-center gap-2.5">
 						{/* Icono */}
-						<div class="text-[var(--md-sys-color-primary)]">
+						<div class="text-primary">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
@@ -208,7 +208,7 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 							</svg>
 						</div>
 						{/* Título */}
-						<h2 class="text-headline-small text-[var(--md-sys-color-on-surface)]">
+						<h2 class="text-headline-small text-on-surface">
 							{asignatura}
 						</h2>
 					</div>
@@ -245,7 +245,7 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 												</strong>{" "}
 												{turno.fecha}
 												{dateHasPassed && (
-													<span class="ml-2 text-[var(--md-sys-color-error)]">
+													<span class="ml-2 text-error">
 														(Fecha pasada)
 													</span>
 												)}
