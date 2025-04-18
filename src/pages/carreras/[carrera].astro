@@ -58,14 +58,14 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 <Layout title={`${NombreCarrera} | Plan de estudio`} theme={carreraData.carrera}>
 	
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<BotonAño carreraData={carreraData} client:visible />
-	<BuscadorMaterias client:visible />
+	<BotonAño carreraData={carreraData} />
+	<BuscadorMaterias />
 	
 	<div id="materias-container" class="space-y-8">
 	{carreraData.cursada?.map(({año, materias, orientaciones}) => {
 		if (orientaciones?.length > 0) {
 			return orientaciones.map(({nombre: orientacionNombre, materias: orientacionMaterias}) => (
-				<AñoCarrera client:visible año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
+				<AñoCarrera año={año} orientacion={orientacionNombre} theme={carreraData.carrera}>
 					{orientacionMaterias.map(({materia: originalMateria, codigo, paraCursar, paraRendir, planDeEstudio}) => {
 						// Eliminar (Carrera) del nombre si existe
 						const materia = originalMateria.endsWith(` (${carreraData.carrera})`) 
