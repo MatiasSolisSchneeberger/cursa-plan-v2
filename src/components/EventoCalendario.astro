@@ -1,0 +1,55 @@
+---
+
+interface Props {
+	numero: number | string;
+	tipo: string | null;
+	periodo?: boolean;
+}
+
+const { numero, tipo, periodo } = Astro.props;
+
+const baseClass = "relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out text-body-medium";
+
+let dynamicClasses = "";
+let dynamicPeriodo = "";
+
+if(periodo){
+	dynamicPeriodo = "py-4 w-max px-3"
+} else {
+	dynamicPeriodo = "min-w-7"
+}
+
+if (tipo) {
+    if (tipo.includes("container")) {
+		if (tipo.includes("primary")){
+			dynamicClasses = `bg-primary-container text-on-primary-container outline outline-on-primary-container`;
+		} else if (tipo.includes("secondary")){
+			dynamicClasses = `bg-secondary-container text-on-secondary-container outline outline-on-secondary-container`;
+		} else if (tipo.includes("tertiary")){
+			dynamicClasses = `bg-tertiary-container text-on-tertiary-container outline outline-on-tertiary-container`;
+		} else if (tipo.includes("error")){
+			dynamicClasses = `bg-error-container text-on-error-container outline outline-on-error-container`;
+		}
+    } else {
+        // Caso para tipos no container pero válidos
+        if (tipo.includes("primary")){
+			dynamicClasses = `bg-primary text-on-primary`;
+		} else if (tipo.includes("secondary")){
+			dynamicClasses = `bg-secondary text-on-secondary`;
+		} else if (tipo.includes("tertiary")){
+			dynamicClasses = `bg-tertiary text-on-tertiary`;
+		} else if (tipo.includes("error")){
+			dynamicClasses = `bg-error text-on-error`;
+		}
+    }
+} else {
+    // Caso por defecto cuando tipo es null
+    dynamicClasses = "text-on-surface-variant outline outline-on-surface-variant";
+}
+
+const finalClass = `${baseClass} ${dynamicClasses} ${dynamicPeriodo}`;
+---
+
+<div class={finalClass}>
+    <span class="w-max">{numero}</span>
+</div>

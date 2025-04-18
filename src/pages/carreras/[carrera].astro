@@ -58,8 +58,8 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 <Layout title={`${NombreCarrera} | Plan de estudio`} theme={carreraData.carrera}>
 	
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<BotonAño carreraData={carreraData} client:visible />
-	<BuscadorMaterias client:visible />
+	<BotonAño carreraData={carreraData} />
+	<BuscadorMaterias />
 	
 	<div id="materias-container" class="space-y-8">
 	{carreraData.cursada?.map(({año, materias, orientaciones}) => {

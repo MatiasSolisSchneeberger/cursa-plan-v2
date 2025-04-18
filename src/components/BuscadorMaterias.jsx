@@ -30,9 +30,9 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
 
     return (
 
-        <div className="relative group flex flex-row rounded-md focus-within:ring-2 focus-within:ring-[var(--md-sys-color-tertiary)] transition-all duration-300">
+        <div className="relative group flex flex-row rounded-md focus-within:ring-2 focus-within:ring-tertiary transition-all duration-300">
             {/* Contenedor de la lupa con z-index para superponer el ring */}
-            <div className='p-2.5 bg-[var(--md-sys-color-primary)] rounded-l-md text-[var(--md-sys-color-on-primary)] z-[1]'>
+            <div className='p-2.5 bg-primary rounded-l-md text-on-primary z-[1]'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={20}
@@ -55,7 +55,7 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
                 placeholder={placeholder}
                 value={searchTerm}
                 onChange={handleSearch}
-                className='w-full px-4 py-2 rounded-r-md bg-[var(--md-sys-color-background)] border border-[var(--md-sys-color-outline)] focus:outline-none focus:bg-[var(--md-sys-color-surface-variant)] focus:ring-2 focus:ring-[var(--md-sys-color-tertiary)] text-[var(--md-sys-color-on-surface)] focus:text-[var(--md-sys-color-on-surface-variant)] transition-all duration-300'
+                className='w-full px-4 py-2 rounded-r-md bg-background border border-outline focus:outline-none focus:bg-surface-variant focus:ring-2 focus:ring-tertiary text-on-surface focus:text-on-surface-variant transition-all duration-300'
 
             />
 
@@ -65,7 +65,7 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
                         setSearchTerm('');
                         handleSearch({ target: { value: '' } });
                     }}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[var(--md-sys-color-outline)]"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-outline"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
