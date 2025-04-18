@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import feriadosData from "../data/calendario/feriados.json";
 import periodosData from "../data/calendario/periodos.json";
+import EventoCalendario from "@components/EventoCalendario.astro";
 
 const months = [
 	{ name: "Enero", days: 31, startDay: 3 },
@@ -23,7 +24,9 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 
 <Layout title="Calendario 2025">
 	<main class="container mx-auto px-4 py-8">
-		<h1 class="mb-8 text-center text-3xl font-bold">Calendario 2025</h1>
+		<h1 class="text-display-small mb-8 text-center text-on-background">
+			Calendario 2025
+		</h1>
 		<div
 			class="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 			{
@@ -32,18 +35,18 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 					const currentMonth = monthIndex + 1;
 
 					return (
-						<div class="relative flex w-full max-w-sm flex-1 flex-col items-center justify-start gap-6 rounded-3xl border-1 border-[var(--md-sys-color-outline)] p-2">
-							<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-[var(--md-sys-color-primary)] p-1.5 text-[var(--md-sys-color-on-primary)]">
+						<div class="relative flex w-full max-w-sm flex-1 flex-col items-center justify-start gap-6 rounded-3xl border-1 border-outline p-2">
+							<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
 								<h3 class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
 									{month.name}
 								</h3>
 							</header>
 
 							{/* Calendario */}
-							<div class="flex w-full flex-col gap-4 rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2 select-none">
+							<div class="flex w-full flex-col gap-4 rounded-2xl bg-surface-variant p-2 select-none">
 								<div class="grid grid-cols-7 justify-items-center gap-1">
 									{weekDays.map((day) => (
-										<div class="flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-secondary)] text-sm font-semibold text-[var(--md-sys-color-on-secondary)]">
+										<div class="flex size-7 items-center justify-center rounded-full bg-secondary text-sm font-semibold text-on-secondary">
 											<span>{day}</span>
 										</div>
 									))}
@@ -51,7 +54,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 								<div class="grid grid-cols-7 justify-items-center space-y-4">
 									{Array.from({ length: month.startDay }).map(
 										() => (
-											<div class="size-6" />
+											<div class="size-7" />
 										),
 									)}
 									{Array.from({ length: month.days }).map(
@@ -124,18 +127,10 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 											}
 
 											return (
-												<div
-													class={`relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out 
-													${Estilo && 
-														`bg-[var(--md-sys-color-${Estilo})]`} 
-													${Estilo !== "error" && "outline"} outline-[var(--md-sys-color-${Estilo ? (Estilo !== "error" ? `on-${Estilo}` : "") : "outline"})] 
-														 `}>
-													<span
-														class={`text-body-medium
-																${Estilo ? `text-[var(--md-sys-color-on-${Estilo})]` : `text-[var(--md-sys-color-on-surface-variant)]`}`}>
-														{day}
-													</span>
-												</div>
+												<EventoCalendario
+													numero={day}
+													tipo={Estilo}
+												/>
 											);
 										},
 									)}
@@ -143,7 +138,7 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 							</div>
 
 							{/* Pie de página con leyendas */}
-							<footer class="flex w-full flex-col gap-4 rounded-2xl bg-[var(--md-sys-color-surface-variant)] p-2">
+							<footer class="flex w-full flex-col gap-4 rounded-2xl bg-surface-variant p-2">
 								{/* Feriados */}
 								{feriadosData.feriados.flatMap((tipo) =>
 									tipo.dias
@@ -152,14 +147,13 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 										)
 										.map((feriado) => (
 											<div class="flex items-center gap-2.5">
-												<div
-													class={`relative flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-${tipo.color})] outline outline-[var(--md-sys-color-on-${tipo.color})] flex-none`}>
-													<span
-														class={`text-body-medium text-[var(--md-sys-color-on-${tipo.color})]`}>
-														{feriado.dia}
-													</span>
-												</div>
-												<p class="text-body-medium w-max text-[var(--md-sys-color-on-surface-variant)]">
+												<EventoCalendario
+													
+													numero={feriado.dia}
+													tipo={tipo.color}
+												/>
+
+												<p class="text-body-medium w-max text-on-surface-variant">
 													{feriado.descripcion}
 													{/* {feriado.dia_original && ` (Original: ${feriado.dia_original})`} */}
 												</p>
@@ -191,31 +185,30 @@ const weekDays = ["D", "L", "M", "M", "J", "V", "S"];
 										// Mostrar fecha completa cuando hay cambio de mes
 										const displayStart =
 											isCrossMonth &&
-											currentMonth === inicio.mes
+											currentMonth !== inicio.mes
 												? `${inicio.dia}/${inicio.mes}`
 												: inicio.dia;
 
 										const displayEnd =
 											isCrossMonth &&
-											currentMonth === final.mes
+											currentMonth !== final.mes
 												? `${final.dia}/${final.mes}`
 												: final.dia;
 
 										return (
 											<div class="flex items-center gap-2.5">
-												<div
-													class={`relative flex h-7 items-center justify-center rounded-full px-2.5 bg-[var(--md-sys-color-${periodo.color})] outline outline-[var(--md-sys-color-on-${periodo.color})]`}>
-													<span
-														class={`text-body-small text-[var(--md-sys-color-on-${periodo.color})] text-nowrap`}>
-														{`${displayStart} - ${displayEnd}`}
-													</span>
-												</div>
+												<EventoCalendario												
+													numero={`${displayStart} - ${displayEnd}`}
+													tipo={periodo.color}
+													periodo
+												/>
+
 												<div>
-													<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
+													<p class="text-body-medium text-on-surface-variant">
 														{periodo.nombre}
 													</p>
 													{periodo.aclaracion && (
-														<p class="text-label-medium text-[var(--md-sys-color-on-surface-variant)]">
+														<p class="text-label-medium text-on-surface-variant">
 															{periodo.aclaracion}
 														</p>
 													)}

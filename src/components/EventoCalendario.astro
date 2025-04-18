@@ -1,73 +1,55 @@
 ---
-const {
-	tipo,
-	fecha,
-	fechaInicio,
-	fechaFinal,
-	descripcion,
-	aclaracion,
-	currentMonth,
-} = Astro.props;
 
-let displayDates = "";
-
-if (fecha) {
-	// Formato para feriado de un solo día
-	displayDates = fecha.dia.toString();
-} else if (fechaInicio && fechaFinal) {
-	// Formato para periodos con posible cambio de mes
-	const isCrossMonth = fechaInicio.mes !== fechaFinal.mes;
-
-	const start =
-		isCrossMonth && currentMonth === fechaInicio.mes
-			? `${fechaInicio.dia}/${fechaInicio.mes}`
-			: fechaInicio.dia;
-
-	const end =
-		isCrossMonth && currentMonth === fechaFinal.mes
-			? `${fechaFinal.dia}/${fechaFinal.mes}`
-			: fechaFinal.dia;
-
-	displayDates = `${start} - ${end}`;
+interface Props {
+	numero: number | string;
+	tipo: string | null;
+	periodo?: boolean;
 }
+
+const { numero, tipo, periodo } = Astro.props;
+
+const baseClass = "relative flex size-7 items-center justify-center rounded-full transition-all ease-in-out text-body-medium";
+
+let dynamicClasses = "";
+let dynamicPeriodo = "";
+
+if(periodo){
+	dynamicPeriodo = "py-4 w-max px-3"
+} else {
+	dynamicPeriodo = "min-w-7"
+}
+
+if (tipo) {
+    if (tipo.includes("container")) {
+		if (tipo.includes("primary")){
+			dynamicClasses = `bg-primary-container text-on-primary-container outline outline-on-primary-container`;
+		} else if (tipo.includes("secondary")){
+			dynamicClasses = `bg-secondary-container text-on-secondary-container outline outline-on-secondary-container`;
+		} else if (tipo.includes("tertiary")){
+			dynamicClasses = `bg-tertiary-container text-on-tertiary-container outline outline-on-tertiary-container`;
+		} else if (tipo.includes("error")){
+			dynamicClasses = `bg-error-container text-on-error-container outline outline-on-error-container`;
+		}
+    } else {
+        // Caso para tipos no container pero válidos
+        if (tipo.includes("primary")){
+			dynamicClasses = `bg-primary text-on-primary`;
+		} else if (tipo.includes("secondary")){
+			dynamicClasses = `bg-secondary text-on-secondary`;
+		} else if (tipo.includes("tertiary")){
+			dynamicClasses = `bg-tertiary text-on-tertiary`;
+		} else if (tipo.includes("error")){
+			dynamicClasses = `bg-error text-on-error`;
+		}
+    }
+} else {
+    // Caso por defecto cuando tipo es null
+    dynamicClasses = "text-on-surface-variant outline outline-on-surface-variant";
+}
+
+const finalClass = `${baseClass} ${dynamicClasses} ${dynamicPeriodo}`;
 ---
 
-{
-	fecha ? (
-		/* Feriado de un día */
-		<div class="flex items-center gap-2.5">
-			<div
-				class={`relative flex size-7 items-center justify-center rounded-full bg-[var(--md-sys-color-${tipo})]
-                 outline outline-[var(--md-sys-color-on-${tipo})]`}>
-				<span
-					class={`text-body-medium text-[var(--md-sys-color-on-${tipo})]`}>
-					{displayDates}
-				</span>
-			</div>
-			<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
-				{descripcion}
-			</p>
-		</div>
-	) : (
-		/* Periodo con rango de fechas */
-		<div class="flex items-center gap-2.5">
-			<div
-				class={`relative flex h-7 items-center justify-center rounded-full px-2.5 bg-[var(--md-sys-color-${tipo})] outline outline-[var(--md-sys-color-on-${tipo})]`}>
-				<span
-					class={`text-body-small text-[var(--md-sys-color-on-${tipo})] text-nowrap`}>
-					{displayDates}
-				</span>
-			</div>
-			<div>
-				<p class="text-body-medium text-[var(--md-sys-color-on-surface-variant)]">
-					{descripcion}
-				</p>
-				{aclaracion && (
-					<p class="text-label-medium text-[var(--md-sys-color-on-surface-variant)]">
-						{aclaracion}
-					</p>
-				)}
-			</div>
-		</div>
-	)
-}
+<div class={finalClass}>
+    <span class="w-max">{numero}</span>
+</div>
