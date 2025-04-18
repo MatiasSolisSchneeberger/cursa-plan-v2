@@ -7,7 +7,7 @@ import Layout from "@layouts/Layout.astro";
 import AñoCarrera from "@components/AñoCarrera.astro";
 import HeaderCarrera from "@components/HeaderCarrera.astro";
 import TarjetaMateria from "@components/TarjetaMateria.astro";
-import BotonAño from "@components/BotonAño.jsx";
+import BotonAnno from "@components/BotonAño.jsx";
 import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
 
 // Define interfaces for type safety
@@ -58,7 +58,7 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 <Layout title={`${NombreCarrera} | Plan de estudio`} theme={carreraData.carrera}>
 	
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<BotonAño carreraData={carreraData} />
+	<BotonAnno carreraData={carreraData} />
 	<BuscadorMaterias />
 	
 	<div id="materias-container" class="space-y-8">
@@ -78,7 +78,7 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 								paraCursar={paraCursar}
 								paraRendir={paraRendir}
 								planDeEstudio={planDeEstudio}
-								theme={carreraData.carrera}
+								carrera={carreraData.carrera}
 							/>
 						);
 					})}

@@ -3,20 +3,22 @@ import { Icon } from "astro-icon/components";
 import RequisitosPara from "./RequisitosPara.astro";
 import { examenes } from "@data/mesaDeExamenes.json";
 
+import fs from "node:fs";
+
 interface Props {
 	materia: string;
 	codigo?: number;
 	paraCursar: Array<condicion> | null;
 	paraRendir: Array<condicion> | null;
 	planDeEstudio: string | null;
-	theme?: string;
+	carrera?: string;
 }
 interface condicion {
 	mat: string;
 	cond: "R" | "A";
 }
 
-const { materia, codigo, paraCursar, paraRendir, planDeEstudio, theme } =
+const { materia, codigo, paraCursar, paraRendir, planDeEstudio, carrera } =
 	Astro.props;
 
 const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
@@ -95,10 +97,15 @@ if (proximaMesa) {
 	const eventTitle = encodeURIComponent(`Examen De ${materia}`);
 	eventUrl = `${baseURL}&text=${eventTitle}&dates=${startDate}/${endDate}`;
 }
+
+// Suponiendo que tienes la variable materia definida
+const pdfFileName = `Plan De Estudio - ${materia}.pdf`;
+const publicPath = `/pdf/${carrera}/${materia}`;
+const fileExists = fs.existsSync(`public${publicPath}`);
 ---
 
 <article
-	class={`materia-card theme-${theme} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
+	class={`materia-card theme-${carrera} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
 	data-materia={materia}
 	data-codigo={codigo}
 	id={materia}>
@@ -288,15 +295,16 @@ if (proximaMesa) {
 							<md-outlined-button
 								class="w-full flex-1 px-6"
 								disabled={!planDeEstudio}
-								href={planDeEstudio}>Ver</md-outlined-button
-							>
+								href={planDeEstudio}>
+								Ver
+							</md-outlined-button>
 							<md-filled-button
 								class="w-full flex-1 px-6"
 								disabled={!planDeEstudio}
 								href={planDeEstudio}
-								download=`Plan De Estudio - ${materia}.pdf`
-								>Descargar</md-filled-button
-							>
+								download=`Programa - ${materia}.pdf`>
+								Descargar
+							</md-filled-button>
 						</footer>
 					</div>
 				</div>
@@ -339,8 +347,7 @@ if (proximaMesa) {
 				</svg>
 			</div>
 			<!-- Título -->
-			<h2
-				class="text-headline-small text-on-surface">
+			<h2 class="text-headline-small text-on-surface">
 				{materia}
 			</h2>
 		</div>
