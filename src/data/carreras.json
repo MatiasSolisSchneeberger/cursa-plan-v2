@@ -6,6 +6,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -76,6 +77,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Mecánica, Calor y Termodinámica",
@@ -243,6 +245,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Química Biológica I",
@@ -474,6 +477,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": " Virología Clínica",
@@ -775,6 +779,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Bacteriología y Micología Clínica",
@@ -1243,6 +1248,7 @@
                 },
                 {
                     "año": 6,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Práctica Hospitalaria",
@@ -1336,6 +1342,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -1418,6 +1425,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Electricidad, Magnetismo y Calor",
@@ -1582,6 +1590,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Dibujo Topográfico y Cartográfico",
@@ -1787,6 +1796,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Fotogrametría",
@@ -2028,6 +2038,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Mediciones Especiales",
@@ -2152,6 +2163,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -2233,6 +2245,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Mecánica Técnica",
@@ -2373,6 +2386,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático",
@@ -2405,6 +2419,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Circuitos Lógicos",
@@ -2523,6 +2538,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Ingeniería Legal",
@@ -2571,7 +2587,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Proyecto Final (anual)",
+                            "materia": "Proyecto Final (Anual)",
                             "paraCursar": [
                                 {
                                     "mat": "Instalaciones Eléctricas I",
@@ -2666,6 +2682,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -2755,6 +2772,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Electricidad, Magnetismo y Calor",
@@ -2967,6 +2985,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático",
@@ -3131,6 +3150,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Circuitos Lógicos",
@@ -3337,6 +3357,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Ingeniería Legal",
@@ -3456,7 +3477,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Proyecto Final (anual)",
+                            "materia": "Proyecto Final (Anual)",
                             "codigo": 506,
                             "paraCursar": [
                                 {
@@ -3581,6 +3602,11 @@
                             "planDeEstudio": null
                         }
                     ]
+                },
+                {
+                    "año": 6,
+                    "orientaciones": null,
+                    "guidelines": {"hola": "mundo"}
                 }
             ]
         },
@@ -3590,6 +3616,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Matemática",
@@ -3661,6 +3688,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Biología Celular y Molecular",
@@ -3687,7 +3715,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Bioestadística (Biología)",
+                            "materia": "Bioestadística (Licenciatura-en-Ciencias-Biológicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Matemática",
@@ -3736,6 +3764,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Fisiología Animal",
@@ -4240,7 +4269,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "materias": null
                 },
                 {
                     "año": 5,
@@ -4485,8 +4515,10 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "materias": null
                 }
+                
             ]
         },
         {
@@ -4495,6 +4527,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -4598,6 +4631,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Electricidad y Magnetismo",
@@ -4831,6 +4865,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Química General",
@@ -5010,6 +5045,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Termodinámica Estadística",
@@ -5171,6 +5207,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Seminario sobre Temas de Física",
@@ -5246,6 +5283,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -5301,6 +5339,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Cálculo Diferencial e Integral II",
@@ -5518,6 +5557,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Química Biológica",
@@ -5719,6 +5759,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Química Física II",
@@ -6108,6 +6149,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Química Analítica III",
@@ -6295,6 +6337,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra I",
@@ -6344,6 +6387,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático II",
@@ -6465,6 +6509,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático III",
@@ -6618,6 +6663,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Real",
@@ -6695,6 +6741,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Geometría Diferencial",
@@ -6755,6 +6802,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Algoritmos y Estructuras de Datos I",
@@ -6810,6 +6858,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Paradigmas y Lenguajes",
@@ -6949,6 +6998,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Taller de Programación I",
@@ -7103,6 +7153,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Ingeniería de Software II",
@@ -7234,6 +7285,7 @@
                 },
                 {
                     "año": 5,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Proyecto Final",
@@ -7366,6 +7418,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Introducción a la Biología",
@@ -7433,6 +7486,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Pedagogía",
@@ -7590,6 +7644,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Fisiología Vegetal",
@@ -7723,6 +7778,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Antropología Física y Cultural",
@@ -7891,6 +7947,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
@@ -7984,6 +8041,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Física Matemática I",
@@ -8245,6 +8303,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Física Matemática II",
@@ -8560,6 +8619,7 @@
             "cursada": [
                 {
                     "año": 1,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Álgebra I",
@@ -8637,6 +8697,7 @@
                 },
                 {
                     "año": 2,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático II",
@@ -8758,6 +8819,7 @@
                 },
                 {
                     "año": 3,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Física (Mecánica)",
@@ -8883,6 +8945,7 @@
                 },
                 {
                     "año": 4,
+                    "orientaciones": null,
                     "materias": [
                         {
                             "materia": "Análisis Matemático III",
