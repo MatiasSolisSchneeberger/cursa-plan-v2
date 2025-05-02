@@ -131,7 +131,7 @@ if (proximaMesa) {
 <!-- Dialog para mostrar las mesas de examen -->
 	<aside
 		id={`dialog-${originalMateria}-${dispositivo}`}
-		class="fixed  inset-0 z-50 hidden items-center justify-center p-4">
+		class="absolute inset-0 z-50 hidden items-center justify-center p-4">
 		<!-- Backdrop -->
 		<div
 			class="fixed inset-0 bg-black opacity-25 transition-all duration-300 ease-in-out"
@@ -313,7 +313,7 @@ if (proximaMesa) {
 	}
 </script>
 
-<style>
+<style is:inline>
 	@keyframes fadeIn {
 		from {
 			opacity: 0;

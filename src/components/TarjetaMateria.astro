@@ -1,8 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import RequisitosPara from "./RequisitosPara.astro";
-import FechaMesas from "./FechaMesas.astro";
-import FechaMesasV2 from "./FechaMesasV2.astro";
+import FechaMesas from "./FechaMesas.astro"
 
 interface Props {
 	materia: string;
@@ -45,7 +44,6 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 			class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
 			{materia}
 		</h3>
-		<FechaMesasV2 materia={materia}/>
 	</header>
 
 	<!-- Mobile slider / Desktop stack container -->
