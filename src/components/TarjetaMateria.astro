@@ -1,107 +1,43 @@
 ---
 import { Icon } from "astro-icon/components";
 import RequisitosPara from "./RequisitosPara.astro";
-import { examenes } from "@data/mesaDeExamenes.json";
+import FechaMesas from "./FechaMesas.astro"
 
 interface Props {
 	materia: string;
+	originalMateria: string;
 	codigo?: number;
-	paraCursar: Array<condicion> | null;
-	paraRendir: Array<condicion> | null;
+	paraCursar: Condicion[] | null;
+	paraRendir: Condicion[] | null;
 	planDeEstudio: string | null;
-	theme?: string;
+	carrera?: string;
 }
-interface condicion {
+interface Condicion {
 	mat: string;
 	cond: "R" | "A";
 }
 
-const { materia, codigo, paraCursar, paraRendir, planDeEstudio, theme } =
-	Astro.props;
+const {
+	materia,
+	originalMateria,
+	codigo,
+	paraCursar,
+	paraRendir,
+	planDeEstudio,
+	carrera,
+} = Astro.props;
+
 
 const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 
-const formatDate = (fecha: string | null) => {
-	if (!fecha || typeof fecha !== "string") return null; // Si es null o no es string, devolver null
 
-	// Check if the date is in "dd/mm/yyyy" format (from mesaDeExamenes.json)
-	if (fecha.includes("/")) {
-		const dateParts = fecha.split("/");
-		if (dateParts.length !== 3) return null;
-
-		const [day, month, year] = dateParts;
-		if (!year || !month || !day) return null;
-
-		return `${day}/${month}/${year.slice(-2)}`;
-	}
-
-	// Handle "yyyy-mm-dd" format (legacy format)
-	const dateParts = fecha.split("-");
-	if (dateParts.length !== 3) return null; // Si el formato no es "aaaa-mm-d", devolver null
-
-	const [year, month, day] = dateParts;
-
-	if (!year || !month || !day) return null; // Si falta algún dato, devolver null
-
-	return `${day.padStart(2, "0")}/${month.padStart(2, "0")}/${year.slice(-2)}`;
-};
-
-// Find the corresponding examen in mesaDeExamenes.json
-const examen = examenes.find(
-	(e) => e.asignatura.toUpperCase() === materia.toUpperCase(),
-);
-
-// Get the turnos if the examen exists, otherwise use an empty array
-const turnos = examen?.turnos || [];
-
-// Convert turnos to the format expected by the component and filter past dates
-const currentDate = new Date();
-
-const sortedMesas = turnos
-	.filter((turno) => turno.fecha)
-	.map((turno) => {
-		// Convertir "dd/mm/yyyy" a objeto Date
-		const [day, month, year] = turno.fecha.split("/");
-		const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
-		return {
-			fecha: `${year}-${month}-${day}`,
-			dateObj,
-		};
-	})
-	// Filtrar solo las fechas que sean hoy o futuras
-	.filter((turno) => turno.dateObj >= currentDate)
-	.sort((a, b) => a.dateObj.getTime() - b.dateObj.getTime());
-
-const proximaMesa = sortedMesas.length > 0 ? sortedMesas[0] : null;
-
-let eventUrl = "";
-let day = "31";
-
-if (proximaMesa) {
-	// Convertir la fecha en objeto Date (se asume el formato "aaaa-mm-d")
-	const examDate = new Date(proximaMesa.fecha);
-	const year = examDate.getFullYear().toString();
-	const month = (examDate.getMonth() + 1).toString().padStart(2, "0");
-	day = (examDate.getDate() + 1).toString();
-
-	// Para un evento de día completo, el formato es: YYYYMMDD (inicio) y el día siguiente para el fin.
-	const startDate = `${year}${month}${day}`;
-	const examDateNext = new Date(examDate);
-	examDateNext.setDate(examDate.getDate() + 1);
-	const yearNext = examDateNext.getFullYear().toString();
-	const monthNext = (examDateNext.getMonth() + 1).toString().padStart(2, "0");
-	const dayNext = examDateNext.getDate().toString().padStart(2, "0");
-	const endDate = `${yearNext}${monthNext}${dayNext}`;
-	const eventTitle = encodeURIComponent(`Examen De ${materia}`);
-	eventUrl = `${baseURL}&text=${eventTitle}&dates=${startDate}/${endDate}`;
-}
 ---
 
 <article
-	class={`materia-card theme-${theme} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
-	data-materia={materia}
+	class={`materia-card theme-${carrera} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
+	data-materia={originalMateria}
 	data-codigo={codigo}
-	id={materia}>
+	id={originalMateria}>
 	<header
 		class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
 		<h3
@@ -140,45 +76,7 @@ if (proximaMesa) {
 					class="flex h-full w-full flex-none snap-center items-start justify-start gap-2.5">
 					<div class="flex h-full w-full flex-col gap-2.5">
 						<!-- Mesa de Examenes -->
-						<div
-							class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5">
-							<header
-								class="text-title-small flex w-full flex-col rounded-xl bg-secondary p-2 text-center text-on-secondary">
-								{
-									proximaMesa ? (
-										<>
-											<h4>Proxima Mesa de Examen:</h4>
-											<p>{`${formatDate(proximaMesa.fecha)}`}</p>
-										</>
-									) : (
-										<h4>No hay Fechas</h4>
-									)
-								}
-							</header>
-							<footer
-								class="relative flex shrink-0 flex-wrap items-start justify-start gap-2.5 self-stretch">
-								<md-outlined-button
-									class="w-full flex-1 px-6"
-									onclick={`openDialog('dialog-${materia}')`}
-									disabled={!proximaMesa}>
-									Ver Mas
-								</md-outlined-button>
-								<md-filled-button
-									class="w-full flex-1 px-6"
-									trailing-icon
-									href={eventUrl}
-									target="_blank"
-									disabled={!proximaMesa}>
-									Agendar
-									<img
-										class="size-4"
-										slot="icon"
-										src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`}
-										alt=""
-									/>
-								</md-filled-button>
-							</footer>
-						</div>
+						<FechaMesas materia={materia} dispositivo="Mobile" originalMateria={originalMateria}/>
 						<div
 							class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5">
 							<header
@@ -199,7 +97,6 @@ if (proximaMesa) {
 								>
 							</footer>
 						</div>
-					</div>
 				</footer>
 			</div>
 
@@ -238,45 +135,8 @@ if (proximaMesa) {
 			<footer class="flex w-full items-start justify-start gap-2.5">
 				<div class="flex w-full flex-col gap-2.5 lg:flex-row">
 					<!-- Mesa de Examenes -->
-					<div
-						class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5 sm:flex-initial lg:w-1/2">
-						<header
-							class="text-title-small flex w-full flex-col rounded-xl bg-secondary p-2 text-center text-on-secondary">
-							{
-								proximaMesa ? (
-									<>
-										<h4>Proxima Mesa de Examen:</h4>
-										<p>{`${formatDate(proximaMesa.fecha)}`}</p>
-									</>
-								) : (
-									<h4>No hay Fechas</h4>
-								)
-							}
-						</header>
-						<footer
-							class="relative flex shrink-0 flex-wrap items-start justify-start gap-2.5 self-stretch">
-							<md-outlined-button
-								class="w-full flex-1 px-6 lg:w-1/2"
-								onclick={`openDialog('dialog-${materia}')`}
-								disabled={!proximaMesa}>
-								Ver Mas
-							</md-outlined-button>
-							<md-filled-button
-								class="w-full flex-1 px-6 lg:w-1/2"
-								trailing-icon
-								href={eventUrl}
-								target="_blank"
-								disabled={!proximaMesa}>
-								Agendar
-								<img
-									class="size-4"
-									slot="icon"
-									src={`https://calendar.google.com/googlecalendar/images/favicons_2020q4/calendar_${day}.ico`}
-									alt=""
-								/>
-							</md-filled-button>
-						</footer>
-					</div>
+					<FechaMesas materia={materia} dispositivo="Desktop" originalMateria={originalMateria}/>
+
 					<div
 						class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5 sm:flex-1 lg:w-1/2">
 						<header
@@ -288,15 +148,16 @@ if (proximaMesa) {
 							<md-outlined-button
 								class="w-full flex-1 px-6"
 								disabled={!planDeEstudio}
-								href={planDeEstudio}>Ver</md-outlined-button
-							>
+								href={planDeEstudio}>
+								Ver
+							</md-outlined-button>
 							<md-filled-button
 								class="w-full flex-1 px-6"
 								disabled={!planDeEstudio}
 								href={planDeEstudio}
-								download=`Plan De Estudio - ${materia}.pdf`
-								>Descargar</md-filled-button
-							>
+								download=`Programa - ${materia}.pdf`>
+								Descargar
+							</md-filled-button>
 						</footer>
 					</div>
 				</div>
@@ -305,175 +166,7 @@ if (proximaMesa) {
 	</div>
 </article>
 
-<!-- Aside: Lista de todas las mesas -->
-<aside
-	id=`dialog-${materia}`
-	class="fixed inset-0 z-50 flex hidden items-center justify-center p-4">
-	<!-- Backdrop -->
-	<div
-		class="fixed inset-0 bg-black opacity-25 transition-all duration-300 ease-in-out"
-		onclick=`closeDialog('dialog-${materia}')`>
-	</div>
-
-	<!-- Contenedor del dialog -->
-	<div
-		class="relative flex max-h-[90vh] w-full max-w-lg scale-95 transform flex-col rounded-3xl bg-surface p-4 opacity-0 shadow-lg transition-all duration-300">
-		<!-- Contenido superior -->
-		<div class="relative flex flex-col items-center justify-center gap-2.5">
-			<!-- Icono -->
-			<div class="text-primary">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="currentColor"
-					class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
-					<path stroke="none" d="M0 0h24v24H0z" fill="none"> </path>
-					<path
-						d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z">
-					</path>
-					<path
-						d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z">
-					</path>
-				</svg>
-			</div>
-			<!-- Título -->
-			<h2
-				class="text-headline-small text-on-surface">
-				{materia}
-			</h2>
-		</div>
-
-		<!-- Lista con scroll -->
-		<div class="w-full flex-1 overflow-y-auto overscroll-contain py-4">
-			<md-list>
-				{
-					(() => {
-						// Get today's date for comparison
-						const today = new Date();
-						today.setHours(0, 0, 0, 0);
-
-						return turnos.map((turno, index) => {
-							const formattedDate = turno.fecha;
-
-							// Check if the date has passed
-							let dateHasPassed = false;
-							if (turno.fecha) {
-								const [day, month, year] = turno.fecha
-									.split("/")
-									.map(Number);
-								const examDate = new Date(year, month - 1, day);
-								examDate.setHours(0, 0, 0, 0);
-								dateHasPassed = examDate < today;
-							}
-
-							const generateCalendarLink = (fecha: string) => {
-								// Convert dd/mm/yyyy to Date object
-								const [day, month, year] = fecha.split("/");
-								const examDate = new Date(
-									Number(year),
-									Number(month) - 1,
-									Number(day),
-								);
-
-								const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`;
-								const examDateNext = new Date(examDate);
-								examDateNext.setDate(examDate.getDate() + 1);
-
-								const nextYear = examDateNext.getFullYear();
-								const nextMonth = (examDateNext.getMonth() + 1)
-									.toString()
-									.padStart(2, "0");
-								const nextDay = examDateNext
-									.getDate()
-									.toString()
-									.padStart(2, "0");
-
-								const endDate = `${nextYear}${nextMonth}${nextDay}`;
-
-								return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(materia)}&dates=${startDate}/${endDate}`;
-							};
-
-							return (
-								<>
-									<md-list-item class="border-0 bg-inherit">
-										<div slot="headline">
-											<strong>Mesa {index + 1}:</strong>{" "}
-											{formattedDate}
-										</div>
-										{dateHasPassed && (
-											<div
-												slot="supporting-text"
-												class="text-error">
-												(Fecha pasada)
-											</div>
-										)}
-										<md-outlined-button
-											href={
-												!dateHasPassed
-													? generateCalendarLink(
-															turno.fecha,
-														)
-													: undefined
-											}
-											target="_blank"
-											class="w-min pr-6 pl-4"
-											slot="end"
-											disabled={dateHasPassed}
-											aria-label="Agendar en Google Calendar">
-											Agendar
-											<Icon
-												name="GoogleCalendar"
-												class={
-													dateHasPassed
-														? "grayscale-100"
-														: ""
-												}
-												slot="icon"
-											/>
-										</md-outlined-button>
-									</md-list-item>
-									<md-divider />
-								</>
-							);
-						});
-					})()
-				}
-			</md-list>
-		</div>
-
-		<!-- Botón -->
-		<div class="pt-4 text-center">
-			<md-filled-button
-				onclick=`closeDialog('dialog-${materia}')`
-				class="w-min px-6">Cerrar</md-filled-button
-			>
-		</div>
-	</div>
-</aside>
-
 <script is:inline>
-	function openDialog(id) {
-		const dialog = document.getElementById(id);
-		const content = dialog.querySelector("div.relative");
-		dialog.classList.toggle("hidden");
-		document.body.style.overflow = "hidden";
-		void content.offsetWidth;
-		content.classList.remove("opacity-0", "scale-95");
-		content.classList.add("opacity-100", "scale-100");
-	}
-
-	function closeDialog(id) {
-		const dialog = document.getElementById(id);
-		const content = dialog.querySelector("div.relative");
-		content.classList.remove("opacity-100", "scale-100");
-		document.body.style.overflow = ""; // Restaura el scroll en el fondo
-		content.classList.add("opacity-0", "scale-95");
-		setTimeout(() => {
-			dialog.classList.toggle("hidden");
-		}, 300);
-	}
 
 	// Add slider functionality
 	document.addEventListener("DOMContentLoaded", () => {
@@ -511,35 +204,7 @@ if (proximaMesa) {
 </script>
 
 <style>
-	/* Animación de apertura del dialog */
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-
-	/* Animación de cierre del dialog */
-	@keyframes fadeOut {
-		from {
-			opacity: 1;
-		}
-		to {
-			opacity: 0;
-		}
-	}
-
-	/* Estilos para el backdrop con animación */
-	.dialog-backdrop {
-		animation: fadeIn 300ms ease-out forwards;
-	}
-
-	.dialog-backdrop.hidden {
-		animation: fadeOut 300ms ease-in forwards;
-	}
-
+	
 	/* Hide scrollbar but keep functionality */
 	.hide-scrollbar {
 		-ms-overflow-style: none; /* IE and Edge */

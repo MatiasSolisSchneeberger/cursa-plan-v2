@@ -33,7 +33,7 @@ function Carrera({ carreraData }) {
                 return (
                     <div className="relative">
                         <md-outlined-button
-                            className={tieneOrientaciones ? "pl-6 pr-4" : "px-6"}
+                            className={tieneOrientaciones ? "pl-6 pr-4 " : "px-6"}
                             id={`usage-anchor-${año}`}
                             href={tieneOrientaciones ? null : `#${año}`}
                             trailing-icon
