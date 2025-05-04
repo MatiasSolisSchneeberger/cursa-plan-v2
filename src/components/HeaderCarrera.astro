@@ -12,14 +12,14 @@ const NombreCarrera = carrera.replace(/-/g, " ");
 
 <header
 	transition:name=`header-${carrera}`
-	class=`theme-${carrera} rounded-full border border-outline p-3 flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden`
+	class=`theme-${carrera} rounded-full w-full border border-outline p-3 flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden`
 	style="background: linear-gradient(to right, var(--md-sys-color-primary-container) 25%, transparent)">
 	<md-filled-icon-button href="/">
 		<Icon name="arrow-left" size={22} />
 	</md-filled-icon-button>
 	<h2
 		transition:name=`nombre-${carrera}`
-		class=`theme-${carrera} block sm:hidden text-primary text-headline-small relative flex-1 flex items-center justify-center text-center`>
+		class=`theme-${carrera} sm:hidden text-primary text-headline-small relative flex-1 flex items-center justify-center text-center`>
 		{NombreCarrera.replace("Licenciatura", "Lic.").replace("Ingeniería", "Ing.").replace("Profesorado", "Prof.")}
 	</h2>
 	<h2
