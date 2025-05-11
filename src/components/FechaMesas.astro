@@ -83,7 +83,7 @@ if (proximaMesa) {
 	const examDate = new Date(proximaMesa.fecha);
 	const year = examDate.getFullYear().toString();
 	const month = (examDate.getMonth() + 1).toString().padStart(2, "0");
-	day = (examDate.getDate() + 1).toString();
+	day = (examDate.getDate()).toString();
 
 	// Para un evento de día completo, el formato es: YYYYMMDD (inicio) y el día siguiente para el fin.
 	const startDate = `${year}${month}${day}`;
