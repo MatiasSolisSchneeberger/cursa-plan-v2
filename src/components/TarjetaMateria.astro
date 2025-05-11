@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
-import RequisitosPara from "./RequisitosPara.astro";
-import FechaMesas from "./FechaMesas.astro"
+import RequisitosPara from "@components/RequisitosPara.astro";
+import FechaMesas from "@components/FechaMesas.astro"
 
 interface Props {
 	materia: string;
@@ -135,7 +135,9 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 			<footer class="flex w-full items-start justify-start gap-2.5">
 				<div class="flex w-full flex-col gap-2.5 lg:flex-row">
 					<!-- Mesa de Examenes -->
-					<FechaMesas materia={materia} dispositivo="Desktop" originalMateria={originalMateria}/>
+					<span class="lg:w-1/2">
+						<FechaMesas materia={materia} dispositivo="Desktop" originalMateria={originalMateria}/>
+					</span>
 
 					<div
 						class="relative flex w-full shrink-0 flex-col items-center justify-start gap-2.5 self-stretch overflow-hidden rounded-2xl bg-surface-variant p-2.5 sm:flex-1 lg:w-1/2">
