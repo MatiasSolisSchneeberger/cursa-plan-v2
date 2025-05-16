@@ -1,6 +1,7 @@
 {
     "carreras": [
         {
+            "id": "Bioquimica",
             "carrera": "Bioquímica",
             "emoji": "microscope",
             "cursada": [
@@ -10,7 +11,7 @@
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
-                            "codigo": 101,
+                            "codigo": "AGA-101",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -1337,6 +1338,7 @@
             ]
         },
         {
+            "id": "IngenieriaEnAgrimensura",
             "carrera": "Ingeniería-en-Agrimensura",
             "emoji": "ruler-2",
             "cursada": [
@@ -2158,6 +2160,7 @@
             ]
         },
         {
+            "id": "IngenieríaEléctrica",
             "carrera": "Ingeniería-Eléctrica",
             "emoji": "bolt",
             "cursada": [
@@ -2677,6 +2680,7 @@
             ]
         },
         {
+            "id": "IngenieríaEnElectrónica",
             "carrera": "Ingeniería-en-Electrónica",
             "emoji": "robot",
             "cursada": [
@@ -3611,6 +3615,7 @@
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasBiológicas",
             "carrera": "Licenciatura-en-Ciencias-Biológicas",
             "emoji": "seedling",
             "cursada": [
@@ -4522,6 +4527,7 @@
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasFísicas",
             "carrera": "Licenciatura-en-Ciencias-Físicas",
             "emoji": "atom",
             "cursada": [
@@ -5278,6 +5284,7 @@
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasQuímicas",
             "carrera": "Licenciatura-en-Ciencias-Químicas",
             "emoji": "flask",
             "cursada": [
@@ -6332,6 +6339,7 @@
             ]
         },
         {
+            "id": "Licenciatura-enMatemática",
             "carrera": "Licenciatura-en-Matemática",
             "emoji": "math",
             "cursada": [
@@ -6797,6 +6805,7 @@
             ]
         },
         {
+            "id": "Licenciatura-en-Sistemas-deInformación",
             "carrera": "Licenciatura-en-Sistemas-de-Información",
             "emoji": "device-imac",
             "cursada": [
@@ -7413,6 +7422,7 @@
             ]
         },
         {
+            "id": "Profesorado-enBiología",
             "carrera": "Profesorado-en-Biología",
             "emoji": "butterfly",
             "cursada": [
@@ -7938,6 +7948,7 @@
         },
         
         {
+            "id": "Profesorado-enFísica",
             "carrera": "Profesorado-en-Física",
             "emoji": "telescope",
             "cursada": [
@@ -8610,6 +8621,7 @@
             ]
         },
         {
+            "id": "Profesorado-enMatemática",
             "carrera": "Profesorado-en-Matemática",
             "emoji": "ruler",
             "cursada": [

@@ -5,33 +5,6 @@ import BuscadorMaterias from "@components/BuscadorMaterias";
 import { Icon } from "astro-icon/components";
 import FechaMesas from "@components/FechaMesas.astro"
 
-// Función para verificar si una fecha ya pasó
-const fechaPasada = (fechaStr: string): boolean => {
-	const [day, month] = fechaStr.split("/").map(Number);
-	const fecha = new Date();
-	fecha.setFullYear(new Date().getFullYear(), month - 1, day);
-	fecha.setHours(0, 0, 0, 0);
-	return fecha < new Date();
-};
-
-// Obtener columnas visibles
-const columnasVisibles = examenes[0].turnos
-	.map((_, index) => {
-		const ultimaFecha = Math.max(
-			...examenes.map((examen) => {
-				const fechaStr = examen.turnos[index].fecha;
-				const [day, month] = fechaStr.split("/").map(Number);
-				return new Date(
-					new Date().getFullYear(),
-					month - 1,
-					day,
-				).getTime();
-			}),
-		);
-		return new Date(ultimaFecha) >= new Date() ? index : null;
-	})
-	.filter((index) => index !== null);
-
 // Helper function to generate Google Calendar links
 const generateCalendarLink = (fecha: string, asignatura: string): string => {
 	// Convert dd/mm/yyyy to Date object
