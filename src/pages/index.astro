@@ -1,10 +1,26 @@
 ---
+export const prerender = false
+
+import { supabase } from '../db/supabase';
 import Layout from '@layouts/Layout.astro';
 import HeroTitle from '@sections/HeroTitle.astro';
 import Carreras from '@sections/Carreras.astro';
+const { data, error } = await supabase.from("carreras").select(`id, name, emojie`);
+console.log(data)
 ---
 
 <Layout title="CursaPlan | Plan de estudios" pagina='Inicio'>
+	<ul>
+		{data && data.length > 0 ? (
+		  data.map((entry) => (
+			<li>{entry.id}{")"} {entry.name} - {entry.emojie}</li>
+		  ))
+		) : (
+		  <li>No se encontraron carreras.</li>
+		)}
+	  </ul>
+
+	  
 	<HeroTitle />
 	<Carreras />
 </Layout>
