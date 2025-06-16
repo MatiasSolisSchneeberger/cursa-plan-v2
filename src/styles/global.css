@@ -7,6 +7,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+* {
+	@apply font-label-medium-font-family text-label-medium-font-size leading-label-medium-line-height font-label-medium-font-weight;
+}
+
 :root {
 	--md-sys-typescale-display-medium-font: Poppins, sans-serif;
 	--md-sys-typescale-display-medium-size: 15rem;
