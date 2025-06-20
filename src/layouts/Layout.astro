@@ -147,6 +147,7 @@ const { title, theme, pagina } = Astro.props;
 		</script>
 
 		<!-- View Transition -->
+		<!-- <ClientRouter /> -->
 		<Analytics />
 	</head>
 	<body
@@ -165,8 +166,7 @@ const { title, theme, pagina } = Astro.props;
 <style is:global>
 	@import "tailwindcss";
 
-	html,
-	body {
+	html, body {
 		scroll-behavior: smooth;
 		margin: 0;
 		width: 100%;

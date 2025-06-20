@@ -94,15 +94,16 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 									planDeEstudio,
 								}) => {
 									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre = originalMateria.endsWith(
-										` (${carreraData.carrera})`,
-									)
-										? originalMateria.slice(
-												0,
-												-` (${carreraData.carrera})`
-													.length,
-											)
-										: originalMateria;
+									const materiaNombre =
+										originalMateria.endsWith(
+											` (${carreraData.carrera})`,
+										)
+											? originalMateria.slice(
+													0,
+													-` (${carreraData.carrera})`
+														.length,
+												)
+											: originalMateria;
 									return (
 										<TarjetaMateria
 											materia={materiaNombre}
@@ -123,21 +124,22 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 							{materias?.map(
 								({
 									materia: originalMateria,
-									
+
 									paraCursar,
 									paraRendir,
 									planDeEstudio,
 								}) => {
 									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre = originalMateria.endsWith(
-										` (${carreraData.carrera})`,
-									)
-										? originalMateria.slice(
-												0,
-												-` (${carreraData.carrera})`
-													.length,
-											)
-										: originalMateria;
+									const materiaNombre =
+										originalMateria.endsWith(
+											` (${carreraData.carrera})`,
+										)
+											? originalMateria.slice(
+													0,
+													-` (${carreraData.carrera})`
+														.length,
+												)
+											: originalMateria;
 									return (
 										<TarjetaMateria
 											materia={materiaNombre}
@@ -159,32 +161,36 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 </Layout>
 
 <script>
-	function handleSearch(searchTerm: string) {
-		const searchTermLower = searchTerm.toLowerCase();
-		const materiasContainer = document.getElementById("materias-container");
-		if (!materiasContainer) return;
 
-		const tarjetas =
-			materiasContainer.getElementsByClassName("materia-card");
+		function handleSearch(searchTerm: string) {
+			const searchTermLower = searchTerm.toLowerCase();
+			const materiasContainer =
+				document.getElementById("materias-container");
+			if (!materiasContainer) return;
 
-		Array.from(tarjetas).forEach((tarjeta) => {
-			const nombreMateria =
-				tarjeta.querySelector("h3")?.textContent?.toLowerCase() || "";
-			const codigoMateria =
-				tarjeta.querySelector(".codigo")?.textContent?.toLowerCase() ||
-				"";
+			const tarjetas =
+				materiasContainer.getElementsByClassName("materia-card");
 
-			if (
-				nombreMateria.includes(searchTermLower) ||
-				codigoMateria.includes(searchTermLower)
-			) {
-				(tarjeta as HTMLElement).style.display = "";
-			} else {
-				(tarjeta as HTMLElement).style.display = "none";
-			}
-		});
-	}
+			Array.from(tarjetas).forEach((tarjeta) => {
+				const nombreMateria =
+					tarjeta.querySelector("h3")?.textContent?.toLowerCase() ||
+					"";
+				const codigoMateria =
+					tarjeta
+						.querySelector(".codigo")
+						?.textContent?.toLowerCase() || "";
 
-	// Exponer la función al componente React
-	(window as any).handleSearch = handleSearch;
+				if (
+					nombreMateria.includes(searchTermLower) ||
+					codigoMateria.includes(searchTermLower)
+				) {
+					(tarjeta as HTMLElement).style.display = "";
+				} else {
+					(tarjeta as HTMLElement).style.display = "none";
+				}
+			});
+		}
+
+		// Exponer la función al componente React
+		(window as any).handleSearch = handleSearch;
 </script>
