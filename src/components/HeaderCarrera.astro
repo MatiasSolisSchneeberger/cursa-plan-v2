@@ -27,12 +27,7 @@ const NombreCarrera = carrera.replace(/-/g, " ");
 		class=`hidden sm:block theme-${carrera} text-primary text-headline-small relative flex-1 flex items-center justify-center text-center`>
 		{NombreCarrera}
 	</h2>
-	<div
-		class="bg-surface-variant rounded-full p-3 flex flex-row gap-2.5 items-center justify-center shrink-0 w-10 h-10 relative">
-		<div
-			transition:name=`emoji-${carrera}`
-			class=`text-primary text-center text-title-medium relative flex items-center justify-center`>
-			<Icon name={emoji} size="22"/>
-		</div>
-	</div>
+	<md-filled-tonal-icon-button >
+		<Icon name={emoji} size="22"/>
+	</md-filled-tonal-icon-button>
 </header>

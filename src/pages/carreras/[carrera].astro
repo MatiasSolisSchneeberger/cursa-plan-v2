@@ -94,15 +94,16 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 									planDeEstudio,
 								}) => {
 									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre = originalMateria.endsWith(
-										` (${carreraData.carrera})`,
-									)
-										? originalMateria.slice(
-												0,
-												-` (${carreraData.carrera})`
-													.length,
-											)
-										: originalMateria;
+									const materiaNombre =
+										originalMateria.endsWith(
+											` (${carreraData.carrera})`,
+										)
+											? originalMateria.slice(
+													0,
+													-` (${carreraData.carrera})`
+														.length,
+												)
+											: originalMateria;
 									return (
 										<TarjetaMateria
 											materia={materiaNombre}
@@ -123,21 +124,21 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 							{materias?.map(
 								({
 									materia: originalMateria,
-									
 									paraCursar,
 									paraRendir,
 									planDeEstudio,
 								}) => {
 									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre = originalMateria.endsWith(
-										` (${carreraData.carrera})`,
-									)
-										? originalMateria.slice(
-												0,
-												-` (${carreraData.carrera})`
-													.length,
-											)
-										: originalMateria;
+									const materiaNombre =
+										originalMateria.endsWith(
+											` (${carreraData.carrera})`,
+										)
+											? originalMateria.slice(
+													0,
+													-` (${carreraData.carrera})`
+														.length,
+												)
+											: originalMateria;
 									return (
 										<TarjetaMateria
 											materia={materiaNombre}

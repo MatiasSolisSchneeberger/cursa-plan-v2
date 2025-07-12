@@ -5,37 +5,10 @@ import BuscadorMaterias from "@components/BuscadorMaterias";
 import { Icon } from "astro-icon/components";
 import FechaMesas from "@components/FechaMesas.astro"
 
-// Función para verificar si una fecha ya pasó
-const fechaPasada = (fechaStr: string): boolean => {
-	const [day, month] = fechaStr.split("/").map(Number);
-	const fecha = new Date();
-	fecha.setFullYear(new Date().getFullYear(), month - 1, day);
-	fecha.setHours(0, 0, 0, 0);
-	return fecha < new Date();
-};
-
-// Obtener columnas visibles
-const columnasVisibles = examenes[0].turnos
-	.map((_, index) => {
-		const ultimaFecha = Math.max(
-			...examenes.map((examen) => {
-				const fechaStr = examen.turnos[index].fecha;
-				const [day, month] = fechaStr.split("/").map(Number);
-				return new Date(
-					new Date().getFullYear(),
-					month - 1,
-					day,
-				).getTime();
-			}),
-		);
-		return new Date(ultimaFecha) >= new Date() ? index : null;
-	})
-	.filter((index) => index !== null);
-
 // Helper function to generate Google Calendar links
 const generateCalendarLink = (fecha: string, asignatura: string): string => {
-	// Convert dd/mm/yyyy to Date object
-	const [day, month, year] = fecha.split("/");
+	// Convert yyyy-mm-dd to Date object
+	const [year, month, day] = fecha.split("-");
 
 	const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`;
 	const examDate = new Date(Number(year), Number(month) - 1, Number(day));
@@ -65,18 +38,18 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 				
 					{/* Tarjeta Materia - Mesa */}
 					<div class="grid grid-cols-1 flex-col gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
-						{examenes.map(({ asignatura, turnos }) => {
-							// Ordenar turnos por fecha y filtrar fechas pasadas
+						{examenes.map(({ materia, fechas }) => {
+							// Ordenar fechas y filtrar fechas pasadas
 							const today = new Date();
 							today.setHours(0, 0, 0, 0);
 
-							const sortedTurnos = [...turnos]
-								.filter((turno) => {
-									if (!turno.fecha) return false;
+							const sortedFechas = [...fechas]
+								.filter((fecha) => {
+									if (!fecha) return false;
 
 									// Check if the date has passed
-									const [day, month, year] = turno.fecha
-										.split("/")
+									const [year, month, day] = fecha
+										.split("-")
 										.map(Number);
 									const examDate = new Date(
 										year,
@@ -88,45 +61,33 @@ const generateCalendarLink = (fecha: string, asignatura: string): string => {
 									// Only include dates that haven't passed yet
 									return examDate >= today;
 								})
-								.map((turno) => {
-									// Convert dd/mm/yyyy to yyyy-mm-dd for sorting
-									const [day, month, year] =
-										turno.fecha.split("/");
-									return {
-										...turno,
-										fechaOrdenada: `${year}-${month}-${day}`,
-									};
-								})
 								.sort((a, b) => {
-									return (
-										new Date(a.fechaOrdenada).getTime() -
-										new Date(b.fechaOrdenada).getTime()
-									);
+									return new Date(a).getTime() - new Date(b).getTime();
 								});
 
 							// Obtener próxima mesa (primera fecha futura)
 							const proximaMesa =
-								sortedTurnos.length > 0
-									? sortedTurnos[0]
+								sortedFechas.length > 0
+									? sortedFechas[0]
 									: null;
 
 							// Generar URL para Google Calendar
 							const eventUrl = proximaMesa
 								? generateCalendarLink(
-										proximaMesa.fecha,
-										asignatura,
+										proximaMesa,
+										materia,
 									)
 								: "";
 
 							return (
-								<article id={asignatura.replace(/-/g, " ")} class="mesa-row full relative flex w-full flex-1 flex-col items-center justify-start gap-2.5 overflow-hidden rounded-3xl border border-outline p-2">
+								<article id={materia.replace(/-/g, " ")} class="mesa-row full relative flex w-full flex-1 flex-col items-center justify-start gap-2.5 overflow-hidden rounded-3xl border border-outline p-2">
 									<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
 										<h3 class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
-											{asignatura.replace(/-/g, " ")}
+											{materia.replace(/-/g, " ")}
 										</h3>
 									</header>
 									<footer class="flex h-full w-full flex-col gap-2.5">
-										<FechaMesas materia={asignatura} dispositivo="Desktop" originalMateria={asignatura} />
+										<FechaMesas materia={materia} dispositivo="Desktop" originalMateria={materia} />
 									</footer>
 								</article>
 							);

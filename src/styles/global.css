@@ -1,5 +1,4 @@
 /** @format */
-
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
@@ -7,28 +6,32 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* * {
+	@apply font-label-medium-font-family text-label-medium-font-size leading-label-medium-line-height font-label-medium-font-weight;
+} */
+
 :root {
-	--md-sys-typescale-display-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-display-medium-font: 'Poppins', sans-serif;
 	--md-sys-typescale-display-medium-size: 15rem;
 	--md-sys-typescale-display-medium-line-height: 17.333333333333332rem;
 	--md-sys-typescale-display-medium-weight: 700;
 
-	--md-sys-typescale-headline-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-headline-medium-font: 'Poppins', sans-serif;
 	--md-sys-typescale-headline-medium-size: 9.333333333333334rem;
 	--md-sys-typescale-headline-medium-line-height: 12rem;
 	--md-sys-typescale-headline-medium-weight: 500;
 
-	--md-sys-typescale-title-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-title-medium-font: 'Poppins', sans-serif;
 	--md-sys-typescale-title-medium-size: 5.333333333333333rem;
 	--md-sys-typescale-title-medium-line-height: 8rem;
 	--md-sys-typescale-title-medium-weight: 500;
 
-	--md-sys-typescale-body-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-body-medium-font: 'Poppins', sans-serif;
 	--md-sys-typescale-body-medium-size: 4.666666666666667rem;
 	--md-sys-typescale-body-medium-line-height: 6.666666666666667rem;
 	--md-sys-typescale-body-medium-weight: 400;
 
-	--md-sys-typescale-label-medium-font: Poppins, sans-serif;
+	--md-sys-typescale-label-medium-font: 'Poppins', sans-serif;
 	--md-sys-typescale-label-medium-size: 4rem;
 	--md-sys-typescale-label-medium-line-height: 5.333333333333333rem;
 	--md-sys-typescale-label-medium-weight: 500;
@@ -1601,25 +1604,25 @@
 
 	/* ---- Fuentes ---- */
 	/* -- FontFamily -- */
-	--font-display-large-font-family: Poppins, sans-serif;
-	--font-display-medium-font-family: Poppins, sans-serif;
-	--font-display-small-font-family: Poppins, sans-serif;
+	--font-display-large-font-family: 'Poppins', sans-serif;
+	--font-display-medium-font-family: 'Poppins', sans-serif;
+	--font-display-small-font-family: 'Poppins', sans-serif;
 
-	--font-headline-large-font-family: Poppins, sans-serif;
-	--font-headline-medium-font-family: Poppins, sans-serif;
-	--font-headline-small-font-family: Poppins, sans-serif;
+	--font-headline-large-font-family: 'Poppins', sans-serif;
+	--font-headline-medium-font-family: 'Poppins', sans-serif;
+	--font-headline-small-font-family: 'Poppins', sans-serif;
 
-	--font-title-large-font-family: Poppins, sans-serif;
-	--font-title-medium-font-family: Poppins, sans-serif;
-	--font-title-small-font-family: Poppins, sans-serif;
+	--font-title-large-font-family: 'Poppins', sans-serif;
+	--font-title-medium-font-family: 'Poppins', sans-serif;
+	--font-title-small-font-family: 'Poppins', sans-serif;
 
-	--font-label-large-font-family: Poppins, sans-serif;
-	--font-label-medium-font-family: Poppins, sans-serif;
-	--font-label-small-font-family: Poppins, sans-serif;
+	--font-label-large-font-family: 'Poppins', sans-serif;
+	--font-label-medium-font-family: 'Poppins', sans-serif;
+	--font-label-small-font-family: 'Poppins', sans-serif;
 
-	--font-body-large-font-family: Poppins, sans-serif;
-	--font-body-medium-font-family: Poppins, sans-serif;
-	--font-body-small-font-family: Poppins, sans-serif;
+	--font-body-large-font-family: 'Poppins', sans-serif;
+	--font-body-medium-font-family: 'Poppins', sans-serif;
+	--font-body-small-font-family: 'Poppins', sans-serif;
 
 	/* -- Size --*/
 	--text-display-large-font-size: 72px;

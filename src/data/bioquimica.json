@@ -1,0 +1,1337 @@
+{
+    "id": "Bioquimica",
+    "carrera": "Bioquímica",
+    "emoji": "microscope",
+    "cursada": [
+        {
+            "año": 1,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": "Álgebra y Geometría Analítica",
+                    "codigo": "AGA-101",
+                    "paraCursar": [],
+                    "paraRendir": [],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química General",
+                    "codigo": 102,
+                    "paraCursar": [],
+                    "paraRendir": [],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Cálculo Diferencial e Integral",
+                    "codigo": 103,
+                    "paraCursar": [
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Inorgánica",
+                    "codigo": 104,
+                    "paraCursar": [
+                        {
+                            "mat": "Química General",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química General",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Biología General y Celular",
+                    "codigo": 105,
+                    "paraCursar": [
+                        {
+                            "mat": "Química General",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química General",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        },
+        {
+            "año": 2,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": "Mecánica, Calor y Termodinámica",
+                    "codigo": 201,
+                    "paraCursar": [
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química General",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Orgánica I",
+                    "codigo": 202,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química General",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Morfología",
+                    "codigo": 203,
+                    "paraCursar": [
+                        {
+                            "mat": "Biología General y Celular",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Biología General y Celular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Electricidad, Magnetismo, Óptica y Sonido",
+                    "codigo": 204,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Mecánica, Calor y Termodinámica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Mecánica, Calor y Termodinámica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Orgánica II",
+                    "codigo": 205,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Orgánica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Biología General y Celular",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Orgánica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Biología General y Celular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Analítica",
+                    "codigo": 206,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Álgebra y Geometría Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Inorgánica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        },
+        {
+            "año": 3,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": "Química Biológica I",
+                    "codigo": 301,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Orgánica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Mecánica, Calor y Termodinámica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Mecánica, Calor y Termodinámica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Física Biológica",
+                    "codigo": 302,
+                    "paraCursar": [
+                        {
+                            "mat": "Mecánica, Calor y Termodinámica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Electricidad, Magnetismo, Óptica y Sonido",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Orgánica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Electricidad, Magnetismo, Óptica y Sonido",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Bioestadística (Bioquímica)",
+                    "codigo": 303,
+                    "paraCursar": [
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Cálculo Diferencial e Integral",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Traducción de Inglés",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Biológica II",
+                    "codigo": 304,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Genética y Biología Molecular",
+                    "codigo": 305,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Analítica Instrumental",
+                    "codigo": 306,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Analítica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Electricidad, Magnetismo, Óptica y Sonido",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        },
+        {
+            "año": 4,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": " Virología Clínica",
+                    "codigo": 401,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecula",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Microbiología General",
+                    "codigo": 402,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Fisiología Humana",
+                    "codigo": 403,
+                    "paraCursar": [
+                        {
+                            "mat": "Morfología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Farmacología",
+                    "codigo": 404,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Prueba de Manejo de Software",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Bromatología y Nutrición",
+                    "codigo": 405,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Biológica I",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Fisiopatología",
+                    "codigo": 406,
+                    "paraCursar": [
+                        {
+                            "mat": "Fisiología Humana",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Física Biológica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Inmunología Clínica",
+                    "codigo": 407,
+                    "paraCursar": [
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiología Humana",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Parasitología Humana",
+                    "codigo": 408,
+                    "paraCursar": [
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiología Humana",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        },
+        {
+            "año": 5,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": "Bacteriología y Micología Clínica",
+                    "codigo": 501,
+                    "paraCursar": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Microbiología General",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Química Clínica",
+                    "codigo": 502,
+                    "paraCursar": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Fisiología Humana",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Toxicología y Química Legal",
+                    "codigo": 503,
+                    "paraCursar": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Orgánica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Farmacología",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Ética Profesional",
+                    "codigo": 504,
+                    "paraCursar": [
+                        {
+                            "mat": "50% de la carrera",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "50% de la carrera",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Hematología Clínica",
+                    "codigo": 505,
+                    "paraCursar": [
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Endocrinología y Monitoreo de Drogas",
+                    "codigo": 506,
+                    "paraCursar": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Farmacología",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Gestión de Laboratorio",
+                    "codigo": 507,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Epistemología y Metodología de la Investigación (Bioquímica)",
+                    "codigo": 508,
+                    "paraCursar": [
+                        {
+                            "mat": "Toxicología y Química Legal",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Toxicología y Química Legal",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Genética y Biología Molecular Aplicada",
+                    "codigo": 511,
+                    "paraCursar": [
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Genética y Biología Molecular",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Epidemiología y Salud Pública",
+                    "codigo": 512,
+                    "paraCursar": [
+                        {
+                            "mat": "Parasitología Humana",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bacteriología y Micología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Virología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bioestadística",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Parasitología Humana",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bacteriología y Micología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Virología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Bioquímica de los Alimentos",
+                    "codigo": 513,
+                    "paraCursar": [
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental Clínica",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Métodos de Conservación de Alimentos",
+                    "codigo": 514,
+                    "paraCursar": [
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Bromatología y Nutrición",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Qca Biológica II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Urgencias Hospitalarias",
+                    "codigo": 515,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fisiopatología",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Determinación de Estructuras Orgánicas",
+                    "codigo": 516,
+                    "paraCursar": [
+                        {
+                            "mat": "Qca Org II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Qca Org II",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Qca Analítica Instrumental",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "(Optativa) Medio Interno y Nefrología",
+                    "codigo": 517,
+                    "paraCursar": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fitopatología",
+                            "cond": "A"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Fitopatología",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        },
+        {
+            "año": 6,
+            "orientaciones": null,
+            "materias": [
+                {
+                    "materia": "Práctica Hospitalaria",
+                    "codigo": 601,
+                    "paraCursar": [
+                        {
+                            "mat": "Hematología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bacteriología y Micología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Endocrinología y Monitoreo de Drogas",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Gestión de Laboratorio",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Virología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Parasitología Humana",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                },
+                {
+                    "materia": "Prácticas Electivas",
+                    "codigo": 602,
+                    "paraCursar": [
+                        {
+                            "mat": "Hematología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Bacteriología y Micología Clínica",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Endocrinología y Monitoreo de Drogas",
+                            "cond": "R"
+                        },
+                        {
+                            "mat": "Gestión de Laboratorio",
+                            "cond": "R"
+                        }
+                    ],
+                    "paraRendir": [
+                        {
+                            "mat": "Virología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Inmunología Clínica",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Parasitología Humana",
+                            "cond": "A"
+                        },
+                        {
+                            "mat": "Química Clínica",
+                            "cond": "A"
+                        }
+                    ],
+                    "planDeEstudio": null
+                }
+            ]
+        }
+    ]
+}

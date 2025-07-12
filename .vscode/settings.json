@@ -6,7 +6,9 @@
     },
     "spellright.language": [
         "en",
-        "es"
+        "es",
+        "fr",
+        "pt"
     ],
     "spellright.documentTypes": [
         "markdown",
@@ -14,7 +16,8 @@
         "plaintext",
         "tailwindcss",
         "astro",
-        "javascriptreact"
+        "javascriptreact",
+        "json"
     ],
     "spellright.parserByClass": {
         "tailwindcss": {

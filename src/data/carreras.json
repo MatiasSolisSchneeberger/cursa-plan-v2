@@ -1,6 +1,7 @@
 {
     "carreras": [
         {
+            "id": "Bioquimica",
             "carrera": "Bioquímica",
             "emoji": "microscope",
             "cursada": [
@@ -10,13 +11,13 @@
                     "materias": [
                         {
                             "materia": "Álgebra y Geometría Analítica",
-                            "codigo": 101,
+                            "codigo": "AGA-101",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Bioquímica)",
                             "codigo": 102,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -480,7 +481,7 @@
                     "orientaciones": null,
                     "materias": [
                         {
-                            "materia": " Virología Clínica",
+                            "materia": "Virología Clínica",
                             "codigo": 401,
                             "paraCursar": [
                                 {
@@ -1034,7 +1035,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Genética y Biología Molecular Aplicada",
+                            "materia": "Genética y Biología Molecular Aplicada (Optativa)",
                             "codigo": 511,
                             "paraCursar": [
                                 {
@@ -1059,7 +1060,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Epidemiología y Salud Pública",
+                            "materia": "Epidemiología y Salud Pública",
                             "codigo": 512,
                             "paraCursar": [
                                 {
@@ -1104,7 +1105,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Bioquímica de los Alimentos",
+                            "materia": "Bioquímica de los Alimentos",
                             "codigo": 513,
                             "paraCursar": [
                                 {
@@ -1137,7 +1138,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Métodos de Conservación de Alimentos",
+                            "materia": "Métodos de Conservación de Alimentos",
                             "codigo": 514,
                             "paraCursar": [
                                 {
@@ -1170,7 +1171,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Urgencias Hospitalarias",
+                            "materia": "Urgencias Hospitalarias",
                             "codigo": 515,
                             "paraCursar": [
                                 {
@@ -1195,7 +1196,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Determinación de Estructuras Orgánicas",
+                            "materia": "Determinación de Estructuras Orgánicas",
                             "codigo": 516,
                             "paraCursar": [
                                 {
@@ -1220,7 +1221,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "(Optativa) Medio Interno y Nefrología",
+                            "materia": "Medio Interno y Nefrología",
                             "codigo": 517,
                             "paraCursar": [
                                 {
@@ -1337,6 +1338,7 @@
             ]
         },
         {
+            "id": "IngenieriaEnAgrimensura",
             "carrera": "Ingeniería-en-Agrimensura",
             "emoji": "ruler-2",
             "cursada": [
@@ -1359,7 +1361,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Ingeniería-en-Agrimensura)",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -1643,7 +1645,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Fotointerpretación y Teledetección (Anual)",
+                            "materia": "Fotointerpretación y Teledetección",
                             "codigo": 303,
                             "paraCursar": [
                                 {
@@ -2120,7 +2122,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Práctica Profesional Supervisada (Anual)",
+                            "materia": "Práctica Profesional Supervisada (Anual) (Ingeniería-en-Agrimensura)",
                             "codigo": 504,
                             "paraCursar": [
                                 {
@@ -2137,7 +2139,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Trabajo Final (Anual)",
+                            "materia": "Trabajo Final (Anual) (Ingeniería-en-Agrimensura)",
                             "codigo": 505,
                             "paraCursar": [
                                 {
@@ -2158,6 +2160,7 @@
             ]
         },
         {
+            "id": "IngenieríaEléctrica",
             "carrera": "Ingeniería-Eléctrica",
             "emoji": "bolt",
             "cursada": [
@@ -2178,13 +2181,13 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Ingeniería-Eléctrica)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Seminario de Ingeniería- Modulo I",
+                            "materia": "Seminario de Ingeniería - Módulo I",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -2320,10 +2323,10 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Seminario de Ingeniería- Modulo II",
+                            "materia": "Seminario de Ingeniería - Módulo II",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería- Modulo I",
+                                    "mat": "Seminario de Ingeni ería- Módulo I",
                                     "cond": "A"
                                 }
                             ],
@@ -2468,10 +2471,10 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Seminario de Ingeniería-Modulo IV",
+                            "materia": "Seminario de Ingeniería - Módulo IV",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería-Modulo III",
+                                    "mat": "Seminario de Ingeniería - Módulo III",
                                     "cond": "A"
                                 }
                             ],
@@ -2479,10 +2482,10 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Economía y Org. Industrial",
+                            "materia": "Economía Y Organización Industrial",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería-Modulo III",
+                                    "mat": "Seminario de Ingeniería - Módulo III",
                                     "cond": "A"
                                 }
                             ],
@@ -2544,7 +2547,7 @@
                             "materia": "Ingeniería Legal",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería-Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 },
                                 {
@@ -2587,7 +2590,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Proyecto Final (Anual)",
+                            "materia": "Proyecto Final",
                             "paraCursar": [
                                 {
                                     "mat": "Instalaciones Eléctricas I",
@@ -2611,10 +2614,10 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Seminario de Ingeniería-Modulo V",
+                            "materia": "Seminario de Ingeniería - Módulo V",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería-Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 },
                                 {
@@ -2646,7 +2649,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Diseño de Líneas de Tras. Y Estaciones Transformadoras",
+                            "materia": "Diseño De Líneas De Transmisión Y Estaciones Transformadoras",
                             "paraCursar": [
                                 {
                                     "mat": "Instalaciones Eléctricas II",
@@ -2677,6 +2680,7 @@
             ]
         },
         {
+            "id": "IngenieríaEnElectrónica",
             "carrera": "Ingeniería-en-Electrónica",
             "emoji": "robot",
             "cursada": [
@@ -2699,7 +2703,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Ingeniería-en-Electrónica)",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -3321,7 +3325,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa I (Fundamentos de Comunicaciones)",
+                            "materia": "Fundamentos de Comunicaciones",
                             "codigo": 409,
                             "paraCursar": [
                                 {
@@ -3364,20 +3368,20 @@
                             "codigo": 501,
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 }
                             ],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa II (Propagación y Antenas)",
+                            "materia": "Propagación y Antenas",
                             "codigo": 502,
                             "paraCursar": [
                                 {
@@ -3402,7 +3406,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa II (Procesamiento Digital de Bísemeles)",
+                            "materia": "Procesamiento Digital de Bísemeles",
                             "codigo": 503,
                             "paraCursar": [
                                 {
@@ -3427,7 +3431,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa III (Transmisión de la Información)",
+                            "materia": "Transmisión de la Información",
                             "codigo": 504,
                             "paraCursar": [
                                 {
@@ -3452,7 +3456,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa III (Modelo y Simulación de Sistemas Fisiológicos)",
+                            "materia": "Modelo y Simulación de Sistemas Fisiológicos",
                             "codigo": 505,
                             "paraCursar": [
                                 {
@@ -3477,7 +3481,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Proyecto Final (Anual)",
+                            "materia": "Proyecto Final",
                             "codigo": 506,
                             "paraCursar": [
                                 {
@@ -3518,17 +3522,17 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Seminario de Ingeniería - Modulo V",
+                            "materia": "Seminario de Ingeniería - Módulo V",
                             "codigo": 507,
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo IV",
+                                    "mat": "Seminario de Ingeniería - Módulo IV",
                                     "cond": "A"
                                 }
                             ],
@@ -3539,20 +3543,20 @@
                             "codigo": 508,
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo III",
+                                    "mat": "Seminario de Ingeniería - Módulo III",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Seminario de Ingeniería - Modulo III",
+                                    "mat": "Seminario de Ingeniería - Módulo III",
                                     "cond": "A"
                                 }
                             ],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa IV (Sistemas de Comunicaciones)",
+                            "materia": "Sistemas de Comunicaciones",
                             "codigo": 509,
                             "paraCursar": [
                                 {
@@ -3577,7 +3581,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa IV (Ingeniería Clínica)",
+                            "materia": "Ingeniería Clínica",
                             "codigo": 510,
                             "paraCursar": [
                                 {
@@ -3611,6 +3615,7 @@
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasBiológicas",
             "carrera": "Licenciatura-en-Ciencias-Biológicas",
             "emoji": "seedling",
             "cursada": [
@@ -3631,7 +3636,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Licenciatura-en-Ciencias-Biológicas)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -3653,7 +3658,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química Biológica",
+                            "materia": "Química Biológica (Licenciatura-en-Ciencias-Biológicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Química General",
@@ -4522,6 +4527,7 @@
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasFísicas",
             "carrera": "Licenciatura-en-Ciencias-Físicas",
             "emoji": "atom",
             "cursada": [
@@ -4868,7 +4874,7 @@
                     "orientaciones": null,
                     "materias": [
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Licenciatura-en-Ciencias-Físicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Calor y Termodinámica",
@@ -5036,7 +5042,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Ingles Técnico",
+                            "materia": "Inglés Técnico",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": "Aprobar para iniciar el Ciclo Superior"
@@ -5192,13 +5198,13 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Optativa II (Dentro del Departamento de Física)",
+                            "materia": "Dentro del Departamento de Física",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento"
                         },
                         {
-                            "materia": "Optativa III (Dentro del Departamento de Física)",
+                            "materia": "Dentro del Departamento de Física",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": "Elegir entre las propuestas anualmente por el Departamento"
@@ -5271,13 +5277,14 @@
                                     "cond": "R"
                                 }
                             ],
-                            "planDeEstudio": "Tener aprobada como mínimo 4 asignaturas del ciclo de Formación Superior"
+                            "planDeEstudio": ""
                         }
                     ]
                 }
             ]
         },
         {
+            "id": "LicenciaturaEnCienciasQuímicas",
             "carrera": "Licenciatura-en-Ciencias-Químicas",
             "emoji": "flask",
             "cursada": [
@@ -5292,7 +5299,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Licenciatura-en-Ciencias-Químicas)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -5560,7 +5567,7 @@
                     "orientaciones": null,
                     "materias": [
                         {
-                            "materia": "Química Biológica",
+                            "materia": "Química Biológica (Licenciatura-en-Ciencias-Químicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Química Analítica I",
@@ -5575,7 +5582,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5593,7 +5600,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5619,7 +5626,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 },
                                 {
@@ -5645,7 +5652,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5667,7 +5674,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5685,7 +5692,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5707,7 +5714,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -5725,7 +5732,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Ingles",
+                                    "mat": "Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -6017,7 +6024,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Prueba de Traducción de Ingles",
+                                    "mat": "Prueba de Traducción de Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -6035,7 +6042,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Prueba de Traducción de Ingles",
+                                    "mat": "Prueba de Traducción de Inglés",
                                     "cond": "A"
                                 }
                             ],
@@ -6122,7 +6129,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Eco toxicología y Sanidad Laboral y Ambiental",
+                            "materia": "Ecotoxicología Y Sanidad Laboral Y Ambiental",
                             "paraCursar": [
                                 {
                                     "mat": "Estadística y Análisis de Datos",
@@ -6332,6 +6339,7 @@
             ]
         },
         {
+            "id": "Licenciatura-enMatemática",
             "carrera": "Licenciatura-en-Matemática",
             "emoji": "math",
             "cursada": [
@@ -6797,6 +6805,7 @@
             ]
         },
         {
+            "id": "Licenciatura-en-Sistemas-deInformación",
             "carrera": "Licenciatura-en-Sistemas-de-Información",
             "emoji": "device-imac",
             "cursada": [
@@ -7143,7 +7152,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Inglés Técnico Informático (extracurricular)",
+                            "materia": "Inglés Técnico Informático (Extracurricular)",
                             "codigo": 0,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -7317,7 +7326,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Auditoria y Seguridad Informática",
+                            "materia": "Auditoría y Seguridad Informática",
                             "codigo": 0,
                             "paraCursar": [
                                 {
@@ -7413,6 +7422,7 @@
             ]
         },
         {
+            "id": "Profesorado-enBiología",
             "carrera": "Profesorado-en-Biología",
             "emoji": "butterfly",
             "cursada": [
@@ -7471,7 +7481,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Competencias Lingüístico-Comunicativas",
+                            "materia": "Competencias Lingüístico - Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -7492,13 +7502,13 @@
                             "materia": "Pedagogía",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "R"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 }
                             ],
@@ -7548,7 +7558,7 @@
                             "materia": "Psicología del Aprendizaje y del Desarrollo",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 },
                                 {
@@ -7562,7 +7572,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 },
                                 {
@@ -7620,7 +7630,7 @@
                             "materia": "Seminario sobre Institución Educativa",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 },
                                 {
@@ -7630,7 +7640,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 },
                                 {
@@ -7938,6 +7948,7 @@
         },
         
         {
+            "id": "Profesorado-enFísica",
             "carrera": "Profesorado-en-Física",
             "emoji": "telescope",
             "cursada": [
@@ -7958,7 +7969,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Competencia Lingüístico-Comunicativas",
+                            "materia": "Competencias Lingüístico - Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -8131,20 +8142,20 @@
                             "materia": "Pedagogía",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencia Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "R"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencia Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 }
                             ],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General",
+                            "materia": "Química General (Profesorado-en-Física)",
                             "paraCursar": [
                                 {
                                     "mat": "Cálculo Diferencial e Integral II",
@@ -8389,7 +8400,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Competencia Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 }
                             ],
@@ -8399,7 +8410,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Competencia Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 }
                             ],
@@ -8610,6 +8621,7 @@
             ]
         },
         {
+            "id": "Profesorado-enMatemática",
             "carrera": "Profesorado-en-Matemática",
             "emoji": "ruler",
             "cursada": [
@@ -8630,7 +8642,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Competencias Lingüístico-Comunicativas",
+                            "materia": "Competencias Lingüístico - Comunicativas",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -8727,13 +8739,13 @@
                             "materia": "Pedagogía",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "R"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 }
                             ],
@@ -8791,7 +8803,7 @@
                             "materia": "Psicología del Aprendizaje y del Desarrollo",
                             "paraCursar": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "R"
                                 },
                                 {
@@ -8801,7 +8813,7 @@
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Competencias Lingüístico-Comunicativas",
+                                    "mat": "Competencias Lingüístico - Comunicativas",
                                     "cond": "A"
                                 },
                                 {
@@ -8898,7 +8910,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Geometría Métrica y Trigonométrica",
+                            "materia": "Geometría Métrica Y Trigonometría",
                             "paraCursar": [
                                 {
                                     "mat": "Álgebra Lineal y Geometría",
@@ -8998,7 +9010,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Geometría Métrica y Trigonométrica",
+                                    "mat": "Geometría Métrica Y Trigonometría",
                                     "cond": "R"
                                 }
                             ],
