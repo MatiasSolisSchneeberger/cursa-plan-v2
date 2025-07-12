@@ -124,7 +124,6 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 							{materias?.map(
 								({
 									materia: originalMateria,
-
 									paraCursar,
 									paraRendir,
 									planDeEstudio,
@@ -161,36 +160,32 @@ const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 </Layout>
 
 <script>
+	function handleSearch(searchTerm: string) {
+		const searchTermLower = searchTerm.toLowerCase();
+		const materiasContainer = document.getElementById("materias-container");
+		if (!materiasContainer) return;
 
-		function handleSearch(searchTerm: string) {
-			const searchTermLower = searchTerm.toLowerCase();
-			const materiasContainer =
-				document.getElementById("materias-container");
-			if (!materiasContainer) return;
+		const tarjetas =
+			materiasContainer.getElementsByClassName("materia-card");
 
-			const tarjetas =
-				materiasContainer.getElementsByClassName("materia-card");
+		Array.from(tarjetas).forEach((tarjeta) => {
+			const nombreMateria =
+				tarjeta.querySelector("h3")?.textContent?.toLowerCase() || "";
+			const codigoMateria =
+				tarjeta.querySelector(".codigo")?.textContent?.toLowerCase() ||
+				"";
 
-			Array.from(tarjetas).forEach((tarjeta) => {
-				const nombreMateria =
-					tarjeta.querySelector("h3")?.textContent?.toLowerCase() ||
-					"";
-				const codigoMateria =
-					tarjeta
-						.querySelector(".codigo")
-						?.textContent?.toLowerCase() || "";
+			if (
+				nombreMateria.includes(searchTermLower) ||
+				codigoMateria.includes(searchTermLower)
+			) {
+				(tarjeta as HTMLElement).style.display = "";
+			} else {
+				(tarjeta as HTMLElement).style.display = "none";
+			}
+		});
+	}
 
-				if (
-					nombreMateria.includes(searchTermLower) ||
-					codigoMateria.includes(searchTermLower)
-				) {
-					(tarjeta as HTMLElement).style.display = "";
-				} else {
-					(tarjeta as HTMLElement).style.display = "none";
-				}
-			});
-		}
-
-		// Exponer la función al componente React
-		(window as any).handleSearch = handleSearch;
+	// Exponer la función al componente React
+	(window as any).handleSearch = handleSearch;
 </script>
