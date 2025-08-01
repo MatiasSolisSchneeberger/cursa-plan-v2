@@ -1,11 +1,16 @@
 ---
-import {Icon} from "astro-icon/components"
-const {theme} = Astro.props
+import { IconSchool } from "@tabler/icons-react";
+import { Icon } from "astro-icon/components";
+const { theme } = Astro.props;
 ---
 
 <a
 	href="/"
-	class=`theme-${theme} bg-primary-container text-on-primary-container rounded-lg p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative overflow-hidden w-min h-min`>
-	<Icon name="school" size="22" />
-	<p class="text-center text-title-small font-black relative flex items-center justify-center">CursaPlan</p>
+	class="bg-primary-400 text-primary-950 dark:bg-primary-600 dark:text-primary-50 rounded-full p-2.5 flex flex-row gap-2.5 items-center justify-center self-stretch shrink-0 relative overflow-hidden w-min h-min"
+	id="logo">
+	<IconSchool size="22" />
+	<p
+		class="logo-text relative flex items-center justify-center text-center font-Poppins text-sm leading-4 font-medium tracking-wide">
+		CursaPlan
+	</p>
 </a>

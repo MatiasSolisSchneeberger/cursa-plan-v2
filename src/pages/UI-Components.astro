@@ -1,0 +1,383 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Button from "@components/Button.astro";
+import ButtonIcon from "@components/ButtonIcon.astro";
+import { IconInfinity } from "@tabler/icons-react";
+import Switch from "@components/Switch.astro";
+
+const tipos = [
+	"primary",
+	"secondary",
+	"tertiary",
+	"background",
+	"text",
+	"danger",
+	"warning",
+	"success",
+	"info",
+];
+
+const size = [
+	{size: "sm",
+		icon: 16
+	}, 
+{size: "md",
+	icon: 24
+}, 
+{size: "lg",
+	icon: 36
+}];
+
+const escalas = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
+---
+
+<Layout>
+	<h1 class="texto-display">Colors:</h1>
+	<span class="size-16 outline-2 outline-background-300">
+		primary
+	</span>
+	<section class="grid grid-cols-11 gap-3 *:rounded-xl">
+		<span class="size-16 bg-primary-50 outline-2 outline-background-300">
+			primary-50
+		</span>
+		<span class="size-16 bg-primary-100 outline-2 outline-background-300">
+			primary-100
+		</span>
+		<span class="size-16 bg-primary-200 outline-2 outline-background-300">
+			primary-200
+		</span>
+		<span class="size-16 bg-primary-300 outline-2 outline-background-300">
+			primary-300
+		</span>
+		<span class="size-16 bg-primary-400 outline-2 outline-background-300">
+			primary-400
+		</span>
+		<span class="size-16 bg-primary-500 outline-2 outline-background-300">
+			primary-500
+		</span>
+		<span class="size-16 bg-primary-600 outline-2 outline-background-300">
+			primary-600
+		</span>
+		<span class="size-16 bg-primary-700 outline-2 outline-background-300">
+			primary-700
+		</span>
+		<span class="size-16 bg-primary-800 outline-2 outline-background-300">
+			primary-800
+		</span>
+		<span class="size-16 bg-primary-900 outline-2 outline-background-300">
+			primary-900
+		</span>
+		<span class="size-16 bg-primary-950 outline-2 outline-background-300">
+			primary-950
+		</span>
+		<span class="size-16 bg-secondary-50 outline-2 outline-background-300">
+			secondary-50
+		</span>
+		<span class="size-16 bg-secondary-100 outline-2 outline-background-300">
+			secondary-100
+		</span>
+		<span class="size-16 bg-secondary-200 outline-2 outline-background-300">
+			secondary-200
+		</span>
+		<span class="size-16 bg-secondary-300 outline-2 outline-background-300">
+			secondary-300
+		</span>
+		<span class="size-16 bg-secondary-400 outline-2 outline-background-300">
+			secondary-400
+		</span>
+		<span class="size-16 bg-secondary-500 outline-2 outline-background-300">
+			secondary-500
+		</span>
+		<span class="size-16 bg-secondary-600 outline-2 outline-background-300">
+			secondary-600
+		</span>
+		<span class="size-16 bg-secondary-700 outline-2 outline-background-300">
+			secondary-700
+		</span>
+		<span class="size-16 bg-secondary-800 outline-2 outline-background-300">
+			secondary-800
+		</span>
+		<span class="size-16 bg-secondary-900 outline-2 outline-background-300">
+			secondary-900
+		</span>
+		<span class="size-16 bg-secondary-950 outline-2 outline-background-300">
+			secondary-950
+		</span>
+		<span class="size-16 bg-tertiary-50 outline-2 outline-background-300">
+			tertiary-50
+		</span>
+		<span class="size-16 bg-tertiary-100 outline-2 outline-background-300">
+			tertiary-100
+		</span>
+		<span class="size-16 bg-tertiary-200 outline-2 outline-background-300">
+			tertiary-200
+		</span>
+		<span class="size-16 bg-tertiary-300 outline-2 outline-background-300">
+			tertiary-300
+		</span>
+		<span class="size-16 bg-tertiary-400 outline-2 outline-background-300">
+			tertiary-400
+		</span>
+		<span class="size-16 bg-tertiary-500 outline-2 outline-background-300">
+			tertiary-500
+		</span>
+		<span class="size-16 bg-tertiary-600 outline-2 outline-background-300">
+			tertiary-600
+		</span>
+		<span class="size-16 bg-tertiary-700 outline-2 outline-background-300">
+			tertiary-700
+		</span>
+		<span class="size-16 bg-tertiary-800 outline-2 outline-background-300">
+			tertiary-800
+		</span>
+		<span class="size-16 bg-tertiary-900 outline-2 outline-background-300">
+			tertiary-900
+		</span>
+		<span class="size-16 bg-tertiary-950 outline-2 outline-background-300">
+			tertiary-950
+		</span>
+		<span class="size-16 bg-background-50 outline-2 outline-background-300">
+			background-50
+		</span>
+		<span
+			class="size-16 bg-background-100 outline-2 outline-background-300">
+			background-100
+		</span>
+		<span
+			class="size-16 bg-background-200 outline-2 outline-background-300">
+			background-200
+		</span>
+		<span
+			class="size-16 bg-background-300 outline-2 outline-background-300">
+			background-300
+		</span>
+		<span
+			class="size-16 bg-background-400 outline-2 outline-background-300">
+			background-400
+		</span>
+		<span
+			class="size-16 bg-background-500 outline-2 outline-background-300">
+			background-500
+		</span>
+		<span
+			class="size-16 bg-background-600 outline-2 outline-background-300">
+			background-600
+		</span>
+		<span
+			class="size-16 bg-background-700 outline-2 outline-background-300">
+			background-700
+		</span>
+		<span
+			class="size-16 bg-background-800 outline-2 outline-background-300">
+			background-800
+		</span>
+		<span
+			class="size-16 bg-background-900 outline-2 outline-background-300">
+			background-900
+		</span>
+		<span
+			class="size-16 bg-background-950 outline-2 outline-background-300">
+			background-950
+		</span>
+		<span class="size-16 bg-text-50 outline-2 outline-background-300">
+			text-50
+		</span>
+		<span class="size-16 bg-text-100 outline-2 outline-background-300">
+			text-100
+		</span>
+		<span class="size-16 bg-text-200 outline-2 outline-background-300">
+			text-200
+		</span>
+		<span class="size-16 bg-text-300 outline-2 outline-background-300">
+			text-300
+		</span>
+		<span class="size-16 bg-text-400 outline-2 outline-background-300">
+			text-400
+		</span>
+		<span class="size-16 bg-text-500 outline-2 outline-background-300">
+			text-500
+		</span>
+		<span class="size-16 bg-text-600 outline-2 outline-background-300">
+			text-600
+		</span>
+		<span class="size-16 bg-text-700 outline-2 outline-background-300">
+			text-700
+		</span>
+		<span class="size-16 bg-text-800 outline-2 outline-background-300">
+			text-800
+		</span>
+		<span class="size-16 bg-text-900 outline-2 outline-background-300">
+			text-900
+		</span>
+		<span class="size-16 bg-text-950 outline-2 outline-background-300">
+			text-950
+		</span>
+		<span class="size-16 bg-danger-50 outline-2 outline-background-300">
+			danger-50
+		</span>
+		<span class="size-16 bg-danger-100 outline-2 outline-background-300">
+			danger-100
+		</span>
+		<span class="size-16 bg-danger-200 outline-2 outline-background-300">
+			danger-200
+		</span>
+		<span class="size-16 bg-danger-300 outline-2 outline-background-300">
+			danger-300
+		</span>
+		<span class="size-16 bg-danger-400 outline-2 outline-background-300">
+			danger-400
+		</span>
+		<span class="size-16 bg-danger-500 outline-2 outline-background-300">
+			danger-500
+		</span>
+		<span class="size-16 bg-danger-600 outline-2 outline-background-300">
+			danger-600
+		</span>
+		<span class="size-16 bg-danger-700 outline-2 outline-background-300">
+			danger-700
+		</span>
+		<span class="size-16 bg-danger-800 outline-2 outline-background-300">
+			danger-800
+		</span>
+		<span class="size-16 bg-danger-900 outline-2 outline-background-300">
+			danger-900
+		</span>
+		<span class="size-16 bg-danger-950 outline-2 outline-background-300">
+			danger-950
+		</span>
+		<span class="size-16 bg-warning-50 outline-2 outline-background-300">
+			warning-50
+		</span>
+		<span class="size-16 bg-warning-100 outline-2 outline-background-300">
+			warning-100
+		</span>
+		<span class="size-16 bg-warning-200 outline-2 outline-background-300">
+			warning-200
+		</span>
+		<span class="size-16 bg-warning-300 outline-2 outline-background-300">
+			warning-300
+		</span>
+		<span class="size-16 bg-warning-400 outline-2 outline-background-300">
+			warning-400
+		</span>
+		<span class="size-16 bg-warning-500 outline-2 outline-background-300">
+			warning-500
+		</span>
+		<span class="size-16 bg-warning-600 outline-2 outline-background-300">
+			warning-600
+		</span>
+		<span class="size-16 bg-warning-700 outline-2 outline-background-300">
+			warning-700
+		</span>
+		<span class="size-16 bg-warning-800 outline-2 outline-background-300">
+			warning-800
+		</span>
+		<span class="size-16 bg-warning-900 outline-2 outline-background-300">
+			warning-900
+		</span>
+		<span class="size-16 bg-warning-950 outline-2 outline-background-300">
+			warning-950
+		</span>
+		<span class="size-16 bg-success-50 outline-2 outline-background-300">
+			success-50
+		</span>
+		<span class="size-16 bg-success-100 outline-2 outline-background-300">
+			success-100
+		</span>
+		<span class="size-16 bg-success-200 outline-2 outline-background-300">
+			success-200
+		</span>
+		<span class="size-16 bg-success-300 outline-2 outline-background-300">
+			success-300
+		</span>
+		<span class="size-16 bg-success-400 outline-2 outline-background-300">
+			success-400
+		</span>
+		<span class="size-16 bg-success-500 outline-2 outline-background-300">
+			success-500
+		</span>
+		<span class="size-16 bg-success-600 outline-2 outline-background-300">
+			success-600
+		</span>
+		<span class="size-16 bg-success-700 outline-2 outline-background-300">
+			success-700
+		</span>
+		<span class="size-16 bg-success-800 outline-2 outline-background-300">
+			success-800
+		</span>
+		<span class="size-16 bg-success-900 outline-2 outline-background-300">
+			success-900
+		</span>
+		<span class="size-16 bg-success-950 outline-2 outline-background-300">
+			success-950
+		</span>
+		<span class="size-16 bg-info-50 outline-2 outline-background-300">
+			info-50
+		</span>
+		<span class="size-16 bg-info-100 outline-2 outline-background-300">
+			info-100
+		</span>
+		<span class="size-16 bg-info-200 outline-2 outline-background-300">
+			info-200
+		</span>
+		<span class="size-16 bg-info-300 outline-2 outline-background-300">
+			info-300
+		</span>
+		<span class="size-16 bg-info-400 outline-2 outline-background-300">
+			info-400
+		</span>
+		<span class="size-16 bg-info-500 outline-2 outline-background-300">
+			info-500
+		</span>
+		<span class="size-16 bg-info-600 outline-2 outline-background-300">
+			info-600
+		</span>
+		<span class="size-16 bg-info-700 outline-2 outline-background-300">
+			info-700
+		</span>
+		<span class="size-16 bg-info-800 outline-2 outline-background-300">
+			info-800
+		</span>
+		<span class="size-16 bg-info-900 outline-2 outline-background-300">
+			info-900
+		</span>
+		<span class="size-16 bg-info-950 outline-2 outline-background-300">
+			info-950
+		</span>
+	</section>
+	<Switch/>
+
+	<div class="mt-8 grid grid-cols-2 gap-3">
+		{
+			tipos
+				.filter((tipo) => tipo !== "background")
+				.map((tipo) => (
+					<>
+						<Button style={tipo}>Button</Button>
+						<Button style={tipo} disabled>
+							Button
+						</Button>
+					</>
+				))
+		}
+	</div>
+
+	<div 
+		class="mt-8 grid grid-cols-2 gap-3" 
+		>
+		{
+			tipos
+				.filter((tipo) => tipo !== "background")
+				.map((tipo) => (
+					size.map(({size, icon}) => (
+						<ButtonIcon style={tipo} size={size}>
+							<IconInfinity size={icon} />
+						</ButtonIcon>
+						<ButtonIcon style={tipo} disabled size={size}>
+							<IconInfinity size={icon} />
+						</ButtonIcon>
+					))
+				))
+		}
+	</div>
+</Layout>

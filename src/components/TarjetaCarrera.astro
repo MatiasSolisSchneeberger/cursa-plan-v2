@@ -6,7 +6,7 @@ interface Props {
 	emoji: string;
 }
 
-const { carrera, emoji }: Props = Astro.props;
+const { carrera, emoji } = Astro.props;
 
 const nombreCarrera = carrera.replace(/-/g, " ");
 ---
@@ -14,20 +14,19 @@ const nombreCarrera = carrera.replace(/-/g, " ");
 <a
 	transition:name={`header-${carrera}`}
 	href={`/carreras/${carrera}`}
-	aria-disabled="true"
-	class={`theme-${carrera} rounded-full hover:shadow-1 from-25% hover:scale-[1.01] outline-solid outline-outline outline-1 p-3 flex flex-row -col items-start justify-between flex-1 h-min -56 relative overflow-hidden transition-all duration-100 ease-in-out w-full bg-primary-container`}>
+	class=`theme-${carrera} hover:shadow-1 outline-outline bg-primary-200 dark:bg-primary-950 relative flex h-min w-full flex-1 flex-row items-center justify-between overflow-hidden rounded-4xl from-25% py-3 pl-3 pr-9 outline-1 transition-all hover:shadow-md duration-100 ease-in-out outline-primary-400 hover:scale-[1.01] gap-3 hover:bg-primary-100 dark:hover:bg-primary-900`>
 	<div
-		class="relative flex h-10 w-10 shrink-0 flex-row items-center justify-center gap-2.5 rounded-full bg-primary p-3">
+		class="relative flex h-10 w-10 shrink-0 flex-row items-center justify-center gap-2.5 rounded-full bg-primary-600 dark:bg-primary-400 p-3">
 		<label
 			transition:name={`emoji-${carrera}`}
-			class={`text-on-primary text-center relative flex items-center justify-center`}>
+			class="relative flex items-center justify-center text-center text-primary-50 dark:text-primary-950">
 			<Icon name={emoji} size="22" />
 		</label>
 	</div>
 
 	<h2
 		transition:name={`nombre-${carrera}`}
-		class="text-title-large relative flex w-full items-center justify-center self-stretch text-center text-on-primary-container">
+		class="texto-headline relative flex w-full items-center justify-center self-stretch text-center text-primary-700 dark:text-primary-300">
 		{/* Texto corto para tamaños menores a md */}
 		<span class="block">
 			{
