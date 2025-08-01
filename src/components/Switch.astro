@@ -1,13 +1,55 @@
 ---
+import { IconInfoCircleFilled } from "@tabler/icons-react";
 
+interface Props {
+	disabled?: boolean;
+	required?: boolean;
+	info?: boolean;
+	optional?: string;
+	HelpText?: string;
+	HelpTextDanger?: boolean;
+}
+
+const { disabled, required, optional, HelpText, info, HelpTextDanger } =
+	Astro.props;
 ---
 
-<label class="inline-flex cursor-pointer items-center">
-	<input type="checkbox" value="" class="peer sr-only" />
+<label
+	class:list=`flex flex-row gap-4 items-center ${
+		disabled ? "cursor-not-allowed" : "cursor-pointer"
+	}`>
+	<input type="checkbox" value="" class="peer sr-only" disabled={disabled} />
 	<div
-		class="peer dark:border-graay-600 relative h-6 w-11 rounded-full bg-background-400 dark:bg-background-600 peer-checked:bg-primary-600 peer-focus:ring-primary-300 peer-focus:outline-4 peer-focus:outline-none after:absolute after:start-[2px] after:top-[2px] after:size-5 after:rounded-full after:bg-primary-50 after:transition-all after:content-[''] peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full dark:peer-checked:bg-primary-400 dark:peer-focus:ring-primary-800 peer-checked:dark:after:bg-background-800">
+		class="relative h-6 w-11 rounded-full bg-background-400 peer-checked:bg-primary-600 after:absolute after:start-[2px] after:top-[2px] after:size-5 after:rounded-full peer-checked:after:bg-primary-100 after:bg-background-100 after:transition-all after:duration-200 after:ease-in-out after:content-[''] peer-checked:after:translate-x-full peer-active:after:scale-110 rtl:peer-checked:after:-translate-x-full dark:bg-background-600 peer-checked:dark:bg-primary-400 dark:peer-checked:after:bg-primary-950">
 	</div>
-	<!-- <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-		Toggle me
-	</span> -->
+	<div>
+		<span class="flex flex-row items-center gap-1">
+			<span class="texto-label text-text-950 select-none">
+				<slot />
+			</span>
+			{
+				optional && (
+					<span class="texto-label text-text-700 select-none">
+						{"("}{optional}{")"}
+					</span>
+				)
+			}
+			{
+				required && (
+					<span class="texto-label text-danger-600 select-none">
+						*
+					</span>
+				)
+			}
+			{info && <IconInfoCircleFilled />}
+		</span>
+		{
+			HelpText && (
+				<span
+					class={`texto-label font-bold select-none ${HelpTextDanger ? "text-danger-700" : "text-text-700"}`}>
+					{HelpText}
+				</span>
+			)
+		}
+	</div>
 </label>
