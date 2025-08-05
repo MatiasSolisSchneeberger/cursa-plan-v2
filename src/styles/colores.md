@@ -18,9 +18,8 @@ Licenciatura en Sistemas de Información: #2F628C
 
 Profesorado en Biología: #3E6837 -
 
-Profesorado en Ciencias Químicas y del Ambiente: #8E4958 -
-
 Profesorado en Física: #00696B -
 
 Profesorado en Matemática: #4C5C92
 
+Profesorado en Ciencias Químicas y del Ambiente: #8E4958 -

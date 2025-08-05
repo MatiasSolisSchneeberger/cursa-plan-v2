@@ -35,7 +35,7 @@ interface Props {
 	pagina?: string;
 }
 
-const { title, theme, pagina } = Astro.props;
+const { title, theme, pagina, ...props } = Astro.props;
 ---
 
 <!doctype html>
@@ -151,13 +151,12 @@ const { title, theme, pagina } = Astro.props;
 		<Analytics />
 	</head>
 	<body
-		class=`theme-${theme} transition-color ease-in-out duration-200 flex justify-center bg-background`>
+		class={`theme-${theme} transition-color ease-in-out duration-200 min-h-screen justify-center bg-background-200 dark:bg-background-950 text-text-950 dark:text-text-100`}>
+		<BotonArriba />
 		<main
-			class=`flex flex-col gap-6 p-4 sm:py-4 sm:px-12 md:py-6 md:px-16 lg:py-4 lg:px-20 w-full`>
+			class="space-y-6 p-4 sm:py-4 sm:px-12 md:py-6 md:px-16 lg:py-4 lg:px-20">
 			<NavHeader pagina={pagina} />
 			<slot />
-			<BotonTema />
-			<BotonArriba />
 			<Footer />
 		</main>
 	</body>
@@ -166,13 +165,12 @@ const { title, theme, pagina } = Astro.props;
 <style is:global>
 	@import "tailwindcss";
 
-	html, body {
+	html,
+	body {
 		scroll-behavior: smooth;
 		margin: 0;
 		width: 100%;
 		height: 100%;
-		min-height: 100vh;
-		overscroll-behavior-y: none;
 	}
 
 	@media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,97 @@
+---
+import { Icon } from "astro-icon/components";
+import Avatar from "./Avatar.astro";
+import Chip from "./Chip.astro";
+import Switch from "./Switch.astro";
+
+interface Props {
+	iconLeft?: {
+		icon: string
+		color?: string
+		size?:number
+	};
+	iconRight?: {
+		icon: string
+		color?: string
+		size?:number
+	};
+	chip?: {
+		style: string;
+		text: string;
+		selection?: boolean;
+	};
+	avatar?: {
+		img?: string;
+		name?: string;
+	};
+	text?: string;
+	textHelp?: string;
+	switchLabel?: boolean;
+	id?: string;
+	button?: {
+		style:
+			| "primary"
+			| "secondary"
+			| "tertiary"
+			| "text"
+			| "danger"
+			| "warning"
+			| "success"
+			| "info"
+			| string;
+		href?: string;
+		disabled?: boolean;
+		id?: string;
+		className?: string;
+	};
+}
+
+const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
+	Astro.props;
+---
+
+<div class="flex h-12 w-full flex-row items-center px-2 py-1" id={id}>
+	{
+		iconLeft && (
+			<span class={`pl-1 ${iconLeft.color && `text-${iconLeft.color}-600 dark:text-${iconLeft.color}-400`}`}>
+				<Icon name={iconLeft.icon} size={iconLeft.size} />
+			</span>
+		)
+	}
+	{
+		avatar && (
+			<span class="px-1">
+				<Avatar img={avatar.img} name={avatar.name} />
+			</span>
+		)
+	}
+	<div class="texto-label flex flex-col pr-4 pl-2">
+		<span class="text-text-950 dark:text-text-50">
+			{text}
+		</span>
+		{textHelp && <span class="text-text-700 dark:text-text-300">{textHelp}</span>}
+	</div>
+	{
+		chip && (
+			<span class="pr-2">
+				<Chip style={chip.style} selection={chip.selection}>
+					{chip.text}
+				</Chip>
+			</span>
+		)
+	}
+	{
+		switchLabel && (
+			<span class="pr-2">
+				<Switch />
+			</span>
+		)
+	}
+	{
+		iconRight && (
+			<span class={`pr-1 ${iconRight.color && `text-${iconRight.color}-600 dark:text-${iconRight.color}-400`}`}>
+				<Icon name={iconRight.icon} size={iconRight.size} />
+			</span>
+		)
+	}
+</div>

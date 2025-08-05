@@ -7,14 +7,16 @@ interface Props {
 	materia: string;
 	originalMateria: string;
 	codigo?: number;
-	paraCursar: Condicion[] | null;
-	paraRendir: Condicion[] | null;
-	planDeEstudio: string | null;
+	paraCursar: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	paraRendir: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	planDeEstudio?: string | null;
 	carrera?: string;
-}
-interface Condicion {
-	mat: string;
-	cond: "R" | "A";
 }
 
 const {
@@ -34,16 +36,16 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 ---
 
 <article
-	class={`materia-card theme-${carrera} w-full border-outline full rounded-3xl border p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
+	class={`materia-card theme-${carrera} w-full bg-background-100 border-1 border-background-300 full rounded-3xl p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
 	data-materia={originalMateria}
-	data-codigo={codigo}
 	id={materia}>
 	<header
-		class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
+		class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary-600 text-primary-50 p-2">
 		<h3
-			class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
+			class="texto-headline relative flex flex-1 items-center justify-center text-center text-pretty">
 			{materia}
 		</h3>
+		
 	</header>
 
 	<!-- Mobile slider / Desktop stack container -->
@@ -102,12 +104,12 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 
 			<!-- Indicator dots -->
 			<div
-				class="flex w-min justify-center gap-2 rounded-full bg-primary-container px-3 py-2">
+				class="flex w-min justify-center gap-2 rounded-full bg-primary-400 px-3 py-2">
 				<button
-					class="slider-dot h-2 w-2 rounded-full bg-on-primary-container opacity-50"
+					class="slider-dot h-2 w-2 rounded-full bg-primary-800 opacity-50"
 					data-index="0"></button>
 				<button
-					class="slider-dot h-2 w-2 rounded-full bg-on-primary-container opacity-50"
+					class="slider-dot h-2 w-2 rounded-full bg-primary-800 opacity-50"
 					data-index="1"></button>
 			</div>
 		</div>
@@ -128,8 +130,7 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 				</div>
 			</section>
 
-			<md-divider role="separator" style="--md-divider-thickness: 2px"
-			></md-divider>
+			
 
 			<!-- Footer -->
 			<footer class="flex w-full items-start justify-start gap-2.5">

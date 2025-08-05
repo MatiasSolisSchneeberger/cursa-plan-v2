@@ -1,0 +1,71 @@
+---
+import type { StringValidation } from "astro:schema";
+import Divider from "@components/Divider.astro";
+import MenuItem from "@components/MenuItem.astro";
+
+interface Props {
+	menu: Array<{
+		title?: string;
+		menuItem: Array<{
+			chip?: {
+				style: string;
+				text: string;
+				selection?: boolean;
+			};
+			avatar?: {
+				img?: string;
+				name?: string;
+			};
+			text?: string;
+			textHelp?: string;
+			switchLabel?: boolean;
+			iconLeft?: string;
+			iconRight?: string;
+			id?: string;
+		}>;
+	}>;
+}
+
+const { menu } = Astro.props;
+---
+
+<div
+	class="flex max-w-sm flex-col gap-2 rounded-xl bg-background-100 py-2 outline-1 outline-background-300">
+	{
+		menu.map(({ title, menuItem }, index) => (
+			<>
+				<a class="flex flex-col">
+					{title && (
+						<span class="texto-label px-4 py-1 text-text-800">
+							{title}
+						</span>
+					)}
+					{menuItem.map(
+						({
+							chip,
+							avatar,
+							switchLabel,
+							text,
+							textHelp,
+							iconLeft,
+							iconRight,
+							id,
+						}) => (
+							<MenuItem
+								iconLeft={iconLeft}
+								iconRight={iconRight}
+								avatar={avatar}
+								chip={chip}
+								text={text}
+								switchLabel={switchLabel}
+								textHelp={textHelp}
+								id={id}
+							/>
+						),
+					)}
+				</a>
+				{menu.length !== index + 1 && <Divider />}
+			</>
+		))
+	}
+</div>

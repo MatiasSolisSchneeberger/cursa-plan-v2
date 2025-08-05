@@ -1,0 +1,35 @@
+---
+interface Props {
+	style: "primary" | "danger" | "warning" | "success" | "info" | string;
+	selection?: boolean;
+}
+
+const { style = "primary", selection } = Astro.props;
+---
+
+<span
+	class:list={[
+		"flex w-min transition-colors flex-row items-center rounded-xl px-2 py-1 outline-1",
+		{
+			"bg-primary-300 dark:bg-primary-800 text-primary-600 dark:text-primary-200 outline-primary-400 dark:outline-primary-600 ": style === "primary" && selection,
+			"bg-background-300 dark:bg-background-800 text-background-600 dark:text-background-200 outline-background-400 dark:outline-background-600 ": style === "background" && selection,
+			"bg-danger-300 dark:bg-danger-800 text-danger-600 dark:text-danger-200 outline-danger-400 dark:outline-danger-600 ": style === "danger" && selection,
+			"bg-warning-300 dark:bg-warning-800 text-warning-600 dark:text-warning-200 outline-warning-400 dark:outline-warning-600 ": style === "warning" && selection,
+			"bg-success-300 dark:bg-success-800 text-success-600 dark:text-success-200 outline-success-400 dark:outline-success-600 ": style === "success" && selection,
+			"bg-info-300 dark:bg-info-800 text-info-600 dark:text-info-200 outline-info-400 dark:outline-info-600 ": style === "info" && selection,
+		},
+		{
+			"text-primary-600 dark:text-primary-400 outline-primary-600 dark:outline-primary-400 ": style === "primary" && !selection,
+			"text-background-600 dark:text-background-400 outline-background-600 dark:outline-background-400 ": style === "background" && !selection,
+			"text-danger-600 dark:text-danger-400 outline-danger-600 dark:outline-danger-400 ": style === "danger" && !selection,
+			"text-warning-600 dark:text-warning-400 outline-warning-600 dark:outline-warning-400 ": style === "warning" && !selection,
+			"text-success-600 dark:text-success-400 outline-success-600 dark:outline-success-400 ": style === "success" && !selection,
+			"text-info-600 dark:text-info-400 outline-info-600 dark:outline-info-400 ": style === "info" && !selection,
+		},
+	]}>
+	<slot name="IconLeft" />
+	<span class="texto-label px-2 select-none">
+		<slot />
+	</span>
+	<slot name="IconRight" />
+</span>
