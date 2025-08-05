@@ -58,9 +58,7 @@ const { carrera: carreraSlug } = Astro.params;
 // Buscar los datos específicos de la carrera
 const carreraData = carreras.find((c) => c.carrera === carreraSlug);
 
-if (!carreraData) {
-	throw new Error(`Carrera no encontrada: ${carreraSlug}`);
-}
+if (!carreraData) return Astro.redirect("/404")
 
 const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 
