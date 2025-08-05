@@ -40,14 +40,18 @@ function icon(cond: "R" | "A" | null): string {
 		{
 			requisitos && requisitos.length > 0 ? (
 				requisitos.map(({mat, cond}) =>(
-					<MenuItem iconLeft={icon(cond)}
+					<MenuItem iconLeft={{
+						icon: icon(cond),
+						size: 22,
+						color: "tertiary"
+					}}
 						text={mat}
 					/>
 				))
 				
 			) : (
 				<div class="flex flex-row p-2 items-center justify-center flex-grow w-full relative">
-					<p class="text-on-secondary-container texto-title relative flex items-center text-center justify-center">
+					<p class="text-secondary-800 texto-title relative flex items-center text-center justify-center">
 						No hay correlativas
 					</p>
 				</div>

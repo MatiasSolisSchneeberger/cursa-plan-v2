@@ -7,14 +7,16 @@ interface Props {
 	materia: string;
 	originalMateria: string;
 	codigo?: number;
-	paraCursar: Condicion[] | null;
-	paraRendir: Condicion[] | null;
-	planDeEstudio: string | null;
+	paraCursar: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	paraRendir: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	planDeEstudio?: string | null;
 	carrera?: string;
-}
-interface Condicion {
-	mat: string;
-	cond: "R" | "A";
 }
 
 const {
@@ -34,7 +36,7 @@ const baseURL = "https://www.google.com/calendar/render?action=TEMPLATE";
 ---
 
 <article
-	class={`materia-card theme-${carrera} w-full bg-background-100 full rounded-3xl p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden shadow-2xs`}
+	class={`materia-card theme-${carrera} w-full bg-background-100 border-1 border-background-300 full rounded-3xl p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
 	data-materia={originalMateria}
 	id={materia}>
 	<header

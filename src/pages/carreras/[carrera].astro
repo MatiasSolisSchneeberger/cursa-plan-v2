@@ -6,8 +6,6 @@ import { carreras } from "@data/carreras.json";
 import Layout from "@layouts/Layout.astro";
 import AñoCarrera from "@components/AñoCarrera.astro";
 import HeaderCarrera from "@components/HeaderCarrera.astro";
-import TarjetaMateria from "@components/TarjetaMateria.astro";
-import BotonAnno from "@components/BotonAño.jsx";
 import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
 import Tabs from "@components/Tabs.astro";
 
@@ -90,6 +88,7 @@ function formatoAño(numero: number): string {
 				<Tabs
 					tab={carreraData.cursada.map((item) => ({
 						label: formatoAño(item.año),
+						href: `#Año ${item.año}`
 					}))}
 				/>
 			)
@@ -100,86 +99,13 @@ function formatoAño(numero: number): string {
 		placeholder="Buscar materia..."
 		targetClass="materia-card"
 	/>
-	<div id="materias-container" class="space-y-8">
+	<section id="materias-container" class="space-y-8">
 		{
-			carreraData.cursada.map(({ año, materias, orientaciones }) => {
-				if (orientaciones !== null && orientaciones.length > 0) {
-					return orientaciones?.map(({ nombre, materias }) => (
-						<AñoCarrera
-							año={año}
-							orientacion={nombre}
-							theme={carreraData.carrera}>
-							{materias.map(
-								({
-									materia: originalMateria,
-									paraCursar,
-									paraRendir,
-									planDeEstudio,
-								}) => {
-									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre =
-										originalMateria.endsWith(
-											` (${carreraData.carrera})`,
-										)
-											? originalMateria.slice(
-													0,
-													-` (${carreraData.carrera})`
-														.length,
-												)
-											: originalMateria;
-									return (
-										<TarjetaMateria
-											materia={materiaNombre}
-											originalMateria={originalMateria}
-											paraCursar={paraCursar}
-											paraRendir={paraRendir}
-											planDeEstudio={planDeEstudio}
-											carrera={carreraData.carrera}
-										/>
-									);
-								},
-							)}
-						</AñoCarrera>
-					));
-				} else {
-					return (
-						<AñoCarrera año={año} theme={carreraData.carrera}>
-							{materias?.map(
-								({
-									materia: originalMateria,
-									paraCursar,
-									paraRendir,
-									planDeEstudio,
-								}) => {
-									// Eliminar (Carrera) del nombre si existe
-									const materiaNombre =
-										originalMateria.endsWith(
-											` (${carreraData.carrera})`,
-										)
-											? originalMateria.slice(
-													0,
-													-` (${carreraData.carrera})`
-														.length,
-												)
-											: originalMateria;
-									return (
-										<TarjetaMateria
-											materia={materiaNombre}
-											originalMateria={originalMateria}
-											paraCursar={paraCursar}
-											paraRendir={paraRendir}
-											planDeEstudio={planDeEstudio}
-											theme={carreraData.carrera}
-										/>
-									);
-								},
-							)}
-						</AñoCarrera>
-					);
-				}
-			})
+			carreraData.cursada.map(({ año, materias, orientaciones }) => (
+				<AñoCarrera año={año} materias={materias} carrera={carreraData.carrera} orientaciones={orientaciones}/>
+			))
 		}
-	</div>
+	</section>
 </Layout>
 
 <script>

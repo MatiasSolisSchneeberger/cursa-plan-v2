@@ -10,23 +10,23 @@ interface Props {
 			text: string;
 			selection?: boolean;
 		};
+		href: string;
 	}>;
-    
 }
 
-const { tab , ...props} = Astro.props;
+const { tab, ...props } = Astro.props;
 ---
 
 <div
-    
-	class="flex w-min flex-row rounded-xl outline-1 outline-background-300 overflow-hidden"
-    {...props}
-    >
+	class="flex w-min flex-row overflow-hidden rounded-xl outline-1 outline-background-300"
+	{...props}>
 	{
-		tab.map(({ label }, index) => (
+		tab.map(({ label , href, chip}, index) => (
 			<div
-				class={`flex items-center ${index !== tab.length - 1 ? "border-background-300 border-r" : ""}`}>
-				<a href={`#${label}`} class="texto-label px-5 py-3 text-text-900 transition-colors hover:bg-background-100 h-full">
+				class={`flex items-center ${index !== tab.length - 1 ? "border-r border-background-300" : ""}`}>
+				<a
+					href={href}
+					class="texto-label h-full px-5 py-3 text-text-900 transition-colors hover:bg-background-100">
 					{label}
 				</a>
 			</div>

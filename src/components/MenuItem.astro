@@ -5,8 +5,16 @@ import Chip from "./Chip.astro";
 import Switch from "./Switch.astro";
 
 interface Props {
-	iconLeft?: string;
-	iconRight?: string;
+	iconLeft?: {
+		icon: string
+		color?: string
+		size?:number
+	};
+	iconRight?: {
+		icon: string
+		color?: string
+		size?:number
+	};
 	chip?: {
 		style: string;
 		text: string;
@@ -20,6 +28,22 @@ interface Props {
 	textHelp?: string;
 	switchLabel?: boolean;
 	id?: string;
+	button?: {
+		style:
+			| "primary"
+			| "secondary"
+			| "tertiary"
+			| "text"
+			| "danger"
+			| "warning"
+			| "success"
+			| "info"
+			| string;
+		href?: string;
+		disabled?: boolean;
+		id?: string;
+		className?: string;
+	};
 }
 
 const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
@@ -29,8 +53,8 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 <div class="flex h-12 w-full flex-row items-center px-2 py-1" id={id}>
 	{
 		iconLeft && (
-			<span class="pl-1">
-				<Icon name={iconLeft} size={22} />
+			<span class={`pl-1 ${iconLeft.color && `text-${iconLeft.color}-600 dark:text-${iconLeft.color}-400`}`}>
+				<Icon name={iconLeft.icon} size={iconLeft.size} />
 			</span>
 		)
 	}
@@ -42,10 +66,10 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 		)
 	}
 	<div class="texto-label flex flex-col pr-4 pl-2">
-		<span class="text-text-950">
+		<span class="text-text-950 dark:text-text-50">
 			{text}
 		</span>
-		{textHelp && <span class="text-text-700">{textHelp}</span>}
+		{textHelp && <span class="text-text-700 dark:text-text-300">{textHelp}</span>}
 	</div>
 	{
 		chip && (
@@ -65,8 +89,8 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 	}
 	{
 		iconRight && (
-			<span class="pr-1">
-				<Icon name={iconRight} size={22} />
+			<span class={`pr-1 ${iconRight.color && `text-${iconRight.color}-600 dark:text-${iconRight.color}-400`}`}>
+				<Icon name={iconRight.icon} size={iconRight.size} />
 			</span>
 		)
 	}
