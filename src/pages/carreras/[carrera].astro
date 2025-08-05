@@ -9,6 +9,7 @@ import HeaderCarrera from "@components/HeaderCarrera.astro";
 import TarjetaMateria from "@components/TarjetaMateria.astro";
 import BotonAnno from "@components/BotonAño.jsx";
 import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
+import Tabs from "@components/Tabs.astro";
 
 // Define interfaces for type safety
 interface Carrera {
@@ -64,19 +65,41 @@ if (!carreraData) {
 }
 
 const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
+
+function formatoAño(numero: number): string {
+	switch (numero) {
+		case 1:
+			return "1ro";
+		case 2:
+			return "2do";
+		case 3:
+			return "3er";
+		default:
+			return `${numero}to`;
+	}
+}
 ---
 
 <Layout
 	title={`${NombreCarrera} | Plan de estudio`}
 	theme={carreraData.carrera}>
 	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<BotonAnno carreraData={carreraData} client:load />
+	<section class="flex justify-center">
+		{
+			carreraData.cursada && (
+				<Tabs
+					tab={carreraData.cursada.map((item) => ({
+						label: formatoAño(item.año),
+					}))}
+				/>
+			)
+		}
+	</section>
 	<BuscadorMaterias
 		client:load
 		placeholder="Buscar materia..."
 		targetClass="materia-card"
 	/>
-
 	<div id="materias-container" class="space-y-8">
 		{
 			carreraData.cursada.map(({ año, materias, orientaciones }) => {

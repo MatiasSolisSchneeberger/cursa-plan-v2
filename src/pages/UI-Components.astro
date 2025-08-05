@@ -4,6 +4,12 @@ import Button from "@components/Button.astro";
 import ButtonIcon from "@components/ButtonIcon.astro";
 import { IconInfinity } from "@tabler/icons-react";
 import Switch from "@components/Switch.astro";
+import Chip from "@components/Chip.astro";
+import Avatar from "@components/Avatar.astro";
+import KeyboardShortcut from "@components/KeyboardShortcut.astro";
+import MenuItem from "@components/MenuItem.astro";
+import Divider from "@components/Divider.astro";
+import Menu from "@components/Menu.astro";
 
 const tipos = [
 	"primary",
@@ -18,22 +24,69 @@ const tipos = [
 ];
 
 const size = [
-	{size: "sm",
+	{
+		size: "sm",
 		icon: 16
 	}, 
-{size: "md",
-	icon: 24
-}, 
-{size: "lg",
-	icon: 36
-}];
+	{
+		size: "md",
+		icon: 24
+	}, 
+	{
+		size: "lg",
+		icon: 36
+	}
+];
 
 const escalas = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
 ---
 
-<Layout>
+<Layout theme="Licenciatura-en-Sistemas-de-Información">
+	<MenuItem textHelp="Texto Ayuda" avatar={{name: "Matias"}} text="Holaa"/>
+
+	<div class="relative items-center justify-center h-24" >
+		<Divider/>
+		<Divider vertical/>
+	</div>
+
+	<section>
+		<Menu menu={[
+			{
+			menuItem: [
+				
+				{
+					avatar: {name: "Matias"},
+					chip: {
+						style: "success",
+						text: "Pro",
+						selection: true
+					},
+					switchLabel: false,
+					text: "Matias",
+					id: "User"
+				}
+				]
+			},
+			{
+			title: "Ajustes",
+			menuItem: [
+				{
+					chip: {
+						style: "primary",
+						text: "Texto"
+					},
+					switchLabel: true,
+					text: "Hola Mundo",
+					textHelp: "Odio a todos"
+				}
+				]
+			}
+		]}/>
+	</section>
+
+
 	<h1 class="texto-display">Colors:</h1>
-	<span class="size-16 outline-2 outline-background-300">
+	<span class="size-16 outline-2 outline-background-300 bg-[var(--primary)]">
 		primary
 	</span>
 	<section class="grid grid-cols-11 gap-3 *:rounded-xl">
@@ -345,41 +398,82 @@ const escalas = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
 			info-950
 		</span>
 	</section>
+	<Switch>
+		Text Label
+	</Switch>
 	<Switch HelpText="Help Text">
 		Text Label
 	</Switch>
-	<Switch HelpText="Help Text" info>
+	<Switch info="Tooltip">
 		Text Label
 	</Switch>
 	<Switch optional="optional">
 		Text Label
 	</Switch>
-	<Switch HelpText="Help Text" HelpTextDanger>
+	<Switch HelpTextDanger>
 		Text Label
 	</Switch>
+	<Switch required>
+		Text Label
+	</Switch>
+	
+	<section class="space-y-3">
+		{["primary", "background" , "danger" , "warning" , "success" , "info"].map((style) => (
+			<Chip style={style}>
+				<IconInfinity size={18} slot="IconLeft" />
+					Chip
+				<IconInfinity size={18} slot="IconRight" />
+			</Chip>
+			<Chip style={style} selection>
+				<IconInfinity size={18} slot="IconLeft" />
+					Chip
+				<IconInfinity size={18} slot="IconRight" />
+			</Chip>
+		))}
+	</section>
+	<section class="grid grid-cols-3 gap-2">
+		<Avatar img="/157shots_so.png" />
+		<Avatar name="matias" />
+		<Avatar />
+		<Avatar img="/157shots_so.png" notification/>
+		<Avatar name="matias" notification/>
+		<Avatar notification/>
+		<Avatar img="/157shots_so.png" status/>
+		<Avatar name="matias" status/>
+		<Avatar status/>
+		<Avatar img="/157shots_so.png" status notification/>
+		<Avatar name="matias" status notification/>
+		<Avatar status notification/>
+	</section>
 
-	<div class="mt-8 grid grid-cols-2 gap-3">
+	<div class="mt-8 grid grid-cols-8  gap-3">
 		{
 			tipos
 				.filter((tipo) => tipo !== "background")
 				.map((tipo) => (
-					<>
+					
 						<Button style={tipo}>Button</Button>
-						<Button style={tipo} disabled>
-							Button
-						</Button>
-					</>
+					
+				))
+		}
+		{
+			tipos
+				.filter((tipo) => tipo !== "background")
+				.map((tipo) => (
+					
+						<Button style={tipo} disabled>Button</Button>
+					
 				))
 		}
 	</div>
 
 	<div 
-		class="mt-8 grid grid-cols-2 gap-3" 
+		class="mt-8 grid md:grid-cols-6 grid-cols-2 gap-3" 
 		>
 		{
 			tipos
-				.filter((tipo) => tipo !== "background")
-				.map((tipo) => (
+			.filter((tipo) => tipo !== "background")
+			.map((tipo) => (
 					size.map(({size, icon}) => (
 						<ButtonIcon style={tipo} size={size}>
 							<IconInfinity size={icon} />

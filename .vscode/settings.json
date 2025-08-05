@@ -32,5 +32,6 @@
     "C_Cpp.errorSquiggles": "disabled",
     "cSpell.words": [
         "oklch"
-    ]
+    ],
+    "references.preferredLocation": "view"
 }

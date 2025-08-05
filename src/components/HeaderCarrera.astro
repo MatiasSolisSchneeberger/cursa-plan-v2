@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import ButtonIcon from "@components/ButtonIcon.astro";
 
 interface Props {
 	carrera: string;
@@ -12,22 +13,26 @@ const NombreCarrera = carrera.replace(/-/g, " ");
 
 <header
 	transition:name=`header-${carrera}`
-	class=`theme-${carrera} rounded-full w-full border border-outline p-3 flex flex-row gap-2.5 items-center justify-start self-stretch shrink-0 relative overflow-hidden`
-	style="background: linear-gradient(to right, var(--md-sys-color-primary-container) 25%, transparent)">
-	<md-filled-icon-button href="/">
+	class=`theme-${carrera} rounded-3xl w-full bg-primary-100 outline-1 outline-primary-300 p-3 flex flex-row gap-2.5 items-center justify-start self-stretch`>
+	<ButtonIcon href="/" size="md" style="primary">
 		<Icon name="arrow-left" size={22} />
-	</md-filled-icon-button>
+	</ButtonIcon>
 	<h2
 		transition:name=`nombre-${carrera}`
-		class=`theme-${carrera} sm:hidden text-primary text-headline-small relative flex-1 flex items-center justify-center text-center`>
-		{NombreCarrera.replace("Licenciatura", "Lic.").replace("Ingeniería", "Ing.").replace("Profesorado", "Prof.")}
+		class=`theme-${carrera} sm:hidden texto-headline text-primary-600 relative flex-1 flex items-center justify-center text-center`>
+		{
+			NombreCarrera.replace("Licenciatura", "Lic.")
+				.replace("Ingeniería", "Ing.")
+				.replace("Profesorado", "Prof.")
+		}
 	</h2>
 	<h2
 		transition:name=`nombre-${carrera}`
-		class=`hidden sm:block theme-${carrera} text-primary text-headline-small relative flex-1 flex items-center justify-center text-center`>
+		class=`hidden sm:block theme-${carrera} texto-headline text-primary-600 relative flex-1 flex items-center justify-center text-center`>
 		{NombreCarrera}
 	</h2>
-	<md-filled-tonal-icon-button >
-		<Icon name={emoji} size="22"/>
-	</md-filled-tonal-icon-button>
+	<span
+		class="relative flex flex-row items-center justify-center gap-0 rounded-xl bg-secondary-400 p-2 text-nowrap text-secondary-800 transition-all duration-150 ease-in-out select-none dark:bg-secondary-600 dark:text-secondary-200">
+		<Icon name={emoji} size={22} />
+	</span>
 </header>

@@ -1,40 +1,37 @@
 ---
 interface Props {
-  año: number;
-  orientacion?: string;
-  theme?: string;
+	año: number;
+	orientacion?: string;
+	theme?: string;
 }
 
 const { año, orientacion, theme } = Astro.props;
 
 function obtenerSufijo(año: number) {
-  if (año === 1) return "ro";
-  if (año === 2) return "do";
-  if (año === 3) return "ro";
-  return "to"; // Para 4 o más
+	if (año === 1) return "ro";
+	if (año === 2) return "do";
+	if (año === 3) return "ro";
+	return "to"; // Para 4 o más
 }
 
 const sufijo = obtenerSufijo(año);
 let id;
 if (orientacion) {
-  id = `${año}-${orientacion}`;
+	id = `${año}-${orientacion}`;
 } else {
-  id = `${año}`;
+	id = `${año}`;
 }
 ---
 
 <section
-  id=`${id}`
-  class=`theme-${theme} flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 relative w-full overflow-hidden`
->
-  <!-- encabezado año -->
-  <h3
-    class="text-headline-medium text-on-background text-center w-full"
-  >
-    {año}<span>{sufijo}</span> Año{orientacion && ` - ${orientacion}`}
-  </h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 w-full gap-4">
-    <!-- Contenido del slot -->
-    <slot />
-  </div>
+	id=`${año}${sufijo}`
+	class=`theme-${theme} flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 relative w-full overflow-hidden pt-12`>
+	<!-- encabezado año -->
+	<h3 class="texto-headline text-background-900 w-full text-center">
+		{año}<span>{sufijo}</span> Año{orientacion && ` - ${orientacion}`}
+	</h3>
+	<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+		<!-- Contenido del slot -->
+		<slot />
+	</div>
 </section>

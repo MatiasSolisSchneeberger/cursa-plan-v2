@@ -2,6 +2,7 @@
 import BotonTema from "@components/BotonTema.astro";
 import Button from "@components/Button.astro";
 import ButtonIcon from "@components/ButtonIcon.astro";
+import Divider from "@components/Divider.astro";
 import LogoPagina from "@components/LogoPagina.astro";
 import { IconMenu2 } from "@tabler/icons-react";
 const { pagina } = Astro.props;
@@ -28,7 +29,7 @@ const paginas = [
 		<ul
 			class="mt-4 flex flex-col gap-3 rounded-lg md:mt-0 md:flex-row md:border-0 md:bg-transparent rtl:space-x-reverse">
 			<li>
-				<md-divider inset></md-divider>
+				<Divider/>
 			</li>
 			{
 				paginas.map(({ href, nombre }) => {

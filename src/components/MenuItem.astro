@@ -1,0 +1,73 @@
+---
+import { Icon } from "astro-icon/components";
+import Avatar from "./Avatar.astro";
+import Chip from "./Chip.astro";
+import Switch from "./Switch.astro";
+
+interface Props {
+	iconLeft?: string;
+	iconRight?: string;
+	chip?: {
+		style: string;
+		text: string;
+		selection?: boolean;
+	};
+	avatar?: {
+		img?: string;
+		name?: string;
+	};
+	text?: string;
+	textHelp?: string;
+	switchLabel?: boolean;
+	id?: string;
+}
+
+const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
+	Astro.props;
+---
+
+<div class="flex h-12 w-full flex-row items-center px-2 py-1" id={id}>
+	{
+		iconLeft && (
+			<span class="pl-1">
+				<Icon name={iconLeft} size={22} />
+			</span>
+		)
+	}
+	{
+		avatar && (
+			<span class="px-1">
+				<Avatar img={avatar.img} name={avatar.name} />
+			</span>
+		)
+	}
+	<div class="texto-label flex flex-col pr-4 pl-2">
+		<span class="text-text-950">
+			{text}
+		</span>
+		{textHelp && <span class="text-text-700">{textHelp}</span>}
+	</div>
+	{
+		chip && (
+			<span class="pr-2">
+				<Chip style={chip.style} selection={chip.selection}>
+					{chip.text}
+				</Chip>
+			</span>
+		)
+	}
+	{
+		switchLabel && (
+			<span class="pr-2">
+				<Switch />
+			</span>
+		)
+	}
+	{
+		iconRight && (
+			<span class="pr-1">
+				<Icon name={iconRight} size={22} />
+			</span>
+		)
+	}
+</div>
