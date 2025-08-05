@@ -8,20 +8,21 @@ interface Props {
 		| "danger"
 		| "warning"
 		| "success"
-		| "info";
+		| "info"
+		| string;
 	href?: string;
 	disabled?: boolean;
-	size: "sm" | "md" | "lg";
+	size: "sm" | "md" | "lg" | string;
 	id?: string;
 	className?: string;
 	type?: string;
 }
 
 const {
-	style,
+	style = "primary",
 	href,
 	disabled = false,
-	size,
+	size = "md",
 	id,
 	className,
 	type = "button",
@@ -33,8 +34,6 @@ if (href && disabled) {
 		"No se puede usar 'href' y 'disabled' al mismo tiempo en el componente <Button/>",
 	);
 }
-
-console.log({ ...props });
 ---
 
 {
@@ -65,7 +64,7 @@ console.log({ ...props });
 			href={href}
 			{...props}
 			id={id}
-			type={type}>
+			>
 			<slot />
 		</a>
 	) : (
@@ -95,7 +94,7 @@ console.log({ ...props });
 			disabled={disabled}
 			{...props}
 			id={id}
-			type={type}>
+			>
 			<slot />
 		</button>
 	)

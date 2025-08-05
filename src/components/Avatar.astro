@@ -1,0 +1,43 @@
+---
+import { IconUser } from "@tabler/icons-react";
+
+interface Props {
+	img?: string;
+	name?: string;
+	notification?: boolean;
+	status?: boolean;
+}
+
+const { img, name, notification, status } = Astro.props;
+---
+
+<span class="relative">
+	{
+		img || name ? (
+			img ? (
+				<img
+					src={img}
+					class="size-10 rounded-full border-2 border-background-100 object-cover dark:border-background-800"
+				/>
+			) : (
+				<span class="texto-title flex h-10 w-10 items-center justify-center rounded-full border-2 border-background-100 bg-primary-400 text-center text-primary-800 dark:border-background-800 dark:bg-primary-600 dark:text-primary-200">
+					{name ? name[0].toUpperCase() : ""}
+				</span>
+			)
+		) : (
+			<span class="texto-title flex h-10 w-10 items-center justify-center rounded-full border-2 border-background-100 bg-primary-400 text-center text-primary-800 dark:border-background-800 dark:bg-primary-600 dark:text-primary-200">
+				<IconUser />
+			</span>
+		)
+	}
+	{
+		notification && (
+			<span class="absolute top-0 left-7 h-3.5 w-3.5 rounded-full border-2 border-background-100 bg-danger-600 dark:border-background-800 dark:bg-danger-400" />
+		)
+	}
+	{
+		status && (
+			<span class="absolute bottom-0 left-7 h-3.5 w-3.5 rounded-full border-2 border-background-100 bg-success-600 dark:border-background-800 dark:bg-success-400" />
+		)
+	}
+</span>
