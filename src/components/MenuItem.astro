@@ -1,19 +1,19 @@
 ---
 import { Icon } from "astro-icon/components";
-import Avatar from "./Avatar.astro";
-import Chip from "./Chip.astro";
-import Switch from "./Switch.astro";
+import Avatar from "@components/Avatar.astro";
+import Chip from "@components/Chip.astro";
+import Switch from "@components/Switch.astro";
 
 interface Props {
 	iconLeft?: {
-		icon: string
-		color?: string
-		size?:number
+		icon: string;
+		color?: string;
+		size?: number;
 	};
 	iconRight?: {
-		icon: string
-		color?: string
-		size?:number
+		icon: string;
+		color?: string;
+		size?: number;
 	};
 	chip?: {
 		style: string;
@@ -50,10 +50,23 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 	Astro.props;
 ---
 
-<div class="flex h-12 w-full flex-row items-center px-2 py-1" id={id}>
+<div class="flex min-h-12 w-full flex-row items-center px-2 py-1" id={id}>
 	{
 		iconLeft && (
-			<span class={`pl-1 ${iconLeft.color && `text-${iconLeft.color}-600 dark:text-${iconLeft.color}-400`}`}>
+			<span
+				class:list={[
+					`pl-1`,
+					{
+						"text-primary-600 dark:text-primary-400": iconLeft.color === "primary",
+						"text-secondary-600 dark:text-secondary-400": iconLeft.color === "secondary",
+						"text-tertiary-600 dark:text-tertiary-400": iconLeft.color === "tertiary",
+						"text-text-600 dark:text-text-400": iconLeft.color === "text",
+						"text-danger-600 dark:text-danger-400": iconLeft.color === "danger",
+						"text-warning-600 dark:text-warning-400": iconLeft.color === "warning",
+						"text-success-600 dark:text-success-400": iconLeft.color === "success",
+						"text-info-600 dark:text-info-400": iconLeft.color === "info",
+					},
+				]}>
 				<Icon name={iconLeft.icon} size={iconLeft.size} />
 			</span>
 		)
@@ -66,10 +79,14 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 		)
 	}
 	<div class="texto-label flex flex-col pr-4 pl-2">
-		<span class="text-text-950 dark:text-text-50">
+		<span class="text-pretty text-text-950 dark:text-text-50">
 			{text}
 		</span>
-		{textHelp && <span class="text-text-700 dark:text-text-300">{textHelp}</span>}
+		{
+			textHelp && (
+				<span class="text-text-700 dark:text-text-300">{textHelp}</span>
+			)
+		}
 	</div>
 	{
 		chip && (
@@ -89,7 +106,20 @@ const { chip, avatar, text, textHelp, switchLabel, iconLeft, iconRight, id } =
 	}
 	{
 		iconRight && (
-			<span class={`pr-1 ${iconRight.color && `text-${iconRight.color}-600 dark:text-${iconRight.color}-400`}`}>
+			<span
+				class:list={[
+					`pr-1`,
+					{
+						"text-primary-600 dark:text-primary-400": iconRight.color === "primary",
+						"text-secondary-600 dark:text-secondary-400": iconRight.color === "secondary",
+						"text-tertiary-600 dark:text-tertiary-400": iconRight.color === "tertiary",
+						"text-text-600 dark:text-text-400": iconRight.color === "text",
+						"text-danger-600 dark:text-danger-400": iconRight.color === "danger",
+						"text-warning-600 dark:text-warning-400": iconRight.color === "warning",
+						"text-success-600 dark:text-success-400": iconRight.color === "success",
+						"text-info-600 dark:text-info-400": iconRight.color === "info",
+					},
+				]}>
 				<Icon name={iconRight.icon} size={iconRight.size} />
 			</span>
 		)

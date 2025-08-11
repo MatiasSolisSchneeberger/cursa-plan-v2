@@ -1,5 +1,5 @@
 ---
-import ButtonIcon from "./ButtonIcon.astro";
+import ButtonIcon from "@components/ButtonIcon.astro";
 import { IconSun, IconMoon } from "@tabler/icons-react";
 
 const {... props} = Astro.props
@@ -16,9 +16,10 @@ const {... props} = Astro.props
 
 <!-- script -->
 <script>
-    const setIcons = (theme) => {
+    const setIcons = (theme: string | null) => {
         const sun = document.getElementById("iconSun");
         const moon = document.getElementById("iconMoon");
+        if (!sun || !moon) return;
         if (theme === "dark") {
             sun.style.display = "none";
             moon.style.display = "inline";

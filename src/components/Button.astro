@@ -16,7 +16,14 @@ interface Props {
 	className?: string;
 }
 
-const { style = "primary", href, disabled = false, id, className, ...props } = Astro.props;
+const {
+	style = "primary",
+	href,
+	disabled = false,
+	id,
+	className,
+	...props
+} = Astro.props;
 
 if (href && disabled) {
 	throw new Error(
@@ -47,11 +54,11 @@ if (href && disabled) {
 			]}
 			href={href}
 			id={id}>
-			<slot name="IconLeft" />
+			<slot name="iconLeft" />
 			<span class="px-2">
 				<slot />
 			</span>
-			<slot name="IconRight" />
+			<slot name="iconRight" />
 		</a>
 	) : (
 		<button
@@ -75,11 +82,11 @@ if (href && disabled) {
 			disabled={disabled}
 			{...props}
 			id={id}>
-			<slot name="IconLeft" />
+			<slot name="iconLeft" />
 			<span class="px-2">
 				<slot />
 			</span>
-			<slot name="IconRight" />
+			<slot name="iconRight" />
 		</button>
 	)
 }

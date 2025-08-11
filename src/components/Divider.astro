@@ -8,8 +8,8 @@ const { vertical } = Astro.props;
 
 {
 	vertical ? (
-		<div class="w-px h-full bg-background-300 inline-block"></div>
+		<div class="inline-block h-full w-px bg-background-300 dark:bg-background-700" />
 	) : (
-		<hr class="h-px w-full border-background-300" />
+		<hr class="h-px w-full border-background-300 dark:border-background-700" />
 	)
 }

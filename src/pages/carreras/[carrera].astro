@@ -4,8 +4,8 @@ import type { GetStaticPaths } from "astro";
 import { carreras } from "@data/carreras.json";
 
 import Layout from "@layouts/Layout.astro";
-import AñoCarrera from "@components/AñoCarrera.astro";
-import HeaderCarrera from "@components/HeaderCarrera.astro";
+import AñoCarrera from "@sections/AñoCarrera.astro";
+import HeaderCarrera from "@sections/HeaderCarrera.astro";
 import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
 import Tabs from "@components/Tabs.astro";
 
@@ -58,7 +58,7 @@ const { carrera: carreraSlug } = Astro.params;
 // Buscar los datos específicos de la carrera
 const carreraData = carreras.find((c) => c.carrera === carreraSlug);
 
-if (!carreraData) return Astro.redirect("/404")
+if (!carreraData) return Astro.redirect("/404");
 
 const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 
@@ -86,7 +86,7 @@ function formatoAño(numero: number): string {
 				<Tabs
 					tab={carreraData.cursada.map((item) => ({
 						label: formatoAño(item.año),
-						href: `#Año ${item.año}`,
+						href: `#Año-${item.año}`,
 					}))}
 				/>
 			)
@@ -101,6 +101,7 @@ function formatoAño(numero: number): string {
 		{
 			carreraData.cursada.map(({ año, materias, orientaciones }) => (
 				<AñoCarrera
+					carrera={carreraSlug}
 					año={año}
 					materias={materias}
 					carrera={carreraData.carrera}

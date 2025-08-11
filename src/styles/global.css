@@ -438,7 +438,7 @@
 
 @layer theme {
 	.theme-Bioquímica {
-		--primary: oklch(61.125% 0.09582 170);
+		--primary: oklch(0.4998 0.096 170);
 		--secondary: oklch(from var(--primary) l c calc(h + 60));
 		--tertiary: oklch(from var(--primary) l c calc(h - 30));
 		--background: oklch(from var(--primary) l 0.01 h);
@@ -746,7 +746,7 @@
 		);
 	}
 	.theme-Ingeniería-en-Agrimensura {
-		--primary: oklch(59.974% 0.14598 45);
+		--primary: oklch(0.4998 0.096 45);
 		--secondary: oklch(from var(--primary) l c calc(h + 60));
 		--tertiary: oklch(from var(--primary) l c calc(h - 30));
 		--background: oklch(from var(--primary) l 0.01 h);
@@ -1362,7 +1362,7 @@
 		);
 	}
 	.theme-Ingeniería-en-Electrónica {
-		--primary: oklch(61.476% 0.1332 130);
+		--primary: oklch(0.4998 0.096 100);
 		--secondary: oklch(from var(--primary) l c calc(h + 60));
 		--tertiary: oklch(from var(--primary) l c calc(h - 30));
 		--background: oklch(from var(--primary) l 0.01 h);
@@ -3210,7 +3210,7 @@
 		);
 	}
 	.theme-Profesorado-en-Biología {
-		--primary: oklch(72.585% 0.19234 132.533);
+		--primary: oklch(0.4998 0.096 148.96);
 		--secondary: oklch(from var(--primary) l c calc(h + 60));
 		--tertiary: oklch(from var(--primary) l c calc(h - 30));
 		--background: oklch(from var(--primary) l 0.01 h);

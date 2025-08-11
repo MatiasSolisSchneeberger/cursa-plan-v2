@@ -1,0 +1,21 @@
+---
+interface Props {
+    carrera?: string;
+    titulo: string
+}
+
+const {carrera, titulo, ...props} = Astro.props
+---
+<article
+	class={`materia-card theme-${carrera} w-full bg-background-100 dark:bg-background-900 border-1 border-background-300 dark:border-background-700 full rounded-3xl p-2 flex flex-col gap-2.5 items-center justify-start flex-1 relative overflow-hidden`}
+	{...props}
+	id={titulo}>
+	<header
+		class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary-600 p-2 text-primary-50 dark:bg-primary-400 dark:text-primary-900">
+		<h3
+			class="texto-headline relative flex flex-1 items-center justify-center text-center text-pretty">
+			{titulo}
+		</h3>
+	</header>
+    <slot/>
+</article>

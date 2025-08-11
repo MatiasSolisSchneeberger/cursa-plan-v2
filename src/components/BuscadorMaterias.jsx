@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { IconSearch, IconX } from '@tabler/icons-react'
+
 export default function BuscadorMaterias({ placeholder = "Buscar materia", targetClass = "materia-card", searchInAttribute = null }) {
     const [searchTerm, setSearchTerm] = useState('');
     const [isFocused, setIsFocused] = useState(false);
@@ -30,24 +32,10 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
 
     return (
 
-        <div className="relative group flex flex-row rounded-md focus-within:ring-2 focus-within:ring-tertiary transition-all duration-300">
+        <div className="relative group flex flex-row rounded-xl dark:bg-background-900 bg-background-100 focus-within:ring-2 focus-within:ring-background-300 dark:focus-within:ring-background-800 transition-all duration-300">
             {/* Contenedor de la lupa con z-index para superponer el ring */}
-            <div className='p-2.5 bg-primary rounded-l-md text-on-primary z-[1]'>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={20}
-                    height={20}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                </svg>
+            <div className='p-2.5 bg-primary-600 dark:bg-primary-400 rounded-l-xl text-primary-100 dark:text-primary-900 z-[1]'>
+                <IconSearch />
             </div>
 
             <input
@@ -55,7 +43,7 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
                 placeholder={placeholder}
                 value={searchTerm}
                 onChange={handleSearch}
-                className='w-full px-4 py-2 rounded-r-md bg-background border border-outline focus:outline-none focus:bg-surface-variant focus:ring-2 focus:ring-tertiary text-on-surface focus:text-on-surface-variant transition-all duration-300'
+                className='w-full px-4 py-2 rounded-r-xl border border-background-300 dark:border-background-700 focus:outline-none focus:bg-background-50 dark:focus:bg-background-800 focus:ring-2 focus:ring-tertiary-300 dark:focus:ring-tertiary-700 text-text-800 dark:text-text-300 focus:text-text-950 dark:focus:text-text-50 transition-all duration-300 texto-label'
 
             />
 
@@ -65,23 +53,9 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
                         setSearchTerm('');
                         handleSearch({ target: { value: '' } });
                     }}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-outline"
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-text-700 dark:text-text-300 cursor-pointer"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M18 6l-12 12" />
-                        <path d="M6 6l12 12" />
-                    </svg>
+                    <IconX />
                 </button>
             )}
         </div>
