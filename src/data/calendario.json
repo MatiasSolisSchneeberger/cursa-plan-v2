@@ -1,0 +1,397 @@
+{
+    "calendario": [
+        {
+            "mes": "Enero",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 1,
+                            "dia_semana": "Mie",
+                            "descripcion": "Año Nuevo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "mes": "Febrero",
+            "periodos": [
+                {
+                    "nombre": "1° Turno",
+                    "inicio": "07/02",
+                    "final": "21/02",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica, excepto 1er año 1er cuatrimestre)"
+                }
+            ]
+        },
+        {
+            "mes": "Marzo",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 3,
+                            "dia_semana": "Lun",
+                            "descripcion": "Carnaval (Día 1)"
+                        },
+                        {
+                            "dia": 4,
+                            "dia_semana": "Mar",
+                            "descripcion": "Carnaval (Día 2)"
+                        },
+                        {
+                            "dia": 24,
+                            "dia_semana": "Lun",
+                            "descripcion": "Día Nacional de la Memoria por la Verdad y la Justicia"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "2° Turno",
+                    "inicio": "10/03",
+                    "final": "14/03",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica, excepto 1er año 1er cuatrimestre)"
+                }
+            ]
+        },
+        {
+            "mes": "Abril",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 2,
+                            "dia_semana": "Mie",
+                            "descripcion": "Día del Veterano y de los Caídos en la Guerra de Malvinas"
+                        },
+                        {
+                            "dia": 18,
+                            "dia_semana": "Vie",
+                            "descripcion": "Viernes Santo",
+                            "aclaracion": "Festividad Cristiana"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 17,
+                            "dia_semana": "Jue",
+                            "descripcion": "Jueves Santo",
+                            "aclaracion": "Festividad Cristiana (Res. 778/17)"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "",
+                    "inicio": "",
+                    "final": "",
+                    "aclaracion": ""
+                }
+            ]
+        },
+        {
+            "mes": "Mayo",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 1,
+                            "dia_semana": "Jue",
+                            "descripcion": "Día del Trabajador"
+                        },
+                        {
+                            "dia": 25,
+                            "dia_semana": "Dom",
+                            "descripcion": "Día de la Revolución de Mayo"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 2,
+                            "dia_semana": "Vie",
+                            "descripcion": "Fines turísticos",
+                            "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+                        },
+                        {
+                            "dia": 3,
+                            "dia_semana": "Sáb",
+                            "descripcion": "Fundación de Corrientes",
+                            "aclaracion": "Sólo para Corrientes"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "4° Turno",
+                    "inicio": "05/05",
+                    "final": "30/05",
+                    "aclaracion": "Mesa expandida (con actividad académica normal)"
+                }
+            ]
+        },
+        {
+            "mes": "Junio",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 20,
+                            "dia_semana": "Vie",
+                            "descripcion": "Día Paso a la Inmortalidad del General Manuel Belgrano"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Feriado Trasladable",
+                    "fechas": [
+                        {
+                            "dia": 16,
+                            "dia_semana": "Mar",
+                            "descripcion": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
+                            "aclaracion": "(17 de Junio)"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "5° Turno",
+                    "inicio": "30/06",
+                    "final": "04/07",
+                    "aclaracion": "Mesa expandida (con actividad académica normal)"
+                }
+            ]
+        },
+        {
+            "mes": "Julio",
+            "feriados": [
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 16,
+                            "dia_semana": "Mie",
+                            "descripcion": "Virgen de Itatí",
+                            "aclaracion": "Corrientes"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "5° Turno",
+                    "inicio": "30/06",
+                    "final": "04/07",
+                    "aclaracion": "Mesa expandida (con actividad académica normal)"
+                },
+                {
+                    "nombre": "Receso de Invierno",
+                    "inicio": "14/07",
+                    "final": "27/07"
+                },
+                {
+                    "nombre": "6° Turno",
+                    "inicio": "28/07",
+                    "final": "01/08",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica)"
+                }
+            ]
+        },
+        {
+            "mes": "Agosto",
+            "feriados": [
+                {
+                    "tipo": "Feriado Trasladable",
+                    "fechas": [
+                        {
+                            "dia": 17,
+                            "dia_semana": "Dom",
+                            "descripcion": "Paso a la Inmortalidad del General José de San Martín"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 15,
+                            "dia_semana": "Vie",
+                            "descripcion": "Fines turísticos",
+                            "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "6° Turno",
+                    "inicio": "28/07",
+                    "final": "01/08",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica)"
+                }
+            ]
+        },
+        {
+            "mes": "Septiembre",
+            "feriados": [
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 17,
+                            "dia_semana": "Mie",
+                            "descripcion": "Día del Docente Universitario",
+                            "aclaracion": "No laborable para docentes"
+                        },
+                        {
+                            "dia": 21,
+                            "dia_semana": "Dom",
+                            "descripcion": "Día del Estudiante",
+                            "aclaracion": "Asueto estudiantil"
+                        },
+                        {
+                            "dia": 24,
+                            "dia_semana": "Mie",
+                            "descripcion": "Virgen de la Merced",
+                            "aclaracion": "Sólo Corrientes"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "7° Turno",
+                    "inicio": "01/09",
+                    "final": "26/09",
+                    "aclaracion": "Mesa expandida (con actividad académica normal)"
+                }
+            ]
+        },
+        {
+            "mes": "Octubre",
+            "feriados": [
+                {
+                    "tipo": "Feriado Trasladable",
+                    "fechas": [
+                        {
+                            "dia": 12,
+                            "dia_semana": "Dom",
+                            "descripcion": "Día del Respeto a la Diversidad Cultural"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "8° Turno",
+                    "color": "primary-container",
+                    "inicio": "6/10",
+                    "final": "31/10",
+                    "aclaracion": "Mesa expandida (con actividad académica normal)"
+                }
+            ]
+        },
+        {
+            "mes": "Noviembre",
+            "feriados": [
+                {
+                    "tipo": "Feriado Trasladable",
+                    "fechas": [
+                        {
+                            "dia": 20,
+                            "dia_semana": "Jue",
+                            "descripcion": "Día de la Soberanía Nacional"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 21,
+                            "dia_semana": "Vie",
+                            "descripcion": "Fines turísticos",
+                            "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+                        },
+                        {
+                            "dia": 26,
+                            "dia_semana": "Mie",
+                            "descripcion": "Día del No Docente Universitario",
+                            "aclaracion": "Personal administrativo"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "9° Turno",
+                    "inicio": "24/11",
+                    "final": "01/12",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica)"
+                }
+            ]
+        },
+        {
+            "mes": "Diciembre",
+            "feriados": [
+                {
+                    "tipo": "Feriado Inamovible",
+                    "fechas": [
+                        {
+                            "dia": 8,
+                            "dia_semana": "Lun",
+                            "descripcion": "Inmaculada Concepción de María"
+                        },
+                        {
+                            "dia": 25,
+                            "dia_semana": "Jue",
+                            "descripcion": "Navidad"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Día No Laborable",
+                    "fechas": [
+                        {
+                            "dia": 14,
+                            "dia_semana": "Dom",
+                            "descripcion": "Aniversario UNNE",
+                            "aclaracion": "Universidad Nacional del Nordeste"
+                        }
+                    ]
+                }
+            ],
+            "periodos": [
+                {
+                    "nombre": "9° Turno",
+                    "inicio": "24/11",
+                    "final": "01/12",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica)"
+                },
+                {
+                    "nombre": "10° Turno",
+                    "color": "primary-container",
+                    "inicio": "15/12",
+                    "final": "19/12",
+                    "aclaracion": "Mesa comprimida (suspensión de actividad académica)"
+                }
+            ]
+        }
+    ]
+}
