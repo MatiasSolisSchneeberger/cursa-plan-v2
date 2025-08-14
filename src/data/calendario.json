@@ -4,7 +4,7 @@
             "mes": "Enero",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 1,
@@ -30,17 +30,17 @@
             "mes": "Marzo",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 3,
                             "dia_semana": "Lun",
-                            "descripcion": "Carnaval (Día 1)"
+                            "descripcion": "Carnaval"
                         },
                         {
                             "dia": 4,
                             "dia_semana": "Mar",
-                            "descripcion": "Carnaval (Día 2)"
+                            "descripcion": "Carnaval"
                         },
                         {
                             "dia": 24,
@@ -63,7 +63,7 @@
             "mes": "Abril",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 2,
@@ -73,19 +73,18 @@
                         {
                             "dia": 18,
                             "dia_semana": "Vie",
-                            "descripcion": "Viernes Santo",
-                            "aclaracion": "Festividad Cristiana"
+                            "descripcion": "Viernes Santo Festividad Cristiana"
                         }
                     ]
                 },
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables",
                     "fechas": [
                         {
                             "dia": 17,
                             "dia_semana": "Jue",
-                            "descripcion": "Jueves Santo",
-                            "aclaracion": "Festividad Cristiana (Res. 778/17)"
+                            "descripcion": "Jueves Santo Festividad Cristiana",
+                            "aclaracion": "(Res. 778/17)"
                         }
                     ]
                 }
@@ -103,7 +102,7 @@
             "mes": "Mayo",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 1,
@@ -118,19 +117,23 @@
                     ]
                 },
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables Con Fines Turísticos",
                     "fechas": [
                         {
                             "dia": 2,
                             "dia_semana": "Vie",
-                            "descripcion": "Fines turísticos",
                             "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Días No Laborables",
+                    "fechas": [
                         {
                             "dia": 3,
                             "dia_semana": "Sáb",
-                            "descripcion": "Fundación de Corrientes",
-                            "aclaracion": "Sólo para Corrientes"
+                            "descripcion": "Fundación de Corrientes y Cruz de los Milagros",
+                            "aclaracion": "Corrientes"
                         }
                     ]
                 }
@@ -148,7 +151,7 @@
             "mes": "Junio",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 20,
@@ -161,10 +164,9 @@
                     "tipo": "Feriado Trasladable",
                     "fechas": [
                         {
-                            "dia": 16,
+                            "dia": 17,
                             "dia_semana": "Mar",
-                            "descripcion": "Paso a la Inmortalidad del General Martín Miguel de Güemes",
-                            "aclaracion": "(17 de Junio)"
+                            "descripcion": "Paso a la Inmortalidad del General Martín Miguel de Güemes"
                         }
                     ]
                 }
@@ -182,12 +184,22 @@
             "mes": "Julio",
             "feriados": [
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Feriados Inamovibles",
+                    "fechas": [
+                        {
+                            "dia": 9,
+                            "dia_semana": "Mie",
+                            "descripcion": "Día de la Independencia"
+                        }
+                    ]
+                },
+                {
+                    "tipo": "Días No Laborables",
                     "fechas": [
                         {
                             "dia": 16,
                             "dia_semana": "Mie",
-                            "descripcion": "Virgen de Itatí",
+                            "descripcion": "Coronación Pontificia de la Virgen de Itatí",
                             "aclaracion": "Corrientes"
                         }
                     ]
@@ -227,7 +239,7 @@
                     ]
                 },
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables Con Fines Turísticos",
                     "fechas": [
                         {
                             "dia": 15,
@@ -251,25 +263,25 @@
             "mes": "Septiembre",
             "feriados": [
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables",
                     "fechas": [
                         {
                             "dia": 17,
                             "dia_semana": "Mie",
                             "descripcion": "Día del Docente Universitario",
-                            "aclaracion": "No laborable para docentes"
+                            "aclaracion": "No laborable para el Claustro Docente"
                         },
                         {
                             "dia": 21,
                             "dia_semana": "Dom",
                             "descripcion": "Día del Estudiante",
-                            "aclaracion": "Asueto estudiantil"
+                            "aclaracion": "Asueto para el Claustro Estudiantil"
                         },
                         {
                             "dia": 24,
                             "dia_semana": "Mie",
                             "descripcion": "Virgen de la Merced",
-                            "aclaracion": "Sólo Corrientes"
+                            "aclaracion": "Sólo para Corrientes"
                         }
                     ]
                 }
@@ -311,6 +323,16 @@
             "mes": "Noviembre",
             "feriados": [
                 {
+                    "tipo": "Días No Laborables Con Fines Turísticos",
+                    "fechas": [
+                        {
+                            "dia": 21,
+                            "dia_semana": "Vie",
+                            "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
+                        }
+                    ]
+                },
+                {
                     "tipo": "Feriado Trasladable",
                     "fechas": [
                         {
@@ -321,19 +343,13 @@
                     ]
                 },
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables",
                     "fechas": [
-                        {
-                            "dia": 21,
-                            "dia_semana": "Vie",
-                            "descripcion": "Fines turísticos",
-                            "aclaracion": "Decreto DECTO-2024-1027-APN-PTE"
-                        },
                         {
                             "dia": 26,
                             "dia_semana": "Mie",
                             "descripcion": "Día del No Docente Universitario",
-                            "aclaracion": "Personal administrativo"
+                            "aclaracion": "No laborable para el Sector No Docente"
                         }
                     ]
                 }
@@ -351,7 +367,7 @@
             "mes": "Diciembre",
             "feriados": [
                 {
-                    "tipo": "Feriado Inamovible",
+                    "tipo": "Feriados Inamovibles",
                     "fechas": [
                         {
                             "dia": 8,
@@ -366,13 +382,12 @@
                     ]
                 },
                 {
-                    "tipo": "Día No Laborable",
+                    "tipo": "Días No Laborables",
                     "fechas": [
                         {
                             "dia": 14,
                             "dia_semana": "Dom",
-                            "descripcion": "Aniversario UNNE",
-                            "aclaracion": "Universidad Nacional del Nordeste"
+                            "descripcion": "Aniversario de Creación de la UNNE"
                         }
                     ]
                 }

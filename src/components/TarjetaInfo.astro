@@ -8,7 +8,7 @@ const { titulo, style = "primary" } = Astro.props;
 ---
 
 <div
-	class="flex w-full flex-1 sm:flex-initial flex-grow flex-col items-start justify-start gap-0 overflow-hidden rounded-2xl border-1 border-background-300 dark:border-background-700">
+	class="flex w-full sm:flex-1 flex-initial flex-grow flex-col items-start justify-start gap-0 overflow-hidden rounded-2xl border-1 border-background-300 dark:border-background-700">
 	<header
 		class:list={[
 			"flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch border-b border-background-300 dark:border-background-700 px-6 py-2",
@@ -34,7 +34,7 @@ const { titulo, style = "primary" } = Astro.props;
 			{titulo}
 		</p>
 	</header>
-	<div class="flex flex-grow flex-col items-start justify-start self-stretch">
+	<div class="flex flex-grow flex-col items-start w-full justify-start">
 		<slot />
 	</div>
 </div>
