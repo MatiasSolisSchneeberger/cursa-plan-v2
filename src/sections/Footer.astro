@@ -1,25 +1,26 @@
 ---
-import LogoPagina from "@components/LogoPagina.astro"
-import MiLogo from "@components/MiLogo.astro"
-import {carreras} from "@data/carreras.json"
-import {Icon} from "astro-icon/components"
+import LogoPagina from "@components/LogoPagina.astro";
+import MenuItem from "@components/MenuItem.astro";
+import MiLogo from "@components/MiLogo.astro";
+import { carreras } from "@data/carreras.json";
 
-const enlacesCarreras = carreras.map(({carrera}) => {
-	const nombreCompleto = carrera.replace(/-/g, " ") // Texto sin guiones
-	let nombreCorto = nombreCompleto // Por defecto, el mismo nombre
+const enlacesCarreras = carreras.map(({ carrera, emoji }) => {
+	const nombreCompleto = carrera.replace(/-/g, " "); // Texto sin guiones
+	let nombreCorto = nombreCompleto; // Por defecto, el mismo nombre
 
 	// Reemplazos para mostrar versión corta
 	nombreCorto = nombreCorto
 		.replace(/\bIngeniería\b/, "Ing.")
 		.replace(/\bLicenciatura\b/, "Lic.")
-		.replace(/\bProfesorado\b/, "Prof.")
+		.replace(/\bProfesorado\b/, "Prof.");
 
 	return {
 		href: `/carreras/${carrera}`,
 		nombreCompleto,
 		nombreCorto,
-	}
-})
+		emoji,
+	};
+});
 
 const contactos = [
 	{
@@ -41,60 +42,55 @@ const contactos = [
 		link: "https://github.com/MatiasSolisSchneeberger/the-swifties-eras-tour",
 		icono: "brand-github-filled",
 	},
-]
+];
 ---
 
-<section class="bg-surface-variant rounded-3xl flex w-full flex-col items-start gap-6 p-10 text-on-surface-variant lg:flex-row">
-	<article class="text-body-medium flex w-full flex-col gap-2 text-left">
+<section
+	class="text-on-surface-variant flex w-full flex-col items-start gap-6 rounded-3xl bg-background-100 p-10 shadow-xl outline-1 outline-background-300 lg:flex-row dark:bg-background-900 dark:outline-background-700">
+	<article class="texto-body flex w-full flex-col gap-2 text-left">
 		<LogoPagina />
 
 		<p>
-			Este sitio no es una página oficial de FaCENA. Está diseñado para brindar información de manera más accesible y
-			organizada.
+			Este sitio no es una página oficial de FaCENA. Está diseñado para
+			brindar información de manera más accesible y organizada.
 		</p>
 		<p>
-			Si encuentras algún error, como fechas incorrectas, cambios en los materiales o cualquier otra información
-			desactualizada, no dudes en contactarme para corregirlo. ¡Tu ayuda es muy valiosa para mantener esta página
-			actualizada y útil para todos!
+			Si encuentras algún error, como fechas incorrectas, cambios en los
+			materiales o cualquier otra información desactualizada, no dudes en
+			contactarme para corregirlo. ¡Tu ayuda es muy valiosa para mantener
+			esta página actualizada y útil para todos!
 		</p>
 
 		<div class="h-10 justify-start">
-			<MiLogo color="on-surface-variant" />
+			<MiLogo />
 		</div>
 	</article>
 
-	<aside class="grid w-full grid-cols-1 md:grid-cols-2 items-start gap-2 overflow-hidden sm:gap-4">
+	<aside
+		class="grid w-full grid-cols-1 items-start gap-4 overflow-hidden sm:gap-4 md:grid-cols-2">
 		<div class="flex flex-col gap-1">
-			<h4 class="text-title-medium mb-2">Contacto:</h4>
+			<h4 class="texto-title">Contacto:</h4>
 			{
-				contactos.map(({label, link}) => {
-					return link ?
-							<a
-								href={link}
-								class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
-								{/* {icono && <Icon name={icono} size={22} class="hidden sm:inline"/>} */}
-								<span class="">{label}</span>
-							</a>
-						:	<span
-								id="copiarCorreo"
-								class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
-								{/* {icono && <Icon name={icono} size={22} class="hidden sm:inline"/>} */}
-								<span class="">{label}</span>
-							</span>
-				})
+				contactos.map(({ label, link, icono }) => (
+					<MenuItem
+						text={label}
+						iconLeft={{ icon: icono }}
+						href={link}
+					/>
+				))
 			}
 		</div>
 		<div class="flex flex-col gap-1">
-			<h2 class="text-title-medium mb-2">
-				Carreras:
-			</h2>
-			<div class="sm:flex flex-col gap-2.5 items-start justify-start shrink-0 relative">
+			<h2 class="texto-title">Carreras:</h2>
+			<div
+				class="relative shrink-0 flex-col items-start justify-start gap-2.5 sm:flex">
 				{
-					enlacesCarreras.map(({href, nombreCompleto, nombreCorto}) => (
-						<a href={href} class="text-left text-title-small underline relative flex items-center justify-start hover:opacity-90">
-							<span class="block md:hidden">{nombreCorto}</span> {/* Se muestra en móviles */}
-							<span class="hidden md:block">{nombreCompleto}</span> {/* Se muestra en pantallas grandes */}
-						</a>
+					enlacesCarreras.map(({ href, emoji, nombreCorto }) => (
+						<MenuItem
+							text={nombreCorto}
+							iconLeft={{ icon: emoji }}
+							href={href}
+						/>
 					))
 				}
 			</div>
