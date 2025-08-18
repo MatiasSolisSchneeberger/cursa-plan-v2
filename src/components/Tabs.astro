@@ -18,7 +18,7 @@ const { tab, ...props } = Astro.props;
 ---
 
 <div
-	class="flex w-min flex-row overflow-hidden rounded-xl outline-1 outline-background-300 dark:outline-background-700"
+	class="flex w-min flex-row justify-self-center overflow-hidden rounded-xl outline-1 outline-background-300 dark:outline-background-700"
 	{...props}>
 	{
 		tab.map(({ label , href, chip}, index) => (
