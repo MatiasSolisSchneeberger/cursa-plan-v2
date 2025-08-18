@@ -4,6 +4,7 @@ import { examenes } from "@data/mesaDeExamenes.json";
 import TarjetaInfo from "@components/TarjetaInfo.astro";
 import Button from "@components/Button.astro";
 import { IconCalendar } from "@tabler/icons-react";
+import MenuItem from "./MenuItem.astro";
 
 interface Props {
 	materia: string;
@@ -19,72 +20,39 @@ const GOOGLE_CALENDAR_BASE_URL =
 const CURRENT_DATE = new Date();
 CURRENT_DATE.setHours(0, 0, 0, 0); // Reset time to start of day for accurate comparison
 
-// Utility functions
-const formatDateForDisplay = (dateString: string): string => {
-	const [year, month, day] = dateString.split("-");
-	return `${day}/${month}/${year.slice(-2)}`;
+const materiaEncontrada = examenes.find((e) => e.materia === materia) || {
+	fechas: [],
 };
 
-const parseDateString = (dateString: string): Date => {
-	const [year, month, day] = dateString.split("-").map(Number);
-	return new Date(year, month - 1, day);
-};
+// Función para obtener partes de la fecha
+function descomponerFecha(fechaStr: string | Date) {
+	const fecha = new Date(fechaStr);
+	return {
+		dia: fecha.getDate(),
+		mes: fecha.getMonth() + 1, // meses empiezan en 0
+		anio: fecha.getFullYear(),
+	};
+}
 
-const isDateInPast = (dateString: string): boolean => {
-	const examDate = parseDateString(dateString);
-	examDate.setHours(0, 0, 0, 0);
-	return examDate < CURRENT_DATE;
-};
+// Función para generar link de Google Calendar
+function linkGoogleCalendar(fechaStr: string, titulo: string) {
+	const { anio, mes, dia } = descomponerFecha(fechaStr);
 
-const generateGoogleCalendarUrl = (
-	dateString: string,
-	materiaName: string,
-): string => {
-	const [year, month, day] = dateString.split("-");
+	// Formato YYYYMMDD para Google Calendar
+	const fechaFormato = `${anio}${String(mes).padStart(2, "0")}${String(dia).padStart(2, "0")}`;
 
-	// Start date: current exam date
-	const startDate = `${year}${month}${day}`;
+	return `${GOOGLE_CALENDAR_BASE_URL}&text=${encodeURIComponent(titulo)}&dates=${fechaFormato}/${fechaFormato}`;
+}
 
-	// End date: next day (for all-day event)
-	const examDate = parseDateString(dateString);
-	const nextDay = new Date(examDate);
-	nextDay.setDate(examDate.getDate() + 1);
+const proximaFecha = materiaEncontrada.fechas.find((f) => {
+	const fecha = new Date(f);
+	fecha.setHours(0, 0, 0, 0); // reset horas para evitar problemas
+	return fecha >= CURRENT_DATE;
+});
 
-	const nextYear = nextDay.getFullYear();
-	const nextMonth = (nextDay.getMonth() + 1).toString().padStart(2, "0");
-	const nextDayStr = nextDay.getDate().toString().padStart(2, "0");
-	const endDate = `${nextYear}${nextMonth}${nextDayStr}`;
-
-	const eventTitle = encodeURIComponent(`Examen De ${materiaName}`);
-	return `${GOOGLE_CALENDAR_BASE_URL}&text=${eventTitle}&dates=${startDate}/${endDate}`;
-};
-
-// Find exam data
-const examen = examenes.find(
-	(e) => e.materia.toUpperCase() === materia.toUpperCase(),
-);
-
-const examDates = examen?.fechas || [];
-
-// Process and sort exam dates
-const validExamDates = examDates
-	.filter(Boolean) // Remove null/undefined values
-	.map((dateString) => ({
-		dateString,
-		dateObj: parseDateString(dateString),
-		formattedDate: formatDateForDisplay(dateString),
-		isPast: isDateInPast(dateString),
-	}))
-	.filter((exam) => !exam.isPast) // Only future dates
-	.sort((a, b) => a.dateObj.getTime() - b.dateObj.getTime());
-
-const proximaMesa = validExamDates[0];
-
-// Generate calendar URL for the next exam
-const calendarUrl = proximaMesa
-	? generateGoogleCalendarUrl(proximaMesa.dateString, materia)
-	: "";
-
+function formatoFecha(fecha: string) {
+	return `${descomponerFecha(fecha).dia.toString().padStart(2, "0")}/${descomponerFecha(fecha).mes.toString().padStart(2, "0")}/${descomponerFecha(fecha).anio.toString().slice(-2)}`;
+}
 ---
 
 <TarjetaInfo style="tertiary" titulo="Proxima Mesa">
@@ -92,8 +60,8 @@ const calendarUrl = proximaMesa
 		class="relative flex w-full flex-col items-center justify-center gap-2 p-2">
 		<div class="texto-label py-2">
 			{
-				proximaMesa ? (
-					<p>{proximaMesa.formattedDate}</p>
+				proximaFecha ? (
+					<p>{formatoFecha(proximaFecha)}</p>
 				) : (
 					<h4>No hay Fechas</h4>
 				)
@@ -109,13 +77,9 @@ const calendarUrl = proximaMesa
 				Ver Mas
 			</Button>
 
-			<Button
-				style="primary"
-				className="w-full flex-1"
-				href={calendarUrl}
-				target="_blank">
+			<Button style="primary" className="w-full flex-1" target="_blank">
 				Agendar
-				<IconCalendar slot="iconRight"/>
+				<IconCalendar slot="iconRight" />
 			</Button>
 		</footer>
 	</section>
@@ -123,106 +87,54 @@ const calendarUrl = proximaMesa
 
 <!-- Exam dates dialog -->
 {
-	proximaMesa && (
+	proximaFecha && (
 		<dialog
 			id={`dialog-${materia}-${dispositivo}`}
-			class="bg-surface fixed w-[90vw] max-w-2xl self-center justify-self-center rounded-2xl backdrop-blur-sm">
+			class="fixed w-[90vw] max-w-2xl self-center justify-self-center rounded-2xl bg-background-100 backdrop-blur-sm dark:bg-background-900">
 			<div class="item relative flex h-[90vh] w-full flex-col items-center justify-center gap-2.5 p-6">
 				{/* Header */}
 				<header class="relative flex flex-col items-center justify-center gap-2.5">
-					<div class="text-primary">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="icon icon-tabler icons-tabler-filled icon-tabler-calendar">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-							<path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1zm3 7h-14v9.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16v-9.625z" />
-							<path d="M12 12a1 1 0 0 1 .993 .883l.007 .117v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-2a1 1 0 0 1 -.117 -1.993l.117 -.007h1z" />
-						</svg>
+					<div class="text-primary-400 dark:text-primary-600">
+						<IconCalendar />
 					</div>
-					<h2 class="text-headline-small text-on-surface">
+					<h2 class="texto-headline text-text-800 dark:text-text-200">
 						{materia.replace(`(${carrera})`, "")}
 					</h2>
 				</header>
 
 				{/* Exam dates list */}
-				<div class="h-full w-full overflow-y-auto overscroll-contain py-4">
-					<md-list>
-						{examDates.map((dateString, index) => {
-							if (!dateString) return null;
+				<div class="h-full w-full overflow-y-auto overscroll-contain space-y-2">
+					{materiaEncontrada.fechas.map((f) => {
+						const fecha = new Date(f);
+						return (
+							<MenuItem iconLeft={{icon: "calendar", color: "info"}}
+								text={formatoFecha(f)}
+								className="justify-between"
+								textHelp={
+									fecha <= CURRENT_DATE && "Fecha Pasada"
+								}
+								button={{
+									text: "Agendar",
+									style: "secondary",
+									disabled: fecha <= CURRENT_DATE,
+									href:
+										fecha > CURRENT_DATE &&
+										linkGoogleCalendar(f, materia),
+									iconLeft: {
 
-							const formattedDate =
-								formatDateForDisplay(dateString);
-							const isPast = isDateInPast(dateString);
-							const calendarUrl = generateGoogleCalendarUrl(
-								dateString,
-								materia,
-							);
-
-							return (
-								<>
-									<md-list-item class="bg-surface border-0">
-										<div
-											slot="headline"
-											class:list={[
-												"text-label-large",
-												isPast &&
-													"text-on-surface-variant",
-											]}>
-											<strong class="text-label-large">
-												Mesa {index + 1}:
-											</strong>{" "}
-											{formattedDate}
-										</div>
-
-										{isPast && (
-											<div
-												slot="supporting-text"
-												class="text-label-small text-error">
-												(Fecha pasada)
-											</div>
-										)}
-
-										<md-outlined-button
-											href={
-												!isPast
-													? calendarUrl
-													: undefined
-											}
-											target="_blank"
-											class="w-min pr-6 pl-4"
-											slot="end"
-											disabled={isPast}
-											aria-label="Agendar en Google Calendar">
-											Agendar
-											<Icon
-												name="GoogleCalendar"
-												class={
-													isPast
-														? "grayscale-100"
-														: ""
-												}
-												slot="icon"
-											/>
-										</md-outlined-button>
-									</md-list-item>
-									<md-divider />
-								</>
-							);
-						})}
-					</md-list>
+									}
+								}}
+							/>
+						);
+					})}
 				</div>
 
 				{/* Footer */}
 				<footer class="pt-4 text-center">
-					<md-filled-button
-						onclick={`document.getElementById('dialog-${materia}-${dispositivo}').close()`}
-						class="w-min px-6">
+					<Button style="primary"
+						onclick={`document.getElementById('dialog-${materia}-${dispositivo}').close()`}>
 						Cerrar
-					</md-filled-button>
+					</Button>
 				</footer>
 			</div>
 		</dialog>
