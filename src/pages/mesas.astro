@@ -7,6 +7,14 @@ import TarjetaLayout from "@components/TarjetaLayout.astro";
 ---
 
 <Layout title="Mesas de Examen" pagina="Mesas de Exámenes">
+	<header>
+		<h1 class="texto-display">Mesa de exámenes</h1>
+		<span>
+			En el caso de no encontrar una materia revisar la resolución
+			oficial.
+		</span>
+	</header>
+
 	<section class="space-y-4">
 		<BuscadorMaterias
 			client:load
@@ -16,12 +24,12 @@ import TarjetaLayout from "@components/TarjetaLayout.astro";
 
 		<article class="mt-4 w-full overflow-x-auto">
 			<div
-				class="grid grid-cols-1 flex-col gap-4 sm:grid-cols-2 md:grid-cols-3">
+				class="grid grid-cols-1 flex-col gap-4 md:grid-cols-2 lg:grid-cols-3">
 				{
 					examenes.map(({ materia }) => {
 						return (
 							<TarjetaLayout
-								titulo={materia.replaceAll("-", " ")}>
+								titulo={materia}>
 								<footer class="flex h-full w-full flex-col gap-2.5">
 									<FechaMesas
 										materia={materia}
