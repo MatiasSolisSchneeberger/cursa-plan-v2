@@ -1,15 +1,15 @@
 ---
-import Tabs from "./Tabs.astro";
-import TarjetaMateria from "./TarjetaMateria.astro";
+import Tabs from "@components/Tabs.astro";
+import TarjetaMateria from "@components/TarjetaMateria.astro";
 
 interface Props {
 	carrera: string;
 	año: number;
-	orientaciones?: Array<{
+	orientaciones: Array<{
 		nombre: string;
 		materias?: Array<Materia>;
-	}>;
-	materias?: Array<Materia>;
+	}> | null;
+	materias: Array<Materia> | null;
 }
 
 interface Materia {
@@ -31,7 +31,7 @@ interface Mesa {
 	fecha: string;
 }
 
-const { año, orientaciones, materias } = Astro.props;
+const { carrera, año, orientaciones, materias } = Astro.props;
 
 function obtenerSufijo(año: number) {
 	if (año === 1) return "er";
@@ -44,10 +44,10 @@ const sufijo = obtenerSufijo(año);
 ---
 
 <section
-	id=`Año ${año}`
-	class=`flex flex-col gap-2.5 items-center justify-center self-stretch shrink-0 relative w-full overflow-hidden pt-12`>
+	id=`Año-${año}`
+	class=`flex flex-col gap-3 items-center justify-center self-stretch shrink-0 relative w-full overflow-hidden`>
 	<!-- encabezado año -->
-	<h3 class="texto-headline w-full text-center text-background-900">
+	<h3 class="texto-headline w-full text-center text-background-900 dark:text-background-200">
 		{año}{sufijo} Año
 	</h3>
 
@@ -67,11 +67,10 @@ const sufijo = obtenerSufijo(año);
 			<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
 				{materias?.map(({ materia, paraCursar, mesas, paraRendir }) => (
 					<TarjetaMateria
-
 						materia={materia}
-						originalMateria={materia.replace(" ", "-")}
 						paraCursar={paraCursar}
 						paraRendir={paraRendir}
+						carrera={carrera}
 					/>
 				))}
 			</div>
@@ -80,8 +79,8 @@ const sufijo = obtenerSufijo(año);
 	{
 		orientaciones &&
 			orientaciones.map(({ nombre, materias }) => (
-				<div id={`${año}-${nombre}`} class="w-full">
-					<h4 class="texto-headline w-full text-center text-background-900">
+				<div id={`${año}-${nombre}`} class="w-full space-y-2 pt-3">
+					<h4 class="texto-headline w-full text-center text-background-900 dark:text-background-200">
 						{nombre}
 					</h4>
 					{materias && (
@@ -94,12 +93,8 @@ const sufijo = obtenerSufijo(año);
 									paraRendir,
 								}) => (
 									<TarjetaMateria
-
+										carrera={carrera}
 										materia={materia}
-										originalMateria={materia.replace(
-											" ",
-											"-",
-										)}
 										paraCursar={paraCursar}
 										paraRendir={paraRendir}
 									/>

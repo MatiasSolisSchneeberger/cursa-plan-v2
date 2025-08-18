@@ -2,99 +2,45 @@
 import Layout from "@layouts/Layout.astro";
 import { examenes } from "@data/mesaDeExamenes.json";
 import BuscadorMaterias from "@components/BuscadorMaterias";
-import { Icon } from "astro-icon/components";
-import FechaMesas from "@components/FechaMesas.astro"
-
-// Helper function to generate Google Calendar links
-const generateCalendarLink = (fecha: string, asignatura: string): string => {
-	// Convert yyyy-mm-dd to Date object
-	const [year, month, day] = fecha.split("-");
-
-	const startDate = `${year}${month.padStart(2, "0")}${day.padStart(2, "0")}`;
-	const examDate = new Date(Number(year), Number(month) - 1, Number(day));
-	const examDateNext = new Date(examDate);
-	examDateNext.setDate(examDate.getDate() + 1);
-
-	const nextYear = examDateNext.getFullYear();
-	const nextMonth = (examDateNext.getMonth() + 1).toString().padStart(2, "0");
-	const nextDay = examDateNext.getDate().toString().padStart(2, "0");
-
-	const endDate = `${nextYear}${nextMonth}${nextDay}`;
-
-	return `https://www.google.com/calendar/render?action=TEMPLATE&text=Examen%20De%20${encodeURIComponent(asignatura)}&dates=${startDate}/${endDate}`;
-};
+import FechaMesas from "@components/FechaMesas.astro";
+import TarjetaLayout from "@components/TarjetaLayout.astro";
 ---
 
 <Layout title="Mesas de Examen" pagina="Mesas de Exámenes">
+	<header>
+		<h1 class="texto-display">Mesa de exámenes</h1>
+		<span>
+			En el caso de no encontrar una materia revisar la resolución
+			oficial.
+		</span>
+	</header>
+
 	<section class="space-y-4">
 		<BuscadorMaterias
 			client:load
 			placeholder="Buscar materia..."
 			targetClass="mesa-row"
 		/>
-		{
-			examenes.length > 0 && (
-				<article class="mt-4 w-full overflow-x-auto">
-				
-					{/* Tarjeta Materia - Mesa */}
-					<div class="grid grid-cols-1 flex-col gap-4 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
-						{examenes.map(({ materia, fechas }) => {
-							// Ordenar fechas y filtrar fechas pasadas
-							const today = new Date();
-							today.setHours(0, 0, 0, 0);
 
-							const sortedFechas = [...fechas]
-								.filter((fecha) => {
-									if (!fecha) return false;
-
-									// Check if the date has passed
-									const [year, month, day] = fecha
-										.split("-")
-										.map(Number);
-									const examDate = new Date(
-										year,
-										month - 1,
-										day,
-									);
-									examDate.setHours(0, 0, 0, 0);
-
-									// Only include dates that haven't passed yet
-									return examDate >= today;
-								})
-								.sort((a, b) => {
-									return new Date(a).getTime() - new Date(b).getTime();
-								});
-
-							// Obtener próxima mesa (primera fecha futura)
-							const proximaMesa =
-								sortedFechas.length > 0
-									? sortedFechas[0]
-									: null;
-
-							// Generar URL para Google Calendar
-							const eventUrl = proximaMesa
-								? generateCalendarLink(
-										proximaMesa,
-										materia,
-									)
-								: "";
-
-							return (
-								<article id={materia.replace(/-/g, " ")} class="mesa-row full relative flex w-full flex-1 flex-col items-center justify-start gap-2.5 overflow-hidden rounded-3xl border border-outline p-2">
-									<header class="relative flex w-full shrink-0 flex-row items-center justify-center gap-2.5 self-stretch rounded-2xl bg-primary p-1.5 text-on-primary">
-										<h3 class="text-headline-small relative flex flex-1 items-center justify-center text-center text-pretty">
-											{materia.replace(/-/g, " ")}
-										</h3>
-									</header>
-									<footer class="flex h-full w-full flex-col gap-2.5">
-										<FechaMesas materia={materia} dispositivo="Desktop" originalMateria={materia} />
-									</footer>
-								</article>
-							);
-						})}
-					</div>
-				</article>
-			)
-		}
+		<article class="mt-4 w-full overflow-x-auto">
+			<div
+				class="grid grid-cols-1 flex-col gap-4 md:grid-cols-2 lg:grid-cols-3">
+				{
+					examenes.map(({ materia }) => {
+						return (
+							<TarjetaLayout
+								titulo={materia}>
+								<footer class="flex h-full w-full flex-col gap-2.5">
+									<FechaMesas
+										materia={materia}
+										dispositivo="Desktop"
+									/>
+								</footer>
+							</TarjetaLayout>
+						);
+					})
+				}
+			</div>
+		</article>
 	</section>
 </Layout>
