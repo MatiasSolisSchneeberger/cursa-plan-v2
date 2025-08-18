@@ -9,7 +9,7 @@ import Divider from "@components/Divider.astro";
 
 <Layout title="Calendario 2025">
 	<section
-		class="relative grid w-full shrink-0 grid-cols-1 flex-col items-center justify-center gap-4 self-stretch overflow-hidden pt-12 md:grid-cols-2 2xl:grid-cols-3">
+		class="relative grid w-full grid-cols-1 flex-col items-center justify-center gap-4 overflow-hidden pt-12 md:grid-cols-2 2xl:grid-cols-3">
 		{
 			calendario.map(({ mes, feriados, periodos }) => (
 				<TarjetaLayout titulo={mes}>
