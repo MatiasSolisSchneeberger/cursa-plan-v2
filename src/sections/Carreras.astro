@@ -11,8 +11,8 @@ import TarjetaCarrera from "@components/TarjetaCarrera.astro";
 	<ul
 		class="relative grid w-full shrink-0 grid-cols-1 flex-wrap content-start items-start justify-start gap-6 self-stretch md:grid-cols-2 lg:grid-cols-3">
 		{
-			carreras.map(({ carrera, emoji }) => {
-				return <TarjetaCarrera carrera={carrera} emoji={emoji} />;
+			carreras.map(({ carrera, emoji, slag }) => {
+				return <TarjetaCarrera slag={slag} carrera={carrera} emoji={emoji} />;
 			})
 		}
 	</ul>

@@ -10,57 +10,19 @@ import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
 import Tabs from "@components/Tabs.astro";
 
 // Define interfaces for type safety
-interface Carrera {
-	carrera: string;
-	emoji: string;
-	cursada: Array<{
-		año: number;
-		materias?: Array<{
-			materia: string;
-			codigo?: number;
-			paraCursar: Array<{
-				mat: string;
-				cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
-			}>;
-			paraRendir: Array<{
-				mat: string;
-				cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
-			}>;
-			planDeEstudio: string | null;
-		}>;
-		orientaciones?: Array<{
-			nombre: string;
-			materias: Array<{
-				materia: string;
-				codigo?: number;
-				paraCursar: Array<{
-					mat: string;
-					cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
-				}>;
-				paraRendir: Array<{
-					mat: string;
-					cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
-				}>;
-				planDeEstudio: string | null;
-			}>;
-		}>;
-	}>;
-}
 
 export const getStaticPaths: GetStaticPaths = () => {
-	return carreras.map(({ carrera }) => ({
-		params: { carrera },
-	}));
+    return carreras.map(({ slag }) => ({
+        params: { carrera: slag },
+    }));
 };
 
 const { carrera: carreraSlug } = Astro.params;
 
-// Buscar los datos específicos de la carrera
-const carreraData = carreras.find((c) => c.carrera === carreraSlug);
+// Buscar los datos específicos de la carrera usando el slag
+const carreraData = carreras.find((c) => c.slag === carreraSlug);
 
 if (!carreraData) return Astro.redirect("/404");
-
-const NombreCarrera = carreraData.carrera.replace(/-/g, " ");
 
 function formatoAño(numero: number): string {
 	switch (numero) {
@@ -74,37 +36,39 @@ function formatoAño(numero: number): string {
 			return `${numero}to`;
 	}
 }
+
+const {carrera, cursada, emoji, slag} = carreraData
 ---
 
 <Layout
-	title={`${NombreCarrera} | Plan de estudio`}
-	theme={carreraData.carrera}>
-	<HeaderCarrera carrera={carreraData.carrera} emoji={carreraData.emoji} />
-	<section class="flex justify-center">
-		{
-			carreraData.cursada && (
-				<Tabs
-					tab={carreraData.cursada.map((item) => ({
-						label: formatoAño(item.año),
-						href: `#Año-${item.año}`,
-					}))}
-				/>
-			)
-		}
-	</section>
+	title={`${carrera} | Plan de estudio`}
+	theme={slag}>
+	<HeaderCarrera carrera={carrera} emoji={emoji} />
+
 	<BuscadorMaterias
 		client:load
 		placeholder="Buscar materia..."
 		targetClass="materia-card"
 	/>
+	{
+		cursada && (
+			<Tabs
+				tab={cursada.map((item) => ({
+					label: formatoAño(item.año),
+					href: `#Año-${item.año}`,
+				}))}
+			/>
+		)
+	}
+
 	<section id="materias-container" class="space-y-8">
 		{
-			carreraData.cursada.map(({ año, materias, orientaciones }) => (
+			cursada.map(({ año, materias, orientaciones }) => (
 				<AñoCarrera
 					carrera={carreraSlug}
 					año={año}
 					materias={materias}
-					carrera={carreraData.carrera}
+					carrera={carrera}
 					orientaciones={orientaciones}
 				/>
 			))

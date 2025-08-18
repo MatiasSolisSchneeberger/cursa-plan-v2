@@ -4,20 +4,17 @@ import MenuItem from "@components/MenuItem.astro";
 import MiLogo from "@components/MiLogo.astro";
 import { carreras } from "@data/carreras.json";
 
-const enlacesCarreras = carreras.map(({ carrera, emoji }) => {
-	const nombreCompleto = carrera.replace(/-/g, " "); // Texto sin guiones
-	let nombreCorto = nombreCompleto; // Por defecto, el mismo nombre
-
+const enlacesCarreras = carreras.map(({ carrera, slag, emoji }) => {
 	// Reemplazos para mostrar versión corta
-	nombreCorto = nombreCorto
+	carrera = carrera
 		.replace(/\bIngeniería\b/, "Ing.")
 		.replace(/\bLicenciatura\b/, "Lic.")
 		.replace(/\bProfesorado\b/, "Prof.");
 
 	return {
-		href: `/carreras/${carrera}`,
-		nombreCompleto,
-		nombreCorto,
+		carrera,
+		href: `/carreras/${slag}`,
+		slag,
 		emoji,
 	};
 });
@@ -85,13 +82,16 @@ const contactos = [
 			<div
 				class="relative shrink-0 flex-col items-start justify-start gap-2.5 sm:flex">
 				{
-					enlacesCarreras.map(({ href, emoji, nombreCorto }) => (
-						<MenuItem
-							text={nombreCorto}
-							iconLeft={{ icon: emoji }}
-							href={href}
-						/>
-					))
+					enlacesCarreras.map(
+						({ href, emoji, carrera , slag}) => (
+							<MenuItem
+								className={`theme-${slag}`}
+								text={carrera}
+								iconLeft={{ icon: emoji, color: "primary" }}
+								href={href}
+							/>
+						),
+					)
 				}
 			</div>
 		</div>

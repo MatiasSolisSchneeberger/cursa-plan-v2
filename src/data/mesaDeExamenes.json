@@ -1,7 +1,7 @@
 {
     "examenes": [
         {
-            "materia": "Administración Y Gestión De Organizaciones",
+            "materia": "Administración y Gestión de Organizaciones",
             "fechas": [
                 "2025-02-20",
                 "2025-03-14",
@@ -91,7 +91,7 @@
             ]
         },
         {
-            "materia": "Álgebra Lineal Y Geometría",
+            "materia": "Álgebra Lineal y Geometría",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -106,7 +106,7 @@
             ]
         },
         {
-            "materia": "Álgebra Lineal Numérica Y Optimización",
+            "materia": "Álgebra Lineal Numérica y Optimización",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -121,7 +121,7 @@
             ]
         },
         {
-            "materia": "Álgebra Y Geometría Analítica",
+            "materia": "Álgebra y Geometría Analítica",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -136,7 +136,7 @@
             ]
         },
         {
-            "materia": "Algoritmos Y Estructuras De Datos I",
+            "materia": "Algoritmos y Estructuras de Datos I",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -151,7 +151,7 @@
             ]
         },
         {
-            "materia": "Algoritmos Y Estructuras De Datos II",
+            "materia": "Algoritmos y Estructuras de Datos II",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -256,7 +256,7 @@
             ]
         },
         {
-            "materia": "Anatomía Comparada De Los Cordados",
+            "materia": "Anatomía Comparada de los Cordados",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -271,7 +271,7 @@
             ]
         },
         {
-            "materia": "Antropología Física Y Cultural",
+            "materia": "Antropología Física y Cultural",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -286,7 +286,7 @@
             ]
         },
         {
-            "materia": "Aplicaciones Térmicas De La Energía Solar",
+            "materia": "Aplicaciones Térmicas de la Energía Solar",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -301,7 +301,7 @@
             ]
         },
         {
-            "materia": "Arquitectura Y Organización De Computadoras",
+            "materia": "Arquitectura y Organización de Computadoras",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -316,7 +316,7 @@
             ]
         },
         {
-            "materia": "Arquitecturas Y Sistemas Operativos Avanzados",
+            "materia": "Arquitecturas y Sistemas Operativos Avanzados",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -346,7 +346,7 @@
             ]
         },
         {
-            "materia": "Auditoría Y Seguridad Informática",
+            "materia": "Auditoría y Seguridad Informática",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -361,7 +361,7 @@
             ]
         },
         {
-            "materia": "Bacteriología Y Micología Clínica",
+            "materia": "Bacteriología y Micología Clínica",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -376,7 +376,7 @@
             ]
         },
         {
-            "materia": "Bases De Datos I",
+            "materia": "Bases de Datos I",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -391,7 +391,7 @@
             ]
         },
         {
-            "materia": "Bases De Datos II",
+            "materia": "Bases de Datos II",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -421,7 +421,7 @@
             ]
         },
         {
-            "materia": "Bioestadística (Licenciatura-en-Ciencias-Biológicas)",
+            "materia": "Bioestadística (Licenciatura en Ciencias Biológicas)",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -451,7 +451,7 @@
             ]
         },
         {
-            "materia": "Biología Celular Y Molecular",
+            "materia": "Biología Celular y Molecular",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -466,7 +466,7 @@
             ]
         },
         {
-            "materia": "Biología De Los Artrópodos",
+            "materia": "Biología de los Artrópodos",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -481,7 +481,7 @@
             ]
         },
         {
-            "materia": "Biología De Los Cordados",
+            "materia": "Biología de los Cordados",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -496,7 +496,7 @@
             ]
         },
         {
-            "materia": "Biología De Los Invertebrados",
+            "materia": "Biología de los Invertebrados",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -511,7 +511,7 @@
             ]
         },
         {
-            "materia": "Biología De Los Parásitos",
+            "materia": "Biología de los Parásitos",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -526,7 +526,7 @@
             ]
         },
         {
-            "materia": "Biología General Y Celular",
+            "materia": "Biología General y Celular",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -541,7 +541,7 @@
             ]
         },
         {
-            "materia": "Bioquímica De Los Alimentos",
+            "materia": "Bioquímica de los Alimentos",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -556,7 +556,7 @@
             ]
         },
         {
-            "materia": "Biotaxonomia De Briofitas Y Pteridofitas",
+            "materia": "Biotaxonomia de Briofitas y Pteridofitas",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -571,7 +571,7 @@
             ]
         },
         {
-            "materia": "Biotaxonomia De Espermatofitas",
+            "materia": "Biotaxonomia de Espermatofitas",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -601,7 +601,7 @@
             ]
         },
         {
-            "materia": "Bromatología Y Nutrición",
+            "materia": "Bromatología y Nutrición",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -631,7 +631,7 @@
             ]
         },
         {
-            "materia": "Cálculo Diferencial e Integral (Licenciatura-en-Sistemas-de-Información)",
+            "materia": "Cálculo Diferencial e Integral (Licenciatura en Sistemas de Información)",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -751,7 +751,7 @@
             ]
         },
         {
-            "materia": "Ciencia, Tecnología Y Sociedad I",
+            "materia": "Ciencia, Tecnología y Sociedad I",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -826,7 +826,7 @@
             ]
         },
         {
-            "materia": "Comunicaciones De Datos",
+            "materia": "Comunicaciones de Datos",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -841,7 +841,7 @@
             ]
         },
         {
-            "materia": "Conocimiento De Idioma Inglés Técnico",
+            "materia": "Conocimiento de Idioma Inglés Técnico",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -856,7 +856,7 @@
             ]
         },
         {
-            "materia": "Determinación De Estructuras Orgánicas",
+            "materia": "Determinación de Estructuras Orgánicas",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -871,7 +871,7 @@
             ]
         },
         {
-            "materia": "Dibujo Topográfico Y Cartográfico",
+            "materia": "Dibujo Topográfico y Cartográfico",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -901,7 +901,7 @@
             ]
         },
         {
-            "materia": "Dinámica De Fluidos Geofísicos",
+            "materia": "Dinámica de Fluidos Geofísicos",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -931,7 +931,7 @@
             ]
         },
         {
-            "materia": "Diseño De Líneas De Transmisión Y Estaciones Transformadoras",
+            "materia": "Diseño de Líneas de Transmisión y Estaciones Transformadoras",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -946,7 +946,7 @@
             ]
         },
         {
-            "materia": "Distribución De La Energía",
+            "materia": "Distribución de la Energía",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -1006,7 +1006,7 @@
             ]
         },
         {
-            "materia": "Ecología De La Conservación",
+            "materia": "Ecología de la Conservación",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -1021,7 +1021,7 @@
             ]
         },
         {
-            "materia": "Ecología De Comunidades",
+            "materia": "Ecología de Comunidades",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1036,7 +1036,7 @@
             ]
         },
         {
-            "materia": "Ecología De Poblaciones",
+            "materia": "Ecología de Poblaciones",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1096,7 +1096,7 @@
             ]
         },
         {
-            "materia": "Ecología Y Medio Ambiente",
+            "materia": "Ecología y Medio Ambiente",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1126,7 +1126,7 @@
             ]
         },
         {
-            "materia": "Economía Y Gestión Empresarial",
+            "materia": "Economía y Gestión Empresarial",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1141,7 +1141,7 @@
             ]
         },
         {
-            "materia": "Economía Y Organización Industrial",
+            "materia": "Economía y Organización Industrial",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -1156,7 +1156,7 @@
             ]
         },
         {
-            "materia": "Ecotoxicología Y Sanidad Laboral Y Ambiental",
+            "materia": "Ecotoxicología y Sanidad Laboral y Ambiental",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -1201,7 +1201,7 @@
             ]
         },
         {
-            "materia": "Educación Para La Salud Y El Ambiente",
+            "materia": "Educación Para la Salud y El Ambiente",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1216,7 +1216,7 @@
             ]
         },
         {
-            "materia": "Electricidad Y Magnetismo",
+            "materia": "Electricidad y Magnetismo",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1231,7 +1231,7 @@
             ]
         },
         {
-            "materia": "Electricidad, Magnetismo Y Calor",
+            "materia": "Electricidad, Magnetismo y Calor",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1246,7 +1246,7 @@
             ]
         },
         {
-            "materia": "Electricidad, Magnetismo Y Óptica",
+            "materia": "Electricidad, Magnetismo y Óptica",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1261,7 +1261,7 @@
             ]
         },
         {
-            "materia": "Electricidad, Magnetismo, Óptica Y Sonido",
+            "materia": "Electricidad, Magnetismo, Óptica y Sonido",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1291,7 +1291,7 @@
             ]
         },
         {
-            "materia": "Electromagnetismo (Ingeniería-en-Electrónica)",
+            "materia": "Electromagnetismo (Ingeniería en Electrónica)",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -1306,7 +1306,7 @@
             ]
         },
         {
-            "materia": "Electromagnetismo (Licenciatura-en-Ciencias-Físicas)",
+            "materia": "Electromagnetismo (Licenciatura en Ciencias Físicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1411,7 +1411,7 @@
             ]
         },
         {
-            "materia": "Elementos De Computación",
+            "materia": "Elementos de Computación",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1426,7 +1426,7 @@
             ]
         },
         {
-            "materia": "Elementos De Edificios",
+            "materia": "Elementos de Edificios",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1441,7 +1441,7 @@
             ]
         },
         {
-            "materia": "Elementos De La Teoría De Galois",
+            "materia": "Elementos de la Teoría de Galois",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -1471,7 +1471,7 @@
             ]
         },
         {
-            "materia": "Endocrinología Y Monitoreo De Drogas",
+            "materia": "Endocrinología y Monitoreo de Drogas",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1501,7 +1501,7 @@
             ]
         },
         {
-            "materia": "Epidemiología Y Salud Pública",
+            "materia": "Epidemiología y Salud Pública",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -1516,7 +1516,7 @@
             ]
         },
         {
-            "materia": "Epistemología Y Metodología De La Investigación (Bioquímica)",
+            "materia": "Epistemología y Metodología de la Investigación (Bioquímica)",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -1531,7 +1531,7 @@
             ]
         },
         {
-            "materia": "Epistemología Y Metodología De La Investigación",
+            "materia": "Epistemología y Metodología de la Investigación",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1561,7 +1561,7 @@
             ]
         },
         {
-            "materia": "Estadística Y Análisis De Datos",
+            "materia": "Estadística y Análisis de Datos",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1606,7 +1606,7 @@
             ]
         },
         {
-            "materia": "Fenómenos De Transporte",
+            "materia": "Fenómenos de Transporte",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -1681,7 +1681,7 @@
             ]
         },
         {
-            "materia": "Física De Sólidos",
+            "materia": "Física de Sólidos",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -1741,7 +1741,7 @@
             ]
         },
         {
-            "materia": "Física General Y Biológica",
+            "materia": "Física General y Biológica",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -1861,7 +1861,7 @@
             ]
         },
         {
-            "materia": "Formulación Y Evaluación De Proyectos",
+            "materia": "Formulación y Evaluación de Proyectos",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -1891,7 +1891,7 @@
             ]
         },
         {
-            "materia": "Fotointerpretación Y Teledetección",
+            "materia": "Fotointerpretación y Teledetección",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -1921,7 +1921,7 @@
             ]
         },
         {
-            "materia": "Fundamentos De Comunicaciones",
+            "materia": "Fundamentos de Comunicaciones",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1936,7 +1936,7 @@
             ]
         },
         {
-            "materia": "Fundamentos De Óptica Nanométrica",
+            "materia": "Fundamentos de Óptica Nanométrica",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -1966,7 +1966,7 @@
             ]
         },
         {
-            "materia": "Genética De Poblaciones",
+            "materia": "Genética de Poblaciones",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2011,7 +2011,7 @@
             ]
         },
         {
-            "materia": "Genética Y Biología Molecular",
+            "materia": "Genética y Biología Molecular",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2026,7 +2026,7 @@
             ]
         },
         {
-            "materia": "Geodesia Astronómica Y Matemática",
+            "materia": "Geodesia Astronómica y Matemática",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2041,7 +2041,7 @@
             ]
         },
         {
-            "materia": "Geodesia Física Y Global",
+            "materia": "Geodesia Física y Global",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2056,7 +2056,7 @@
             ]
         },
         {
-            "materia": "Geografía Física Y Geomorfología",
+            "materia": "Geografía Física y Geomorfología",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -2116,7 +2116,7 @@
             ]
         },
         {
-            "materia": "Geometría Métrica Y Trigonometría",
+            "materia": "Geometría Métrica y Trigonometría",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -2131,7 +2131,7 @@
             ]
         },
         {
-            "materia": "Gestión De Laboratorio",
+            "materia": "Gestión de Laboratorio",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -2206,7 +2206,7 @@
             ]
         },
         {
-            "materia": "Historia De La Matemática",
+            "materia": "Historia de la Matemática",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2221,7 +2221,7 @@
             ]
         },
         {
-            "materia": "Información Rural Y Agrología",
+            "materia": "Información Rural y Agrología",
             "fechas": [
                 "2025-02-20",
                 "2025-03-12",
@@ -2266,7 +2266,7 @@
             ]
         },
         {
-            "materia": "Ingeniería De Software I",
+            "materia": "Ingeniería de Software I",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2281,7 +2281,7 @@
             ]
         },
         {
-            "materia": "Ingeniería De Software II",
+            "materia": "Ingeniería de Software II",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2416,7 +2416,7 @@
             ]
         },
         {
-            "materia": "Instrumentación Y Mediciones Electrónicas",
+            "materia": "Instrumentación y Mediciones Electrónicas",
             "fechas": [
                 "2025-02-18",
                 "2025-03-13",
@@ -2446,7 +2446,7 @@
             ]
         },
         {
-            "materia": "Introducción A La Biología",
+            "materia": "Introducción a la Biología",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -2461,7 +2461,7 @@
             ]
         },
         {
-            "materia": "Introducción A La Ingeniería en Agrimensura",
+            "materia": "Introducción a la Ingeniería en Agrimensura",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2476,7 +2476,7 @@
             ]
         },
         {
-            "materia": "Introducción A La Mecánica Cuántica Relativista (Optativa)",
+            "materia": "Introducción a la Mecánica Cuántica Relativista (Optativa)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2491,7 +2491,7 @@
             ]
         },
         {
-            "materia": "Introducción A La Topología Álgebraica",
+            "materia": "Introducción a la Topología Álgebraica",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2521,7 +2521,7 @@
             ]
         },
         {
-            "materia": "Laboratorio De Calor Y Termodinámica",
+            "materia": "Laboratorio de Calor y Termodinámica",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -2536,7 +2536,7 @@
             ]
         },
         {
-            "materia": "Laboratorio De Electricidad Y Magnetismo",
+            "materia": "Laboratorio de Electricidad y Magnetismo",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -2551,7 +2551,7 @@
             ]
         },
         {
-            "materia": "Laboratorio De Mecánica Clásica",
+            "materia": "Laboratorio de Mecánica Clásica",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2596,7 +2596,7 @@
             ]
         },
         {
-            "materia": "Lógica Y Matemática Computacional",
+            "materia": "Lógica y Matemática Computacional",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2611,7 +2611,7 @@
             ]
         },
         {
-            "materia": "Manejo De Recursos Naturales",
+            "materia": "Manejo de Recursos Naturales",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2626,7 +2626,7 @@
             ]
         },
         {
-            "materia": "Maquinas Hidráulicas Y Térmicas",
+            "materia": "Maquinas Hidráulicas y Térmicas",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -2671,7 +2671,7 @@
             ]
         },
         {
-            "materia": "Materiales Y Componentes",
+            "materia": "Materiales y Componentes",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -2761,7 +2761,7 @@
             ]
         },
         {
-            "materia": "Mecánica, Calor Y Termodinámica",
+            "materia": "Mecánica, Calor y Termodinámica",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -2776,7 +2776,7 @@
             ]
         },
         {
-            "materia": "Mecánica, Óptica Y Sonido",
+            "materia": "Mecánica, Óptica y Sonido",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -2836,7 +2836,7 @@
             ]
         },
         {
-            "materia": "Medio Interno Y Nefrología",
+            "materia": "Medio Interno y Nefrología",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -2881,7 +2881,7 @@
             ]
         },
         {
-            "materia": "Métodos De Conservación De Alimentos",
+            "materia": "Métodos de Conservación de Alimentos",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -2941,7 +2941,7 @@
             ]
         },
         {
-            "materia": "Microbiología Aplicada Y Ambiental",
+            "materia": "Microbiología Aplicada y Ambiental",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3001,7 +3001,7 @@
             ]
         },
         {
-            "materia": "Modelo Y Simulación De Sistemas Fisiológicos",
+            "materia": "Modelo y Simulación de Sistemas Fisiológicos",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3016,7 +3016,7 @@
             ]
         },
         {
-            "materia": "Modelos Y Simulación",
+            "materia": "Modelos y Simulación",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -3076,7 +3076,7 @@
             ]
         },
         {
-            "materia": "Óptica De Fourier",
+            "materia": "Óptica de Fourier",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3091,7 +3091,7 @@
             ]
         },
         {
-            "materia": "Óptica Y Sonido",
+            "materia": "Óptica y Sonido",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3211,7 +3211,7 @@
             ]
         },
         {
-            "materia": "Paradigmas Y Lenguajes",
+            "materia": "Paradigmas y Lenguajes",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -3301,7 +3301,7 @@
             ]
         },
         {
-            "materia": "Práctica Profesional Supervisada (Anual) (Ingeniería-en-Agrimensura)",
+            "materia": "Práctica Profesional Supervisada (Anual) (Ingeniería en Agrimensura)",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -3316,7 +3316,7 @@
             ]
         },
         {
-            "materia": "Probabilidad Y Estadística",
+            "materia": "Probabilidad y Estadística",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -3346,7 +3346,7 @@
             ]
         },
         {
-            "materia": "Procesamiento Digital De Bioseñales",
+            "materia": "Procesamiento Digital de Bioseñales",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -3406,7 +3406,7 @@
             ]
         },
         {
-            "materia": "Programación Orientada A Objetos",
+            "materia": "Programación Orientada a Objetos",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -3421,7 +3421,7 @@
             ]
         },
         {
-            "materia": "Propagación Y Antenas",
+            "materia": "Propagación y Antenas",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -3466,7 +3466,7 @@
             ]
         },
         {
-            "materia": "Proyecto Final De Carrera",
+            "materia": "Proyecto Final de Carrera",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -3481,7 +3481,7 @@
             ]
         },
         {
-            "materia": "Prueba De Idioma",
+            "materia": "Prueba de Idioma",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3496,7 +3496,7 @@
             ]
         },
         {
-            "materia": "Prueba De Manejo De Software",
+            "materia": "Prueba de Manejo de Software",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3511,7 +3511,7 @@
             ]
         },
         {
-            "materia": "Prueba De Traducción De Ingles",
+            "materia": "Prueba de Traducción de Ingles",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3526,7 +3526,7 @@
             ]
         },
         {
-            "materia": "Prueba De Traducción Técnica",
+            "materia": "Prueba de Traducción Técnica",
             "fechas": [
                 "2025-02-19",
                 "2025-03-11",
@@ -3541,7 +3541,7 @@
             ]
         },
         {
-            "materia": "Prueba De Traducción Técnica (Ingles)",
+            "materia": "Prueba de Traducción Técnica (Ingles)",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3556,7 +3556,7 @@
             ]
         },
         {
-            "materia": "Prueba De Traducción Técnica Del Idioma Ingles",
+            "materia": "Prueba de Traducción Técnica Del Idioma Ingles",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3571,7 +3571,7 @@
             ]
         },
         {
-            "materia": "Psicología Del Aprendizaje Y Del Desarrollo",
+            "materia": "Psicología Del Aprendizaje y Del Desarrollo",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -3601,7 +3601,7 @@
             ]
         },
         {
-            "materia": "Química Analítica Aplicada A Las Formulaciones Farmacéuticas",
+            "materia": "Química Analítica Aplicada a Las Formulaciones Farmacéuticas",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -3676,7 +3676,7 @@
             ]
         },
         {
-            "materia": "Química Biológica (Licenciatura-en-Ciencias-Biológicas)",
+            "materia": "Química Biológica (Licenciatura en Ciencias Biológicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3691,7 +3691,7 @@
             ]
         },
         {
-            "materia": "Química Biológica (Licenciatura-en-Ciencias-Químicas)",
+            "materia": "Química Biológica (Licenciatura en Ciencias Químicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3841,7 +3841,7 @@
             ]
         },
         {
-            "materia": "Química General (Ingeniería-en-Agrimensura)",
+            "materia": "Química General (Ingeniería en Agrimensura)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3856,7 +3856,7 @@
             ]
         },
         {
-            "materia": "Química General (Ingeniería-Eléctrica)",
+            "materia": "Química General (Ingeniería Eléctrica)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3871,7 +3871,7 @@
             ]
         },
         {
-            "materia": "Química General (Ingeniería-en-Electrónica)",
+            "materia": "Química General (Ingeniería en Electrónica)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3886,7 +3886,7 @@
             ]
         },
         {
-            "materia": "Química General (Licenciatura-en-Ciencias-Físicas)",
+            "materia": "Química General (Licenciatura en Ciencias Físicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3901,7 +3901,7 @@
             ]
         },
         {
-            "materia": "Química General (Profesorado-en-Física)",
+            "materia": "Química General (Profesorado en Física)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3931,7 +3931,7 @@
             ]
         },
         {
-            "materia": "Química General (Licenciatura-en-Ciencias-Químicas)",
+            "materia": "Química General (Licenciatura en Ciencias Químicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3946,7 +3946,7 @@
             ]
         },
         {
-            "materia": "Química General (Licenciatura-en-Ciencias-Biológicas)",
+            "materia": "Química General (Licenciatura en Ciencias Biológicas)",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -3961,7 +3961,7 @@
             ]
         },
         {
-            "materia": "Química General Y Biológica",
+            "materia": "Química General y Biológica",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4021,7 +4021,7 @@
             ]
         },
         {
-            "materia": "Química Toxicológica Y Legal",
+            "materia": "Química Toxicológica y Legal",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -4036,7 +4036,7 @@
             ]
         },
         {
-            "materia": "Redes De Datos",
+            "materia": "Redes de Datos",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4066,7 +4066,7 @@
             ]
         },
         {
-            "materia": "Seminario De Ingeniería - Módulo I",
+            "materia": "Seminario de Ingeniería - Módulo I",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4081,7 +4081,7 @@
             ]
         },
         {
-            "materia": "Seminario De Ingeniería - Módulo II",
+            "materia": "Seminario de Ingeniería - Módulo II",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4096,7 +4096,7 @@
             ]
         },
         {
-            "materia": "Seminario De Ingeniería - Módulo III",
+            "materia": "Seminario de Ingeniería - Módulo III",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -4111,7 +4111,7 @@
             ]
         },
         {
-            "materia": "Seminario De Ingeniería - Módulo IV",
+            "materia": "Seminario de Ingeniería - Módulo IV",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4126,7 +4126,7 @@
             ]
         },
         {
-            "materia": "Seminario De Ingeniería - Módulo V",
+            "materia": "Seminario de Ingeniería - Módulo V",
             "fechas": [
                 "2025-02-17",
                 "2025-03-12",
@@ -4141,7 +4141,7 @@
             ]
         },
         {
-            "materia": "Seminario Sobre Temas De Física",
+            "materia": "Seminario Sobre Temas de Física",
             "fechas": [
                 "2025-02-17",
                 "2025-03-12",
@@ -4156,7 +4156,7 @@
             ]
         },
         {
-            "materia": "Señales Y Sistemas",
+            "materia": "Señales y Sistemas",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4171,7 +4171,7 @@
             ]
         },
         {
-            "materia": "Sistema De Información Territorial",
+            "materia": "Sistema de Información Territorial",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4186,7 +4186,7 @@
             ]
         },
         {
-            "materia": "Sistemas De Comunicaciones",
+            "materia": "Sistemas de Comunicaciones",
             "fechas": [
                 "2025-02-20",
                 "2025-03-13",
@@ -4201,7 +4201,7 @@
             ]
         },
         {
-            "materia": "Sistemas De Potencia",
+            "materia": "Sistemas de Potencia",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4216,7 +4216,7 @@
             ]
         },
         {
-            "materia": "Sistemas De Representación",
+            "materia": "Sistemas de Representación",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4246,7 +4246,7 @@
             ]
         },
         {
-            "materia": "Sistemas Y Organizaciones",
+            "materia": "Sistemas y Organizaciones",
             "fechas": [
                 "2025-02-17",
                 "2025-03-12",
@@ -4261,7 +4261,7 @@
             ]
         },
         {
-            "materia": "Taller De Programación I",
+            "materia": "Taller de Programación I",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4276,7 +4276,7 @@
             ]
         },
         {
-            "materia": "Taller De Programación II",
+            "materia": "Taller de Programación II",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4291,7 +4291,7 @@
             ]
         },
         {
-            "materia": "Taller De Tecnología Educativa",
+            "materia": "Taller de Tecnología Educativa",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4321,7 +4321,7 @@
             ]
         },
         {
-            "materia": "Teoría Abstracta De La Medida",
+            "materia": "Teoría Abstracta de la Medida",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4336,7 +4336,7 @@
             ]
         },
         {
-            "materia": "Teoría Cualitativa De Ecuaciones Diferenciales Ordinarias",
+            "materia": "Teoría Cualitativa de Ecuaciones Diferenciales Ordinarias",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4351,7 +4351,7 @@
             ]
         },
         {
-            "materia": "Teoría De Circuitos",
+            "materia": "Teoría de Circuitos",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4366,7 +4366,7 @@
             ]
         },
         {
-            "materia": "Teoría De Control",
+            "materia": "Teoría de Control",
             "fechas": [
                 "2025-02-19",
                 "2025-03-12",
@@ -4381,7 +4381,7 @@
             ]
         },
         {
-            "materia": "Teoría De Errores Y Compensación",
+            "materia": "Teoría de Errores y Compensación",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4396,7 +4396,7 @@
             ]
         },
         {
-            "materia": "Teoría De La Computación",
+            "materia": "Teoría de la Computación",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4441,7 +4441,7 @@
             ]
         },
         {
-            "materia": "Tópicos Avanzados De Ingeniería De Software",
+            "materia": "Tópicos Avanzados de Ingeniería de Software",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4516,7 +4516,7 @@
             ]
         },
         {
-            "materia": "Toxicología Y Química Legal",
+            "materia": "Toxicología y Química Legal",
             "fechas": [
                 "2025-02-18",
                 "2025-03-11",
@@ -4531,7 +4531,7 @@
             ]
         },
         {
-            "materia": "Trabajo Final (Ingeniería-en-Agrimensura)",
+            "materia": "Trabajo Final (Ingeniería en Agrimensura)",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4546,7 +4546,7 @@
             ]
         },
         {
-            "materia": "Trabajo Final (Licenciatura-en-Ciencias-Químicas)",
+            "materia": "Trabajo Final (Licenciatura en Ciencias Químicas)",
             "fechas": [
                 "2025-02-17",
                 "2025-03-10",
@@ -4561,7 +4561,7 @@
             ]
         },
         {
-            "materia": "Trabajo Final De Graduación",
+            "materia": "Trabajo Final de Graduación",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4576,7 +4576,7 @@
             ]
         },
         {
-            "materia": "Transmisión De La Energía",
+            "materia": "Transmisión de la Energía",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
@@ -4591,7 +4591,7 @@
             ]
         },
         {
-            "materia": "Transmisión De La Información",
+            "materia": "Transmisión de la Información",
             "fechas": [
                 "2025-02-21",
                 "2025-03-14",
