@@ -32,7 +32,7 @@ export default function BuscadorMaterias({ placeholder = "Buscar materia", targe
 
     return (
 
-        <div className="relative group flex flex-row rounded-xl dark:bg-background-900 bg-background-100 focus-within:ring-2 focus-within:ring-background-300 dark:focus-within:ring-background-800 transition-all duration-300">
+        <div className="relative m-3 group flex flex-row rounded-xl dark:bg-background-900 bg-background-100 focus-within:ring-2 focus-within:ring-background-300 dark:focus-within:ring-background-800 transition-all duration-300">
             {/* Contenedor de la lupa con z-index para superponer el ring */}
             <div className='p-2.5 bg-primary-600 dark:bg-primary-400 rounded-l-xl text-primary-100 dark:text-primary-900 z-[1]'>
                 <IconSearch />
