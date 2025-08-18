@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 import Avatar from "@components/Avatar.astro";
 import Chip from "@components/Chip.astro";
 import Switch from "@components/Switch.astro";
+import Button from "@components/Button.astro";
 
 interface Props {
 	iconLeft?: {
@@ -43,8 +44,11 @@ interface Props {
 		disabled?: boolean;
 		id?: string;
 		className?: string;
+		text: string;
+		iconL
 	};
 	href?: string;
+	className?: string;
 }
 
 const {
@@ -57,6 +61,8 @@ const {
 	iconRight,
 	id,
 	href,
+	button,
+	className
 } = Astro.props;
 ---
 
@@ -64,7 +70,7 @@ const {
 	href ? (
 		<a
 			href={href}
-			class="flex min-h-12 w-full flex-row items-center px-2 py-1"
+			class={`flex min-h-12 w-full flex-row items-center px-2 py-1 ${className}`}
 			id={id}>
 			{iconLeft && (
 				<span
@@ -118,6 +124,16 @@ const {
 				<span class="pr-2">
 					<Switch />
 				</span>
+			)}
+			{button && (
+				<Button
+					style={button.style}
+					href={button.href}
+					className={`${button.className} `}
+					disabled={button.disabled}
+					id={button.id}>
+					{button.text}{" "}
+				</Button>
 			)}
 			{iconRight && (
 				<span
@@ -148,7 +164,7 @@ const {
 		</a>
 	) : (
 		<div
-			class="flex min-h-12 w-full flex-row items-center px-2 py-1"
+			class={`flex min-h-12 w-full flex-row items-center px-2 py-1 ${className}`}
 			id={id}>
 			{iconLeft && (
 				<span
@@ -202,6 +218,16 @@ const {
 				<span class="pr-2">
 					<Switch />
 				</span>
+			)}
+			{button && (
+				<Button
+					style={button.style}
+					href={button.href}
+					className={button.className}
+					disabled={button.disabled}
+					id={button.id}>
+					{button.text}{" "}
+				</Button>
 			)}
 			{iconRight && (
 				<span
