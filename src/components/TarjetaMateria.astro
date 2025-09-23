@@ -55,6 +55,7 @@ const { materia, paraCursar, paraRendir, planDeEstudio, carrera } = Astro.props;
 						materia={materia}
 						dispositivo="Mobile"
 						carrera={carrera}
+						client:load
 					/>
 					<TarjetaInfo style="tertiary" titulo="Plan de estudio">
 						{
@@ -118,6 +119,7 @@ const { materia, paraCursar, paraRendir, planDeEstudio, carrera } = Astro.props;
 							materia={materia}
 							dispositivo="Desktop"
 							carrera={carrera}
+							client:load
 						/>
 					</span>
 
