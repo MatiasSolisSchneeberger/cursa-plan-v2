@@ -3609,8 +3609,7 @@
                 },
                 {
                     "año": 6,
-                    "orientaciones": null,
-                    "guidelines": {"hola": "mundo"}
+                    "orientaciones": null
                 }
             ]
         },
@@ -4523,7 +4522,6 @@
                     ],
                     "materias": null
                 }
-                
             ]
         },
         {
@@ -7946,7 +7944,6 @@
                 }
             ]
         },
-        
         {
             "id": "Profesorado-enFísica",
             "carrera": "Profesorado-en-Física",
