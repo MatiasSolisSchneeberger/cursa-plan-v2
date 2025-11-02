@@ -41,32 +41,20 @@ const { title, theme, pagina, ...props } = Astro.props;
 <!doctype html>
 <html lang="es" class="flex justify-center">
 	<head>
-		<!-- ---- MetaDatos ---- -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Título optimizado -->
 		<title>CursaPlan {title && `| ${title}`}</title>
-
-		<!-- Meta descripción -->
 		<meta
 			name="description"
 			content="Encuentra los planes de estudio detallados de todas las carreras de FaCENA. Información actualizada sobre materias, correlatividades y más."
 		/>
 
-		<!-- Palabras clave -->
-		<meta
-			name="keywords"
-			content="CursaPlan, planes de estudio FaCENA, carreras FaCENA, materias, correlatividades, universidad, Facultad de Ciencias Exactas y Naturales"
-		/>
-
-		<!-- Autor -->
+		<link rel="canonical" href="https://cursa-plan.vercel.app/" />
 		<meta name="author" content="CursaPlan Team" />
 
-		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<!-- Etiquetas Open Graph (Para Facebook, LinkedIn, etc.) -->
 		<meta
 			property="og:title"
 			content="CursaPlan - Planes de Estudio de FaCENA"
@@ -75,11 +63,13 @@ const { title, theme, pagina, ...props } = Astro.props;
 			property="og:description"
 			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
 		/>
-		<meta property="og:image" content="/157shots_so.png" />
-		<meta property="og:url" content="https://tudominio.com" />
+		<meta
+			property="og:image"
+			content="https://cursa-plan.vercel.app/157shots_so.png"
+		/>
+		<meta property="og:url" content="https://cursa-plan.vercel.app/" />
 		<meta property="og:type" content="website" />
-
-		<!-- Twitter Card (Para Twitter) -->
+		<meta property="og:site_name" content="CursaPlan" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta
 			name="twitter:title"
@@ -89,38 +79,31 @@ const { title, theme, pagina, ...props } = Astro.props;
 			name="twitter:description"
 			content="Consulta los planes de estudio de todas las carreras de FaCENA con información actualizada sobre materias y correlatividades."
 		/>
-		<meta name="twitter:image" content="/157shots_so.png" />
 		<meta
-			property="og:site_name"
-			content="https://cursa-plan.vercel.app/"
+			name="twitter:image"
+			content="https://cursa-plan.vercel.app/157shots_so.png"
 		/>
-		<!-- Datos estructurados JSON-LD para SEO (Google) -->
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "EducationalOrganization",
+				"@type": "WebSite",
 				"name": "CursaPlan",
-				"url": "https://tudominio.com",
-				"logo": "https://tudominio.com/logo.png",
+				"url": "https://cursa-plan.vercel.app/",
+				"logo": "https://cursa-plan.vercel.app/logo.png",
 				"description": "Consulta los planes de estudio de todas las carreras de FaCENA con información detallada sobre materias y correlatividades.",
-				"sameAs": [
-					"https://facebook.com/cursaplan",
-					"https://twitter.com/cursaplan",
-					"https://instagram.com/cursaplan"
-				]
+				"publisher": {
+					"@type": "Organization",
+					"name": "CursaPlan Team"
+				},
+				"about": {
+					"@type": "EducationalOrganization",
+					"name": "FaCENA"
+				}
 			}
 		</script>
 
 		<meta name="generator" content={Astro.generator} />
 
-		<!-- ---- MaterialDesign ---- -->
-		<script type="importmap">
-			{
-				"imports": {
-					"@material/web/": "https://esm.run/@material/web/"
-				}
-			}
-		</script>
 		<script type="module">
 			import "@material/web/all.js";
 			import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
@@ -147,7 +130,7 @@ const { title, theme, pagina, ...props } = Astro.props;
 		</script>
 
 		<!-- View Transition -->
-		<!-- <ClientRouter /> -->
+		<ClientRouter />
 		<Analytics />
 	</head>
 	<body
