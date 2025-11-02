@@ -12,15 +12,15 @@ import Tabs from "@components/Tabs.astro";
 // Define interfaces for type safety
 
 export const getStaticPaths: GetStaticPaths = () => {
-    return carreras.map(({ slag }) => ({
-        params: { carrera: slag },
+    return carreras.map(({ slug }) => ({
+        params: { carrera: slug },
     }));
 };
 
 const { carrera: carreraSlug } = Astro.params;
 
-// Buscar los datos específicos de la carrera usando el slag
-const carreraData = carreras.find((c) => c.slag === carreraSlug);
+// Buscar los datos específicos de la carrera usando el slug
+const carreraData = carreras.find((c) => c.slug === carreraSlug);
 
 if (!carreraData) return Astro.redirect("/404");
 
@@ -37,12 +37,12 @@ function formatoAño(numero: number): string {
 	}
 }
 
-const {carrera, cursada, emoji, slag} = carreraData
+const {carrera, cursada, emoji, slug} = carreraData
 ---
 
 <Layout
 	title={`${carrera} | Plan de estudio`}
-	theme={slag}>
+	theme={slug}>
 	<HeaderCarrera carrera={carrera} emoji={emoji} />
 
 	<BuscadorMaterias

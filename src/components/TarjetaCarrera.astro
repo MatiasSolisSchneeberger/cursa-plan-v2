@@ -3,28 +3,28 @@ import { Icon } from "astro-icon/components";
 
 interface Props {
 	carrera: string;
-	slag: string;
+	slug: string;
 	emoji: string;
 }
 
-const { carrera, emoji, slag } = Astro.props;
+const { carrera, emoji, slug } = Astro.props;
 ---
 
 <a
-	transition:name={`header-${slag}`}
-	href={`/carreras/${slag}`}
-	class=`theme-${slag} hover:shadow-1 outline-outline bg-primary-200 dark:bg-primary-950 relative flex h-min w-full flex-1 flex-row items-center justify-between overflow-hidden rounded-4xl from-25% py-3 pl-3 pr-9 outline-1 transition-all hover:shadow-md duration-100 ease-in-out outline-primary-400 hover:scale-[1.01] gap-3 hover:bg-primary-100 dark:hover:bg-primary-900`>
+	transition:name={`header-${slug}`}
+	href={`/carreras/${slug}`}
+	class=`theme-${slug} hover:shadow-1 outline-outline bg-primary-200 dark:bg-primary-950 relative flex h-min w-full flex-1 flex-row items-center justify-between overflow-hidden rounded-4xl from-25% py-3 pl-3 pr-9 outline-1 transition-all hover:shadow-md duration-100 ease-in-out outline-primary-400 hover:scale-[1.01] gap-3 hover:bg-primary-100 dark:hover:bg-primary-900`>
 	<div
 		class="relative flex h-10 w-10 shrink-0 flex-row items-center justify-center gap-2.5 rounded-full bg-primary-600 dark:bg-primary-400 p-3">
 		<label
-			transition:name={`emoji-${slag}`}
+			transition:name={`emoji-${slug}`}
 			class="relative flex items-center justify-center text-center text-primary-50 dark:text-primary-950">
 			<Icon name={emoji} size="22" />
 		</label>
 	</div>
 
 	<h2
-		transition:name={`nombre-${slag}`}
+		transition:name={`nombre-${slug}`}
 		class="texto-headline relative flex w-full items-center justify-center self-stretch text-center text-primary-700 dark:text-primary-300">
 		{/* Texto corto para tamaños menores a md */}
 		<span class="block">

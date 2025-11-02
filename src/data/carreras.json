@@ -3,7 +3,7 @@
         {
             
             "carrera": "Bioquímica",
-            "slag": "bioquimica",
+            "slug": "bioquimica",
             "emoji": "microscope",
             "cursada": [
                 {
@@ -1341,7 +1341,7 @@
         {
             
             "carrera": "Ingeniería en Agrimensura",
-            "slag": "ingenieria-en-agrimensura",
+            "slug": "ingenieria-en-agrimensura",
             "emoji": "ruler-2",
             "cursada": [
                 {
@@ -2164,7 +2164,7 @@
         {
             
             "carrera": "Ingeniería Eléctrica",
-            "slag": "ingenieria-electrica",
+            "slug": "ingenieria-electrica",
             "emoji": "bolt",
             "cursada": [
                 {
@@ -2685,7 +2685,7 @@
         {
             
             "carrera": "Ingeniería en Electrónica",
-            "slag": "ingenieria-en-electronica",
+            "slug": "ingenieria-en-electronica",
             "emoji": "robot",
             "cursada": [
                 {
@@ -3621,7 +3621,7 @@
         {
             
             "carrera": "Licenciatura en Ciencias Biológicas",
-            "slag": "licenciatura-en-ciencias-biologicas",
+            "slug": "licenciatura-en-ciencias-biologicas",
             "emoji": "seedling",
             "cursada": [
                 {
@@ -4534,7 +4534,7 @@
         {
             
             "carrera": "Licenciatura en Ciencias Físicas",
-            "slag": "licenciatura-en-ciencias-fisicas",
+            "slug": "licenciatura-en-ciencias-fisicas",
             "emoji": "atom",
             "cursada": [
                 {
@@ -5292,7 +5292,7 @@
         {
             
             "carrera": "Licenciatura en Ciencias Químicas",
-            "slag": "licenciatura-en-ciencias-quimicas",
+            "slug": "licenciatura-en-ciencias-quimicas",
             "emoji": "flask",
             "cursada": [
                 {
@@ -6348,7 +6348,7 @@
         {
             
             "carrera": "Licenciatura en Matemática",
-            "slag": "licenciatura-en-matematica",
+            "slug": "licenciatura-en-matematica",
             "emoji": "math",
             "cursada": [
                 {
@@ -6815,7 +6815,7 @@
         {
             
             "carrera": "Licenciatura en Sistemas de Información",
-            "slag": "licenciatura-en-sistemas-de-informacion",
+            "slug": "licenciatura-en-sistemas-de-informacion",
             "emoji": "device-imac",
             "cursada": [
                 {
@@ -7433,7 +7433,7 @@
         {
             
             "carrera": "Profesorado en Biología",
-            "slag": "profesorado-en-biologia",
+            "slug": "profesorado-en-biologia",
             "emoji": "butterfly",
             "cursada": [
                 {
@@ -7960,7 +7960,7 @@
         {
             
             "carrera": "Profesorado en Física",
-            "slag": "profesorado-en-fisica",
+            "slug": "profesorado-en-fisica",
             "emoji": "telescope",
             "cursada": [
                 {
@@ -8634,7 +8634,7 @@
         {
             
             "carrera": "Profesorado en Matemática",
-            "slag": "profesorado-en-matematica",
+            "slug": "profesorado-en-matematica",
             "emoji": "ruler",
             "cursada": [
                 {

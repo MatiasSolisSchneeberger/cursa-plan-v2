@@ -3,23 +3,23 @@ import { Icon } from "astro-icon/components";
 import ButtonIcon from "@components/ButtonIcon.astro";
 
 interface Props {
-	slag: string;
+	slug: string;
 	carrera: string;
 	emoji: string;
 }
 
-const { slag, carrera, emoji } = Astro.props;
+const { slug, carrera, emoji } = Astro.props;
 ---
 
 <header
-	transition:name=`header-${slag}`
-	class=`theme-${slag} rounded-3xl w-full bg-primary-100 dark:bg-primary-900 outline-1 outline-primary-300 dark:outline-primary-700 p-3 flex flex-row gap-2.5 items-center justify-start self-stretch`>
+	transition:name=`header-${slug}`
+	class=`theme-${slug} rounded-3xl w-full bg-primary-100 dark:bg-primary-900 outline-1 outline-primary-300 dark:outline-primary-700 p-3 flex flex-row gap-2.5 items-center justify-start self-stretch`>
 	<ButtonIcon href="/" size="md" style="primary">
 		<Icon name="arrow-left" size={22} />
 	</ButtonIcon>
 	<h2
-		transition:name=`nombre-${slag}`
-		class=`theme-${slag} sm:hidden texto-headline text-primary-600 dark:text-primary-400 relative flex-1 flex items-center justify-center text-center`>
+		transition:name=`nombre-${slug}`
+		class=`theme-${slug} sm:hidden texto-headline text-primary-600 dark:text-primary-400 relative flex-1 flex items-center justify-center text-center`>
 		{
 			carrera.replace("Licenciatura", "Lic.")
 				.replace("Ingeniería", "Ing.")
@@ -27,8 +27,8 @@ const { slag, carrera, emoji } = Astro.props;
 		}
 	</h2>
 	<h2
-		transition:name=`nombre-${slag}`
-		class=`hidden sm:flex theme-${slag} texto-headline text-primary-600 dark:text-primary-400 relative flex-1 items-center justify-center text-center`>
+		transition:name=`nombre-${slug}`
+		class=`hidden sm:flex theme-${slug} texto-headline text-primary-600 dark:text-primary-400 relative flex-1 items-center justify-center text-center`>
 		{carrera}
 	</h2>
 	<span
