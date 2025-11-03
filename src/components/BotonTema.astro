@@ -1,72 +1,78 @@
 ---
-import { Icon } from "astro-icon/components";
+import ButtonIcon from "@components/ButtonIcon.astro";
+import { IconSun, IconMoon } from "@tabler/icons-react";
+
+const {... props} = Astro.props
 ---
 
-<md-fab id="themeToggle" aria-label="Cambiar tema" class="fixed bottom-2 left-2 z-50" variant="primary">
-	<Icon name="sun-moon" slot="icon" class="hidden dark:inline" size={22} />
-</md-fab>
+<ButtonIcon id="themeToggle" {... props} style="secondary" size="md">
+    <span id="iconSun" style="display: none;">
+        <IconSun size={24} />
+    </span>
+    <span id="iconMoon" style="display: none;">
+        <IconMoon size={24} />
+    </span>
+</ButtonIcon>
 
 <!-- script -->
 <script>
-	/* 	console.log("Script de cambio de tema cargado"); */
+    const setIcons = (theme: string | null) => {
+        const sun = document.getElementById("iconSun");
+        const moon = document.getElementById("iconMoon");
+        if (!sun || !moon) return;
+        if (theme === "dark") {
+            sun.style.display = "none";
+            moon.style.display = "inline";
+        } else {
+            sun.style.display = "inline";
+            moon.style.display = "none";
+        }
+    };
 
-	const theme = (() => {
-		if (
-			typeof localStorage !== "undefined" &&
-			localStorage.getItem("picoPreferredColorScheme")
-		) {
-			return localStorage.getItem("picoPreferredColorScheme");
-		}
-		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-			return "dark";
-		}
-		return "light";
-	})();
+    const theme = (() => {
+        if (
+            typeof localStorage !== "undefined" &&
+            localStorage.getItem("picoPreferredColorScheme")
+        ) {
+            return localStorage.getItem("picoPreferredColorScheme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            return "dark";
+        }
+        return "light";
+    })();
 
-	if (theme === "light") {
-		document.documentElement.setAttribute("data-theme", "light");
-		document.documentElement.classList.remove("dark");
-	} else {
-		document.documentElement.setAttribute("data-theme", "dark");
-		document.documentElement.classList.add("dark");
-	}
+    if (theme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.classList.remove("dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.classList.add("dark");
+    }
+    window.localStorage.setItem("picoPreferredColorScheme", theme);
+    setIcons(theme);
 
-	window.localStorage.setItem("picoPreferredColorScheme", theme as string);
+    const handleToggleClick = () => {
+        const element = document.documentElement;
+        element.classList.toggle("dark");
+        const isDark = element.classList.contains("dark");
+        const newTheme = isDark ? "dark" : "light";
+        element.setAttribute("data-theme", newTheme);
+        localStorage.setItem("picoPreferredColorScheme", newTheme);
+        setIcons(newTheme);
+    };
 
-	const handleToggleClick = () => {
-		const element = document.documentElement;
-		element.classList.toggle("dark");
+    document
+        .getElementById("themeToggle")
+        .addEventListener("click", handleToggleClick);
 
-		const isDark = element.classList.contains("dark");
+    document.addEventListener("keydown", (event) => {
+        if (event.ctrlKey && event.key === "d") {
+            event.preventDefault();
+            handleToggleClick();
+        }
+    });
 
-		if (isDark) {
-			element.setAttribute("data-theme", "dark");
-		} else {
-			element.setAttribute("data-theme", "light");
-		}
-
-		localStorage.setItem(
-			"picoPreferredColorScheme",
-			isDark ? "dark" : "light",
-		);
-	};
-
-	document
-		.getElementById("themeToggle")!
-		.addEventListener("click", handleToggleClick);
-
-	// Add event listener for Ctrl+D
-	document.addEventListener("keydown", (event) => {
-		if (event.ctrlKey && event.key === "d") {
-			event.preventDefault(); // Prevent default action
-			handleToggleClick(); // Call the toggle function
-		}
-	});
-	if (localStorage.getItem("picoPreferredColorScheme") === "dark") {
-		document.documentElement.setAttribute("data-theme", "dark");
-		document.documentElement.classList.add("dark");
-	} else {
-		document.documentElement.setAttribute("data-theme", "light");
-		document.documentElement.classList.remove("dark");
-	}
+    // Inicializar íconos al cargar
+    setIcons(localStorage.getItem("picoPreferredColorScheme") || theme);
 </script>

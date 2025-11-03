@@ -11,10 +11,10 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), icon()],
-  adapter: vercel(),
-
-  vite: {
-    plugins: [tailwindcss()]
-  }
+    integrations: [react(), icon()],
+    adapter: vercel(),
+    output: 'server',
+    vite: {
+        plugins: [tailwindcss()]
+    }
 });

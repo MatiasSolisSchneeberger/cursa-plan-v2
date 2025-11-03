@@ -1,0 +1,108 @@
+---
+import Tabs from "@components/Tabs.astro";
+import TarjetaMateria from "@components/TarjetaMateria.astro";
+
+interface Props {
+	carrera: string;
+	año: number;
+	orientaciones: Array<{
+		nombre: string;
+		materias?: Array<Materia>;
+	}> | null;
+	materias: Array<Materia> | null;
+}
+
+interface Materia {
+	materia: string;
+	codigo?: number;
+	paraCursar: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	paraRendir: Array<{
+		mat: string;
+		cond: "R" | "A" | null; // "R" = Regular, "A" = Aprobada
+	}>;
+	planDeEstudio: string | null;
+	mesas: Mesa[] | null;
+}
+
+interface Mesa {
+	fecha: string;
+}
+
+const { carrera, año, orientaciones, materias } = Astro.props;
+
+function obtenerSufijo(año: number) {
+	if (año === 1) return "er";
+	if (año === 2) return "do";
+	if (año === 3) return "ro";
+	return "to"; // Para 4 o más
+}
+
+const sufijo = obtenerSufijo(año);
+---
+
+<section
+	id=`Año-${año}`
+	class=`flex flex-col gap-3 items-center justify-center self-stretch shrink-0 relative w-full overflow-hidden`>
+	<!-- encabezado año -->
+	<h3 class="texto-headline w-full text-center text-background-900 dark:text-background-200">
+		{año}{sufijo} Año
+	</h3>
+
+	{
+		orientaciones && (
+			<Tabs
+				tab={orientaciones.map(({ nombre }) => ({
+					label: nombre,
+					href: `#${año}-${nombre}`,
+				}))}
+			/>
+		)
+	}
+
+	{
+		materias && (
+			<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+				{materias?.map(({ materia, paraCursar, mesas, paraRendir }) => (
+					<TarjetaMateria
+						materia={materia}
+						paraCursar={paraCursar}
+						paraRendir={paraRendir}
+						carrera={carrera}
+					/>
+				))}
+			</div>
+		)
+	}
+	{
+		orientaciones &&
+			orientaciones.map(({ nombre, materias }) => (
+				<div id={`${año}-${nombre}`} class="w-full space-y-2 pt-3">
+					<h4 class="texto-headline w-full text-center text-background-900 dark:text-background-200">
+						{nombre}
+					</h4>
+					{materias && (
+						<div class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 2xl:grid-cols-3">
+							{materias?.map(
+								({
+									materia,
+									paraCursar,
+									mesas,
+									paraRendir,
+								}) => (
+									<TarjetaMateria
+										carrera={carrera}
+										materia={materia}
+										paraCursar={paraCursar}
+										paraRendir={paraRendir}
+									/>
+								),
+							)}
+						</div>
+					)}
+				</div>
+			))
+	}
+</section>

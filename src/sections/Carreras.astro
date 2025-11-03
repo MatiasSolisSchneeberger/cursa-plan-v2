@@ -1,19 +1,33 @@
 ---
-import {carreras} from '@data/carreras.json';
-import TarjetaCarrera from '@components/TarjetaCarrera.astro';
+import { supabase } from "@lib/supabase";
 
+import { carreras } from "@data/carreras.json";
+import TarjetaCarrera from "@components/TarjetaCarrera.astro";
+
+const { data, error } = await supabase
+	.from("carreras")
+	.select("nombre,slug,emojie");
 ---
 
-<section class="flex flex-col gap-6 items-center justify-center flex-wrap content-start self-stretch shrink-0 relative">
-    <h2 class="text-headline-medium text-surface-tint text-center">
-        Carreras
-    </h2>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full items-start justify-start flex-wrap content-start self-stretch shrink-0 relative">
-        {carreras.map(({carrera, emoji, cursada}) => {   
-            return (
-                <TarjetaCarrera carrera={carrera} emoji={emoji} cursada={cursada.length > 0}/>
-            )
-            
-        })}
-    </ul>
+<section
+	class="relative flex shrink-0 flex-col flex-wrap content-start items-center justify-center gap-6 self-stretch">
+	<h2 class="texto-headline text-center text-text-950 dark:text-text-50">
+		Carreras
+	</h2>
+	<ul
+		class="relative grid w-full shrink-0 grid-cols-1 flex-wrap content-start items-start justify-start gap-6 self-stretch md:grid-cols-2 lg:grid-cols-3">
+		{
+			data
+				?.filter((item) => item.slug != "profesorado-en-ciencias-quimicas-y-del-ambiente")
+				.map(({ nombre, slug, emojie }) => {
+					return (
+						<TarjetaCarrera
+							slug={slug}
+							carrera={nombre}
+							emoji={emojie}
+						/>
+					);
+				})
+		}
+	</ul>
 </section>

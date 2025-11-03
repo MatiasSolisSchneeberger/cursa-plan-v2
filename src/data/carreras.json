@@ -1,8 +1,9 @@
 {
     "carreras": [
         {
-            "id": "Bioquimica",
+            
             "carrera": "Bioquímica",
+            "slug": "bioquimica",
             "emoji": "microscope",
             "cursada": [
                 {
@@ -1338,8 +1339,9 @@
             ]
         },
         {
-            "id": "IngenieriaEnAgrimensura",
-            "carrera": "Ingeniería-en-Agrimensura",
+            
+            "carrera": "Ingeniería en Agrimensura",
+            "slug": "ingenieria-en-agrimensura",
             "emoji": "ruler-2",
             "cursada": [
                 {
@@ -1361,7 +1363,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Ingeniería-en-Agrimensura)",
+                            "materia": "Química General (Ingeniería en Agrimensura)",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -2122,24 +2124,24 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Práctica Profesional Supervisada (Anual) (Ingeniería-en-Agrimensura)",
+                            "materia": "Práctica Profesional Supervisada (Anual) (Ingeniería en Agrimensura)",
                             "codigo": 504,
                             "paraCursar": [
                                 {
                                     "mat": "Tener regularizada y aprobada todo 4to año inclusive",
-                                    "cond": "R"
+                                    "cond": null
                                 }
                             ],
                             "paraRendir": [
                                 {
                                     "mat": "Aprobada todo 4to año inclusive",
-                                    "cond": "A"
+                                    "cond": null
                                 }
                             ],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Trabajo Final (Anual) (Ingeniería-en-Agrimensura)",
+                            "materia": "Trabajo Final (Anual) (Ingeniería en Agrimensura)",
                             "codigo": 505,
                             "paraCursar": [
                                 {
@@ -2160,8 +2162,9 @@
             ]
         },
         {
-            "id": "IngenieríaEléctrica",
-            "carrera": "Ingeniería-Eléctrica",
+            
+            "carrera": "Ingeniería Eléctrica",
+            "slug": "ingenieria-electrica",
             "emoji": "bolt",
             "cursada": [
                 {
@@ -2181,7 +2184,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Ingeniería-Eléctrica)",
+                            "materia": "Química General (Ingeniería Eléctrica)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -2326,7 +2329,7 @@
                             "materia": "Seminario de Ingeniería - Módulo II",
                             "paraCursar": [
                                 {
-                                    "mat": "Seminario de Ingeni ería- Módulo I",
+                                    "mat": "Seminario de Ingeniería - Módulo I",
                                     "cond": "A"
                                 }
                             ],
@@ -2482,7 +2485,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Economía Y Organización Industrial",
+                            "materia": "Economía y Organización Industrial",
                             "paraCursar": [
                                 {
                                     "mat": "Seminario de Ingeniería - Módulo III",
@@ -2649,7 +2652,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Diseño De Líneas De Transmisión Y Estaciones Transformadoras",
+                            "materia": "Diseño de Líneas de Transmisión y Estaciones Transformadoras",
                             "paraCursar": [
                                 {
                                     "mat": "Instalaciones Eléctricas II",
@@ -2680,8 +2683,9 @@
             ]
         },
         {
-            "id": "IngenieríaEnElectrónica",
-            "carrera": "Ingeniería-en-Electrónica",
+            
+            "carrera": "Ingeniería en Electrónica",
+            "slug": "ingenieria-en-electronica",
             "emoji": "robot",
             "cursada": [
                 {
@@ -2703,7 +2707,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Ingeniería-en-Electrónica)",
+                            "materia": "Química General (Ingeniería en Electrónica)",
                             "codigo": 103,
                             "paraCursar": [],
                             "paraRendir": [],
@@ -3051,7 +3055,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Electromagnetismo (Ingeniería-en-Electrónica)",
+                            "materia": "Electromagnetismo (Ingeniería en Electrónica)",
                             "codigo": 304,
                             "paraCursar": [
                                 {
@@ -3614,8 +3618,9 @@
             ]
         },
         {
-            "id": "LicenciaturaEnCienciasBiológicas",
-            "carrera": "Licenciatura-en-Ciencias-Biológicas",
+            
+            "carrera": "Licenciatura en Ciencias Biológicas",
+            "slug": "licenciatura-en-ciencias-biologicas",
             "emoji": "seedling",
             "cursada": [
                 {
@@ -3635,7 +3640,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Licenciatura-en-Ciencias-Biológicas)",
+                            "materia": "Química General (Licenciatura en Ciencias Biológicas)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -3657,7 +3662,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química Biológica (Licenciatura-en-Ciencias-Biológicas)",
+                            "materia": "Química Biológica (Licenciatura en Ciencias Biológicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Química General",
@@ -3719,7 +3724,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Bioestadística (Licenciatura-en-Ciencias-Biológicas)",
+                            "materia": "Bioestadística (Licenciatura en Ciencias Biológicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Matemática",
@@ -4525,8 +4530,9 @@
             ]
         },
         {
-            "id": "LicenciaturaEnCienciasFísicas",
-            "carrera": "Licenciatura-en-Ciencias-Físicas",
+            
+            "carrera": "Licenciatura en Ciencias Físicas",
+            "slug": "licenciatura-en-ciencias-fisicas",
             "emoji": "atom",
             "cursada": [
                 {
@@ -4872,7 +4878,7 @@
                     "orientaciones": null,
                     "materias": [
                         {
-                            "materia": "Química General (Licenciatura-en-Ciencias-Físicas)",
+                            "materia": "Química General (Licenciatura en Ciencias Físicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Calor y Termodinámica",
@@ -4888,7 +4894,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Electromagnetismo (Licenciatura-en-Ciencias-Físicas)",
+                            "materia": "Electromagnetismo (Licenciatura en Ciencias Físicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Electricidad y Magnetismo",
@@ -5282,8 +5288,9 @@
             ]
         },
         {
-            "id": "LicenciaturaEnCienciasQuímicas",
-            "carrera": "Licenciatura-en-Ciencias-Químicas",
+            
+            "carrera": "Licenciatura en Ciencias Químicas",
+            "slug": "licenciatura-en-ciencias-quimicas",
             "emoji": "flask",
             "cursada": [
                 {
@@ -5297,7 +5304,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Licenciatura-en-Ciencias-Químicas)",
+                            "materia": "Química General (Licenciatura en Ciencias Químicas)",
                             "paraCursar": [],
                             "paraRendir": [],
                             "planDeEstudio": null
@@ -5565,7 +5572,7 @@
                     "orientaciones": null,
                     "materias": [
                         {
-                            "materia": "Química Biológica (Licenciatura-en-Ciencias-Químicas)",
+                            "materia": "Química Biológica (Licenciatura en Ciencias Químicas)",
                             "paraCursar": [
                                 {
                                     "mat": "Química Analítica I",
@@ -6127,7 +6134,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Ecotoxicología Y Sanidad Laboral Y Ambiental",
+                            "materia": "Ecotoxicología y Sanidad Laboral y Ambiental",
                             "paraCursar": [
                                 {
                                     "mat": "Estadística y Análisis de Datos",
@@ -6337,8 +6344,9 @@
             ]
         },
         {
-            "id": "Licenciatura-enMatemática",
-            "carrera": "Licenciatura-en-Matemática",
+            
+            "carrera": "Licenciatura en Matemática",
+            "slug": "licenciatura-en-matematica",
             "emoji": "math",
             "cursada": [
                 {
@@ -6803,8 +6811,9 @@
             ]
         },
         {
-            "id": "Licenciatura-en-Sistemas-deInformación",
-            "carrera": "Licenciatura-en-Sistemas-de-Información",
+            
+            "carrera": "Licenciatura en Sistemas de Información",
+            "slug": "licenciatura-en-sistemas-de-informacion",
             "emoji": "device-imac",
             "cursada": [
                 {
@@ -6830,13 +6839,13 @@
                             "codigo": 0,
                             "paraCursar": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos I",
+                                    "mat": "Algoritmos y Estructura de Datos I",
                                     "cond": "R"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos I",
+                                    "mat": "Algoritmos y Estructura de Datos I",
                                     "cond": "A"
                                 }
                             ],
@@ -6872,17 +6881,17 @@
                             "codigo": 0,
                             "paraCursar": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos I",
+                                    "mat": "Algoritmos y Estructura de Datos I",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "A"
                                 }
                             ],
@@ -6893,28 +6902,28 @@
                             "codigo": 0,
                             "paraCursar": [
                                 {
-                                    "mat": "Logica Y Matematica Computacional",
+                                    "mat": "Logica y Matematica Computacional",
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos I",
+                                    "mat": "Algoritmos y Estructura de Datos I",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Logica Y Matematica Computacional",
+                                    "mat": "Logica y Matematica Computacional",
                                     "cond": "A"
                                 }
                             ],
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Cálculo Diferencial e Integral (Licenciatura-en-Sistemas-de-Información)",
+                            "materia": "Cálculo Diferencial e Integral (Licenciatura en Sistemas de Información)",
                             "codigo": 0,
                             "paraCursar": [
                                 {
-                                    "mat": "Logica Y Matematica Computacional",
+                                    "mat": "Logica y Matematica Computacional",
                                     "cond": "R"
                                 },
                                 {
@@ -6928,7 +6937,7 @@
                                     "cond": "A"
                                 },
                                 {
-                                    "mat": "Logica Y Matematica Computacional",
+                                    "mat": "Logica y Matematica Computacional",
                                     "cond": "A"
                                 }
                             ],
@@ -6943,13 +6952,13 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "A"
                                 },
                                 {
@@ -6968,13 +6977,13 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "A"
                                 }
                             ],
                             "paraRendir": [
                                 {
-                                    "mat": "Algoritmos Y Estructura de Datos II",
+                                    "mat": "Algoritmos y Estructura de Datos II",
                                     "cond": "A"
                                 },
                                 {
@@ -7420,8 +7429,9 @@
             ]
         },
         {
-            "id": "Profesorado-enBiología",
-            "carrera": "Profesorado-en-Biología",
+            
+            "carrera": "Profesorado en Biología",
+            "slug": "profesorado-en-biologia",
             "emoji": "butterfly",
             "cursada": [
                 {
@@ -7945,8 +7955,9 @@
             ]
         },
         {
-            "id": "Profesorado-enFísica",
-            "carrera": "Profesorado-en-Física",
+            
+            "carrera": "Profesorado en Física",
+            "slug": "profesorado-en-fisica",
             "emoji": "telescope",
             "cursada": [
                 {
@@ -8152,7 +8163,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Química General (Profesorado-en-Física)",
+                            "materia": "Química General (Profesorado en Física)",
                             "paraCursar": [
                                 {
                                     "mat": "Cálculo Diferencial e Integral II",
@@ -8618,8 +8629,9 @@
             ]
         },
         {
-            "id": "Profesorado-enMatemática",
-            "carrera": "Profesorado-en-Matemática",
+            
+            "carrera": "Profesorado en Matemática",
+            "slug": "profesorado-en-matematica",
             "emoji": "ruler",
             "cursada": [
                 {
@@ -8907,7 +8919,7 @@
                             "planDeEstudio": null
                         },
                         {
-                            "materia": "Geometría Métrica Y Trigonometría",
+                            "materia": "Geometría Métrica y Trigonometría",
                             "paraCursar": [
                                 {
                                     "mat": "Álgebra Lineal y Geometría",
@@ -9007,7 +9019,7 @@
                                     "cond": "R"
                                 },
                                 {
-                                    "mat": "Geometría Métrica Y Trigonometría",
+                                    "mat": "Geometría Métrica y Trigonometría",
                                     "cond": "R"
                                 }
                             ],

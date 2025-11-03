@@ -1,0 +1,92 @@
+---
+interface Props {
+	style:
+		| "primary"
+		| "secondary"
+		| "tertiary"
+		| "text"
+		| "danger"
+		| "warning"
+		| "success"
+		| "info"
+		| string;
+	href?: string;
+	disabled?: boolean;
+	id?: string;
+	className?: string;
+}
+
+const {
+	style = "primary",
+	href,
+	disabled = false,
+	id,
+	className,
+	...props
+} = Astro.props;
+
+if (href && disabled) {
+	throw new Error(
+		"No se puede usar 'href' y 'disabled' al mismo tiempo en el componente <Button/>",
+	);
+}
+---
+
+{
+	href && !disabled ? (
+		<a
+			class:list={[
+				`texto-label relative flex min-h-10 flex-row items-center justify-center gap-0 rounded-xl px-3 text-nowrap transition-all duration-150 ease-in-out select-none not-disabled:hover:rounded-2xl not-disabled:hover:shadow-md not-disabled:focus:outline-2 not-disabled:focus:outline-offset-2 not-disabled:focus:outline-background-900 not-disabled:active:scale-95 disabled:cursor-not-allowed disabled:opacity-65 dark:not-disabled:focus:outline-background-200 ${className}`,
+				{
+					"bg-primary-600 text-primary-100 dark:bg-primary-400 dark:text-primary-900":
+						style === "primary",
+					"bg-secondary-400 text-secondary-800 dark:bg-secondary-600 dark:text-secondary-200":
+						style === "secondary",
+					"text-tertiary-600 outline-1 outline-tertiary-600 not-disabled:hover:outline-2":
+						style === "tertiary",
+					"text-text-800 underline decoration-text-800 underline-offset-4 not-disabled:hover:text-text-700 not-disabled:hover:decoration-text-700 not-disabled:hover:decoration-2":
+						style === "text",
+					"bg-danger-600 text-danger-100": style === "danger",
+					"bg-warning-600 text-warning-100": style === "warning",
+					"bg-success-600 text-success-100": style === "success",
+					"bg-info-600 text-info-100": style === "info",
+				},
+			]}
+			href={href}
+			id={id}>
+			<slot name="iconLeft" />
+			<span class="px-2">
+				<slot />
+			</span>
+			<slot name="iconRight" />
+		</a>
+	) : (
+		<button
+			class:list={[
+				`texto-label relative flex h-10 min-h-10 flex-row items-center justify-center gap-0 rounded-xl px-3 text-nowrap transition-all duration-150 ease-in-out select-none not-disabled:hover:rounded-2xl not-disabled:hover:shadow-md not-disabled:focus:outline-2 not-disabled:focus:outline-offset-2 not-disabled:focus:outline-background-900 not-disabled:active:scale-95 disabled:cursor-not-allowed disabled:opacity-65 dark:not-disabled:focus:outline-background-200 ${className}`,
+				{
+					"bg-primary-600 text-primary-100 dark:bg-primary-400 dark:text-primary-900":
+						style === "primary",
+					"bg-secondary-400 text-secondary-800 dark:bg-secondary-600 dark:text-secondary-200":
+						style === "secondary",
+					"text-tertiary-600 outline-1 outline-tertiary-600 not-disabled:hover:outline-2":
+						style === "tertiary",
+					"text-text-800 underline decoration-text-800 underline-offset-4 not-disabled:hover:text-text-700 not-disabled:hover:decoration-text-700 not-disabled:hover:decoration-2 dark:text-text-200 dark:decoration-text-200 dark:not-disabled:hover:text-text-300 dark:not-disabled:hover:decoration-text-300":
+						style === "text",
+					"bg-danger-600 text-danger-100": style === "danger",
+					"bg-warning-600 text-warning-100": style === "warning",
+					"bg-success-600 text-success-100": style === "success",
+					"bg-info-600 text-info-100": style === "info",
+				},
+			]}
+			disabled={disabled}
+			{...props}
+			id={id}>
+			<slot name="iconLeft" />
+			<span class="px-2">
+				<slot />
+			</span>
+			<slot name="iconRight" />
+		</button>
+	)
+}

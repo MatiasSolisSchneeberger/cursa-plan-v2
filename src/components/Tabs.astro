@@ -1,0 +1,35 @@
+---
+import Divider from "@components/Divider.astro";
+
+interface Props {
+	tab: Array<{
+		iconLeft?: string;
+		label: string;
+		chip?: {
+			style: string;
+			text: string;
+			selection?: boolean;
+		};
+		href: string;
+	}>;
+}
+
+const { tab, ...props } = Astro.props;
+---
+
+<div
+	class="flex w-min flex-row justify-self-center overflow-hidden rounded-xl outline-1 outline-background-300 dark:outline-background-700"
+	{...props}>
+	{
+		tab.map(({ label , href, chip}, index) => (
+			<div
+				class={`flex items-center ${index !== tab.length - 1 ? "border-r border-background-300 dark:border-background-700" : ""}`}>
+				<a
+					href={href}
+					class="texto-label h-full px-5 py-3 text-text-900 dark:text-text-100 transition-colors hover:bg-background-100 dark:hover:bg-background-900">
+					{label}
+				</a>
+			</div>
+		))
+	}
+</div>

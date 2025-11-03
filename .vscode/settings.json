@@ -29,5 +29,9 @@
     },
     "IDX.aI.enableInlineCompletion": true,
     "IDX.aI.enableCodebaseIndexing": true,
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "cSpell.words": [
+        "oklch"
+    ],
+    "references.preferredLocation": "view"
 }

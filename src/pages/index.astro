@@ -1,10 +1,12 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import HeroTitle from '@sections/HeroTitle.astro';
-import Carreras from '@sections/Carreras.astro';
+import Layout from "@layouts/Layout.astro";
+import HeroTitle from "@sections/HeroTitle.astro";
+import Carreras from "@sections/Carreras.astro";
+import { map } from "astro:schema";
+
 ---
 
-<Layout title="CursaPlan | Plan de estudios" pagina='Inicio'>
+<Layout pagina="Inicio">
 	<HeroTitle />
 	<Carreras />
 </Layout>

@@ -1,0 +1,15 @@
+---
+interface Props {
+	vertical?: boolean;
+}
+
+const { vertical } = Astro.props;
+---
+
+{
+	vertical ? (
+		<div class="inline-block h-full w-px bg-background-300 dark:bg-background-700" />
+	) : (
+		<hr class="h-px w-full border-background-300 dark:border-background-700" />
+	)
+}
