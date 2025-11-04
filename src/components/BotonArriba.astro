@@ -5,41 +5,43 @@ import { IconArrowUp } from "@tabler/icons-react";
 
 <ButtonIcon
 	id="scrollToTop"
-	className="invisible fixed right-2 z-50 bottom-2 scale-90 opacity-0"
+	className="invisible fixed right-2 bottom-2 z-50 scale-90 opacity-0"
 	style="secondary"
 	size="lg">
-	<IconArrowUp size={32}/>
+	<IconArrowUp size={32} />
 </ButtonIcon>
 
 <script>
-	const scrollToTopButton = document.getElementById("scrollToTop");
+	document.addEventListener("astro:page-load", () => {
+		const scrollToTopButton = document.getElementById("scrollToTop");
 
-	const toggleVisibility = () => {
-		if (window.scrollY > 200) {
-			// Mostrar después de scrollear 200px
-			scrollToTopButton?.classList.remove(
-				"invisible",
-				"opacity-0",
-				"scale-90",
-			);
-			scrollToTopButton?.classList.add("opacity-100", "scale-100");
-		} else {
-			scrollToTopButton?.classList.remove("opacity-100", "scale-100");
-			scrollToTopButton?.classList.add(
-				"invisible",
-				"opacity-0",
-				"scale-90",
-			);
-		}
-	};
+		const toggleVisibility = () => {
+			if (window.scrollY > 200) {
+				// Mostrar después de scrollear 200px
+				scrollToTopButton?.classList.remove(
+					"invisible",
+					"opacity-0",
+					"scale-90",
+				);
+				scrollToTopButton?.classList.add("opacity-100", "scale-100");
+			} else {
+				scrollToTopButton?.classList.remove("opacity-100", "scale-100");
+				scrollToTopButton?.classList.add(
+					"invisible",
+					"opacity-0",
+					"scale-90",
+				);
+			}
+		};
 
-	const handleScrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
+		const handleScrollToTop = () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		};
 
-	window.addEventListener("scroll", toggleVisibility);
-	scrollToTopButton?.addEventListener("click", handleScrollToTop);
+		window.addEventListener("scroll", toggleVisibility);
+		scrollToTopButton?.addEventListener("click", handleScrollToTop);
+	});
 </script>

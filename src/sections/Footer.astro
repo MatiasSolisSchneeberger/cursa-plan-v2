@@ -1,10 +1,13 @@
 ---
+import { supabase } from "@lib/supabase";
 import LogoPagina from "@components/LogoPagina.astro";
 import MenuItem from "@components/MenuItem.astro";
 import MiLogo from "@components/MiLogo.astro";
-import { carreras } from "@data/carreras.json";
+/*import { carreras } from "@data/carreras.json";*/
 
-const enlacesCarreras = carreras.map(({ carrera, slug, emoji }) => {
+const {data, error} = await supabase.from("carreras").select("nombre,slug,emojie").order("nombre");
+
+/*const enlacesCarreras = carreras.map(({ carrera, slug, emoji }) => {
 	// Reemplazos para mostrar versión corta
 	carrera = carrera
 		.replace(/\bIngeniería\b/, "Ing.")
@@ -17,7 +20,7 @@ const enlacesCarreras = carreras.map(({ carrera, slug, emoji }) => {
 		slug,
 		emoji,
 	};
-});
+});*/
 
 const contactos = [
 	{
@@ -83,13 +86,13 @@ const contactos = [
 			<div
 				class="relative shrink-0 flex-col items-start justify-start gap-2.5 sm:flex">
 				{
-					enlacesCarreras.map(
-						({ href, emoji, carrera , slug}) => (
+					data?.map(
+						({emojie, nombre , slug}) => (
 							<MenuItem
 								className={`theme-${slug}`}
-								text={carrera}
-								iconLeft={{ icon: emoji, color: "primary" }}
-								href={href}
+								text={nombre}
+								iconLeft={{ icon: emojie, color: "primary" }}
+								href={`/carreras/${slug}`}
 							/>
 						),
 					)

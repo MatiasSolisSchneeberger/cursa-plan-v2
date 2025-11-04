@@ -49,7 +49,7 @@ const { materia, paraCursar, paraRendir, planDeEstudio, carrera } = Astro.props;
 
 				<!-- Footer -->
 				<footer
-					class="flex h-full flex-col min-w-full w-full snap-center items-start justify-start gap-2.5">
+					class="flex h-full w-full min-w-full snap-center flex-col items-start justify-start gap-2.5">
 					<!-- Mesa de Examenes -->
 					<FechaMesas
 						materia={materia}
@@ -154,7 +154,7 @@ const { materia, paraCursar, paraRendir, planDeEstudio, carrera } = Astro.props;
 
 <script is:inline>
 	// Add slider functionality
-	document.addEventListener("DOMContentLoaded", () => {
+	document.addEventListener("astro:page-load", () => {
 		const sliders = document.querySelectorAll(".slider-container");
 
 		sliders.forEach((slider) => {
