@@ -5,7 +5,10 @@ import MenuItem from "@components/MenuItem.astro";
 import MiLogo from "@components/MiLogo.astro";
 /*import { carreras } from "@data/carreras.json";*/
 
-const {data, error} = await supabase.from("carreras").select("nombre,slug,emojie").order("nombre");
+const { data, error } = await supabase
+	.from("carreras")
+	.select("nombre,slug,emojie")
+	.order("nombre");
 
 /*const enlacesCarreras = carreras.map(({ carrera, slug, emoji }) => {
 	// Reemplazos para mostrar versión corta
@@ -86,16 +89,20 @@ const contactos = [
 			<div
 				class="relative shrink-0 flex-col items-start justify-start gap-2.5 sm:flex">
 				{
-					data?.map(
-						({emojie, nombre , slug}) => (
+					data
+						?.filter(
+							(item) =>
+								item.slug !=
+								"profesorado-en-ciencias-quimicas-y-del-ambiente",
+						)
+						?.map(({ emojie, nombre, slug }) => (
 							<MenuItem
 								className={`theme-${slug}`}
 								text={nombre}
 								iconLeft={{ icon: emojie, color: "primary" }}
 								href={`/carreras/${slug}`}
 							/>
-						),
-					)
+						))
 				}
 			</div>
 		</div>

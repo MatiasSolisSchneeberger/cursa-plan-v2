@@ -131,19 +131,19 @@
 		--primary-c: 0.0961;
 		--primary-h: 247.87;
 
-		--theme-bioquimica: calc(((360 / 13) * 5));
+		--theme-profesorado-en-matematica: calc(((360 / 13) * 1));
 		--theme-ingenieria-en-agrimensura: calc(((360 / 13) * 2));
 		--theme-ingenieria-electrica: calc(((360 / 13) * 3));
-		--theme-ingenieria-en-electronica: calc(((360 / 13) * 8));
-		--theme-licenciatura-en-ciencias-biologicas: calc(((360 / 13) * 6));
-		--theme-licenciatura-en-ciencias-fisicas: calc(((360 / 13) * 13));
-		--theme-licenciatura-en-ciencias-quimicas: calc(((360 / 13) * 7));
-		--theme-licenciatura-en-matematica: calc(((360 / 13) * 10));
-		--theme-licenciatura-en-sistemas-de-informacion: calc(((360 / 13) * 9));
 		--theme-profesorado-en-biologia: calc(((360 / 13) * 4));
+		--theme-bioquimica: calc(((360 / 13) * 5));
+		--theme-licenciatura-en-ciencias-biologicas: calc(((360 / 13) * 6));
+		--theme-licenciatura-en-ciencias-quimicas: calc(((360 / 13) * 7));
+		--theme-ingenieria-en-electronica: calc(((360 / 13) * 8));
+		--theme-licenciatura-en-sistemas-de-informacion: calc(((360 / 13) * 9));
+		--theme-licenciatura-en-matematica: calc(((360 / 13) * 10));
 		--theme-profesorado-en-fisica: calc(((360 / 13) * 11));
-		--theme-profesorado-en-matematica: calc(((360 / 13) * 1));
-		--theme-profesorado-en-ciencias-quimicas-y-del-ambiente: calc(((360 / 13) * 1));
+		--theme-licenciatura-en-ciencias-fisicas: calc(((360 / 13) * 12));
+		--theme-profesorado-en-ciencias-quimicas-y-del-ambiente: calc(((360 / 13) * 13));
 
 		--primary: oklch(var(--primary-l) var(--primary-c) var(--primary-h));
 		--secondary: oklch(from var(--primary) l c calc(h + 60));

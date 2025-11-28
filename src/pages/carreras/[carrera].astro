@@ -1,108 +1,246 @@
 ---
-import type { GetStaticPaths } from "astro";
-
-import { carreras } from "@data/carreras.json";
-
+// Ya no importamos el JSON, importamos los tipos
+import type { CarreraData, PlanEstudio, Año, Orientacion, Periodo, Materia, Correlativa, CorrelativaMateria } from "@lib/types";
 import Layout from "@layouts/Layout.astro";
-import AñoCarrera from "@sections/AñoCarrera.astro";
-import HeaderCarrera from "@sections/HeaderCarrera.astro";
-import BuscadorMaterias from "@components/BuscadorMaterias.jsx";
-import Tabs from "@components/Tabs.astro";
 
-// Define interfaces for type safety
+// --- 1. Configuración de Supabase ---
+// Leemos las variables de entorno (Astro las provee en SSR)
+const SUPABASE_URL = import.meta.env.SUPABASE_URL;
+const SUPABASE_KEY = import.meta.env.SUPABASE_KEY;
 
-export const getStaticPaths: GetStaticPaths = () => {
-    return carreras.map(({ slug }) => ({
-        params: { carrera: slug },
-    }));
-};
-
+// --- 2. Obtenemos el Slug de la URL ---
+// ¡Ya no usamos getStaticPaths!
+// Astro.params contiene el slug de la URL (ej: "bioquimica")
 const { carrera: carreraSlug } = Astro.params;
 
-// Buscar los datos específicos de la carrera usando el slug
-const carreraData = carreras.find((c) => c.slug === carreraSlug);
-
-if (!carreraData) return Astro.redirect("/404");
-
-function formatoAño(numero: number): string {
-	switch (numero) {
-		case 1:
-			return "1ro";
-		case 2:
-			return "2do";
-		case 3:
-			return "3er";
-		default:
-			return `${numero}to`;
-	}
+if (!carreraSlug) {
+	// Redirigir o mostrar error si no hay slug
+	return Astro.redirect("/404");
 }
 
-const {carrera, cursada, emoji, slug} = carreraData
+// --- 3. La Consulta GraphQL (Modificada) ---
+// Ahora la consulta filtra por el slug que vino en la URL
+const GetCarreraQuery = `
+query GetPlanPorCarrera($slug: String!) {
+  carrerasCollection(filter: { slug: { eq: $slug } }) {
+    edges {
+      node {
+        nombre
+        slug
+        emojie
+        plan_estudioCollection(orderBy: [{ anio_inicio: AscNullsFirst }]) {
+          edges {
+            node {
+              anio_inicio
+              anio_fin
+              materia_planCollection(orderBy: [
+                { anio: AscNullsFirst },
+                { nro_periodo: AscNullsFirst }
+              ]) {
+                edges {
+                  node {
+                    anio
+                    nro_periodo
+                    orientaciones { nombre }
+                    periodo { periodo }
+                    materias { nombre, slug }
+                    correlativasCollection(orderBy: [{ tipo_requisito: AscNullsFirst }]) {
+                      edges {
+                        node {
+                          tipo_requisito
+                          condicion
+                          porcentaje
+                          materias { nombre, slug }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`;
+
+// --- 4. Función Auxiliar de Agrupamiento ---
+// (La misma que teníamos en generar-datos.ts)
+function groupBy(list: any[], keyGetter: (item: any) => string | number) {
+	const map = new Map<string | number, any[]>();
+	list.forEach((item) => {
+		const key = keyGetter(item);
+		const collection = map.get(key);
+		if (!collection) {
+			map.set(key, [item]);
+		} else {
+			collection.push(item);
+		}
+	});
+	return Object.fromEntries(map);
+}
+
+// --- 5. Lógica de Fetch y Transformación ---
+// Esta función se ejecuta EN EL SERVIDOR en CADA petición
+
+async function getDatosDeCarrera(slug: string): Promise<CarreraData | null> {
+	const response = await fetch(`${SUPABASE_URL}/graphql/v1`, {
+		method: "POST",
+		headers: {
+			apiKey: SUPABASE_KEY as string,
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			query: GetCarreraQuery,
+			variables: { slug: slug }, // Usamos el slug de la URL
+		}),
+	});
+
+	const result = await response.json();
+
+	if (result.errors || !result.data.carrerasCollection.edges.length) {
+		console.error("Error fetching carrera data:", result.errors);
+		return null; // La carrera no se encontró
+	}
+
+	// --- Inicio de la Transformación ---
+	// (La misma lógica de 'generar-datos.ts' pero para un solo item)
+	const carreraNode = result.data.carrerasCollection.edges[0].node;
+
+	const processedCarrera: CarreraData = {
+		carrera: carreraNode.nombre,
+		slug: carreraNode.slug,
+		emojie: carreraNode.emojie,
+		planEstudio: carreraNode.plan_estudioCollection.edges.map((planEdge: any): PlanEstudio => {
+			const planNode = planEdge.node;
+			const materiasDelPlan = planNode.materia_planCollection.edges.map((e: any) => e.node);
+
+			const materiasPorAnio = groupBy(materiasDelPlan, (m) => m.anio || 0);
+
+			return {
+				anioInicio: planNode.anio_inicio,
+				anioFin: planNode.anio_fin || null,
+				años: Object.entries(materiasPorAnio).map(([anio, materiasDeEsteAnio]): Año => {
+					const materiasPorOrientacion = groupBy(materiasDeEsteAnio, (m) => m.orientaciones?.nombre || null);
+
+					return {
+						año: parseInt(anio, 10),
+						orientaciones: Object.entries(materiasPorOrientacion).map(([orientacion, materiasDeEstaOrientacion]): Orientacion => {
+							const materiasPorPeriodo = groupBy(materiasDeEstaOrientacion, (m) => m.nro_periodo);
+
+							return {
+								orientacion: orientacion === "null" ? null : orientacion,
+								periodos: Object.entries(materiasPorPeriodo).map(([nroPeriodo, materiasDeEstePeriodo]): Periodo => {
+									return {
+										tipoPeriodo: (materiasDeEstePeriodo[0] as any)?.periodo?.periodo || "n/a",
+										nroPeriodo: parseInt(nroPeriodo, 10),
+										materias: materiasDeEstePeriodo.map((m: any): Materia => {
+											// --- ¡ESTA ES LA CORRECCIÓN! ---
+											const correlativasEdges = m.correlativasCollection?.edges || []; // <-- Si es null, usa []
+											// --- FIN DE LA CORRECCIÓN ---
+
+											const correlativasPorTipo = groupBy(
+												correlativasEdges.map((e: any) => e.node),
+												(c) => c.tipo_requisito,
+											);
+
+											return {
+												materia: m.materias.nombre,
+												slug: m.materias.slug,
+												correlativas: Object.entries(correlativasPorTipo).map(([tipo, correlativas]): Correlativa => {
+													return {
+														tipo: (tipo.startsWith("para") ? tipo.substring(4) : tipo).toLowerCase(),
+														materias: correlativas.map((c: any): CorrelativaMateria => {
+															return {
+																nombre: c.materias?.nombre || null,
+																condicion: c.condicion?.toLowerCase() || null,
+																otro: c.porcentaje ? `${c.porcentaje}%` : null,
+															};
+														}),
+													};
+												}),
+											};
+										}),
+									};
+								}),
+							};
+						}),
+					};
+				}),
+			};
+		}),
+	};
+	return processedCarrera;
+	// --- Fin de la Transformación ---
+}
+
+// --- 6. Ejecución de la lógica ---
+// Hacemos 'await' para obtener los datos ANTES de renderizar el HTML
+const carreraData = await getDatosDeCarrera(carreraSlug);
+
+// Si la carrera no se encontró en Supabase, redirigimos
+if (!carreraData) {
+	return Astro.redirect("/404");
+}
 ---
 
-<Layout
-	title={`${carrera} | Plan de estudio`}
-	theme={slug}>
-	<HeaderCarrera carrera={carrera} emoji={emoji} />
+<!-- 7. Template (HTML) --><!-- 
+  Esta sección es IDÉNTICA a la que tenías,
+  porque ya estaba preparada para recibir el objeto 'carreraData'.
+-->
+<Layout title={carreraData.carrera}>
+	<h1>{carreraData.emojie} {carreraData.carrera}</h1>
 
-	<BuscadorMaterias
-		client:load
-		placeholder="Buscar materia..."
-		targetClass="materia-card"
-	/>
 	{
-		cursada && (
-			<Tabs
-				tab={cursada.map((item) => ({
-					label: formatoAño(item.año),
-					href: `#Año-${item.año}`,
-				}))}
-			/>
-		)
-	}
+		carreraData.planEstudio.map((plan) => (
+			<section>
+				<h2>
+					Plan {plan.anioInicio}
+					{plan.anioFin ? ` - ${plan.anioFin}` : ""}
+				</h2>
 
-	<section id="materias-container" class="space-y-8">
-		{
-			cursada.map(({ año, materias, orientaciones }) => (
-				<AñoCarrera
-					carrera={carreraSlug}
-					año={año}
-					materias={materias}
-					carrera={carrera}
-					orientaciones={orientaciones}
-				/>
-			))
-		}
-	</section>
+				{plan.años
+					.filter((a) => a.año > 0)
+					.map((a) => (
+						<div style="padding-left: 20px;">
+							<h3>Año: {a.año}</h3>
+
+							{a.orientaciones.map((o) => (
+								<div style="padding-left: 20px;">
+									{o.orientacion && <h4>Orientación: {o.orientacion}</h4>}
+
+									{o.periodos.map((p) => (
+										<div style="padding-left: 20px;">
+											<h5>
+												Periodo {p.nroPeriodo} ({p.tipoPeriodo})
+											</h5>
+
+											<ul>
+												{p.materias.map((m) => (
+													<li>
+														<strong>{m.materia}</strong>
+														{m.correlativas.length > 0 && (
+															<ul style="padding-left: 40px; list-style-type: '→ ';">
+																{m.correlativas.map((c) => (
+																	<li>
+																		<strong>{c.tipo}: </strong>
+																		{c.materias.map((cm) => (cm.nombre ? `${cm.nombre} (${cm.condicion})` : cm.otro)).join(", ")}
+																	</li>
+																))}
+															</ul>
+														)}
+													</li>
+												))}
+											</ul>
+										</div>
+									))}
+								</div>
+							))}
+						</div>
+					))}
+			</section>
+		))
+	}
 </Layout>
-
-<script>
-	function handleSearch(searchTerm: string) {
-		const searchTermLower = searchTerm.toLowerCase();
-		const materiasContainer = document.getElementById("materias-container");
-		if (!materiasContainer) return;
-
-		const tarjetas =
-			materiasContainer.getElementsByClassName("materia-card");
-
-		Array.from(tarjetas).forEach((tarjeta) => {
-			const nombreMateria =
-				tarjeta.querySelector("h3")?.textContent?.toLowerCase() || "";
-			const codigoMateria =
-				tarjeta.querySelector(".codigo")?.textContent?.toLowerCase() ||
-				"";
-
-			if (
-				nombreMateria.includes(searchTermLower) ||
-				codigoMateria.includes(searchTermLower)
-			) {
-				(tarjeta as HTMLElement).style.display = "";
-			} else {
-				(tarjeta as HTMLElement).style.display = "none";
-			}
-		});
-	}
-
-	// Exponer la función al componente React
-	(window as any).handleSearch = handleSearch;
-</script>

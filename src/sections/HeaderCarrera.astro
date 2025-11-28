@@ -21,7 +21,7 @@ const { slug, carrera, emoji } = Astro.props;
 		transition:name=`nombre-${slug}`
 		class=`theme-${slug} sm:hidden texto-headline text-primary-600 dark:text-primary-400 relative flex-1 flex items-center justify-center text-center`>
 		{
-			carrera.replace("Licenciatura", "Lic.")
+			carrera?.replace("Licenciatura", "Lic.")
 				.replace("Ingeniería", "Ing.")
 				.replace("Profesorado", "Prof.")
 		}
@@ -33,6 +33,6 @@ const { slug, carrera, emoji } = Astro.props;
 	</h2>
 	<span
 		class="relative flex flex-row items-center justify-center gap-0 rounded-xl bg-secondary-400 p-2 text-nowrap text-secondary-800 transition-all duration-150 ease-in-out select-none dark:bg-secondary-600 dark:text-secondary-200">
-		<Icon name={emoji} size={22} />
+		{emoji && <Icon name={emoji} size={22} />}
 	</span>
 </header>
