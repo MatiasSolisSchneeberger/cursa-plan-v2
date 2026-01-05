@@ -6,7 +6,7 @@ import TarjetaCarrera from "@components/TarjetaCarrera.astro";
 
 const { data, error } = await supabase
 	.from("carreras")
-	.select("nombre,slug,emojie");
+	.select("nombre,slug,icon");
 ---
 
 <section
@@ -18,13 +18,17 @@ const { data, error } = await supabase
 		class="relative grid w-full shrink-0 grid-cols-1 flex-wrap content-start items-start justify-start gap-6 self-stretch md:grid-cols-2 lg:grid-cols-3">
 		{
 			data
-				?.filter((item) => item.slug != "profesorado-en-ciencias-quimicas-y-del-ambiente")
-				.map(({ nombre, slug, emojie }) => {
+				?.filter(
+					(item) =>
+						item.slug !=
+						"profesorado-en-ciencias-quimicas-y-del-ambiente",
+				)
+				.map(({ nombre, slug, icon }) => {
 					return (
 						<TarjetaCarrera
 							slug={slug}
 							carrera={nombre}
-							emoji={emojie}
+							emoji={icon}
 						/>
 					);
 				})
